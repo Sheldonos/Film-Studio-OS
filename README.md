@@ -32,7 +32,7 @@ It is **not a code-gen toy**. It is a production-grade system with:
 ## Architecture
 
 ```
-Bob / CLI / MCP
+Bob/Astra / CLI / MCP
        │
        ▼
  Canonical Domain  ──────────────────────────────────────────────────────────┐
