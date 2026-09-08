@@ -17,7 +17,7 @@
 
 ## What is Film Studio OS?
 
-Film Studio OS is an AI-powered film production operating system that runs inside **IBM Bob**. It turns properly licensed source material (books, scripts, treatments) into production-ready artifacts — covering every stage from rights intake and screenplay development through generative production, editorial, post, and archival delivery.
+Film Studio OS is an AI-powered film production operating system that runs inside **IBM Bob/Astra 6**. It turns properly licensed source material (books, scripts, treatments) into production-ready artifacts — covering every stage from rights intake and screenplay development through generative production, editorial, post, and archival delivery.
 
 It is **not a code-gen toy**. It is a production-grade system with:
 
