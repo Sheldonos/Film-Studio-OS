@@ -1,0 +1,23 @@
+{
+  "schema_version": "2.0",
+  "adapter_id": "mock-generation",
+  "as_of": "2026-08-15",
+  "status": "implemented_and_tested",
+  "live_enabled": false,
+  "research_only": false,
+  "modalities": [
+    "video-test-fixture"
+  ],
+  "capabilities": [
+    "deterministic dry-run artifact",
+    "failure/retry fixture"
+  ],
+  "async_job_pattern": "submit/poll/cancel",
+  "auth": "none",
+  "commercial_use": "not applicable",
+  "training_policy": "none",
+  "retention_policy": "local test state only",
+  "cost_unit": "USD normalized",
+  "evidence": "repository implementation",
+  "policy_note": "No live provider is enabled by default. Unknown provider policy fields block policy-sensitive routing until reverified."
+}

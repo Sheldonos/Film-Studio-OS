@@ -1,0 +1,156 @@
+{
+  "schema_version": "2.0",
+  "scope_note": "Coverage states reflect v0.2 dry-run/runtime support. Generated media delivery formats are not claimed live.",
+  "rows": [
+    {
+      "source_type": "plain_text_or_markdown",
+      "ingestion": "implemented",
+      "normalized_to": "SourceAsset/segments",
+      "workflow_families": [
+        "intake_rights_v2",
+        "adaptation_v2",
+        "story_script_v2"
+      ],
+      "dry_run_outputs": [
+        "CreativeBrief",
+        "AdaptationMandate",
+        "ScreenplayDraft",
+        "ShotSpecSet",
+        "ArchiveManifest"
+      ],
+      "status": "tested"
+    },
+    {
+      "source_type": "fountain",
+      "ingestion": "implemented",
+      "normalized_to": "SourceAsset/segments",
+      "workflow_families": [
+        "intake_rights_v2",
+        "story_script_v2",
+        "direction_previs_v2"
+      ],
+      "dry_run_outputs": [
+        "LockedScript",
+        "DirectorBreakdown",
+        "ShotSpecSet"
+      ],
+      "status": "tested"
+    },
+    {
+      "source_type": "fdx",
+      "ingestion": "implemented",
+      "normalized_to": "SourceAsset/segments",
+      "workflow_families": [
+        "intake_rights_v2",
+        "story_script_v2"
+      ],
+      "dry_run_outputs": [
+        "ScriptAudit",
+        "RevisionPlan",
+        "LockedScript"
+      ],
+      "status": "tested"
+    },
+    {
+      "source_type": "docx",
+      "ingestion": "implemented",
+      "normalized_to": "SourceAsset/segments",
+      "workflow_families": [
+        "intake_rights_v2",
+        "adaptation_v2",
+        "documentary_v2"
+      ],
+      "dry_run_outputs": [
+        "SourceMap",
+        "EvidenceLedger",
+        "AdaptationMandate"
+      ],
+      "status": "tested"
+    },
+    {
+      "source_type": "epub",
+      "ingestion": "implemented",
+      "normalized_to": "SourceAsset/segments",
+      "workflow_families": [
+        "intake_rights_v2",
+        "adaptation_v2"
+      ],
+      "dry_run_outputs": [
+        "SourceMap",
+        "AdaptationDecisionLedger"
+      ],
+      "status": "tested"
+    },
+    {
+      "source_type": "pdf",
+      "ingestion": "optional_pypdf",
+      "normalized_to": "SourceAsset/segments",
+      "workflow_families": [
+        "intake_rights_v2",
+        "adaptation_v2",
+        "documentary_v2"
+      ],
+      "dry_run_outputs": [
+        "SourceMap",
+        "EvidenceLedger"
+      ],
+      "status": "optional_dependency_tested_with_parser_contract"
+    },
+    {
+      "source_type": "srt_or_vtt",
+      "ingestion": "implemented",
+      "normalized_to": "SourceAsset/segments",
+      "workflow_families": [
+        "documentary_v2",
+        "localization_archive_v2"
+      ],
+      "dry_run_outputs": [
+        "EvidenceLedger",
+        "LocalizationPackage"
+      ],
+      "status": "tested_parser; alignment/media integration partial"
+    },
+    {
+      "source_type": "csv_research",
+      "ingestion": "implemented",
+      "normalized_to": "SourceAsset/segments",
+      "workflow_families": [
+        "documentary_v2"
+      ],
+      "dry_run_outputs": [
+        "EvidenceLedger",
+        "ClaimMap",
+        "FactCheckReport"
+      ],
+      "status": "tested_parser; semantic fact checking requires review"
+    },
+    {
+      "source_type": "image_reference",
+      "ingestion": "metadata/path only",
+      "normalized_to": "Artifact/ReferenceBinding",
+      "workflow_families": [
+        "art_animation_v2",
+        "shot_production_v2"
+      ],
+      "dry_run_outputs": [
+        "ReferenceBinding",
+        "KeyframePlan"
+      ],
+      "status": "workflow modeled; image inspection adapter future"
+    },
+    {
+      "source_type": "existing_video_or_audio",
+      "ingestion": "deterministic_media_probe_and_extraction",
+      "normalized_to": "Media probe metadata + future semantic Artifact",
+      "workflow_families": [
+        "documentary_v2",
+        "post_finish_v2"
+      ],
+      "dry_run_outputs": [
+        "probe/checksum/frame/audio extraction",
+        "basic technical QC"
+      ],
+      "status": "local tool implemented/tested; semantic alignment and full delivery QC partial"
+    }
+  ]
+}

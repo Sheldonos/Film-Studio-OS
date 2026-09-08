@@ -1,0 +1,59 @@
+{
+  "schema_version": "2.0",
+  "workflow_id": "localization_archive_v2",
+  "version": "2.0.0",
+  "description": "Localize, validate delivery, release through human approval, and create immutable reproduction archive.",
+  "production_route": "provider_neutral",
+  "steps": [
+    {
+      "id": "localization",
+      "capability_id": "localization_accessibility",
+      "owner_agent": "localization_delivery_supervisor",
+      "depends_on": [],
+      "output_type": "LocalizationPackage",
+      "reviewer_agent": "qc_supervisor"
+    },
+    {
+      "id": "delivery",
+      "capability_id": "delivery_validation",
+      "owner_agent": "localization_delivery_supervisor",
+      "depends_on": [
+        "localization"
+      ],
+      "output_type": "DeliveryQC",
+      "reviewer_agent": "qc_supervisor"
+    },
+    {
+      "id": "release",
+      "capability_id": "release_approval",
+      "owner_agent": "studio_orchestrator",
+      "depends_on": [
+        "delivery"
+      ],
+      "output_type": "ReleaseDecision",
+      "approval_required": true,
+      "approval_role": "human_producer_legal",
+      "gate_id": "gate_master"
+    },
+    {
+      "id": "archive",
+      "capability_id": "archive_packaging",
+      "owner_agent": "production_librarian",
+      "depends_on": [
+        "release"
+      ],
+      "output_type": "ArchiveManifest",
+      "reviewer_agent": "qc_supervisor"
+    },
+    {
+      "id": "reproduction",
+      "capability_id": "reproduction_manifest",
+      "owner_agent": "production_librarian",
+      "depends_on": [
+        "archive"
+      ],
+      "output_type": "ReproductionManifest",
+      "reviewer_agent": "qc_supervisor"
+    }
+  ]
+}

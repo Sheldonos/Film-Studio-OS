@@ -1,0 +1,95 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "default": "2.0",
+      "pattern": "^\\d+\\.\\d+$",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "project_id": {
+      "minLength": 1,
+      "title": "Project Id",
+      "type": "string"
+    },
+    "studio_id": {
+      "minLength": 1,
+      "title": "Studio Id",
+      "type": "string"
+    },
+    "title": {
+      "minLength": 1,
+      "title": "Title",
+      "type": "string"
+    },
+    "project_type": {
+      "enum": [
+        "short",
+        "feature",
+        "series",
+        "limited_series",
+        "documentary",
+        "trailer",
+        "animatic",
+        "hybrid"
+      ],
+      "title": "Project Type",
+      "type": "string"
+    },
+    "status": {
+      "default": "development",
+      "enum": [
+        "development",
+        "greenlight_pending",
+        "preproduction",
+        "production",
+        "post",
+        "delivery",
+        "archived",
+        "cancelled"
+      ],
+      "title": "Status",
+      "type": "string"
+    },
+    "source_asset_ids": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Source Asset Ids",
+      "type": "array"
+    },
+    "rights_record_ids": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Rights Record Ids",
+      "type": "array"
+    },
+    "budget_usd": {
+      "default": 0,
+      "minimum": 0,
+      "title": "Budget Usd",
+      "type": "number"
+    },
+    "distribution_targets": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Distribution Targets",
+      "type": "array"
+    },
+    "created_at": {
+      "title": "Created At",
+      "type": "string"
+    }
+  },
+  "required": [
+    "project_id",
+    "studio_id",
+    "title",
+    "project_type"
+  ],
+  "title": "Project",
+  "type": "object",
+  "$id": "https://film-studio-os.local/schema/v2/domain/Project.json"
+}

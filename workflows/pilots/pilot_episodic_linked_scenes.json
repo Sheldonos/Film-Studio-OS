@@ -1,0 +1,105 @@
+{
+  "schema_version": "2.0",
+  "workflow_id": "pilot_episodic_linked_scenes",
+  "version": "2.0.0",
+  "description": "pilot episodic linked scenes",
+  "production_route": "mock_dry_run",
+  "steps": [
+    {
+      "id": "intake",
+      "capability_id": "rights_risk_triage",
+      "owner_agent": "production_librarian",
+      "depends_on": [],
+      "handler": "rights_gate",
+      "output_type": "IntakeArtifact",
+      "reviewer_agent": null,
+      "approval_required": false,
+      "approval_role": "fixture_human",
+      "gate_id": null
+    },
+    {
+      "id": "series",
+      "capability_id": "series",
+      "owner_agent": "series_continuity_editor",
+      "depends_on": [
+        "intake"
+      ],
+      "handler": "artifact",
+      "output_type": "SeriesArtifact",
+      "reviewer_agent": "qc_supervisor",
+      "approval_required": false,
+      "approval_role": "fixture_human",
+      "gate_id": null
+    },
+    {
+      "id": "episode_a",
+      "capability_id": "episode_a",
+      "owner_agent": "showrunner",
+      "depends_on": [
+        "series"
+      ],
+      "handler": "artifact",
+      "output_type": "EpisodeAArtifact",
+      "reviewer_agent": "qc_supervisor",
+      "approval_required": false,
+      "approval_role": "fixture_human",
+      "gate_id": null
+    },
+    {
+      "id": "episode_b",
+      "capability_id": "episode_b",
+      "owner_agent": "showrunner",
+      "depends_on": [
+        "episode_a"
+      ],
+      "handler": "artifact",
+      "output_type": "EpisodeBArtifact",
+      "reviewer_agent": "qc_supervisor",
+      "approval_required": false,
+      "approval_role": "fixture_human",
+      "gate_id": null
+    },
+    {
+      "id": "continuity",
+      "capability_id": "continuity",
+      "owner_agent": "continuity_supervisor",
+      "depends_on": [
+        "episode_b"
+      ],
+      "handler": "artifact",
+      "output_type": "ContinuityArtifact",
+      "reviewer_agent": "qc_supervisor",
+      "approval_required": false,
+      "approval_role": "fixture_human",
+      "gate_id": null
+    },
+    {
+      "id": "shot",
+      "capability_id": "video_generation_plan",
+      "owner_agent": "generative_supervisor",
+      "depends_on": [
+        "continuity"
+      ],
+      "handler": "mock_generation",
+      "output_type": "ShotArtifact",
+      "reviewer_agent": "qc_supervisor",
+      "approval_required": false,
+      "approval_role": "fixture_human",
+      "gate_id": null
+    },
+    {
+      "id": "release",
+      "capability_id": "master_qc",
+      "owner_agent": "studio_orchestrator",
+      "depends_on": [
+        "shot"
+      ],
+      "handler": "artifact",
+      "output_type": "ReleaseArtifact",
+      "reviewer_agent": "qc_supervisor",
+      "approval_required": true,
+      "approval_role": "fixture_human",
+      "gate_id": "gate_master"
+    }
+  ]
+}

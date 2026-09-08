@@ -1,0 +1,79 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "default": "2.0",
+      "pattern": "^\\d+\\.\\d+$",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "reproduction_manifest_id": {
+      "minLength": 1,
+      "title": "Reproduction Manifest Id",
+      "type": "string"
+    },
+    "project_id": {
+      "minLength": 1,
+      "title": "Project Id",
+      "type": "string"
+    },
+    "final_artifact_version_id": {
+      "minLength": 1,
+      "title": "Final Artifact Version Id",
+      "type": "string"
+    },
+    "upstream_version_ids": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Upstream Version Ids",
+      "type": "array"
+    },
+    "provider_job_ids": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Provider Job Ids",
+      "type": "array"
+    },
+    "decision_ids": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Decision Ids",
+      "type": "array"
+    },
+    "approval_ids": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Approval Ids",
+      "type": "array"
+    },
+    "reproducibility": {
+      "enum": [
+        "exact",
+        "best_effort",
+        "not_reproducible"
+      ],
+      "title": "Reproducibility",
+      "type": "string"
+    },
+    "limitations": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Limitations",
+      "type": "array"
+    }
+  },
+  "required": [
+    "reproduction_manifest_id",
+    "project_id",
+    "final_artifact_version_id",
+    "reproducibility"
+  ],
+  "title": "ReproductionManifest",
+  "type": "object",
+  "$id": "https://film-studio-os.local/schema/v2/domain/ReproductionManifest.json"
+}

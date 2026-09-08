@@ -1,0 +1,110 @@
+{
+  "/film": {
+    "orchestrator": "studio_orchestrator",
+    "workflow": "script_to_film_v2",
+    "purpose": "Full end-to-end production from brief/script to master."
+  },
+  "/script-audit": {
+    "orchestrator": "script_editor",
+    "workflow": [
+      "cold_read_audit",
+      "premise_theme_audit",
+      "structure_causality_audit",
+      "character_arc_audit",
+      "scene_function_audit",
+      "dialogue_voice_audit",
+      "continuity_logic_audit",
+      "genre_tone_audit",
+      "production_feasibility_audit",
+      "revision_regression_audit"
+    ],
+    "purpose": "Independent multi-pass script diagnosis."
+  },
+  "/scene": {
+    "orchestrator": "director",
+    "workflow": [
+      "scene_intention_breakdown",
+      "blocking_plan",
+      "coverage_plan",
+      "shot_spec_compilation"
+    ],
+    "purpose": "Convert an approved scene into generation-ready coverage."
+  },
+  "/dialogue": {
+    "orchestrator": "director",
+    "workflow": "dialogue_scene_v1",
+    "purpose": "Dialogue-specific coverage/performance/identity workflow."
+  },
+  "/action": {
+    "orchestrator": "director",
+    "workflow": "action_sequence_v1",
+    "purpose": "Action-specific geography/motion/interaction workflow."
+  },
+  "/character-build": {
+    "orchestrator": "character_director",
+    "workflow": [
+      "character_bible_creation",
+      "identity_state_separation",
+      "wardrobe_canon",
+      "expression_range_map",
+      "character_reference_plan"
+    ],
+    "purpose": "Create persistent character identity system."
+  },
+  "/world-build": {
+    "orchestrator": "production_designer",
+    "workflow": [
+      "world_bible_creation",
+      "location_bible_creation",
+      "prop_canon_design",
+      "environment_state_design",
+      "location_geography_map"
+    ],
+    "purpose": "Create persistent world/location/prop system."
+  },
+  "/continuity": {
+    "orchestrator": "continuity_supervisor",
+    "workflow": [
+      "continuity_extraction",
+      "continuity_diff",
+      "screen_direction_validation"
+    ],
+    "purpose": "Build/validate authoritative scene and shot state."
+  },
+  "/shot": {
+    "orchestrator": "generative_supervisor",
+    "workflow": [
+      "shot_spec_compilation",
+      "reference_selection",
+      "prompt_compilation",
+      "model_routing",
+      "keyframe_generation_plan",
+      "keyframe_evaluation",
+      "video_generation_plan"
+    ],
+    "purpose": "Produce one traceable shot from a locked ShotSpec."
+  },
+  "/film-qc": {
+    "orchestrator": "qc_supervisor",
+    "workflow": [
+      "visual_qc",
+      "motion_physics_qc",
+      "identity_qc",
+      "continuity_qc",
+      "edit_qc",
+      "audio_qc",
+      "master_qc"
+    ],
+    "purpose": "Independent quality audit."
+  },
+  "/film-master": {
+    "orchestrator": "studio_orchestrator",
+    "workflow": [
+      "picture_lock_check",
+      "master_qc",
+      "archive_packaging",
+      "reproduction_manifest"
+    ],
+    "purpose": "Finalize and archive a release candidate."
+  }
+}

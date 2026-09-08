@@ -1,0 +1,146 @@
+{
+  "$defs": {
+    "Finding": {
+      "additionalProperties": false,
+      "properties": {
+        "blocker": {
+          "default": false,
+          "title": "Blocker",
+          "type": "boolean"
+        },
+        "category": {
+          "minLength": 1,
+          "title": "Category",
+          "type": "string"
+        },
+        "confidence": {
+          "default": 1.0,
+          "maximum": 1,
+          "minimum": 0,
+          "title": "Confidence",
+          "type": "number"
+        },
+        "evidence": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Evidence",
+          "type": "array"
+        },
+        "finding_id": {
+          "minLength": 1,
+          "title": "Finding Id",
+          "type": "string"
+        },
+        "message": {
+          "minLength": 1,
+          "title": "Message",
+          "type": "string"
+        },
+        "schema_version": {
+          "default": "2.0",
+          "pattern": "^\\d+\\.\\d+$",
+          "title": "Schema Version",
+          "type": "string"
+        },
+        "severity": {
+          "$ref": "#/$defs/RiskLevel"
+        }
+      },
+      "required": [
+        "finding_id",
+        "category",
+        "severity",
+        "message"
+      ],
+      "title": "Finding",
+      "type": "object"
+    },
+    "RiskLevel": {
+      "enum": [
+        "low",
+        "medium",
+        "high",
+        "critical"
+      ],
+      "title": "RiskLevel",
+      "type": "string"
+    }
+  },
+  "$id": "https://film-studio-os.local/schemas/v2/GateResultV2.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "gate_id": {
+      "minLength": 1,
+      "title": "Gate Id",
+      "type": "string"
+    },
+    "hard_blockers": {
+      "items": {
+        "$ref": "#/$defs/Finding"
+      },
+      "title": "Hard Blockers",
+      "type": "array"
+    },
+    "metric_scores": {
+      "additionalProperties": {
+        "type": "number"
+      },
+      "title": "Metric Scores",
+      "type": "object"
+    },
+    "passed": {
+      "title": "Passed",
+      "type": "boolean"
+    },
+    "project_id": {
+      "minLength": 1,
+      "title": "Project Id",
+      "type": "string"
+    },
+    "reviewed_at": {
+      "title": "Reviewed At",
+      "type": "string"
+    },
+    "reviewer": {
+      "minLength": 1,
+      "title": "Reviewer",
+      "type": "string"
+    },
+    "schema_version": {
+      "default": "2.0",
+      "pattern": "^\\d+\\.\\d+$",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "subject_id": {
+      "minLength": 1,
+      "title": "Subject Id",
+      "type": "string"
+    },
+    "weighted_score": {
+      "anyOf": [
+        {
+          "maximum": 5,
+          "minimum": 0,
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Weighted Score"
+    }
+  },
+  "required": [
+    "gate_id",
+    "project_id",
+    "subject_id",
+    "passed",
+    "reviewer"
+  ],
+  "title": "GateResultV2",
+  "type": "object"
+}

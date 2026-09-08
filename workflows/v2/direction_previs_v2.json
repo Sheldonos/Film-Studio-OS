@@ -1,0 +1,75 @@
+{
+  "schema_version": "2.0",
+  "workflow_id": "direction_previs_v2",
+  "version": "2.0.0",
+  "description": "Translate approved scenes into performance, blocking, coverage, camera and previs.",
+  "production_route": "provider_neutral",
+  "steps": [
+    {
+      "id": "intention",
+      "capability_id": "scene_intention_breakdown",
+      "owner_agent": "director",
+      "depends_on": [],
+      "output_type": "DirectorBreakdown"
+    },
+    {
+      "id": "performance",
+      "capability_id": "performance_objective_design",
+      "owner_agent": "director",
+      "depends_on": [
+        "intention"
+      ],
+      "output_type": "PerformanceSpec"
+    },
+    {
+      "id": "blocking",
+      "capability_id": "blocking_plan",
+      "owner_agent": "director",
+      "depends_on": [
+        "intention"
+      ],
+      "output_type": "BlockingPlan",
+      "reviewer_agent": "continuity_supervisor"
+    },
+    {
+      "id": "coverage",
+      "capability_id": "coverage_plan",
+      "owner_agent": "director",
+      "depends_on": [
+        "blocking",
+        "performance"
+      ],
+      "output_type": "CoveragePlan",
+      "reviewer_agent": "cinematographer"
+    },
+    {
+      "id": "camera",
+      "capability_id": "camera_language_design",
+      "owner_agent": "cinematographer",
+      "depends_on": [
+        "coverage"
+      ],
+      "output_type": "CameraPlan"
+    },
+    {
+      "id": "shots",
+      "capability_id": "shot_spec_compilation",
+      "owner_agent": "cinematographer",
+      "depends_on": [
+        "camera"
+      ],
+      "output_type": "ShotSpecSet",
+      "reviewer_agent": "director"
+    },
+    {
+      "id": "previs",
+      "capability_id": "storyboard_plan",
+      "owner_agent": "storyboard_previs",
+      "depends_on": [
+        "shots"
+      ],
+      "output_type": "StoryboardAnimatic",
+      "reviewer_agent": "director"
+    }
+  ]
+}

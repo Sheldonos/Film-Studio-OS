@@ -1,0 +1,101 @@
+{
+  "schema_version": "2.0",
+  "workflow_id": "physical_preproduction_v2",
+  "version": "2.0.0",
+  "description": "Script breakdown, production design, location, safety, schedule and operations feasibility before physical or hybrid production.",
+  "production_route": "physical_or_hybrid",
+  "steps": [
+    {
+      "id": "breakdown",
+      "capability_id": "script_element_breakdown",
+      "owner_agent": "line_producer",
+      "reviewer_agent": "continuity_supervisor",
+      "output_type": "ScriptElementBreakdown",
+      "handler": "artifact"
+    },
+    {
+      "id": "design",
+      "capability_id": "production_design_package",
+      "owner_agent": "production_designer",
+      "reviewer_agent": "director",
+      "depends_on": [
+        "breakdown"
+      ],
+      "output_type": "ProductionDesignPackage",
+      "handler": "artifact"
+    },
+    {
+      "id": "locations",
+      "capability_id": "location_scout_matrix",
+      "owner_agent": "production_designer",
+      "reviewer_agent": "line_producer",
+      "depends_on": [
+        "breakdown"
+      ],
+      "output_type": "LocationScoutMatrix",
+      "handler": "artifact"
+    },
+    {
+      "id": "risk",
+      "capability_id": "production_risk_register",
+      "owner_agent": "line_producer",
+      "reviewer_agent": "security_data_governance",
+      "depends_on": [
+        "breakdown",
+        "locations"
+      ],
+      "output_type": "ProductionRiskRegister",
+      "handler": "artifact"
+    },
+    {
+      "id": "location_feasibility",
+      "capability_id": "location_feasibility_plan",
+      "owner_agent": "line_producer",
+      "reviewer_agent": "security_data_governance",
+      "depends_on": [
+        "locations",
+        "risk"
+      ],
+      "output_type": "LocationFeasibilityPlan",
+      "handler": "artifact"
+    },
+    {
+      "id": "schedule",
+      "capability_id": "schedule_budget_scenario",
+      "owner_agent": "line_producer",
+      "reviewer_agent": "studio_orchestrator",
+      "depends_on": [
+        "design",
+        "location_feasibility"
+      ],
+      "output_type": "ScheduleBudgetScenario",
+      "handler": "artifact"
+    },
+    {
+      "id": "art_execution",
+      "capability_id": "art_department_execution_plan",
+      "owner_agent": "production_designer",
+      "reviewer_agent": "line_producer",
+      "depends_on": [
+        "design",
+        "schedule"
+      ],
+      "output_type": "ArtDepartmentExecutionPlan",
+      "handler": "artifact"
+    },
+    {
+      "id": "operations",
+      "capability_id": "production_operations_plan",
+      "owner_agent": "line_producer",
+      "reviewer_agent": "studio_orchestrator",
+      "depends_on": [
+        "risk",
+        "schedule",
+        "art_execution"
+      ],
+      "output_type": "ProductionOperationsPlan",
+      "handler": "artifact"
+    }
+  ]
+}
+

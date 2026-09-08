@@ -1,0 +1,93 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "default": "2.0",
+      "pattern": "^\\d+\\.\\d+$",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "adaptation_mandate_id": {
+      "minLength": 1,
+      "title": "Adaptation Mandate Id",
+      "type": "string"
+    },
+    "project_id": {
+      "minLength": 1,
+      "title": "Project Id",
+      "type": "string"
+    },
+    "source_asset_ids": {
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1,
+      "title": "Source Asset Ids",
+      "type": "array"
+    },
+    "target_format": {
+      "enum": [
+        "short",
+        "feature",
+        "limited_series",
+        "episodic_series",
+        "documentary"
+      ],
+      "title": "Target Format",
+      "type": "string"
+    },
+    "fidelity_priority": {
+      "enum": [
+        "strict",
+        "balanced",
+        "transformative_within_license"
+      ],
+      "title": "Fidelity Priority",
+      "type": "string"
+    },
+    "locked_elements": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Locked Elements",
+      "type": "array"
+    },
+    "permitted_operations": {
+      "items": {
+        "enum": [
+          "keep",
+          "compress",
+          "merge",
+          "reorder",
+          "remove",
+          "add"
+        ],
+        "type": "string"
+      },
+      "title": "Permitted Operations",
+      "type": "array"
+    },
+    "approval_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Approval Id"
+    }
+  },
+  "required": [
+    "adaptation_mandate_id",
+    "project_id",
+    "source_asset_ids",
+    "target_format",
+    "fidelity_priority"
+  ],
+  "title": "AdaptationMandate",
+  "type": "object",
+  "$id": "https://film-studio-os.local/schema/v2/domain/AdaptationMandate.json"
+}

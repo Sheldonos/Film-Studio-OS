@@ -1,0 +1,21 @@
+{
+  "schema_version": "2.0",
+  "workflow_id": "repository_release_audit_v2",
+  "version": "2.0.0",
+  "description": "Source-backed repository audit, evidence record and independent release review.",
+  "production_route": "local_read_only_and_surgical_remediation",
+  "steps": [
+    {
+      "id": "audit",
+      "capability_id": "repository_release_audit",
+      "owner_agent": "security_data_governance",
+      "reviewer_agent": "qc_supervisor",
+      "output_type": "RepositoryReleaseAudit",
+      "handler": "artifact",
+      "approval_required": true,
+      "approval_role": "human_release_owner",
+      "gate_id": "remediation_scope_approved"
+    }
+  ]
+}
+

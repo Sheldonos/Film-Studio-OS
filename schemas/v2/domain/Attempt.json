@@ -1,0 +1,80 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "default": "2.0",
+      "pattern": "^\\d+\\.\\d+$",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "attempt_id": {
+      "minLength": 1,
+      "title": "Attempt Id",
+      "type": "string"
+    },
+    "work_order_id": {
+      "minLength": 1,
+      "title": "Work Order Id",
+      "type": "string"
+    },
+    "ordinal": {
+      "minimum": 1,
+      "title": "Ordinal",
+      "type": "integer"
+    },
+    "started_at": {
+      "title": "Started At",
+      "type": "string"
+    },
+    "completed_at": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Completed At"
+    },
+    "outcome": {
+      "default": "running",
+      "enum": [
+        "running",
+        "accepted",
+        "rejected",
+        "failed",
+        "cancelled"
+      ],
+      "title": "Outcome",
+      "type": "string"
+    },
+    "failure_class": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Failure Class"
+    },
+    "actual_cost_usd": {
+      "default": 0,
+      "minimum": 0,
+      "title": "Actual Cost Usd",
+      "type": "number"
+    }
+  },
+  "required": [
+    "attempt_id",
+    "work_order_id",
+    "ordinal"
+  ],
+  "title": "Attempt",
+  "type": "object",
+  "$id": "https://film-studio-os.local/schema/v2/domain/Attempt.json"
+}

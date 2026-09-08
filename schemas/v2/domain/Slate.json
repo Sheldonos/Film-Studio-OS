@@ -1,0 +1,41 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "default": "2.0",
+      "pattern": "^\\d+\\.\\d+$",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "slate_id": {
+      "minLength": 1,
+      "title": "Slate Id",
+      "type": "string"
+    },
+    "studio_id": {
+      "minLength": 1,
+      "title": "Studio Id",
+      "type": "string"
+    },
+    "name": {
+      "minLength": 1,
+      "title": "Name",
+      "type": "string"
+    },
+    "project_ids": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Project Ids",
+      "type": "array"
+    }
+  },
+  "required": [
+    "slate_id",
+    "studio_id",
+    "name"
+  ],
+  "title": "Slate",
+  "type": "object",
+  "$id": "https://film-studio-os.local/schema/v2/domain/Slate.json"
+}

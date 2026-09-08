@@ -1,0 +1,1248 @@
+[
+  {
+    "skill_id": "act_sequence_design",
+    "classification": "merge_as_subprocedure",
+    "bob_parent_skill": null,
+    "owner_agent": "story_architect",
+    "path": "skills/act_sequence_design/skill.json"
+  },
+  {
+    "skill_id": "action_paragraph_rhythm",
+    "classification": "merge_as_subprocedure",
+    "bob_parent_skill": null,
+    "owner_agent": "showrunner",
+    "path": "skills/action_paragraph_rhythm/skill.json"
+  },
+  {
+    "skill_id": "action_sequence_direction",
+    "classification": "merge_as_subprocedure",
+    "bob_parent_skill": null,
+    "owner_agent": "director",
+    "path": "skills/action_sequence_direction/skill.json"
+  },
+  {
+    "skill_id": "action_state_tracking",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "continuity-control",
+    "owner_agent": "continuity_supervisor",
+    "path": "skills/action_state_tracking/skill.json"
+  },
+  {
+    "skill_id": "actor_speakability",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "dialogue-voice-subtext",
+    "owner_agent": "showrunner",
+    "path": "skills/actor_speakability/skill.json"
+  },
+  {
+    "skill_id": "adr_strategy",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "sound-post",
+    "owner_agent": "sound_supervisor",
+    "path": "skills/adr_strategy/skill.json"
+  },
+  {
+    "skill_id": "ambience_design",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "sound-post",
+    "owner_agent": "sound_supervisor",
+    "path": "skills/ambience_design/skill.json"
+  },
+  {
+    "skill_id": "animatic_timing",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "coverage-storyboard-previs",
+    "owner_agent": "storyboard_previs",
+    "path": "skills/animatic_timing/skill.json"
+  },
+  {
+    "skill_id": "archive_packaging",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "archive-reproduction",
+    "owner_agent": "production_librarian",
+    "path": "skills/archive_packaging/skill.json"
+  },
+  {
+    "skill_id": "artifact_cleanup",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "security-threat-review",
+    "owner_agent": "vfx_supervisor",
+    "path": "skills/artifact_cleanup/skill.json"
+  },
+  {
+    "skill_id": "assembly_edit",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "editorial-dailies",
+    "owner_agent": "editor",
+    "path": "skills/assembly_edit/skill.json"
+  },
+  {
+    "skill_id": "asset_registration",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "source-intake-rights",
+    "owner_agent": "production_librarian",
+    "path": "skills/asset_registration/skill.json"
+  },
+  {
+    "skill_id": "audience_promise_mapping",
+    "classification": "merge_as_subprocedure",
+    "bob_parent_skill": null,
+    "owner_agent": "showrunner",
+    "path": "skills/audience_promise_mapping/skill.json"
+  },
+  {
+    "skill_id": "audio_qc",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "sound-post",
+    "owner_agent": "qc_supervisor",
+    "path": "skills/audio_qc/skill.json"
+  },
+  {
+    "skill_id": "background_repair",
+    "classification": "merge_as_subprocedure",
+    "bob_parent_skill": null,
+    "owner_agent": "vfx_supervisor",
+    "path": "skills/background_repair/skill.json"
+  },
+  {
+    "skill_id": "banter_construction",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "comedy-banter",
+    "owner_agent": "showrunner",
+    "path": "skills/banter_construction/skill.json"
+  },
+  {
+    "skill_id": "behavior_gesture_design",
+    "classification": "merge_as_subprocedure",
+    "bob_parent_skill": null,
+    "owner_agent": "character_director",
+    "path": "skills/behavior_gesture_design/skill.json"
+  },
+  {
+    "skill_id": "benchmark_evaluation",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "quality-gate-design",
+    "owner_agent": "qc_supervisor",
+    "path": "skills/benchmark_evaluation/skill.json"
+  },
+  {
+    "skill_id": "blocking_geography_writing",
+    "classification": "merge_as_subprocedure",
+    "bob_parent_skill": null,
+    "owner_agent": "showrunner",
+    "path": "skills/blocking_geography_writing/skill.json"
+  },
+  {
+    "skill_id": "blocking_plan",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "director-breakdown",
+    "owner_agent": "director",
+    "path": "skills/blocking_plan/skill.json"
+  },
+  {
+    "skill_id": "budget_envelope",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "production-economics",
+    "owner_agent": "studio_orchestrator",
+    "path": "skills/budget_envelope/skill.json"
+  },
+  {
+    "skill_id": "camera_height_distance",
+    "classification": "merge_as_subprocedure",
+    "bob_parent_skill": null,
+    "owner_agent": "cinematographer",
+    "path": "skills/camera_height_distance/skill.json"
+  },
+  {
+    "skill_id": "camera_language_design",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "cinematography-design",
+    "owner_agent": "cinematographer",
+    "path": "skills/camera_language_design/skill.json"
+  },
+  {
+    "skill_id": "camera_motion_design",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "cinematography-design",
+    "owner_agent": "cinematographer",
+    "path": "skills/camera_motion_design/skill.json"
+  },
+  {
+    "skill_id": "causal_chain_construction",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "story-architecture",
+    "owner_agent": "story_architect",
+    "path": "skills/causal_chain_construction/skill.json"
+  },
+  {
+    "skill_id": "character_arc_audit",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "character-architecture",
+    "owner_agent": "script_editor",
+    "path": "skills/character_arc_audit/skill.json"
+  },
+  {
+    "skill_id": "character_bible_creation",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "character-architecture",
+    "owner_agent": "character_director",
+    "path": "skills/character_bible_creation/skill.json"
+  },
+  {
+    "skill_id": "character_reference_plan",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "reference-binding",
+    "owner_agent": "character_director",
+    "path": "skills/character_reference_plan/skill.json"
+  },
+  {
+    "skill_id": "character_state_tracking",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "series-continuity",
+    "owner_agent": "continuity_supervisor",
+    "path": "skills/character_state_tracking/skill.json"
+  },
+  {
+    "skill_id": "cold_read_audit",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "script-audit-revision",
+    "owner_agent": "script_editor",
+    "path": "skills/cold_read_audit/skill.json"
+  },
+  {
+    "skill_id": "color_normalization",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "color-finishing",
+    "owner_agent": "colorist",
+    "path": "skills/color_normalization/skill.json"
+  },
+  {
+    "skill_id": "compositing_plan",
+    "classification": "merge_as_subprocedure",
+    "bob_parent_skill": null,
+    "owner_agent": "vfx_supervisor",
+    "path": "skills/compositing_plan/skill.json"
+  },
+  {
+    "skill_id": "composition_design",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "cinematography-design",
+    "owner_agent": "cinematographer",
+    "path": "skills/composition_design/skill.json"
+  },
+  {
+    "skill_id": "composition_lighting_qc",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "keyframe-evaluation",
+    "owner_agent": "qc_supervisor",
+    "path": "skills/composition_lighting_qc/skill.json"
+  },
+  {
+    "skill_id": "continuity_diff",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "continuity-control",
+    "owner_agent": "continuity_supervisor",
+    "path": "skills/continuity_diff/skill.json"
+  },
+  {
+    "skill_id": "continuity_edit",
+    "classification": "merge_as_subprocedure",
+    "bob_parent_skill": null,
+    "owner_agent": "editor",
+    "path": "skills/continuity_edit/skill.json"
+  },
+  {
+    "skill_id": "continuity_extraction",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "continuity-control",
+    "owner_agent": "continuity_supervisor",
+    "path": "skills/continuity_extraction/skill.json"
+  },
+  {
+    "skill_id": "continuity_logic_audit",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "script-audit-revision",
+    "owner_agent": "script_editor",
+    "path": "skills/continuity_logic_audit/skill.json"
+  },
+  {
+    "skill_id": "continuity_qc",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "continuity-qc",
+    "owner_agent": "qc_supervisor",
+    "path": "skills/continuity_qc/skill.json"
+  },
+  {
+    "skill_id": "costume_state_design",
+    "classification": "merge_as_subprocedure",
+    "bob_parent_skill": null,
+    "owner_agent": "production_designer",
+    "path": "skills/costume_state_design/skill.json"
+  },
+  {
+    "skill_id": "coverage_plan",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "coverage-storyboard-previs",
+    "owner_agent": "director",
+    "path": "skills/coverage_plan/skill.json"
+  },
+  {
+    "skill_id": "coverage_visualization",
+    "classification": "merge_as_subprocedure",
+    "bob_parent_skill": null,
+    "owner_agent": "storyboard_previs",
+    "path": "skills/coverage_visualization/skill.json"
+  },
+  {
+    "skill_id": "creative_constraint_extraction",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "source-adaptation",
+    "owner_agent": "studio_orchestrator",
+    "path": "skills/creative_constraint_extraction/skill.json"
+  },
+  {
+    "skill_id": "crisis_climax_design",
+    "classification": "merge_as_subprocedure",
+    "bob_parent_skill": null,
+    "owner_agent": "story_architect",
+    "path": "skills/crisis_climax_design/skill.json"
+  },
+  {
+    "skill_id": "critical_path_analysis",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "production-economics",
+    "owner_agent": "studio_orchestrator",
+    "path": "skills/critical_path_analysis/skill.json"
+  },
+  {
+    "skill_id": "cue_brief",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "score-design",
+    "owner_agent": "composer",
+    "path": "skills/cue_brief/skill.json"
+  },
+  {
+    "skill_id": "dailies_review",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "editorial-dailies",
+    "owner_agent": "editor",
+    "path": "skills/dailies_review/skill.json"
+  },
+  {
+    "skill_id": "decision_logging",
+    "classification": "merge_as_subprocedure",
+    "bob_parent_skill": null,
+    "owner_agent": "production_librarian",
+    "path": "skills/decision_logging/skill.json"
+  },
+  {
+    "skill_id": "delivery_color_check",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "color-finishing",
+    "owner_agent": "colorist",
+    "path": "skills/delivery_color_check/skill.json"
+  },
+  {
+    "skill_id": "depth_foreground_background",
+    "classification": "merge_as_subprocedure",
+    "bob_parent_skill": null,
+    "owner_agent": "cinematographer",
+    "path": "skills/depth_foreground_background/skill.json"
+  },
+  {
+    "skill_id": "dialogue_edit",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "sound-post",
+    "owner_agent": "sound_supervisor",
+    "path": "skills/dialogue_edit/skill.json"
+  },
+  {
+    "skill_id": "dialogue_scene_direction",
+    "classification": "merge_as_subprocedure",
+    "bob_parent_skill": null,
+    "owner_agent": "director",
+    "path": "skills/dialogue_scene_direction/skill.json"
+  },
+  {
+    "skill_id": "dialogue_to_action_substitution",
+    "classification": "merge_as_subprocedure",
+    "bob_parent_skill": null,
+    "owner_agent": "showrunner",
+    "path": "skills/dialogue_to_action_substitution/skill.json"
+  },
+  {
+    "skill_id": "dialogue_voice_audit",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "dialogue-voice-subtext",
+    "owner_agent": "script_editor",
+    "path": "skills/dialogue_voice_audit/skill.json"
+  },
+  {
+    "skill_id": "dialogue_voice_construction",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "dialogue-voice-subtext",
+    "owner_agent": "showrunner",
+    "path": "skills/dialogue_voice_construction/skill.json"
+  },
+  {
+    "skill_id": "dramatic_question_design",
+    "classification": "merge_as_subprocedure",
+    "bob_parent_skill": null,
+    "owner_agent": "showrunner",
+    "path": "skills/dramatic_question_design/skill.json"
+  },
+  {
+    "skill_id": "edit_compatibility_scoring",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "editorial-dailies",
+    "owner_agent": "editor",
+    "path": "skills/edit_compatibility_scoring/skill.json"
+  },
+  {
+    "skill_id": "edit_qc",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "editorial-dailies",
+    "owner_agent": "qc_supervisor",
+    "path": "skills/edit_qc/skill.json"
+  },
+  {
+    "skill_id": "environment_state_design",
+    "classification": "merge_as_subprocedure",
+    "bob_parent_skill": null,
+    "owner_agent": "production_designer",
+    "path": "skills/environment_state_design/skill.json"
+  },
+  {
+    "skill_id": "era_technology_consistency",
+    "classification": "merge_as_subprocedure",
+    "bob_parent_skill": null,
+    "owner_agent": "production_designer",
+    "path": "skills/era_technology_consistency/skill.json"
+  },
+  {
+    "skill_id": "exposition_concealment",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "dialogue-voice-subtext",
+    "owner_agent": "showrunner",
+    "path": "skills/exposition_concealment/skill.json"
+  },
+  {
+    "skill_id": "expression_range_map",
+    "classification": "merge_as_subprocedure",
+    "bob_parent_skill": null,
+    "owner_agent": "character_director",
+    "path": "skills/expression_range_map/skill.json"
+  },
+  {
+    "skill_id": "face_hand_repair",
+    "classification": "merge_as_subprocedure",
+    "bob_parent_skill": null,
+    "owner_agent": "vfx_supervisor",
+    "path": "skills/face_hand_repair/skill.json"
+  },
+  {
+    "skill_id": "failure_classification",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "generation-failure-repair",
+    "owner_agent": "qc_supervisor",
+    "path": "skills/failure_classification/skill.json"
+  },
+  {
+    "skill_id": "filmable_action_writing",
+    "classification": "merge_as_subprocedure",
+    "bob_parent_skill": null,
+    "owner_agent": "showrunner",
+    "path": "skills/filmable_action_writing/skill.json"
+  },
+  {
+    "skill_id": "foley_design",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "sound-post",
+    "owner_agent": "sound_supervisor",
+    "path": "skills/foley_design/skill.json"
+  },
+  {
+    "skill_id": "generation_failure_classification",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "generation-failure-repair",
+    "owner_agent": "generative_supervisor",
+    "path": "skills/generation_failure_classification/skill.json"
+  },
+  {
+    "skill_id": "generation_logging",
+    "classification": "merge_as_subprocedure",
+    "bob_parent_skill": null,
+    "owner_agent": "production_librarian",
+    "path": "skills/generation_logging/skill.json"
+  },
+  {
+    "skill_id": "generation_risk_previs",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "coverage-storyboard-previs",
+    "owner_agent": "storyboard_previs",
+    "path": "skills/generation_risk_previs/skill.json"
+  },
+  {
+    "skill_id": "genre_contract_definition",
+    "classification": "merge_as_subprocedure",
+    "bob_parent_skill": null,
+    "owner_agent": "showrunner",
+    "path": "skills/genre_contract_definition/skill.json"
+  },
+  {
+    "skill_id": "genre_tone_audit",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "script-audit-revision",
+    "owner_agent": "script_editor",
+    "path": "skills/genre_tone_audit/skill.json"
+  },
+  {
+    "skill_id": "geography_continuity",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "continuity-control",
+    "owner_agent": "continuity_supervisor",
+    "path": "skills/geography_continuity/skill.json"
+  },
+  {
+    "skill_id": "greenlight_package",
+    "classification": "merge_as_subprocedure",
+    "bob_parent_skill": null,
+    "owner_agent": "studio_orchestrator",
+    "path": "skills/greenlight_package/skill.json"
+  },
+  {
+    "skill_id": "handoff_validation",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "bob-package-validation",
+    "owner_agent": "studio_orchestrator",
+    "path": "skills/handoff_validation/skill.json"
+  },
+  {
+    "skill_id": "identity_qc",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "visual-identity-qc",
+    "owner_agent": "qc_supervisor",
+    "path": "skills/identity_qc/skill.json"
+  },
+  {
+    "skill_id": "identity_state_separation",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "world-character-canon",
+    "owner_agent": "character_director",
+    "path": "skills/identity_state_separation/skill.json"
+  },
+  {
+    "skill_id": "imitation_risk_audit",
+    "classification": "merge_as_subprocedure",
+    "bob_parent_skill": null,
+    "owner_agent": "script_editor",
+    "path": "skills/imitation_risk_audit/skill.json"
+  },
+  {
+    "skill_id": "interaction_repair",
+    "classification": "merge_as_subprocedure",
+    "bob_parent_skill": null,
+    "owner_agent": "vfx_supervisor",
+    "path": "skills/interaction_repair/skill.json"
+  },
+  {
+    "skill_id": "interruption_overlap_design",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "dialogue-voice-subtext",
+    "owner_agent": "showrunner",
+    "path": "skills/interruption_overlap_design/skill.json"
+  },
+  {
+    "skill_id": "joke_mechanics",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "comedy-banter",
+    "owner_agent": "showrunner",
+    "path": "skills/joke_mechanics/skill.json"
+  },
+  {
+    "skill_id": "keyframe_evaluation",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "keyframe-evaluation",
+    "owner_agent": "generative_supervisor",
+    "path": "skills/keyframe_evaluation/skill.json"
+  },
+  {
+    "skill_id": "keyframe_generation_plan",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "provider-job-operation",
+    "owner_agent": "generative_supervisor",
+    "path": "skills/keyframe_generation_plan/skill.json"
+  },
+  {
+    "skill_id": "knowledge_state_tracking",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "series-continuity",
+    "owner_agent": "continuity_supervisor",
+    "path": "skills/knowledge_state_tracking/skill.json"
+  },
+  {
+    "skill_id": "lens_strategy",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "cinematography-design",
+    "owner_agent": "cinematographer",
+    "path": "skills/lens_strategy/skill.json"
+  },
+  {
+    "skill_id": "lighting_design",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "cinematography-design",
+    "owner_agent": "cinematographer",
+    "path": "skills/lighting_design/skill.json"
+  },
+  {
+    "skill_id": "lighting_time_state_tracking",
+    "classification": "merge_as_subprocedure",
+    "bob_parent_skill": null,
+    "owner_agent": "continuity_supervisor",
+    "path": "skills/lighting_time_state_tracking/skill.json"
+  },
+  {
+    "skill_id": "line_compression",
+    "classification": "merge_as_subprocedure",
+    "bob_parent_skill": null,
+    "owner_agent": "showrunner",
+    "path": "skills/line_compression/skill.json"
+  },
+  {
+    "skill_id": "lineage_reconstruction",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "archive-reproduction",
+    "owner_agent": "production_librarian",
+    "path": "skills/lineage_reconstruction/skill.json"
+  },
+  {
+    "skill_id": "lip_sync_strategy",
+    "classification": "merge_as_subprocedure",
+    "bob_parent_skill": null,
+    "owner_agent": "generative_supervisor",
+    "path": "skills/lip_sync_strategy/skill.json"
+  },
+  {
+    "skill_id": "location_bible_creation",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "world-character-canon",
+    "owner_agent": "production_designer",
+    "path": "skills/location_bible_creation/skill.json"
+  },
+  {
+    "skill_id": "location_geography_map",
+    "classification": "merge_as_subprocedure",
+    "bob_parent_skill": null,
+    "owner_agent": "production_designer",
+    "path": "skills/location_geography_map/skill.json"
+  },
+  {
+    "skill_id": "look_grade",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "color-finishing",
+    "owner_agent": "colorist",
+    "path": "skills/look_grade/skill.json"
+  },
+  {
+    "skill_id": "loudness_delivery_qc",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "localization-accessibility",
+    "owner_agent": "sound_supervisor",
+    "path": "skills/loudness_delivery_qc/skill.json"
+  },
+  {
+    "skill_id": "mask_rotoscope_plan",
+    "classification": "merge_as_subprocedure",
+    "bob_parent_skill": null,
+    "owner_agent": "vfx_supervisor",
+    "path": "skills/mask_rotoscope_plan/skill.json"
+  },
+  {
+    "skill_id": "master_qc",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "master-quality-gate",
+    "owner_agent": "qc_supervisor",
+    "path": "skills/master_qc/skill.json"
+  },
+  {
+    "skill_id": "midpoint_reversal_design",
+    "classification": "merge_as_subprocedure",
+    "bob_parent_skill": null,
+    "owner_agent": "story_architect",
+    "path": "skills/midpoint_reversal_design/skill.json"
+  },
+  {
+    "skill_id": "mix_plan",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "sound-post",
+    "owner_agent": "sound_supervisor",
+    "path": "skills/mix_plan/skill.json"
+  },
+  {
+    "skill_id": "model_routing",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "model-routing",
+    "owner_agent": "generative_supervisor",
+    "path": "skills/model_routing/skill.json"
+  },
+  {
+    "skill_id": "motif_design",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "score-design",
+    "owner_agent": "composer",
+    "path": "skills/motif_design/skill.json"
+  },
+  {
+    "skill_id": "motion_physics_qc",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "motion-performance-planning",
+    "owner_agent": "qc_supervisor",
+    "path": "skills/motion_physics_qc/skill.json"
+  },
+  {
+    "skill_id": "motion_strategy",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "motion-performance-planning",
+    "owner_agent": "generative_supervisor",
+    "path": "skills/motion_strategy/skill.json"
+  },
+  {
+    "skill_id": "music_transition_design",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "score-design",
+    "owner_agent": "composer",
+    "path": "skills/music_transition_design/skill.json"
+  },
+  {
+    "skill_id": "negative_constraint_compilation",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "prompt-compilation",
+    "owner_agent": "generative_supervisor",
+    "path": "skills/negative_constraint_compilation/skill.json"
+  },
+  {
+    "skill_id": "performance_objective_design",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "director-breakdown",
+    "owner_agent": "director",
+    "path": "skills/performance_objective_design/skill.json"
+  },
+  {
+    "skill_id": "performance_prompting",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "motion-performance-planning",
+    "owner_agent": "generative_supervisor",
+    "path": "skills/performance_prompting/skill.json"
+  },
+  {
+    "skill_id": "pickup_identification",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "director-breakdown",
+    "owner_agent": "director",
+    "path": "skills/pickup_identification/skill.json"
+  },
+  {
+    "skill_id": "picture_lock_check",
+    "classification": "merge_as_subprocedure",
+    "bob_parent_skill": null,
+    "owner_agent": "editor",
+    "path": "skills/picture_lock_check/skill.json"
+  },
+  {
+    "skill_id": "premise_stress_test",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "story-architecture",
+    "owner_agent": "showrunner",
+    "path": "skills/premise_stress_test/skill.json"
+  },
+  {
+    "skill_id": "premise_theme_audit",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "script-audit-revision",
+    "owner_agent": "script_editor",
+    "path": "skills/premise_theme_audit/skill.json"
+  },
+  {
+    "skill_id": "production_feasibility_audit",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "script-audit-revision",
+    "owner_agent": "script_editor",
+    "path": "skills/production_feasibility_audit/skill.json"
+  },
+  {
+    "skill_id": "production_status_report",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "production-economics",
+    "owner_agent": "studio_orchestrator",
+    "path": "skills/production_status_report/skill.json"
+  },
+  {
+    "skill_id": "production_strategy_selection",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "model-routing",
+    "owner_agent": "studio_orchestrator",
+    "path": "skills/production_strategy_selection/skill.json"
+  },
+  {
+    "skill_id": "progressive_complication",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "story-architecture",
+    "owner_agent": "story_architect",
+    "path": "skills/progressive_complication/skill.json"
+  },
+  {
+    "skill_id": "prompt_compilation",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "prompt-compilation",
+    "owner_agent": "generative_supervisor",
+    "path": "skills/prompt_compilation/skill.json"
+  },
+  {
+    "skill_id": "prompt_versioning",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "prompt-compilation",
+    "owner_agent": "production_librarian",
+    "path": "skills/prompt_versioning/skill.json"
+  },
+  {
+    "skill_id": "prop_canon_design",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "world-character-canon",
+    "owner_agent": "production_designer",
+    "path": "skills/prop_canon_design/skill.json"
+  },
+  {
+    "skill_id": "prop_state_tracking",
+    "classification": "merge_as_subprocedure",
+    "bob_parent_skill": null,
+    "owner_agent": "continuity_supervisor",
+    "path": "skills/prop_state_tracking/skill.json"
+  },
+  {
+    "skill_id": "provenance_capture",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "archive-reproduction",
+    "owner_agent": "production_librarian",
+    "path": "skills/provenance_capture/skill.json"
+  },
+  {
+    "skill_id": "reaction_shot_design",
+    "classification": "merge_as_subprocedure",
+    "bob_parent_skill": null,
+    "owner_agent": "director",
+    "path": "skills/reaction_shot_design/skill.json"
+  },
+  {
+    "skill_id": "reaction_timing",
+    "classification": "merge_as_subprocedure",
+    "bob_parent_skill": null,
+    "owner_agent": "editor",
+    "path": "skills/reaction_timing/skill.json"
+  },
+  {
+    "skill_id": "reference_selection",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "reference-binding",
+    "owner_agent": "generative_supervisor",
+    "path": "skills/reference_selection/skill.json"
+  },
+  {
+    "skill_id": "rejection_learning_ingest",
+    "classification": "merge_as_subprocedure",
+    "bob_parent_skill": null,
+    "owner_agent": "production_librarian",
+    "path": "skills/rejection_learning_ingest/skill.json"
+  },
+  {
+    "skill_id": "relationship_state_tracking",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "series-continuity",
+    "owner_agent": "character_director",
+    "path": "skills/relationship_state_tracking/skill.json"
+  },
+  {
+    "skill_id": "reproduction_manifest",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "archive-reproduction",
+    "owner_agent": "production_librarian",
+    "path": "skills/reproduction_manifest/skill.json"
+  },
+  {
+    "skill_id": "reveal_ordering",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "story-architecture",
+    "owner_agent": "story_architect",
+    "path": "skills/reveal_ordering/skill.json"
+  },
+  {
+    "skill_id": "revision_plan",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "script-audit-revision",
+    "owner_agent": "showrunner",
+    "path": "skills/revision_plan/skill.json"
+  },
+  {
+    "skill_id": "revision_regression_audit",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "script-audit-revision",
+    "owner_agent": "script_editor",
+    "path": "skills/revision_regression_audit/skill.json"
+  },
+  {
+    "skill_id": "rights_risk_triage",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "documentary-evidence",
+    "owner_agent": "studio_orchestrator",
+    "path": "skills/rights_risk_triage/skill.json"
+  },
+  {
+    "skill_id": "runtime_budgeting",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "story-architecture",
+    "owner_agent": "story_architect",
+    "path": "skills/runtime_budgeting/skill.json"
+  },
+  {
+    "skill_id": "scene_card_generation",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "scene-construction",
+    "owner_agent": "showrunner",
+    "path": "skills/scene_card_generation/skill.json"
+  },
+  {
+    "skill_id": "scene_function_audit",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "scene-construction",
+    "owner_agent": "script_editor",
+    "path": "skills/scene_function_audit/skill.json"
+  },
+  {
+    "skill_id": "scene_intention_breakdown",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "director-breakdown",
+    "owner_agent": "director",
+    "path": "skills/scene_intention_breakdown/skill.json"
+  },
+  {
+    "skill_id": "scene_necessity_test",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "scene-construction",
+    "owner_agent": "story_architect",
+    "path": "skills/scene_necessity_test/skill.json"
+  },
+  {
+    "skill_id": "scene_pacing_evaluation",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "editorial-dailies",
+    "owner_agent": "editor",
+    "path": "skills/scene_pacing_evaluation/skill.json"
+  },
+  {
+    "skill_id": "scene_writing",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "scene-construction",
+    "owner_agent": "showrunner",
+    "path": "skills/scene_writing/skill.json"
+  },
+  {
+    "skill_id": "score_spotting",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "score-design",
+    "owner_agent": "composer",
+    "path": "skills/score_spotting/skill.json"
+  },
+  {
+    "skill_id": "screen_direction_axis_control",
+    "classification": "merge_as_subprocedure",
+    "bob_parent_skill": null,
+    "owner_agent": "cinematographer",
+    "path": "skills/screen_direction_axis_control/skill.json"
+  },
+  {
+    "skill_id": "screen_direction_validation",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "continuity-control",
+    "owner_agent": "continuity_supervisor",
+    "path": "skills/screen_direction_validation/skill.json"
+  },
+  {
+    "skill_id": "screenplay_format_validation",
+    "classification": "merge_as_subprocedure",
+    "bob_parent_skill": null,
+    "owner_agent": "showrunner",
+    "path": "skills/screenplay_format_validation/skill.json"
+  },
+  {
+    "skill_id": "sequence_grade_continuity",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "color-finishing",
+    "owner_agent": "colorist",
+    "path": "skills/sequence_grade_continuity/skill.json"
+  },
+  {
+    "skill_id": "setup_payoff_tracking",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "story-architecture",
+    "owner_agent": "story_architect",
+    "path": "skills/setup_payoff_tracking/skill.json"
+  },
+  {
+    "skill_id": "shot_family_grouping",
+    "classification": "merge_as_subprocedure",
+    "bob_parent_skill": null,
+    "owner_agent": "storyboard_previs",
+    "path": "skills/shot_family_grouping/skill.json"
+  },
+  {
+    "skill_id": "shot_matching",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "color-finishing",
+    "owner_agent": "colorist",
+    "path": "skills/shot_matching/skill.json"
+  },
+  {
+    "skill_id": "shot_priority_map",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "director-breakdown",
+    "owner_agent": "director",
+    "path": "skills/shot_priority_map/skill.json"
+  },
+  {
+    "skill_id": "shot_repair_strategy",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "generation-failure-repair",
+    "owner_agent": "generative_supervisor",
+    "path": "skills/shot_repair_strategy/skill.json"
+  },
+  {
+    "skill_id": "shot_size_selection",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "cinematography-design",
+    "owner_agent": "cinematographer",
+    "path": "skills/shot_size_selection/skill.json"
+  },
+  {
+    "skill_id": "shot_spec_compilation",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "shot-specification",
+    "owner_agent": "cinematographer",
+    "path": "skills/shot_spec_compilation/skill.json"
+  },
+  {
+    "skill_id": "silence_pause_design",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "dialogue-voice-subtext",
+    "owner_agent": "showrunner",
+    "path": "skills/silence_pause_design/skill.json"
+  },
+  {
+    "skill_id": "skin_tone_identity_check",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "visual-identity-qc",
+    "owner_agent": "colorist",
+    "path": "skills/skin_tone_identity_check/skill.json"
+  },
+  {
+    "skill_id": "sound_effects_design",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "sound-post",
+    "owner_agent": "sound_supervisor",
+    "path": "skills/sound_effects_design/skill.json"
+  },
+  {
+    "skill_id": "sound_motif_design",
+    "classification": "merge_as_subprocedure",
+    "bob_parent_skill": null,
+    "owner_agent": "sound_supervisor",
+    "path": "skills/sound_motif_design/skill.json"
+  },
+  {
+    "skill_id": "staleness_propagation",
+    "classification": "merge_as_subprocedure",
+    "bob_parent_skill": null,
+    "owner_agent": "studio_orchestrator",
+    "path": "skills/staleness_propagation/skill.json"
+  },
+  {
+    "skill_id": "storyboard_plan",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "coverage-storyboard-previs",
+    "owner_agent": "storyboard_previs",
+    "path": "skills/storyboard_plan/skill.json"
+  },
+  {
+    "skill_id": "structure_causality_audit",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "script-audit-revision",
+    "owner_agent": "script_editor",
+    "path": "skills/structure_causality_audit/skill.json"
+  },
+  {
+    "skill_id": "structure_map",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "source-adaptation",
+    "owner_agent": "showrunner",
+    "path": "skills/structure_map/skill.json"
+  },
+  {
+    "skill_id": "subplot_braiding",
+    "classification": "merge_as_subprocedure",
+    "bob_parent_skill": null,
+    "owner_agent": "story_architect",
+    "path": "skills/subplot_braiding/skill.json"
+  },
+  {
+    "skill_id": "subtext_writing",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "dialogue-voice-subtext",
+    "owner_agent": "showrunner",
+    "path": "skills/subtext_writing/skill.json"
+  },
+  {
+    "skill_id": "suspense_dramatic_irony",
+    "classification": "merge_as_subprocedure",
+    "bob_parent_skill": null,
+    "owner_agent": "story_architect",
+    "path": "skills/suspense_dramatic_irony/skill.json"
+  },
+  {
+    "skill_id": "sync_validation",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "sound-post",
+    "owner_agent": "sound_supervisor",
+    "path": "skills/sync_validation/skill.json"
+  },
+  {
+    "skill_id": "table_read_simulation",
+    "classification": "merge_as_subprocedure",
+    "bob_parent_skill": null,
+    "owner_agent": "script_editor",
+    "path": "skills/table_read_simulation/skill.json"
+  },
+  {
+    "skill_id": "task_graph_compilation",
+    "classification": "merge_as_subprocedure",
+    "bob_parent_skill": null,
+    "owner_agent": "studio_orchestrator",
+    "path": "skills/task_graph_compilation/skill.json"
+  },
+  {
+    "skill_id": "temp_track_risk_audit",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "score-design",
+    "owner_agent": "composer",
+    "path": "skills/temp_track_risk_audit/skill.json"
+  },
+  {
+    "skill_id": "theme_countertheme_design",
+    "classification": "merge_as_subprocedure",
+    "bob_parent_skill": null,
+    "owner_agent": "showrunner",
+    "path": "skills/theme_countertheme_design/skill.json"
+  },
+  {
+    "skill_id": "transition_previs",
+    "classification": "merge_as_subprocedure",
+    "bob_parent_skill": null,
+    "owner_agent": "storyboard_previs",
+    "path": "skills/transition_previs/skill.json"
+  },
+  {
+    "skill_id": "transition_selection",
+    "classification": "merge_as_subprocedure",
+    "bob_parent_skill": null,
+    "owner_agent": "editor",
+    "path": "skills/transition_selection/skill.json"
+  },
+  {
+    "skill_id": "upscale_interpolation_plan",
+    "classification": "merge_as_subprocedure",
+    "bob_parent_skill": null,
+    "owner_agent": "generative_supervisor",
+    "path": "skills/upscale_interpolation_plan/skill.json"
+  },
+  {
+    "skill_id": "vfx_feasibility_triage",
+    "classification": "merge_as_subprocedure",
+    "bob_parent_skill": null,
+    "owner_agent": "vfx_supervisor",
+    "path": "skills/vfx_feasibility_triage/skill.json"
+  },
+  {
+    "skill_id": "vfx_review",
+    "classification": "merge_as_subprocedure",
+    "bob_parent_skill": null,
+    "owner_agent": "vfx_supervisor",
+    "path": "skills/vfx_review/skill.json"
+  },
+  {
+    "skill_id": "video_generation_plan",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "provider-job-operation",
+    "owner_agent": "generative_supervisor",
+    "path": "skills/video_generation_plan/skill.json"
+  },
+  {
+    "skill_id": "visual_motif_design",
+    "classification": "merge_as_subprocedure",
+    "bob_parent_skill": null,
+    "owner_agent": "production_designer",
+    "path": "skills/visual_motif_design/skill.json"
+  },
+  {
+    "skill_id": "visual_qc",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "visual-identity-qc",
+    "owner_agent": "qc_supervisor",
+    "path": "skills/visual_qc/skill.json"
+  },
+  {
+    "skill_id": "visual_reveal_writing",
+    "classification": "merge_as_subprocedure",
+    "bob_parent_skill": null,
+    "owner_agent": "showrunner",
+    "path": "skills/visual_reveal_writing/skill.json"
+  },
+  {
+    "skill_id": "voice_consistency",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "localization-accessibility",
+    "owner_agent": "sound_supervisor",
+    "path": "skills/voice_consistency/skill.json"
+  },
+  {
+    "skill_id": "voice_fingerprint_design",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "character-architecture",
+    "owner_agent": "character_director",
+    "path": "skills/voice_fingerprint_design/skill.json"
+  },
+  {
+    "skill_id": "wardrobe_canon",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "world-character-canon",
+    "owner_agent": "character_director",
+    "path": "skills/wardrobe_canon/skill.json"
+  },
+  {
+    "skill_id": "wardrobe_state_tracking",
+    "classification": "merge_as_subprocedure",
+    "bob_parent_skill": null,
+    "owner_agent": "continuity_supervisor",
+    "path": "skills/wardrobe_state_tracking/skill.json"
+  },
+  {
+    "skill_id": "wit_callback_design",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "comedy-banter",
+    "owner_agent": "showrunner",
+    "path": "skills/wit_callback_design/skill.json"
+  },
+  {
+    "skill_id": "world_bible_creation",
+    "classification": "keep_and_deepen",
+    "bob_parent_skill": "world-character-canon",
+    "owner_agent": "production_designer",
+    "path": "skills/world_bible_creation/skill.json"
+  }
+]

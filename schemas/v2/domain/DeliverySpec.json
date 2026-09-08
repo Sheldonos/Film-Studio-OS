@@ -1,0 +1,111 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "default": "2.0",
+      "pattern": "^\\d+\\.\\d+$",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "delivery_spec_id": {
+      "minLength": 1,
+      "title": "Delivery Spec Id",
+      "type": "string"
+    },
+    "target": {
+      "minLength": 1,
+      "title": "Target",
+      "type": "string"
+    },
+    "container": {
+      "minLength": 1,
+      "title": "Container",
+      "type": "string"
+    },
+    "video_codec": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Video Codec"
+    },
+    "width": {
+      "anyOf": [
+        {
+          "exclusiveMinimum": 0,
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Width"
+    },
+    "height": {
+      "anyOf": [
+        {
+          "exclusiveMinimum": 0,
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Height"
+    },
+    "frame_rate": {
+      "anyOf": [
+        {
+          "exclusiveMinimum": 0,
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Frame Rate"
+    },
+    "audio_sample_rate_hz": {
+      "anyOf": [
+        {
+          "exclusiveMinimum": 0,
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Audio Sample Rate Hz"
+    },
+    "subtitle_formats": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Subtitle Formats",
+      "type": "array"
+    },
+    "checksum_algorithm": {
+      "const": "sha256",
+      "default": "sha256",
+      "title": "Checksum Algorithm",
+      "type": "string"
+    }
+  },
+  "required": [
+    "delivery_spec_id",
+    "target",
+    "container"
+  ],
+  "title": "DeliverySpec",
+  "type": "object",
+  "$id": "https://film-studio-os.local/schema/v2/domain/DeliverySpec.json"
+}

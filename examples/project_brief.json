@@ -1,0 +1,19 @@
+{
+  "project_id": "example_short_001",
+  "title": "Last Train Home",
+  "format": "short film",
+  "runtime_minutes": 8,
+  "genre": "drama-comedy",
+  "creative_invariants": [
+    "original characters only",
+    "naturalistic performances",
+    "night transit visual motif",
+    "no source-specific imitation"
+  ],
+  "success_metrics": [
+    "clear causal story",
+    "5 distinguishable voices",
+    "<2.5 generations per accepted shot",
+    "continuity failure rate < 3%"
+  ]
+}

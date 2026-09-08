@@ -1,0 +1,136 @@
+{
+  "$defs": {
+    "JobStatus": {
+      "enum": [
+        "created",
+        "estimated",
+        "authorized",
+        "submitted",
+        "running",
+        "succeeded",
+        "failed",
+        "cancelled",
+        "timed_out"
+      ],
+      "title": "JobStatus",
+      "type": "string"
+    }
+  },
+  "$id": "https://film-studio-os.local/schemas/v2/ProviderJob.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "actual_cost_usd": {
+      "default": 0,
+      "minimum": 0,
+      "title": "Actual Cost Usd",
+      "type": "number"
+    },
+    "adapter_id": {
+      "title": "Adapter Id",
+      "type": "string"
+    },
+    "completed_at": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Completed At"
+    },
+    "estimated_cost_usd": {
+      "default": 0,
+      "minimum": 0,
+      "title": "Estimated Cost Usd",
+      "type": "number"
+    },
+    "external_job_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "External Job Id"
+    },
+    "failure_code": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Failure Code"
+    },
+    "idempotency_key": {
+      "title": "Idempotency Key",
+      "type": "string"
+    },
+    "model_id": {
+      "title": "Model Id",
+      "type": "string"
+    },
+    "project_id": {
+      "title": "Project Id",
+      "type": "string"
+    },
+    "provider_job_id": {
+      "title": "Provider Job Id",
+      "type": "string"
+    },
+    "request_hash": {
+      "pattern": "^[a-f0-9]{64}$",
+      "title": "Request Hash",
+      "type": "string"
+    },
+    "result_artifact_ids": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Result Artifact Ids",
+      "type": "array"
+    },
+    "schema_version": {
+      "default": "2.0",
+      "pattern": "^\\d+\\.\\d+$",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "status": {
+      "$ref": "#/$defs/JobStatus",
+      "default": "created"
+    },
+    "submitted_at": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Submitted At"
+    }
+  },
+  "required": [
+    "provider_job_id",
+    "project_id",
+    "adapter_id",
+    "model_id",
+    "idempotency_key",
+    "request_hash"
+  ],
+  "title": "ProviderJob",
+  "type": "object"
+}

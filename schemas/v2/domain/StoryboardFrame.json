@@ -1,0 +1,64 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "default": "2.0",
+      "pattern": "^\\d+\\.\\d+$",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "storyboard_frame_id": {
+      "minLength": 1,
+      "title": "Storyboard Frame Id",
+      "type": "string"
+    },
+    "shot_id": {
+      "minLength": 1,
+      "title": "Shot Id",
+      "type": "string"
+    },
+    "panel_index": {
+      "minimum": 0,
+      "title": "Panel Index",
+      "type": "integer"
+    },
+    "image_artifact_version_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Image Artifact Version Id"
+    },
+    "action_note": {
+      "default": "",
+      "title": "Action Note",
+      "type": "string"
+    },
+    "duration_seconds": {
+      "anyOf": [
+        {
+          "exclusiveMinimum": 0,
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Duration Seconds"
+    }
+  },
+  "required": [
+    "storyboard_frame_id",
+    "shot_id",
+    "panel_index"
+  ],
+  "title": "StoryboardFrame",
+  "type": "object",
+  "$id": "https://film-studio-os.local/schema/v2/domain/StoryboardFrame.json"
+}

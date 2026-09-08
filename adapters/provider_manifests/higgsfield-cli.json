@@ -1,0 +1,40 @@
+{
+  "schema_version": "2.0",
+  "adapter_id": "higgsfield-cli",
+  "as_of": "2026-08-15",
+  "status": "production_contract_available_disabled_by_default",
+  "live_enabled": false,
+  "research_only": false,
+  "commercial_use": "conditional_on_account_terms_and_project_rights",
+  "training_policy": "verify_current_provider_terms",
+  "retention_policy": "verify_current_provider_terms",
+  "evidence": [
+    "https://github.com/higgsfield-ai/cli",
+    "https://github.com/higgsfield-ai/cli/blob/main/MODELS.md",
+    "https://higgsfield.ai/cli"
+  ],
+  "installation": "npm install -g @higgsfield/cli",
+  "authentication": "higgsfield login",
+  "discovery_commands": [
+    "higgsfield model list --json",
+    "higgsfield model get <job-set-type> --json",
+    "higgsfield workflow list --json",
+    "higgsfield generate cost <job-set-type> [model parameters] --json"
+  ],
+  "generation_command_shape": "higgsfield generate create <job-set-type> [model parameters] --json",
+  "required_live_gates": [
+    "FILM_STUDIO_EXTERNAL_AUTHORIZED=1",
+    "request-bound unexpired human approval",
+    "live model-schema discovery",
+    "cost preflight within approval cap",
+    "rights and consent clearance"
+  ],
+  "capabilities_are_dynamic": true,
+  "cancel_supported": false,
+  "verified_at": "2026-08-15",
+  "authoritative_sources": [
+    "https://github.com/higgsfield-ai/cli",
+    "https://github.com/higgsfield-ai/cli/blob/main/MODELS.md",
+    "https://higgsfield.ai/cli"
+  ]
+}

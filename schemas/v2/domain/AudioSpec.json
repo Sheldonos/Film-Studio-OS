@@ -1,0 +1,68 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "default": "2.0",
+      "pattern": "^\\d+\\.\\d+$",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "audio_spec_id": {
+      "minLength": 1,
+      "title": "Audio Spec Id",
+      "type": "string"
+    },
+    "scene_id": {
+      "minLength": 1,
+      "title": "Scene Id",
+      "type": "string"
+    },
+    "dialogue_requirements": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Dialogue Requirements",
+      "type": "array"
+    },
+    "ambience": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Ambience",
+      "type": "array"
+    },
+    "foley": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Foley",
+      "type": "array"
+    },
+    "sfx": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Sfx",
+      "type": "array"
+    },
+    "score_intent": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Score Intent"
+    }
+  },
+  "required": [
+    "audio_spec_id",
+    "scene_id"
+  ],
+  "title": "AudioSpec",
+  "type": "object",
+  "$id": "https://film-studio-os.local/schema/v2/domain/AudioSpec.json"
+}

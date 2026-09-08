@@ -1,0 +1,31 @@
+{
+  "schema_version": "2.0",
+  "workflow_id": "team_contribution_v2",
+  "version": "2.0.0",
+  "description": "Disposition every production role and synthesize accountable department contributions.",
+  "production_route": "provider_neutral",
+  "steps": [
+    {
+      "id": "coverage",
+      "capability_id": "production_role_coverage",
+      "owner_agent": "line_producer",
+      "reviewer_agent": "qc_supervisor",
+      "output_type": "ProductionTeamContributionPlan",
+      "handler": "team_plan",
+      "estimated_duration_seconds": 20
+    },
+    {
+      "id": "synthesis",
+      "capability_id": "department_contribution_synthesis",
+      "owner_agent": "studio_orchestrator",
+      "reviewer_agent": "qc_supervisor",
+      "depends_on": [
+        "coverage"
+      ],
+      "output_type": "DepartmentContributionSynthesis",
+      "handler": "artifact",
+      "estimated_duration_seconds": 30
+    }
+  ]
+}
+

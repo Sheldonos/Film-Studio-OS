@@ -1,0 +1,61 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "default": "2.0",
+      "pattern": "^\\d+\\.\\d+$",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "archive_manifest_id": {
+      "minLength": 1,
+      "title": "Archive Manifest Id",
+      "type": "string"
+    },
+    "project_id": {
+      "minLength": 1,
+      "title": "Project Id",
+      "type": "string"
+    },
+    "artifact_version_ids": {
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1,
+      "title": "Artifact Version Ids",
+      "type": "array"
+    },
+    "approval_ids": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Approval Ids",
+      "type": "array"
+    },
+    "provider_job_ids": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Provider Job Ids",
+      "type": "array"
+    },
+    "checksum": {
+      "pattern": "^[a-f0-9]{64}$",
+      "title": "Checksum",
+      "type": "string"
+    },
+    "created_at": {
+      "title": "Created At",
+      "type": "string"
+    }
+  },
+  "required": [
+    "archive_manifest_id",
+    "project_id",
+    "artifact_version_ids",
+    "checksum"
+  ],
+  "title": "ArchiveManifest",
+  "type": "object",
+  "$id": "https://film-studio-os.local/schema/v2/domain/ArchiveManifest.json"
+}

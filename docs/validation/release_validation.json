@@ -1,0 +1,15 @@
+{
+  "validated_at": "2026-08-15",
+  "valid": true,
+  "bob": {"modes": 8, "personas": 26, "active_skills": 51},
+  "contracts": {"registered_capabilities": 105, "workflow_files": 28, "workflow_step_references": 178},
+  "hygiene_issue_count": 0,
+  "errors": [],
+  "warnings": [],
+  "limitations": [
+    "pytest and jsonschema dependencies were unavailable in the sandbox; the standard install/pytest run is a beta release condition",
+    "hosted multi-user deployment needs SSO/RBAC, tenant isolation and managed secrets",
+    "live Higgsfield UAT requires an authorized studio account and paid-action approval",
+    "no static type checker or linter is configured"
+  ]
+}

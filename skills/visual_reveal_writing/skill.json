@@ -1,0 +1,125 @@
+{
+  "skill_id": "visual_reveal_writing",
+  "name": "Visual Reveal Writing",
+  "department": "writing_story",
+  "purpose": "Stage information so discovery occurs through image, action or composition.",
+  "scope": "Bounded writing_story capability; must operate on versioned structured artifacts.",
+  "out_of_scope": [
+    "final approval outside owner decision rights",
+    "silent mutation of upstream artifacts",
+    "copying protected source-specific expression"
+  ],
+  "triggers": [
+    "work order capability_id=visual_reveal_writing"
+  ],
+  "prerequisites": [
+    "required upstream artifact versions present",
+    "creative invariants loaded",
+    "human-control policy satisfied"
+  ],
+  "inputs": {
+    "required": [
+      "ProductionWorkOrder",
+      "upstream artifact refs"
+    ],
+    "optional": [
+      "reference assets",
+      "prior audit findings",
+      "benchmark profile"
+    ]
+  },
+  "outputs": {
+    "primary": "Visual Reveal WritingResult",
+    "must_include": [
+      "provenance",
+      "quality evidence",
+      "downstream handoff metadata"
+    ]
+  },
+  "subskills": [],
+  "procedure": [
+    "Validate authoritative inputs specifically required for visual_reveal_writing.",
+    "Execute the bounded operation: Stage information so discovery occurs through image, action or composition.",
+    "Apply visual_reveal_writing-specific decision rules and record evidence/uncertainty.",
+    "Validate the named output against its workflow contract and creative invariants.",
+    "Record provenance and hand off to script_editor."
+  ],
+  "decision_rules": [
+    "do not invent missing upstream decisions",
+    "prefer local repair over global rewrite when scope is local",
+    "escalate when confidence is low and impact is high"
+  ],
+  "creative_invariants": [
+    "preserve approved premise/theme/character/world/visual invariants unless work order explicitly authorizes change"
+  ],
+  "tools_allowed": [
+    "state_store",
+    "artifact_store",
+    "approved_provider_adapter_if_needed"
+  ],
+  "state_read": [
+    "project_brief",
+    "artifact_registry",
+    "continuity_state",
+    "quality_history"
+  ],
+  "state_write": [
+    "visual_reveal_writing_results",
+    "decisions",
+    "telemetry"
+  ],
+  "quality_checks": [
+    "schema valid",
+    "owner boundary respected",
+    "output traceable",
+    "acceptance test passes"
+  ],
+  "rubric": {
+    "0": "missing/contradictory",
+    "1": "major defects",
+    "2": "usable with significant revision",
+    "3": "production-usable",
+    "4": "strong",
+    "5": "exceptional and robust"
+  },
+  "failure_modes": [
+    "missing prerequisite",
+    "scope creep",
+    "generic output",
+    "contradiction with authoritative state",
+    "untraceable result"
+  ],
+  "recovery": [
+    "request/fetch prerequisite",
+    "narrow operation",
+    "rerun targeted pass",
+    "escalate owner conflict",
+    "rollback to prior version"
+  ],
+  "handoff_to": [
+    "script_editor"
+  ],
+  "examples": [
+    "Run visual_reveal_writing on fixture/project artifact and emit a scored result."
+  ],
+  "counterexamples": [
+    "Do not ask visual_reveal_writing to \"make the whole film better\" or override another department."
+  ],
+  "tests": [],
+  "telemetry": [
+    "latency_ms",
+    "attempt_count",
+    "estimated_cost",
+    "quality_score",
+    "downstream_acceptance"
+  ],
+  "version": "0.2.0",
+  "owner_agent": "showrunner",
+  "bob_activation": false,
+  "bob_parent_skill": null,
+  "migration": {
+    "classification": "merge_as_subprocedure",
+    "bob_parent_skill": null,
+    "legacy_id_preserved": true
+  }
+}

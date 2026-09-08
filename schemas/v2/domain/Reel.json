@@ -1,0 +1,46 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "default": "2.0",
+      "pattern": "^\\d+\\.\\d+$",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "reel_id": {
+      "minLength": 1,
+      "title": "Reel Id",
+      "type": "string"
+    },
+    "timeline_id": {
+      "minLength": 1,
+      "title": "Timeline Id",
+      "type": "string"
+    },
+    "number": {
+      "minimum": 1,
+      "title": "Number",
+      "type": "integer"
+    },
+    "start_seconds": {
+      "minimum": 0,
+      "title": "Start Seconds",
+      "type": "number"
+    },
+    "end_seconds": {
+      "exclusiveMinimum": 0,
+      "title": "End Seconds",
+      "type": "number"
+    }
+  },
+  "required": [
+    "reel_id",
+    "timeline_id",
+    "number",
+    "start_seconds",
+    "end_seconds"
+  ],
+  "title": "Reel",
+  "type": "object",
+  "$id": "https://film-studio-os.local/schema/v2/domain/Reel.json"
+}

@@ -1,0 +1,22 @@
+{
+  "job_set_type": "cinematic_studio_video_3_5",
+  "sections": {
+    "scene_context": "SC-010: an original character discovers the workshop has lost power; the beat changes confidence to concern.",
+    "active_references": ["project-owned-character-ref-uuid", "project-owned-workshop-ref-uuid"],
+    "location_map": "Workbench north, door east, window west; preserve the locked axis.",
+    "first_frame_blocking": "Character at the workbench in left profile, practical lamp in foreground, door visible deep right.",
+    "format_mode": "single continuous five-second video shot",
+    "cut_by_cut_action": ["0.0-2.0s: lamp flickers while the character stops working", "2.0-5.0s: slow turn toward the dark doorway"],
+    "optics": "50 mm medium close-up with shallow but readable depth",
+    "camera": "slow controlled push; eye level; preserve screen direction",
+    "action": "lamp failure motivates the turn; hands remain in valid contact with the tool",
+    "performance": "suppress alarm, then allow one small breath and focused glance",
+    "physics": "natural inertia, hand contact and cloth response; stable architecture",
+    "lighting": "warm practical dies to cool window ambience without exposure pumping",
+    "audio": "lamp buzz stops, tool placed on wood, quiet room tone; no dialogue",
+    "style": "grounded original cinematic realism; no artist imitation",
+    "positive_locks": ["same original character identity", "same blue work shirt", "same workbench geography", "no text or logos"]
+  },
+  "parameters": {},
+  "declared_estimate_usd": 0.0
+}

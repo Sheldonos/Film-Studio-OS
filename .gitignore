@@ -1,0 +1,55 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Environment / secrets
+.env
+.env.*
+*.env
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Local state / caches
+*.sqlite
+*.sqlite3
+*.db
+.cache/
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+
+# Generated media / provider outputs
+artifacts/generated-media/
+artifacts/provider-downloads/
+.film-studio/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs
+*.log
+logs/
+
+# Zip artifacts
+*.zip

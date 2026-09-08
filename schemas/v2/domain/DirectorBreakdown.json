@@ -1,0 +1,61 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "default": "2.0",
+      "pattern": "^\\d+\\.\\d+$",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "director_breakdown_id": {
+      "minLength": 1,
+      "title": "Director Breakdown Id",
+      "type": "string"
+    },
+    "scene_id": {
+      "minLength": 1,
+      "title": "Scene Id",
+      "type": "string"
+    },
+    "audience_effect": {
+      "minLength": 1,
+      "title": "Audience Effect",
+      "type": "string"
+    },
+    "dramatic_intention": {
+      "minLength": 1,
+      "title": "Dramatic Intention",
+      "type": "string"
+    },
+    "performance_objectives": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "title": "Performance Objectives",
+      "type": "object"
+    },
+    "blocking_principles": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Blocking Principles",
+      "type": "array"
+    },
+    "coverage_priorities": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Coverage Priorities",
+      "type": "array"
+    }
+  },
+  "required": [
+    "director_breakdown_id",
+    "scene_id",
+    "audience_effect",
+    "dramatic_intention"
+  ],
+  "title": "DirectorBreakdown",
+  "type": "object",
+  "$id": "https://film-studio-os.local/schema/v2/domain/DirectorBreakdown.json"
+}

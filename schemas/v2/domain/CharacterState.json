@@ -1,0 +1,65 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "default": "2.0",
+      "pattern": "^\\d+\\.\\d+$",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "character_state_id": {
+      "minLength": 1,
+      "title": "Character State Id",
+      "type": "string"
+    },
+    "character_bible_id": {
+      "minLength": 1,
+      "title": "Character Bible Id",
+      "type": "string"
+    },
+    "scene_id": {
+      "minLength": 1,
+      "title": "Scene Id",
+      "type": "string"
+    },
+    "wardrobe": {
+      "default": "",
+      "title": "Wardrobe",
+      "type": "string"
+    },
+    "physical_condition": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Physical Condition",
+      "type": "array"
+    },
+    "emotional_state": {
+      "default": "",
+      "title": "Emotional State",
+      "type": "string"
+    },
+    "knowledge_state": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Knowledge State",
+      "type": "array"
+    },
+    "prop_state_ids": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Prop State Ids",
+      "type": "array"
+    }
+  },
+  "required": [
+    "character_state_id",
+    "character_bible_id",
+    "scene_id"
+  ],
+  "title": "CharacterState",
+  "type": "object",
+  "$id": "https://film-studio-os.local/schema/v2/domain/CharacterState.json"
+}

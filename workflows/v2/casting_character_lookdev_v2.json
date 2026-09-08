@@ -1,0 +1,77 @@
+{
+  "schema_version": "2.0",
+  "workflow_id": "casting_character_lookdev_v2",
+  "version": "2.0.0",
+  "description": "Casting breakdown through independently accepted character, costume and appearance continuity packages.",
+  "production_route": "provider_neutral",
+  "steps": [
+    {
+      "id": "casting",
+      "capability_id": "casting_breakdown",
+      "owner_agent": "director",
+      "reviewer_agent": "character_director",
+      "output_type": "CastingBreakdown",
+      "handler": "artifact"
+    },
+    {
+      "id": "audition",
+      "capability_id": "audition_evaluation_plan",
+      "owner_agent": "director",
+      "reviewer_agent": "rights_clearance_supervisor",
+      "depends_on": [
+        "casting"
+      ],
+      "output_type": "AuditionEvaluationPlan",
+      "handler": "artifact"
+    },
+    {
+      "id": "character_reference",
+      "capability_id": "character_reference_package",
+      "owner_agent": "character_director",
+      "reviewer_agent": "production_designer",
+      "depends_on": [
+        "casting"
+      ],
+      "output_type": "CharacterReferencePackage",
+      "handler": "artifact"
+    },
+    {
+      "id": "costume",
+      "capability_id": "costume_look_plan",
+      "owner_agent": "production_designer",
+      "reviewer_agent": "character_director",
+      "depends_on": [
+        "character_reference"
+      ],
+      "output_type": "CostumeLookPlan",
+      "handler": "artifact"
+    },
+    {
+      "id": "appearance_continuity",
+      "capability_id": "appearance_continuity_plan",
+      "owner_agent": "continuity_supervisor",
+      "reviewer_agent": "production_designer",
+      "depends_on": [
+        "costume"
+      ],
+      "output_type": "AppearanceContinuityPlan",
+      "handler": "artifact"
+    },
+    {
+      "id": "look_acceptance",
+      "capability_id": "character_look_acceptance",
+      "owner_agent": "qc_supervisor",
+      "reviewer_agent": "character_director",
+      "depends_on": [
+        "audition",
+        "appearance_continuity"
+      ],
+      "output_type": "CharacterLookAcceptance",
+      "handler": "gate",
+      "approval_required": true,
+      "approval_role": "human_creative_owner",
+      "gate_id": "character_look_acceptance"
+    }
+  ]
+}
+

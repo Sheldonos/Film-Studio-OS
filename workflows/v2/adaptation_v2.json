@@ -1,0 +1,56 @@
+{
+  "schema_version": "2.0",
+  "workflow_id": "adaptation_v2",
+  "version": "2.0.0",
+  "description": "Adapt licensed source material while preserving canon, mandate and traceable change decisions.",
+  "production_route": "provider_neutral",
+  "steps": [
+    {
+      "id": "source_map",
+      "capability_id": "source_canon_extraction",
+      "owner_agent": "adaptation_executive",
+      "depends_on": [],
+      "output_type": "SourceMap"
+    },
+    {
+      "id": "mandate",
+      "capability_id": "adaptation_mandate",
+      "owner_agent": "adaptation_executive",
+      "depends_on": [
+        "source_map"
+      ],
+      "output_type": "AdaptationMandate",
+      "reviewer_agent": "showrunner"
+    },
+    {
+      "id": "ledger",
+      "capability_id": "adaptation_change_ledger",
+      "owner_agent": "adaptation_executive",
+      "depends_on": [
+        "mandate"
+      ],
+      "output_type": "AdaptationDecisionLedger",
+      "reviewer_agent": "script_editor"
+    },
+    {
+      "id": "outline",
+      "capability_id": "structure_map",
+      "owner_agent": "story_architect",
+      "depends_on": [
+        "ledger"
+      ],
+      "output_type": "StructureMap",
+      "reviewer_agent": "showrunner"
+    },
+    {
+      "id": "regression",
+      "capability_id": "adaptation_fidelity_audit",
+      "owner_agent": "script_editor",
+      "depends_on": [
+        "outline"
+      ],
+      "output_type": "AuditReport",
+      "reviewer_agent": "rights_clearance_supervisor"
+    }
+  ]
+}

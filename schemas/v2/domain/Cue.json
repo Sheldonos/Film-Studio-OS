@@ -1,0 +1,66 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "default": "2.0",
+      "pattern": "^\\d+\\.\\d+$",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "cue_id": {
+      "minLength": 1,
+      "title": "Cue Id",
+      "type": "string"
+    },
+    "timeline_id": {
+      "minLength": 1,
+      "title": "Timeline Id",
+      "type": "string"
+    },
+    "cue_type": {
+      "enum": [
+        "dialogue",
+        "adr",
+        "foley",
+        "sfx",
+        "ambience",
+        "music",
+        "narration"
+      ],
+      "title": "Cue Type",
+      "type": "string"
+    },
+    "start_seconds": {
+      "minimum": 0,
+      "title": "Start Seconds",
+      "type": "number"
+    },
+    "duration_seconds": {
+      "exclusiveMinimum": 0,
+      "title": "Duration Seconds",
+      "type": "number"
+    },
+    "artifact_version_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Artifact Version Id"
+    }
+  },
+  "required": [
+    "cue_id",
+    "timeline_id",
+    "cue_type",
+    "start_seconds",
+    "duration_seconds"
+  ],
+  "title": "Cue",
+  "type": "object",
+  "$id": "https://film-studio-os.local/schema/v2/domain/Cue.json"
+}

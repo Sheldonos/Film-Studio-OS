@@ -1,0 +1,105 @@
+{
+  "schema_version": "2.0",
+  "workflow_id": "pilot_action_sequence",
+  "version": "2.0.0",
+  "description": "pilot action sequence",
+  "production_route": "mock_dry_run",
+  "steps": [
+    {
+      "id": "intake",
+      "capability_id": "rights_risk_triage",
+      "owner_agent": "production_librarian",
+      "depends_on": [],
+      "handler": "rights_gate",
+      "output_type": "IntakeArtifact",
+      "reviewer_agent": null,
+      "approval_required": false,
+      "approval_role": "fixture_human",
+      "gate_id": null
+    },
+    {
+      "id": "geography",
+      "capability_id": "geography",
+      "owner_agent": "continuity_supervisor",
+      "depends_on": [
+        "intake"
+      ],
+      "handler": "artifact",
+      "output_type": "GeographyArtifact",
+      "reviewer_agent": "qc_supervisor",
+      "approval_required": false,
+      "approval_role": "fixture_human",
+      "gate_id": null
+    },
+    {
+      "id": "coverage",
+      "capability_id": "coverage",
+      "owner_agent": "cinematographer",
+      "depends_on": [
+        "geography"
+      ],
+      "handler": "artifact",
+      "output_type": "CoverageArtifact",
+      "reviewer_agent": "qc_supervisor",
+      "approval_required": false,
+      "approval_role": "fixture_human",
+      "gate_id": null
+    },
+    {
+      "id": "shot",
+      "capability_id": "video_generation_plan",
+      "owner_agent": "generative_supervisor",
+      "depends_on": [
+        "coverage"
+      ],
+      "handler": "mock_generation",
+      "output_type": "ShotArtifact",
+      "reviewer_agent": "qc_supervisor",
+      "approval_required": false,
+      "approval_role": "fixture_human",
+      "gate_id": null
+    },
+    {
+      "id": "repair",
+      "capability_id": "repair",
+      "owner_agent": "vfx_supervisor",
+      "depends_on": [
+        "shot"
+      ],
+      "handler": "artifact",
+      "output_type": "RepairArtifact",
+      "reviewer_agent": "qc_supervisor",
+      "approval_required": false,
+      "approval_role": "fixture_human",
+      "gate_id": null
+    },
+    {
+      "id": "edit",
+      "capability_id": "edit",
+      "owner_agent": "editor",
+      "depends_on": [
+        "repair"
+      ],
+      "handler": "artifact",
+      "output_type": "EditArtifact",
+      "reviewer_agent": "qc_supervisor",
+      "approval_required": false,
+      "approval_role": "fixture_human",
+      "gate_id": null
+    },
+    {
+      "id": "release",
+      "capability_id": "master_qc",
+      "owner_agent": "studio_orchestrator",
+      "depends_on": [
+        "edit"
+      ],
+      "handler": "artifact",
+      "output_type": "ReleaseArtifact",
+      "reviewer_agent": "qc_supervisor",
+      "approval_required": true,
+      "approval_role": "fixture_human",
+      "gate_id": "gate_master"
+    }
+  ]
+}

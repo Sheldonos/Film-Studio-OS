@@ -1,0 +1,172 @@
+{
+  "$defs": {
+    "ApprovalStatus": {
+      "enum": [
+        "not_required",
+        "pending",
+        "approved",
+        "rejected",
+        "revoked"
+      ],
+      "title": "ApprovalStatus",
+      "type": "string"
+    }
+  },
+  "$id": "https://film-studio-os.local/schemas/v2/WorkOrderV2.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "actual_cost_usd": {
+      "default": 0.0,
+      "minimum": 0,
+      "title": "Actual Cost Usd",
+      "type": "number"
+    },
+    "approval_required": {
+      "default": false,
+      "title": "Approval Required",
+      "type": "boolean"
+    },
+    "approval_status": {
+      "$ref": "#/$defs/ApprovalStatus",
+      "default": "not_required"
+    },
+    "attempt_budget": {
+      "default": 3,
+      "minimum": 1,
+      "title": "Attempt Budget",
+      "type": "integer"
+    },
+    "attempt_count": {
+      "default": 0,
+      "minimum": 0,
+      "title": "Attempt Count",
+      "type": "integer"
+    },
+    "capability_id": {
+      "minLength": 1,
+      "title": "Capability Id",
+      "type": "string"
+    },
+    "cost_budget_usd": {
+      "default": 0.0,
+      "minimum": 0,
+      "title": "Cost Budget Usd",
+      "type": "number"
+    },
+    "dependency_step_ids": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Dependency Step Ids",
+      "type": "array"
+    },
+    "failure_code": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Failure Code"
+    },
+    "idempotency_key": {
+      "minLength": 1,
+      "title": "Idempotency Key",
+      "type": "string"
+    },
+    "input_version_ids": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Input Version Ids",
+      "type": "array"
+    },
+    "output_version_ids": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Output Version Ids",
+      "type": "array"
+    },
+    "owner_agent": {
+      "minLength": 1,
+      "title": "Owner Agent",
+      "type": "string"
+    },
+    "project_id": {
+      "minLength": 1,
+      "title": "Project Id",
+      "type": "string"
+    },
+    "reviewer_agent": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Reviewer Agent"
+    },
+    "schema_version": {
+      "default": "2.0",
+      "pattern": "^\\d+\\.\\d+$",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "status": {
+      "default": "pending",
+      "enum": [
+        "pending",
+        "blocked",
+        "ready",
+        "running",
+        "waiting_approval",
+        "review",
+        "done",
+        "failed",
+        "cancelled"
+      ],
+      "title": "Status",
+      "type": "string"
+    },
+    "step_id": {
+      "minLength": 1,
+      "title": "Step Id",
+      "type": "string"
+    },
+    "timeout_seconds": {
+      "default": 900,
+      "minimum": 1,
+      "title": "Timeout Seconds",
+      "type": "integer"
+    },
+    "work_order_id": {
+      "minLength": 1,
+      "title": "Work Order Id",
+      "type": "string"
+    },
+    "workflow_id": {
+      "minLength": 1,
+      "title": "Workflow Id",
+      "type": "string"
+    }
+  },
+  "required": [
+    "work_order_id",
+    "project_id",
+    "workflow_id",
+    "step_id",
+    "capability_id",
+    "owner_agent",
+    "idempotency_key"
+  ],
+  "title": "WorkOrderV2",
+  "type": "object"
+}

@@ -1,0 +1,170 @@
+{
+  "$defs": {
+    "RightsStatus": {
+      "enum": [
+        "unknown",
+        "unverified",
+        "partial",
+        "cleared",
+        "blocked"
+      ],
+      "title": "RightsStatus",
+      "type": "string"
+    }
+  },
+  "$id": "https://film-studio-os.local/schemas/v2/RightsRecord.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "adaptation_allowed": {
+      "default": false,
+      "title": "Adaptation Allowed",
+      "type": "boolean"
+    },
+    "ai_processing_allowed": {
+      "anyOf": [
+        {
+          "type": "boolean"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Ai Processing Allowed"
+    },
+    "approved_at": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Approved At"
+    },
+    "approved_by": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Approved By"
+    },
+    "basis": {
+      "default": "unknown",
+      "enum": [
+        "owned",
+        "licensed",
+        "public_domain",
+        "permission",
+        "unknown"
+      ],
+      "title": "Basis",
+      "type": "string"
+    },
+    "evidence_artifact_ids": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Evidence Artifact Ids",
+      "type": "array"
+    },
+    "languages": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Languages",
+      "type": "array"
+    },
+    "likeness_voice_restrictions": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Likeness Voice Restrictions",
+      "type": "array"
+    },
+    "media": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Media",
+      "type": "array"
+    },
+    "rights_record_id": {
+      "minLength": 1,
+      "title": "Rights Record Id",
+      "type": "string"
+    },
+    "schema_version": {
+      "default": "2.0",
+      "pattern": "^\\d+\\.\\d+$",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "source_asset_id": {
+      "minLength": 1,
+      "title": "Source Asset Id",
+      "type": "string"
+    },
+    "status": {
+      "$ref": "#/$defs/RightsStatus",
+      "default": "unverified"
+    },
+    "term_end": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Term End"
+    },
+    "term_start": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Term Start"
+    },
+    "territories": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Territories",
+      "type": "array"
+    },
+    "training_allowed": {
+      "anyOf": [
+        {
+          "type": "boolean"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Training Allowed"
+    }
+  },
+  "required": [
+    "rights_record_id",
+    "source_asset_id"
+  ],
+  "title": "RightsRecord",
+  "type": "object"
+}

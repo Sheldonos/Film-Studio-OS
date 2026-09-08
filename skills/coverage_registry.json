@@ -1,0 +1,2138 @@
+[
+  {
+    "capability_id": "creative_constraint_extraction",
+    "level": "skill",
+    "department": "studio_governance",
+    "owner_agent": "studio_orchestrator",
+    "acceptance_tests": [
+      "test_creative_constraint_extraction_schema",
+      "test_creative_constraint_extraction_boundary",
+      "test_creative_constraint_extraction_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "production_strategy_selection",
+    "level": "skill",
+    "department": "studio_governance",
+    "owner_agent": "studio_orchestrator",
+    "acceptance_tests": [
+      "test_production_strategy_selection_schema",
+      "test_production_strategy_selection_boundary",
+      "test_production_strategy_selection_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "task_graph_compilation",
+    "level": "skill",
+    "department": "studio_governance",
+    "owner_agent": "studio_orchestrator",
+    "acceptance_tests": [
+      "test_task_graph_compilation_schema",
+      "test_task_graph_compilation_boundary",
+      "test_task_graph_compilation_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "critical_path_analysis",
+    "level": "skill",
+    "department": "studio_governance",
+    "owner_agent": "studio_orchestrator",
+    "acceptance_tests": [
+      "test_critical_path_analysis_schema",
+      "test_critical_path_analysis_boundary",
+      "test_critical_path_analysis_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "budget_envelope",
+    "level": "skill",
+    "department": "studio_governance",
+    "owner_agent": "studio_orchestrator",
+    "acceptance_tests": [
+      "test_budget_envelope_schema",
+      "test_budget_envelope_boundary",
+      "test_budget_envelope_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "handoff_validation",
+    "level": "skill",
+    "department": "studio_governance",
+    "owner_agent": "studio_orchestrator",
+    "acceptance_tests": [
+      "test_handoff_validation_schema",
+      "test_handoff_validation_boundary",
+      "test_handoff_validation_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "staleness_propagation",
+    "level": "skill",
+    "department": "studio_governance",
+    "owner_agent": "studio_orchestrator",
+    "acceptance_tests": [
+      "test_staleness_propagation_schema",
+      "test_staleness_propagation_boundary",
+      "test_staleness_propagation_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "production_status_report",
+    "level": "skill",
+    "department": "studio_governance",
+    "owner_agent": "studio_orchestrator",
+    "acceptance_tests": [
+      "test_production_status_report_schema",
+      "test_production_status_report_boundary",
+      "test_production_status_report_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "premise_stress_test",
+    "level": "skill",
+    "department": "writing_story",
+    "owner_agent": "showrunner",
+    "acceptance_tests": [
+      "test_premise_stress_test_schema",
+      "test_premise_stress_test_boundary",
+      "test_premise_stress_test_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "dramatic_question_design",
+    "level": "skill",
+    "department": "writing_story",
+    "owner_agent": "showrunner",
+    "acceptance_tests": [
+      "test_dramatic_question_design_schema",
+      "test_dramatic_question_design_boundary",
+      "test_dramatic_question_design_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "theme_countertheme_design",
+    "level": "skill",
+    "department": "writing_story",
+    "owner_agent": "showrunner",
+    "acceptance_tests": [
+      "test_theme_countertheme_design_schema",
+      "test_theme_countertheme_design_boundary",
+      "test_theme_countertheme_design_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "genre_contract_definition",
+    "level": "skill",
+    "department": "writing_story",
+    "owner_agent": "showrunner",
+    "acceptance_tests": [
+      "test_genre_contract_definition_schema",
+      "test_genre_contract_definition_boundary",
+      "test_genre_contract_definition_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "audience_promise_mapping",
+    "level": "skill",
+    "department": "writing_story",
+    "owner_agent": "showrunner",
+    "acceptance_tests": [
+      "test_audience_promise_mapping_schema",
+      "test_audience_promise_mapping_boundary",
+      "test_audience_promise_mapping_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "structure_map",
+    "level": "skill",
+    "department": "writing_story",
+    "owner_agent": "showrunner",
+    "acceptance_tests": [
+      "test_structure_map_schema",
+      "test_structure_map_boundary",
+      "test_structure_map_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "scene_card_generation",
+    "level": "skill",
+    "department": "writing_story",
+    "owner_agent": "showrunner",
+    "acceptance_tests": [
+      "test_scene_card_generation_schema",
+      "test_scene_card_generation_boundary",
+      "test_scene_card_generation_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "scene_writing",
+    "level": "skill",
+    "department": "writing_story",
+    "owner_agent": "showrunner",
+    "acceptance_tests": [
+      "test_scene_writing_schema",
+      "test_scene_writing_boundary",
+      "test_scene_writing_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "revision_plan",
+    "level": "skill",
+    "department": "writing_story",
+    "owner_agent": "showrunner",
+    "acceptance_tests": [
+      "test_revision_plan_schema",
+      "test_revision_plan_boundary",
+      "test_revision_plan_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "act_sequence_design",
+    "level": "skill",
+    "department": "writing_story",
+    "owner_agent": "story_architect",
+    "acceptance_tests": [
+      "test_act_sequence_design_schema",
+      "test_act_sequence_design_boundary",
+      "test_act_sequence_design_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "causal_chain_construction",
+    "level": "skill",
+    "department": "writing_story",
+    "owner_agent": "story_architect",
+    "acceptance_tests": [
+      "test_causal_chain_construction_schema",
+      "test_causal_chain_construction_boundary",
+      "test_causal_chain_construction_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "progressive_complication",
+    "level": "skill",
+    "department": "writing_story",
+    "owner_agent": "story_architect",
+    "acceptance_tests": [
+      "test_progressive_complication_schema",
+      "test_progressive_complication_boundary",
+      "test_progressive_complication_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "midpoint_reversal_design",
+    "level": "skill",
+    "department": "writing_story",
+    "owner_agent": "story_architect",
+    "acceptance_tests": [
+      "test_midpoint_reversal_design_schema",
+      "test_midpoint_reversal_design_boundary",
+      "test_midpoint_reversal_design_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "crisis_climax_design",
+    "level": "skill",
+    "department": "writing_story",
+    "owner_agent": "story_architect",
+    "acceptance_tests": [
+      "test_crisis_climax_design_schema",
+      "test_crisis_climax_design_boundary",
+      "test_crisis_climax_design_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "setup_payoff_tracking",
+    "level": "skill",
+    "department": "writing_story",
+    "owner_agent": "story_architect",
+    "acceptance_tests": [
+      "test_setup_payoff_tracking_schema",
+      "test_setup_payoff_tracking_boundary",
+      "test_setup_payoff_tracking_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "reveal_ordering",
+    "level": "skill",
+    "department": "writing_story",
+    "owner_agent": "story_architect",
+    "acceptance_tests": [
+      "test_reveal_ordering_schema",
+      "test_reveal_ordering_boundary",
+      "test_reveal_ordering_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "suspense_dramatic_irony",
+    "level": "skill",
+    "department": "writing_story",
+    "owner_agent": "story_architect",
+    "acceptance_tests": [
+      "test_suspense_dramatic_irony_schema",
+      "test_suspense_dramatic_irony_boundary",
+      "test_suspense_dramatic_irony_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "subplot_braiding",
+    "level": "skill",
+    "department": "writing_story",
+    "owner_agent": "story_architect",
+    "acceptance_tests": [
+      "test_subplot_braiding_schema",
+      "test_subplot_braiding_boundary",
+      "test_subplot_braiding_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "runtime_budgeting",
+    "level": "skill",
+    "department": "writing_story",
+    "owner_agent": "story_architect",
+    "acceptance_tests": [
+      "test_runtime_budgeting_schema",
+      "test_runtime_budgeting_boundary",
+      "test_runtime_budgeting_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "scene_necessity_test",
+    "level": "skill",
+    "department": "writing_story",
+    "owner_agent": "story_architect",
+    "acceptance_tests": [
+      "test_scene_necessity_test_schema",
+      "test_scene_necessity_test_boundary",
+      "test_scene_necessity_test_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "character_bible_creation",
+    "level": "skill",
+    "department": "art_world",
+    "owner_agent": "character_director",
+    "acceptance_tests": [
+      "test_character_bible_creation_schema",
+      "test_character_bible_creation_boundary",
+      "test_character_bible_creation_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "identity_state_separation",
+    "level": "skill",
+    "department": "art_world",
+    "owner_agent": "character_director",
+    "acceptance_tests": [
+      "test_identity_state_separation_schema",
+      "test_identity_state_separation_boundary",
+      "test_identity_state_separation_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "voice_fingerprint_design",
+    "level": "skill",
+    "department": "art_world",
+    "owner_agent": "character_director",
+    "acceptance_tests": [
+      "test_voice_fingerprint_design_schema",
+      "test_voice_fingerprint_design_boundary",
+      "test_voice_fingerprint_design_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "behavior_gesture_design",
+    "level": "skill",
+    "department": "art_world",
+    "owner_agent": "character_director",
+    "acceptance_tests": [
+      "test_behavior_gesture_design_schema",
+      "test_behavior_gesture_design_boundary",
+      "test_behavior_gesture_design_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "wardrobe_canon",
+    "level": "skill",
+    "department": "art_world",
+    "owner_agent": "character_director",
+    "acceptance_tests": [
+      "test_wardrobe_canon_schema",
+      "test_wardrobe_canon_boundary",
+      "test_wardrobe_canon_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "expression_range_map",
+    "level": "skill",
+    "department": "art_world",
+    "owner_agent": "character_director",
+    "acceptance_tests": [
+      "test_expression_range_map_schema",
+      "test_expression_range_map_boundary",
+      "test_expression_range_map_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "relationship_state_tracking",
+    "level": "skill",
+    "department": "art_world",
+    "owner_agent": "character_director",
+    "acceptance_tests": [
+      "test_relationship_state_tracking_schema",
+      "test_relationship_state_tracking_boundary",
+      "test_relationship_state_tracking_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "character_reference_plan",
+    "level": "skill",
+    "department": "art_world",
+    "owner_agent": "character_director",
+    "acceptance_tests": [
+      "test_character_reference_plan_schema",
+      "test_character_reference_plan_boundary",
+      "test_character_reference_plan_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "dialogue_voice_construction",
+    "level": "skill",
+    "department": "writing_story",
+    "owner_agent": "showrunner",
+    "acceptance_tests": [
+      "test_dialogue_voice_construction_schema",
+      "test_dialogue_voice_construction_boundary",
+      "test_dialogue_voice_construction_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "subtext_writing",
+    "level": "skill",
+    "department": "writing_story",
+    "owner_agent": "showrunner",
+    "acceptance_tests": [
+      "test_subtext_writing_schema",
+      "test_subtext_writing_boundary",
+      "test_subtext_writing_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "exposition_concealment",
+    "level": "skill",
+    "department": "writing_story",
+    "owner_agent": "showrunner",
+    "acceptance_tests": [
+      "test_exposition_concealment_schema",
+      "test_exposition_concealment_boundary",
+      "test_exposition_concealment_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "interruption_overlap_design",
+    "level": "skill",
+    "department": "writing_story",
+    "owner_agent": "showrunner",
+    "acceptance_tests": [
+      "test_interruption_overlap_design_schema",
+      "test_interruption_overlap_design_boundary",
+      "test_interruption_overlap_design_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "silence_pause_design",
+    "level": "skill",
+    "department": "writing_story",
+    "owner_agent": "showrunner",
+    "acceptance_tests": [
+      "test_silence_pause_design_schema",
+      "test_silence_pause_design_boundary",
+      "test_silence_pause_design_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "banter_construction",
+    "level": "skill",
+    "department": "writing_story",
+    "owner_agent": "showrunner",
+    "acceptance_tests": [
+      "test_banter_construction_schema",
+      "test_banter_construction_boundary",
+      "test_banter_construction_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "wit_callback_design",
+    "level": "skill",
+    "department": "writing_story",
+    "owner_agent": "showrunner",
+    "acceptance_tests": [
+      "test_wit_callback_design_schema",
+      "test_wit_callback_design_boundary",
+      "test_wit_callback_design_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "joke_mechanics",
+    "level": "skill",
+    "department": "writing_story",
+    "owner_agent": "showrunner",
+    "acceptance_tests": [
+      "test_joke_mechanics_schema",
+      "test_joke_mechanics_boundary",
+      "test_joke_mechanics_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "line_compression",
+    "level": "skill",
+    "department": "writing_story",
+    "owner_agent": "showrunner",
+    "acceptance_tests": [
+      "test_line_compression_schema",
+      "test_line_compression_boundary",
+      "test_line_compression_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "actor_speakability",
+    "level": "skill",
+    "department": "writing_story",
+    "owner_agent": "showrunner",
+    "acceptance_tests": [
+      "test_actor_speakability_schema",
+      "test_actor_speakability_boundary",
+      "test_actor_speakability_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "dialogue_to_action_substitution",
+    "level": "skill",
+    "department": "writing_story",
+    "owner_agent": "showrunner",
+    "acceptance_tests": [
+      "test_dialogue_to_action_substitution_schema",
+      "test_dialogue_to_action_substitution_boundary",
+      "test_dialogue_to_action_substitution_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "cold_read_audit",
+    "level": "skill",
+    "department": "writing_story",
+    "owner_agent": "script_editor",
+    "acceptance_tests": [
+      "test_cold_read_audit_schema",
+      "test_cold_read_audit_boundary",
+      "test_cold_read_audit_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "premise_theme_audit",
+    "level": "skill",
+    "department": "writing_story",
+    "owner_agent": "script_editor",
+    "acceptance_tests": [
+      "test_premise_theme_audit_schema",
+      "test_premise_theme_audit_boundary",
+      "test_premise_theme_audit_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "structure_causality_audit",
+    "level": "skill",
+    "department": "writing_story",
+    "owner_agent": "script_editor",
+    "acceptance_tests": [
+      "test_structure_causality_audit_schema",
+      "test_structure_causality_audit_boundary",
+      "test_structure_causality_audit_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "character_arc_audit",
+    "level": "skill",
+    "department": "writing_story",
+    "owner_agent": "script_editor",
+    "acceptance_tests": [
+      "test_character_arc_audit_schema",
+      "test_character_arc_audit_boundary",
+      "test_character_arc_audit_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "scene_function_audit",
+    "level": "skill",
+    "department": "writing_story",
+    "owner_agent": "script_editor",
+    "acceptance_tests": [
+      "test_scene_function_audit_schema",
+      "test_scene_function_audit_boundary",
+      "test_scene_function_audit_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "dialogue_voice_audit",
+    "level": "skill",
+    "department": "writing_story",
+    "owner_agent": "script_editor",
+    "acceptance_tests": [
+      "test_dialogue_voice_audit_schema",
+      "test_dialogue_voice_audit_boundary",
+      "test_dialogue_voice_audit_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "continuity_logic_audit",
+    "level": "skill",
+    "department": "writing_story",
+    "owner_agent": "script_editor",
+    "acceptance_tests": [
+      "test_continuity_logic_audit_schema",
+      "test_continuity_logic_audit_boundary",
+      "test_continuity_logic_audit_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "genre_tone_audit",
+    "level": "skill",
+    "department": "writing_story",
+    "owner_agent": "script_editor",
+    "acceptance_tests": [
+      "test_genre_tone_audit_schema",
+      "test_genre_tone_audit_boundary",
+      "test_genre_tone_audit_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "production_feasibility_audit",
+    "level": "skill",
+    "department": "writing_story",
+    "owner_agent": "script_editor",
+    "acceptance_tests": [
+      "test_production_feasibility_audit_schema",
+      "test_production_feasibility_audit_boundary",
+      "test_production_feasibility_audit_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "table_read_simulation",
+    "level": "skill",
+    "department": "writing_story",
+    "owner_agent": "script_editor",
+    "acceptance_tests": [
+      "test_table_read_simulation_schema",
+      "test_table_read_simulation_boundary",
+      "test_table_read_simulation_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "revision_regression_audit",
+    "level": "skill",
+    "department": "writing_story",
+    "owner_agent": "script_editor",
+    "acceptance_tests": [
+      "test_revision_regression_audit_schema",
+      "test_revision_regression_audit_boundary",
+      "test_revision_regression_audit_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "imitation_risk_audit",
+    "level": "skill",
+    "department": "writing_story",
+    "owner_agent": "script_editor",
+    "acceptance_tests": [
+      "test_imitation_risk_audit_schema",
+      "test_imitation_risk_audit_boundary",
+      "test_imitation_risk_audit_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "filmable_action_writing",
+    "level": "skill",
+    "department": "writing_story",
+    "owner_agent": "showrunner",
+    "acceptance_tests": [
+      "test_filmable_action_writing_schema",
+      "test_filmable_action_writing_boundary",
+      "test_filmable_action_writing_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "blocking_geography_writing",
+    "level": "skill",
+    "department": "writing_story",
+    "owner_agent": "showrunner",
+    "acceptance_tests": [
+      "test_blocking_geography_writing_schema",
+      "test_blocking_geography_writing_boundary",
+      "test_blocking_geography_writing_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "visual_reveal_writing",
+    "level": "skill",
+    "department": "writing_story",
+    "owner_agent": "showrunner",
+    "acceptance_tests": [
+      "test_visual_reveal_writing_schema",
+      "test_visual_reveal_writing_boundary",
+      "test_visual_reveal_writing_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "action_paragraph_rhythm",
+    "level": "skill",
+    "department": "writing_story",
+    "owner_agent": "showrunner",
+    "acceptance_tests": [
+      "test_action_paragraph_rhythm_schema",
+      "test_action_paragraph_rhythm_boundary",
+      "test_action_paragraph_rhythm_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "screenplay_format_validation",
+    "level": "skill",
+    "department": "writing_story",
+    "owner_agent": "showrunner",
+    "acceptance_tests": [
+      "test_screenplay_format_validation_schema",
+      "test_screenplay_format_validation_boundary",
+      "test_screenplay_format_validation_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "scene_intention_breakdown",
+    "level": "skill",
+    "department": "direction_performance",
+    "owner_agent": "director",
+    "acceptance_tests": [
+      "test_scene_intention_breakdown_schema",
+      "test_scene_intention_breakdown_boundary",
+      "test_scene_intention_breakdown_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "performance_objective_design",
+    "level": "skill",
+    "department": "direction_performance",
+    "owner_agent": "director",
+    "acceptance_tests": [
+      "test_performance_objective_design_schema",
+      "test_performance_objective_design_boundary",
+      "test_performance_objective_design_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "blocking_plan",
+    "level": "skill",
+    "department": "direction_performance",
+    "owner_agent": "director",
+    "acceptance_tests": [
+      "test_blocking_plan_schema",
+      "test_blocking_plan_boundary",
+      "test_blocking_plan_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "coverage_plan",
+    "level": "skill",
+    "department": "direction_performance",
+    "owner_agent": "director",
+    "acceptance_tests": [
+      "test_coverage_plan_schema",
+      "test_coverage_plan_boundary",
+      "test_coverage_plan_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "shot_priority_map",
+    "level": "skill",
+    "department": "direction_performance",
+    "owner_agent": "director",
+    "acceptance_tests": [
+      "test_shot_priority_map_schema",
+      "test_shot_priority_map_boundary",
+      "test_shot_priority_map_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "dialogue_scene_direction",
+    "level": "skill",
+    "department": "direction_performance",
+    "owner_agent": "director",
+    "acceptance_tests": [
+      "test_dialogue_scene_direction_schema",
+      "test_dialogue_scene_direction_boundary",
+      "test_dialogue_scene_direction_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "action_sequence_direction",
+    "level": "skill",
+    "department": "direction_performance",
+    "owner_agent": "director",
+    "acceptance_tests": [
+      "test_action_sequence_direction_schema",
+      "test_action_sequence_direction_boundary",
+      "test_action_sequence_direction_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "reaction_shot_design",
+    "level": "skill",
+    "department": "direction_performance",
+    "owner_agent": "director",
+    "acceptance_tests": [
+      "test_reaction_shot_design_schema",
+      "test_reaction_shot_design_boundary",
+      "test_reaction_shot_design_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "pickup_identification",
+    "level": "skill",
+    "department": "direction_performance",
+    "owner_agent": "director",
+    "acceptance_tests": [
+      "test_pickup_identification_schema",
+      "test_pickup_identification_boundary",
+      "test_pickup_identification_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "world_bible_creation",
+    "level": "skill",
+    "department": "art_world",
+    "owner_agent": "production_designer",
+    "acceptance_tests": [
+      "test_world_bible_creation_schema",
+      "test_world_bible_creation_boundary",
+      "test_world_bible_creation_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "location_bible_creation",
+    "level": "skill",
+    "department": "art_world",
+    "owner_agent": "production_designer",
+    "acceptance_tests": [
+      "test_location_bible_creation_schema",
+      "test_location_bible_creation_boundary",
+      "test_location_bible_creation_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "environment_state_design",
+    "level": "skill",
+    "department": "art_world",
+    "owner_agent": "production_designer",
+    "acceptance_tests": [
+      "test_environment_state_design_schema",
+      "test_environment_state_design_boundary",
+      "test_environment_state_design_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "prop_canon_design",
+    "level": "skill",
+    "department": "art_world",
+    "owner_agent": "production_designer",
+    "acceptance_tests": [
+      "test_prop_canon_design_schema",
+      "test_prop_canon_design_boundary",
+      "test_prop_canon_design_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "costume_state_design",
+    "level": "skill",
+    "department": "art_world",
+    "owner_agent": "production_designer",
+    "acceptance_tests": [
+      "test_costume_state_design_schema",
+      "test_costume_state_design_boundary",
+      "test_costume_state_design_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "era_technology_consistency",
+    "level": "skill",
+    "department": "art_world",
+    "owner_agent": "production_designer",
+    "acceptance_tests": [
+      "test_era_technology_consistency_schema",
+      "test_era_technology_consistency_boundary",
+      "test_era_technology_consistency_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "visual_motif_design",
+    "level": "skill",
+    "department": "art_world",
+    "owner_agent": "production_designer",
+    "acceptance_tests": [
+      "test_visual_motif_design_schema",
+      "test_visual_motif_design_boundary",
+      "test_visual_motif_design_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "location_geography_map",
+    "level": "skill",
+    "department": "art_world",
+    "owner_agent": "production_designer",
+    "acceptance_tests": [
+      "test_location_geography_map_schema",
+      "test_location_geography_map_boundary",
+      "test_location_geography_map_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "camera_language_design",
+    "level": "skill",
+    "department": "camera_lighting_previs",
+    "owner_agent": "cinematographer",
+    "acceptance_tests": [
+      "test_camera_language_design_schema",
+      "test_camera_language_design_boundary",
+      "test_camera_language_design_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "shot_size_selection",
+    "level": "skill",
+    "department": "camera_lighting_previs",
+    "owner_agent": "cinematographer",
+    "acceptance_tests": [
+      "test_shot_size_selection_schema",
+      "test_shot_size_selection_boundary",
+      "test_shot_size_selection_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "lens_strategy",
+    "level": "skill",
+    "department": "camera_lighting_previs",
+    "owner_agent": "cinematographer",
+    "acceptance_tests": [
+      "test_lens_strategy_schema",
+      "test_lens_strategy_boundary",
+      "test_lens_strategy_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "composition_design",
+    "level": "skill",
+    "department": "camera_lighting_previs",
+    "owner_agent": "cinematographer",
+    "acceptance_tests": [
+      "test_composition_design_schema",
+      "test_composition_design_boundary",
+      "test_composition_design_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "camera_height_distance",
+    "level": "skill",
+    "department": "camera_lighting_previs",
+    "owner_agent": "cinematographer",
+    "acceptance_tests": [
+      "test_camera_height_distance_schema",
+      "test_camera_height_distance_boundary",
+      "test_camera_height_distance_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "camera_motion_design",
+    "level": "skill",
+    "department": "camera_lighting_previs",
+    "owner_agent": "cinematographer",
+    "acceptance_tests": [
+      "test_camera_motion_design_schema",
+      "test_camera_motion_design_boundary",
+      "test_camera_motion_design_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "lighting_design",
+    "level": "skill",
+    "department": "camera_lighting_previs",
+    "owner_agent": "cinematographer",
+    "acceptance_tests": [
+      "test_lighting_design_schema",
+      "test_lighting_design_boundary",
+      "test_lighting_design_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "depth_foreground_background",
+    "level": "skill",
+    "department": "camera_lighting_previs",
+    "owner_agent": "cinematographer",
+    "acceptance_tests": [
+      "test_depth_foreground_background_schema",
+      "test_depth_foreground_background_boundary",
+      "test_depth_foreground_background_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "screen_direction_axis_control",
+    "level": "skill",
+    "department": "camera_lighting_previs",
+    "owner_agent": "cinematographer",
+    "acceptance_tests": [
+      "test_screen_direction_axis_control_schema",
+      "test_screen_direction_axis_control_boundary",
+      "test_screen_direction_axis_control_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "shot_spec_compilation",
+    "level": "skill",
+    "department": "camera_lighting_previs",
+    "owner_agent": "cinematographer",
+    "acceptance_tests": [
+      "test_shot_spec_compilation_schema",
+      "test_shot_spec_compilation_boundary",
+      "test_shot_spec_compilation_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "storyboard_plan",
+    "level": "skill",
+    "department": "camera_lighting_previs",
+    "owner_agent": "storyboard_previs",
+    "acceptance_tests": [
+      "test_storyboard_plan_schema",
+      "test_storyboard_plan_boundary",
+      "test_storyboard_plan_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "coverage_visualization",
+    "level": "skill",
+    "department": "camera_lighting_previs",
+    "owner_agent": "storyboard_previs",
+    "acceptance_tests": [
+      "test_coverage_visualization_schema",
+      "test_coverage_visualization_boundary",
+      "test_coverage_visualization_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "shot_family_grouping",
+    "level": "skill",
+    "department": "camera_lighting_previs",
+    "owner_agent": "storyboard_previs",
+    "acceptance_tests": [
+      "test_shot_family_grouping_schema",
+      "test_shot_family_grouping_boundary",
+      "test_shot_family_grouping_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "animatic_timing",
+    "level": "skill",
+    "department": "camera_lighting_previs",
+    "owner_agent": "storyboard_previs",
+    "acceptance_tests": [
+      "test_animatic_timing_schema",
+      "test_animatic_timing_boundary",
+      "test_animatic_timing_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "transition_previs",
+    "level": "skill",
+    "department": "camera_lighting_previs",
+    "owner_agent": "storyboard_previs",
+    "acceptance_tests": [
+      "test_transition_previs_schema",
+      "test_transition_previs_boundary",
+      "test_transition_previs_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "generation_risk_previs",
+    "level": "skill",
+    "department": "camera_lighting_previs",
+    "owner_agent": "storyboard_previs",
+    "acceptance_tests": [
+      "test_generation_risk_previs_schema",
+      "test_generation_risk_previs_boundary",
+      "test_generation_risk_previs_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "continuity_extraction",
+    "level": "skill",
+    "department": "continuity_state",
+    "owner_agent": "continuity_supervisor",
+    "acceptance_tests": [
+      "test_continuity_extraction_schema",
+      "test_continuity_extraction_boundary",
+      "test_continuity_extraction_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "character_state_tracking",
+    "level": "skill",
+    "department": "continuity_state",
+    "owner_agent": "continuity_supervisor",
+    "acceptance_tests": [
+      "test_character_state_tracking_schema",
+      "test_character_state_tracking_boundary",
+      "test_character_state_tracking_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "prop_state_tracking",
+    "level": "skill",
+    "department": "continuity_state",
+    "owner_agent": "continuity_supervisor",
+    "acceptance_tests": [
+      "test_prop_state_tracking_schema",
+      "test_prop_state_tracking_boundary",
+      "test_prop_state_tracking_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "wardrobe_state_tracking",
+    "level": "skill",
+    "department": "continuity_state",
+    "owner_agent": "continuity_supervisor",
+    "acceptance_tests": [
+      "test_wardrobe_state_tracking_schema",
+      "test_wardrobe_state_tracking_boundary",
+      "test_wardrobe_state_tracking_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "geography_continuity",
+    "level": "skill",
+    "department": "continuity_state",
+    "owner_agent": "continuity_supervisor",
+    "acceptance_tests": [
+      "test_geography_continuity_schema",
+      "test_geography_continuity_boundary",
+      "test_geography_continuity_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "screen_direction_validation",
+    "level": "skill",
+    "department": "continuity_state",
+    "owner_agent": "continuity_supervisor",
+    "acceptance_tests": [
+      "test_screen_direction_validation_schema",
+      "test_screen_direction_validation_boundary",
+      "test_screen_direction_validation_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "lighting_time_state_tracking",
+    "level": "skill",
+    "department": "continuity_state",
+    "owner_agent": "continuity_supervisor",
+    "acceptance_tests": [
+      "test_lighting_time_state_tracking_schema",
+      "test_lighting_time_state_tracking_boundary",
+      "test_lighting_time_state_tracking_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "knowledge_state_tracking",
+    "level": "skill",
+    "department": "continuity_state",
+    "owner_agent": "continuity_supervisor",
+    "acceptance_tests": [
+      "test_knowledge_state_tracking_schema",
+      "test_knowledge_state_tracking_boundary",
+      "test_knowledge_state_tracking_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "action_state_tracking",
+    "level": "skill",
+    "department": "continuity_state",
+    "owner_agent": "continuity_supervisor",
+    "acceptance_tests": [
+      "test_action_state_tracking_schema",
+      "test_action_state_tracking_boundary",
+      "test_action_state_tracking_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "continuity_diff",
+    "level": "skill",
+    "department": "continuity_state",
+    "owner_agent": "continuity_supervisor",
+    "acceptance_tests": [
+      "test_continuity_diff_schema",
+      "test_continuity_diff_boundary",
+      "test_continuity_diff_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "reference_selection",
+    "level": "skill",
+    "department": "generative_vfx",
+    "owner_agent": "generative_supervisor",
+    "acceptance_tests": [
+      "test_reference_selection_schema",
+      "test_reference_selection_boundary",
+      "test_reference_selection_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "prompt_compilation",
+    "level": "skill",
+    "department": "generative_vfx",
+    "owner_agent": "generative_supervisor",
+    "acceptance_tests": [
+      "test_prompt_compilation_schema",
+      "test_prompt_compilation_boundary",
+      "test_prompt_compilation_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "negative_constraint_compilation",
+    "level": "skill",
+    "department": "generative_vfx",
+    "owner_agent": "generative_supervisor",
+    "acceptance_tests": [
+      "test_negative_constraint_compilation_schema",
+      "test_negative_constraint_compilation_boundary",
+      "test_negative_constraint_compilation_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "keyframe_generation_plan",
+    "level": "skill",
+    "department": "generative_vfx",
+    "owner_agent": "generative_supervisor",
+    "acceptance_tests": [
+      "test_keyframe_generation_plan_schema",
+      "test_keyframe_generation_plan_boundary",
+      "test_keyframe_generation_plan_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "keyframe_evaluation",
+    "level": "skill",
+    "department": "generative_vfx",
+    "owner_agent": "generative_supervisor",
+    "acceptance_tests": [
+      "test_keyframe_evaluation_schema",
+      "test_keyframe_evaluation_boundary",
+      "test_keyframe_evaluation_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "model_routing",
+    "level": "skill",
+    "department": "generative_vfx",
+    "owner_agent": "generative_supervisor",
+    "acceptance_tests": [
+      "test_model_routing_schema",
+      "test_model_routing_boundary",
+      "test_model_routing_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "video_generation_plan",
+    "level": "skill",
+    "department": "generative_vfx",
+    "owner_agent": "generative_supervisor",
+    "acceptance_tests": [
+      "test_video_generation_plan_schema",
+      "test_video_generation_plan_boundary",
+      "test_video_generation_plan_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "motion_strategy",
+    "level": "skill",
+    "department": "generative_vfx",
+    "owner_agent": "generative_supervisor",
+    "acceptance_tests": [
+      "test_motion_strategy_schema",
+      "test_motion_strategy_boundary",
+      "test_motion_strategy_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "performance_prompting",
+    "level": "skill",
+    "department": "generative_vfx",
+    "owner_agent": "generative_supervisor",
+    "acceptance_tests": [
+      "test_performance_prompting_schema",
+      "test_performance_prompting_boundary",
+      "test_performance_prompting_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "lip_sync_strategy",
+    "level": "skill",
+    "department": "generative_vfx",
+    "owner_agent": "generative_supervisor",
+    "acceptance_tests": [
+      "test_lip_sync_strategy_schema",
+      "test_lip_sync_strategy_boundary",
+      "test_lip_sync_strategy_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "generation_failure_classification",
+    "level": "skill",
+    "department": "generative_vfx",
+    "owner_agent": "generative_supervisor",
+    "acceptance_tests": [
+      "test_generation_failure_classification_schema",
+      "test_generation_failure_classification_boundary",
+      "test_generation_failure_classification_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "shot_repair_strategy",
+    "level": "skill",
+    "department": "generative_vfx",
+    "owner_agent": "generative_supervisor",
+    "acceptance_tests": [
+      "test_shot_repair_strategy_schema",
+      "test_shot_repair_strategy_boundary",
+      "test_shot_repair_strategy_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "upscale_interpolation_plan",
+    "level": "skill",
+    "department": "generative_vfx",
+    "owner_agent": "generative_supervisor",
+    "acceptance_tests": [
+      "test_upscale_interpolation_plan_schema",
+      "test_upscale_interpolation_plan_boundary",
+      "test_upscale_interpolation_plan_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "vfx_feasibility_triage",
+    "level": "skill",
+    "department": "generative_vfx",
+    "owner_agent": "vfx_supervisor",
+    "acceptance_tests": [
+      "test_vfx_feasibility_triage_schema",
+      "test_vfx_feasibility_triage_boundary",
+      "test_vfx_feasibility_triage_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "compositing_plan",
+    "level": "skill",
+    "department": "generative_vfx",
+    "owner_agent": "vfx_supervisor",
+    "acceptance_tests": [
+      "test_compositing_plan_schema",
+      "test_compositing_plan_boundary",
+      "test_compositing_plan_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "mask_rotoscope_plan",
+    "level": "skill",
+    "department": "generative_vfx",
+    "owner_agent": "vfx_supervisor",
+    "acceptance_tests": [
+      "test_mask_rotoscope_plan_schema",
+      "test_mask_rotoscope_plan_boundary",
+      "test_mask_rotoscope_plan_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "artifact_cleanup",
+    "level": "skill",
+    "department": "generative_vfx",
+    "owner_agent": "vfx_supervisor",
+    "acceptance_tests": [
+      "test_artifact_cleanup_schema",
+      "test_artifact_cleanup_boundary",
+      "test_artifact_cleanup_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "interaction_repair",
+    "level": "skill",
+    "department": "generative_vfx",
+    "owner_agent": "vfx_supervisor",
+    "acceptance_tests": [
+      "test_interaction_repair_schema",
+      "test_interaction_repair_boundary",
+      "test_interaction_repair_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "background_repair",
+    "level": "skill",
+    "department": "generative_vfx",
+    "owner_agent": "vfx_supervisor",
+    "acceptance_tests": [
+      "test_background_repair_schema",
+      "test_background_repair_boundary",
+      "test_background_repair_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "face_hand_repair",
+    "level": "skill",
+    "department": "generative_vfx",
+    "owner_agent": "vfx_supervisor",
+    "acceptance_tests": [
+      "test_face_hand_repair_schema",
+      "test_face_hand_repair_boundary",
+      "test_face_hand_repair_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "vfx_review",
+    "level": "skill",
+    "department": "generative_vfx",
+    "owner_agent": "vfx_supervisor",
+    "acceptance_tests": [
+      "test_vfx_review_schema",
+      "test_vfx_review_boundary",
+      "test_vfx_review_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "dailies_review",
+    "level": "skill",
+    "department": "editorial_post",
+    "owner_agent": "editor",
+    "acceptance_tests": [
+      "test_dailies_review_schema",
+      "test_dailies_review_boundary",
+      "test_dailies_review_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "edit_compatibility_scoring",
+    "level": "skill",
+    "department": "editorial_post",
+    "owner_agent": "editor",
+    "acceptance_tests": [
+      "test_edit_compatibility_scoring_schema",
+      "test_edit_compatibility_scoring_boundary",
+      "test_edit_compatibility_scoring_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "assembly_edit",
+    "level": "skill",
+    "department": "editorial_post",
+    "owner_agent": "editor",
+    "acceptance_tests": [
+      "test_assembly_edit_schema",
+      "test_assembly_edit_boundary",
+      "test_assembly_edit_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "scene_pacing_evaluation",
+    "level": "skill",
+    "department": "editorial_post",
+    "owner_agent": "editor",
+    "acceptance_tests": [
+      "test_scene_pacing_evaluation_schema",
+      "test_scene_pacing_evaluation_boundary",
+      "test_scene_pacing_evaluation_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "continuity_edit",
+    "level": "skill",
+    "department": "editorial_post",
+    "owner_agent": "editor",
+    "acceptance_tests": [
+      "test_continuity_edit_schema",
+      "test_continuity_edit_boundary",
+      "test_continuity_edit_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "reaction_timing",
+    "level": "skill",
+    "department": "editorial_post",
+    "owner_agent": "editor",
+    "acceptance_tests": [
+      "test_reaction_timing_schema",
+      "test_reaction_timing_boundary",
+      "test_reaction_timing_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "transition_selection",
+    "level": "skill",
+    "department": "editorial_post",
+    "owner_agent": "editor",
+    "acceptance_tests": [
+      "test_transition_selection_schema",
+      "test_transition_selection_boundary",
+      "test_transition_selection_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "picture_lock_check",
+    "level": "skill",
+    "department": "editorial_post",
+    "owner_agent": "editor",
+    "acceptance_tests": [
+      "test_picture_lock_check_schema",
+      "test_picture_lock_check_boundary",
+      "test_picture_lock_check_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "dialogue_edit",
+    "level": "skill",
+    "department": "sound_music",
+    "owner_agent": "sound_supervisor",
+    "acceptance_tests": [
+      "test_dialogue_edit_schema",
+      "test_dialogue_edit_boundary",
+      "test_dialogue_edit_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "adr_strategy",
+    "level": "skill",
+    "department": "sound_music",
+    "owner_agent": "sound_supervisor",
+    "acceptance_tests": [
+      "test_adr_strategy_schema",
+      "test_adr_strategy_boundary",
+      "test_adr_strategy_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "voice_consistency",
+    "level": "skill",
+    "department": "sound_music",
+    "owner_agent": "sound_supervisor",
+    "acceptance_tests": [
+      "test_voice_consistency_schema",
+      "test_voice_consistency_boundary",
+      "test_voice_consistency_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "foley_design",
+    "level": "skill",
+    "department": "sound_music",
+    "owner_agent": "sound_supervisor",
+    "acceptance_tests": [
+      "test_foley_design_schema",
+      "test_foley_design_boundary",
+      "test_foley_design_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "ambience_design",
+    "level": "skill",
+    "department": "sound_music",
+    "owner_agent": "sound_supervisor",
+    "acceptance_tests": [
+      "test_ambience_design_schema",
+      "test_ambience_design_boundary",
+      "test_ambience_design_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "sound_effects_design",
+    "level": "skill",
+    "department": "sound_music",
+    "owner_agent": "sound_supervisor",
+    "acceptance_tests": [
+      "test_sound_effects_design_schema",
+      "test_sound_effects_design_boundary",
+      "test_sound_effects_design_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "sound_motif_design",
+    "level": "skill",
+    "department": "sound_music",
+    "owner_agent": "sound_supervisor",
+    "acceptance_tests": [
+      "test_sound_motif_design_schema",
+      "test_sound_motif_design_boundary",
+      "test_sound_motif_design_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "sync_validation",
+    "level": "skill",
+    "department": "sound_music",
+    "owner_agent": "sound_supervisor",
+    "acceptance_tests": [
+      "test_sync_validation_schema",
+      "test_sync_validation_boundary",
+      "test_sync_validation_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "mix_plan",
+    "level": "skill",
+    "department": "sound_music",
+    "owner_agent": "sound_supervisor",
+    "acceptance_tests": [
+      "test_mix_plan_schema",
+      "test_mix_plan_boundary",
+      "test_mix_plan_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "loudness_delivery_qc",
+    "level": "skill",
+    "department": "sound_music",
+    "owner_agent": "sound_supervisor",
+    "acceptance_tests": [
+      "test_loudness_delivery_qc_schema",
+      "test_loudness_delivery_qc_boundary",
+      "test_loudness_delivery_qc_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "score_spotting",
+    "level": "skill",
+    "department": "sound_music",
+    "owner_agent": "composer",
+    "acceptance_tests": [
+      "test_score_spotting_schema",
+      "test_score_spotting_boundary",
+      "test_score_spotting_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "motif_design",
+    "level": "skill",
+    "department": "sound_music",
+    "owner_agent": "composer",
+    "acceptance_tests": [
+      "test_motif_design_schema",
+      "test_motif_design_boundary",
+      "test_motif_design_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "cue_brief",
+    "level": "skill",
+    "department": "sound_music",
+    "owner_agent": "composer",
+    "acceptance_tests": [
+      "test_cue_brief_schema",
+      "test_cue_brief_boundary",
+      "test_cue_brief_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "music_transition_design",
+    "level": "skill",
+    "department": "sound_music",
+    "owner_agent": "composer",
+    "acceptance_tests": [
+      "test_music_transition_design_schema",
+      "test_music_transition_design_boundary",
+      "test_music_transition_design_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "temp_track_risk_audit",
+    "level": "skill",
+    "department": "sound_music",
+    "owner_agent": "composer",
+    "acceptance_tests": [
+      "test_temp_track_risk_audit_schema",
+      "test_temp_track_risk_audit_boundary",
+      "test_temp_track_risk_audit_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "color_normalization",
+    "level": "skill",
+    "department": "finishing",
+    "owner_agent": "colorist",
+    "acceptance_tests": [
+      "test_color_normalization_schema",
+      "test_color_normalization_boundary",
+      "test_color_normalization_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "shot_matching",
+    "level": "skill",
+    "department": "finishing",
+    "owner_agent": "colorist",
+    "acceptance_tests": [
+      "test_shot_matching_schema",
+      "test_shot_matching_boundary",
+      "test_shot_matching_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "look_grade",
+    "level": "skill",
+    "department": "finishing",
+    "owner_agent": "colorist",
+    "acceptance_tests": [
+      "test_look_grade_schema",
+      "test_look_grade_boundary",
+      "test_look_grade_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "skin_tone_identity_check",
+    "level": "skill",
+    "department": "finishing",
+    "owner_agent": "colorist",
+    "acceptance_tests": [
+      "test_skin_tone_identity_check_schema",
+      "test_skin_tone_identity_check_boundary",
+      "test_skin_tone_identity_check_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "sequence_grade_continuity",
+    "level": "skill",
+    "department": "finishing",
+    "owner_agent": "colorist",
+    "acceptance_tests": [
+      "test_sequence_grade_continuity_schema",
+      "test_sequence_grade_continuity_boundary",
+      "test_sequence_grade_continuity_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "delivery_color_check",
+    "level": "skill",
+    "department": "finishing",
+    "owner_agent": "colorist",
+    "acceptance_tests": [
+      "test_delivery_color_check_schema",
+      "test_delivery_color_check_boundary",
+      "test_delivery_color_check_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "visual_qc",
+    "level": "skill",
+    "department": "finishing",
+    "owner_agent": "qc_supervisor",
+    "acceptance_tests": [
+      "test_visual_qc_schema",
+      "test_visual_qc_boundary",
+      "test_visual_qc_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "motion_physics_qc",
+    "level": "skill",
+    "department": "finishing",
+    "owner_agent": "qc_supervisor",
+    "acceptance_tests": [
+      "test_motion_physics_qc_schema",
+      "test_motion_physics_qc_boundary",
+      "test_motion_physics_qc_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "identity_qc",
+    "level": "skill",
+    "department": "finishing",
+    "owner_agent": "qc_supervisor",
+    "acceptance_tests": [
+      "test_identity_qc_schema",
+      "test_identity_qc_boundary",
+      "test_identity_qc_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "continuity_qc",
+    "level": "skill",
+    "department": "finishing",
+    "owner_agent": "qc_supervisor",
+    "acceptance_tests": [
+      "test_continuity_qc_schema",
+      "test_continuity_qc_boundary",
+      "test_continuity_qc_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "composition_lighting_qc",
+    "level": "skill",
+    "department": "finishing",
+    "owner_agent": "qc_supervisor",
+    "acceptance_tests": [
+      "test_composition_lighting_qc_schema",
+      "test_composition_lighting_qc_boundary",
+      "test_composition_lighting_qc_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "edit_qc",
+    "level": "skill",
+    "department": "finishing",
+    "owner_agent": "qc_supervisor",
+    "acceptance_tests": [
+      "test_edit_qc_schema",
+      "test_edit_qc_boundary",
+      "test_edit_qc_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "audio_qc",
+    "level": "skill",
+    "department": "finishing",
+    "owner_agent": "qc_supervisor",
+    "acceptance_tests": [
+      "test_audio_qc_schema",
+      "test_audio_qc_boundary",
+      "test_audio_qc_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "master_qc",
+    "level": "skill",
+    "department": "finishing",
+    "owner_agent": "qc_supervisor",
+    "acceptance_tests": [
+      "test_master_qc_schema",
+      "test_master_qc_boundary",
+      "test_master_qc_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "benchmark_evaluation",
+    "level": "skill",
+    "department": "finishing",
+    "owner_agent": "qc_supervisor",
+    "acceptance_tests": [
+      "test_benchmark_evaluation_schema",
+      "test_benchmark_evaluation_boundary",
+      "test_benchmark_evaluation_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "failure_classification",
+    "level": "skill",
+    "department": "finishing",
+    "owner_agent": "qc_supervisor",
+    "acceptance_tests": [
+      "test_failure_classification_schema",
+      "test_failure_classification_boundary",
+      "test_failure_classification_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "asset_registration",
+    "level": "skill",
+    "department": "archive_memory",
+    "owner_agent": "production_librarian",
+    "acceptance_tests": [
+      "test_asset_registration_schema",
+      "test_asset_registration_boundary",
+      "test_asset_registration_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "provenance_capture",
+    "level": "skill",
+    "department": "archive_memory",
+    "owner_agent": "production_librarian",
+    "acceptance_tests": [
+      "test_provenance_capture_schema",
+      "test_provenance_capture_boundary",
+      "test_provenance_capture_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "prompt_versioning",
+    "level": "skill",
+    "department": "archive_memory",
+    "owner_agent": "production_librarian",
+    "acceptance_tests": [
+      "test_prompt_versioning_schema",
+      "test_prompt_versioning_boundary",
+      "test_prompt_versioning_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "generation_logging",
+    "level": "skill",
+    "department": "archive_memory",
+    "owner_agent": "production_librarian",
+    "acceptance_tests": [
+      "test_generation_logging_schema",
+      "test_generation_logging_boundary",
+      "test_generation_logging_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "decision_logging",
+    "level": "skill",
+    "department": "archive_memory",
+    "owner_agent": "production_librarian",
+    "acceptance_tests": [
+      "test_decision_logging_schema",
+      "test_decision_logging_boundary",
+      "test_decision_logging_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "lineage_reconstruction",
+    "level": "skill",
+    "department": "archive_memory",
+    "owner_agent": "production_librarian",
+    "acceptance_tests": [
+      "test_lineage_reconstruction_schema",
+      "test_lineage_reconstruction_boundary",
+      "test_lineage_reconstruction_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "rejection_learning_ingest",
+    "level": "skill",
+    "department": "archive_memory",
+    "owner_agent": "production_librarian",
+    "acceptance_tests": [
+      "test_rejection_learning_ingest_schema",
+      "test_rejection_learning_ingest_boundary",
+      "test_rejection_learning_ingest_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "archive_packaging",
+    "level": "skill",
+    "department": "archive_memory",
+    "owner_agent": "production_librarian",
+    "acceptance_tests": [
+      "test_archive_packaging_schema",
+      "test_archive_packaging_boundary",
+      "test_archive_packaging_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "reproduction_manifest",
+    "level": "skill",
+    "department": "archive_memory",
+    "owner_agent": "production_librarian",
+    "acceptance_tests": [
+      "test_reproduction_manifest_schema",
+      "test_reproduction_manifest_boundary",
+      "test_reproduction_manifest_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "rights_risk_triage",
+    "level": "skill",
+    "department": "studio_governance",
+    "owner_agent": "studio_orchestrator",
+    "acceptance_tests": [
+      "test_rights_risk_triage_schema",
+      "test_rights_risk_triage_boundary",
+      "test_rights_risk_triage_provenance"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "capability_id": "greenlight_package",
+    "level": "skill",
+    "department": "studio_governance",
+    "owner_agent": "studio_orchestrator",
+    "acceptance_tests": [
+      "test_greenlight_package_schema",
+      "test_greenlight_package_boundary",
+      "test_greenlight_package_provenance"
+    ],
+    "version": "0.1.0"
+  }
+]

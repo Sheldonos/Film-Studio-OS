@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "workflow_id": "art_animation_v2",
+  "version": "2.0.0",
+  "description": "Develop character/world canon and 2D/3D/hybrid asset requirements.",
+  "production_route": "provider_neutral",
+  "steps": [
+    {
+      "id": "world",
+      "capability_id": "world_bible_creation",
+      "owner_agent": "production_designer",
+      "depends_on": [],
+      "output_type": "WorldBible"
+    },
+    {
+      "id": "characters",
+      "capability_id": "character_bible_creation",
+      "owner_agent": "character_director",
+      "depends_on": [],
+      "output_type": "CharacterBible"
+    },
+    {
+      "id": "continuity",
+      "capability_id": "continuity_extraction",
+      "owner_agent": "continuity_supervisor",
+      "depends_on": [
+        "world",
+        "characters"
+      ],
+      "output_type": "ContinuityState"
+    },
+    {
+      "id": "animation_plan",
+      "capability_id": "animation_strategy",
+      "owner_agent": "animation_technical_director",
+      "depends_on": [
+        "world",
+        "characters"
+      ],
+      "output_type": "AnimationPlan",
+      "reviewer_agent": "production_designer"
+    },
+    {
+      "id": "asset_acceptance",
+      "capability_id": "asset_acceptance_qc",
+      "owner_agent": "qc_supervisor",
+      "depends_on": [
+        "continuity",
+        "animation_plan"
+      ],
+      "output_type": "AssetAcceptanceReport"
+    }
+  ]
+}

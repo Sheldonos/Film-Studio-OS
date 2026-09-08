@@ -1,0 +1,57 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "default": "2.0",
+      "pattern": "^\\d+\\.\\d+$",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "source_passage_id": {
+      "minLength": 1,
+      "title": "Source Passage Id",
+      "type": "string"
+    },
+    "source_asset_id": {
+      "minLength": 1,
+      "title": "Source Asset Id",
+      "type": "string"
+    },
+    "ordinal": {
+      "minimum": 0,
+      "title": "Ordinal",
+      "type": "integer"
+    },
+    "text": {
+      "title": "Text",
+      "type": "string"
+    },
+    "start_locator": {
+      "minLength": 1,
+      "title": "Start Locator",
+      "type": "string"
+    },
+    "end_locator": {
+      "minLength": 1,
+      "title": "End Locator",
+      "type": "string"
+    },
+    "sha256": {
+      "pattern": "^[a-f0-9]{64}$",
+      "title": "Sha256",
+      "type": "string"
+    }
+  },
+  "required": [
+    "source_passage_id",
+    "source_asset_id",
+    "ordinal",
+    "text",
+    "start_locator",
+    "end_locator",
+    "sha256"
+  ],
+  "title": "SourcePassage",
+  "type": "object",
+  "$id": "https://film-studio-os.local/schema/v2/domain/SourcePassage.json"
+}

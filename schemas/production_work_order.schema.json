@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ProductionWorkOrder",
+  "type": "object",
+  "required": [
+    "work_order_id",
+    "project_id",
+    "objective_id",
+    "capability_id",
+    "owner_agent",
+    "status"
+  ],
+  "properties": {
+    "work_order_id": {},
+    "project_id": {},
+    "objective_id": {},
+    "capability_id": {},
+    "owner_agent": {},
+    "requested_by": {},
+    "priority": {},
+    "status": {},
+    "blocked_by": {},
+    "inputs": {},
+    "constraints": {},
+    "creative_invariants": {},
+    "expected_outputs": {},
+    "acceptance_tests": {},
+    "reviewers": {},
+    "approval_state": {},
+    "cost_budget": {},
+    "time_budget": {},
+    "attempt_budget": {},
+    "evidence": {},
+    "decisions": {},
+    "outputs": {},
+    "failures": {},
+    "lessons": {}
+  }
+}

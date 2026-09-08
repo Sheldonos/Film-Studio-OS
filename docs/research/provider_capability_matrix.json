@@ -1,0 +1,89 @@
+{
+  "as_of": "2026-08-15",
+  "policy": "No live provider is enabled by default. Unknown provider policy fields block policy-sensitive routing until reverified.",
+  "providers": [
+    {
+      "adapter_id": "mock-generation",
+      "async_job_pattern": "submit/poll/cancel",
+      "auth": "none",
+      "capabilities": [
+        "deterministic dry-run artifact",
+        "failure/retry fixture"
+      ],
+      "commercial_use": "not applicable",
+      "cost": "0",
+      "cost_unit": "USD normalized",
+      "evidence": "repository implementation",
+      "idempotency": true,
+      "live": false,
+      "modalities": [
+        "video-test-fixture"
+      ],
+      "retention": "local test state only",
+      "status": "implemented_and_tested",
+      "training": "none"
+    },
+    {
+      "adapter_id": "runway",
+      "async_job_pattern": "provider API; must be verified during adapter implementation",
+      "auth": "unknown until integration",
+      "capabilities": [
+        "current API exposes multiple video/image/audio models; capability changes frequently"
+      ],
+      "commercial_use": "unknown/not captured",
+      "cost_unit": "provider credits / model-specific",
+      "evidence": "official Runway API changelog, accessed 2026-08-15",
+      "idempotency": "must be implemented in our adapter",
+      "live": false,
+      "modalities": [
+        "video",
+        "image",
+        "audio"
+      ],
+      "retention": "unknown/not captured",
+      "status": "research_only",
+      "training": "unknown/not captured"
+    },
+    {
+      "adapter_id": "google-gemini-video",
+      "async_job_pattern": "must be verified during adapter implementation",
+      "auth": "unknown until integration",
+      "capabilities": [
+        "Gemini Omni Flash video generation/editing",
+        "Veo 3.1 native audio / extension / frame control"
+      ],
+      "commercial_use": "unknown/not captured",
+      "cost_unit": "unknown/not captured",
+      "evidence": "official Google Gemini API video docs, accessed 2026-08-15",
+      "idempotency": "must be implemented in our adapter",
+      "live": false,
+      "modalities": [
+        "video"
+      ],
+      "retention": "unknown/not captured",
+      "status": "research_only",
+      "training": "unknown/not captured"
+    },
+    {
+      "adapter_id": "higgsfield-mcp",
+      "async_job_pattern": "unknown/not captured",
+      "auth": "OAuth account connection per provider help center",
+      "capabilities": [
+        "MCP surface advertises generation/upscale/background/reframe/motion/audio operations"
+      ],
+      "commercial_use": "unknown/not captured",
+      "cost_unit": "provider credits",
+      "evidence": "official Higgsfield MCP help center, accessed 2026-08-15",
+      "idempotency": "must be implemented in our adapter",
+      "live": false,
+      "modalities": [
+        "image",
+        "video",
+        "audio"
+      ],
+      "retention": "unknown/not captured",
+      "status": "research_only_legacy_boundary_retained",
+      "training": "unknown/not captured"
+    }
+  ]
+}

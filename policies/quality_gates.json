@@ -1,0 +1,155 @@
+{
+  "gate_greenlight": {
+    "owner": "human_producer",
+    "independent_review": true,
+    "minimum_score": 3.5,
+    "checks": [
+      "brief clarity",
+      "rights risk triaged",
+      "budget/schedule envelope",
+      "production strategy",
+      "success metrics"
+    ]
+  },
+  "gate_story": {
+    "owner": "showrunner",
+    "reviewer": "script_editor",
+    "minimum_score": 3.5,
+    "checks": [
+      "premise engine",
+      "causality",
+      "character agency",
+      "genre promise",
+      "setups/payoffs",
+      "ending logic"
+    ]
+  },
+  "gate_script": {
+    "owner": "showrunner",
+    "reviewer": "script_editor",
+    "minimum_score": 3.7,
+    "checks": [
+      "scene function",
+      "voice differentiation",
+      "subtext",
+      "continuity logic",
+      "table-read performance",
+      "production feasibility"
+    ]
+  },
+  "gate_shot_design": {
+    "owner": "director",
+    "reviewer": "cinematographer",
+    "minimum_score": 3.7,
+    "checks": [
+      "story function",
+      "emotional objective",
+      "coverage",
+      "geography",
+      "visual motivation",
+      "feasibility"
+    ]
+  },
+  "gate_keyframe": {
+    "owner": "cinematographer",
+    "reviewer": "qc_supervisor",
+    "minimum_score": 4.0,
+    "checks": [
+      "composition",
+      "identity",
+      "world state",
+      "lighting",
+      "continuity",
+      "motion readiness"
+    ]
+  },
+  "gate_identity": {
+    "owner": "character_director",
+    "reviewer": "qc_supervisor",
+    "minimum_score": 4.2,
+    "checks": [
+      "face/body",
+      "wardrobe",
+      "voice if applicable",
+      "state correctness",
+      "reference adherence"
+    ]
+  },
+  "gate_motion": {
+    "owner": "generative_supervisor",
+    "reviewer": "qc_supervisor",
+    "minimum_score": 4.0,
+    "checks": [
+      "temporal stability",
+      "physics",
+      "anatomy",
+      "camera motion",
+      "interaction",
+      "background stability"
+    ]
+  },
+  "gate_continuity": {
+    "owner": "continuity_supervisor",
+    "reviewer": "qc_supervisor",
+    "minimum_score": 4.2,
+    "checks": [
+      "character state",
+      "prop state",
+      "geography",
+      "screen direction",
+      "light/time",
+      "action match"
+    ]
+  },
+  "gate_edit": {
+    "owner": "director",
+    "reviewer": "qc_supervisor",
+    "minimum_score": 4.0,
+    "checks": [
+      "narrative clarity",
+      "rhythm",
+      "geography",
+      "performance continuity",
+      "cut motivation",
+      "pickup completeness"
+    ]
+  },
+  "gate_audio": {
+    "owner": "sound_supervisor",
+    "reviewer": "qc_supervisor",
+    "minimum_score": 4.0,
+    "checks": [
+      "dialogue clarity",
+      "sync",
+      "Foley",
+      "ambience continuity",
+      "music function",
+      "mix priority"
+    ]
+  },
+  "gate_finish": {
+    "owner": "cinematographer",
+    "reviewer": "qc_supervisor",
+    "minimum_score": 4.0,
+    "checks": [
+      "shot match",
+      "look continuity",
+      "VFX integration",
+      "skin/identity",
+      "delivery color"
+    ]
+  },
+  "gate_master": {
+    "owner": "human_producer",
+    "reviewer": "qc_supervisor",
+    "minimum_score": 4.2,
+    "checks": [
+      "all prior gates",
+      "master technical QC",
+      "subtitles/accessibility as required",
+      "rights status",
+      "provenance completeness",
+      "archive manifest"
+    ]
+  }
+}

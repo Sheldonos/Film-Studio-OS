@@ -1,0 +1,36 @@
+{
+  "pilot": "action-sequence",
+  "status": "complete",
+  "workflow_id": "pilot_action_sequence",
+  "work_orders": 7,
+  "review_rounds": 6,
+  "event_count": 82,
+  "actual_cost_usd": 0.0,
+  "attempts": 7,
+  "metrics_recorded": 28,
+  "metric_names": [
+    "acceptance",
+    "actual_cost_usd",
+    "attempt_count",
+    "latency_ms"
+  ],
+  "critical_path_steps": [
+    "intake",
+    "geography",
+    "coverage",
+    "shot",
+    "repair",
+    "edit",
+    "release"
+  ],
+  "critical_path_estimated_seconds": 7.0,
+  "provider_mode": "mock/dry-run",
+  "external_authorization": false,
+  "all_work_orders_done": true,
+  "reproduction_manifest": {
+    "final_version_id": "pilot_action_sequence.release@d87c58f14b4c",
+    "artifact_count": 7,
+    "event_count": 82,
+    "metric_count": 28
+  }
+}

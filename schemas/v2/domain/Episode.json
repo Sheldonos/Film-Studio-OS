@@ -1,0 +1,70 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "default": "2.0",
+      "pattern": "^\\d+\\.\\d+$",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "episode_id": {
+      "minLength": 1,
+      "title": "Episode Id",
+      "type": "string"
+    },
+    "season_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Season Id"
+    },
+    "episode_number": {
+      "minimum": 1,
+      "title": "Episode Number",
+      "type": "integer"
+    },
+    "title": {
+      "minLength": 1,
+      "title": "Title",
+      "type": "string"
+    },
+    "target_runtime_seconds": {
+      "exclusiveMinimum": 0,
+      "title": "Target Runtime Seconds",
+      "type": "number"
+    },
+    "sequence_ids": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Sequence Ids",
+      "type": "array"
+    },
+    "lock_status": {
+      "default": "open",
+      "enum": [
+        "open",
+        "story_locked",
+        "script_locked",
+        "picture_locked"
+      ],
+      "title": "Lock Status",
+      "type": "string"
+    }
+  },
+  "required": [
+    "episode_id",
+    "episode_number",
+    "title",
+    "target_runtime_seconds"
+  ],
+  "title": "Episode",
+  "type": "object",
+  "$id": "https://film-studio-os.local/schema/v2/domain/Episode.json"
+}

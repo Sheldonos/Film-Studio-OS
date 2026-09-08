@@ -1,0 +1,16 @@
+{
+  "schema_version": "2.0",
+  "models": {
+    "RightsRecord": "schemas/v2/RightsRecord.schema.json",
+    "ConsentRecord": "schemas/v2/ConsentRecord.schema.json",
+    "Approval": "schemas/v2/Approval.schema.json",
+    "ArtifactVersion": "schemas/v2/ArtifactVersion.schema.json",
+    "WorkOrderV2": "schemas/v2/WorkOrderV2.schema.json",
+    "ShotSpecV2": "schemas/v2/ShotSpecV2.schema.json",
+    "GateResultV2": "schemas/v2/GateResultV2.schema.json",
+    "ProviderCapability": "schemas/v2/ProviderCapability.schema.json",
+    "ProviderJob": "schemas/v2/ProviderJob.schema.json"
+  },
+  "migration_from": "0.1.0",
+  "policy": "Pydantic strict models are authoritative; generated JSON Schema mirrors public interchange validation."
+}

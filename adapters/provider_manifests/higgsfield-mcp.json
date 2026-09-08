@@ -1,0 +1,24 @@
+{
+  "schema_version": "2.0",
+  "adapter_id": "higgsfield-mcp",
+  "as_of": "2026-08-15",
+  "status": "research_only_legacy_boundary_retained",
+  "live_enabled": false,
+  "research_only": true,
+  "modalities": [
+    "image",
+    "video",
+    "audio"
+  ],
+  "capabilities": [
+    "MCP surface advertises generation/upscale/background/reframe/motion/audio operations"
+  ],
+  "async_job_pattern": "unknown/not captured",
+  "auth": "OAuth account connection per provider help center",
+  "commercial_use": "unknown/not captured",
+  "training_policy": "unknown/not captured",
+  "retention_policy": "unknown/not captured",
+  "cost_unit": "provider credits",
+  "evidence": "official Higgsfield MCP help center, accessed 2026-08-15",
+  "policy_note": "No live provider is enabled by default. Unknown provider policy fields block policy-sensitive routing until reverified."
+}

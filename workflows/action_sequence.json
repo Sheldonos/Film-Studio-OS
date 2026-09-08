@@ -1,0 +1,30 @@
+{
+  "workflow_id": "action_sequence_v1",
+  "name": "Action Sequence Production",
+  "version": "0.1.0",
+  "steps": [
+    "action_sequence_direction",
+    "location_geography_map",
+    "blocking_plan",
+    "generation_risk_previs",
+    "camera_motion_design",
+    "shot_spec_compilation",
+    "continuity_extraction",
+    "model_routing",
+    "keyframe_generation_plan",
+    "motion_strategy",
+    "video_generation_plan",
+    "motion_physics_qc",
+    "interaction_repair",
+    "edit_compatibility_scoring",
+    "continuity_edit",
+    "sound_effects_design",
+    "foley_design"
+  ],
+  "special_rules": [
+    "split complex interactions into readable causal units",
+    "establish geography before escalating motion",
+    "prefer motivated cuts over long unstable generations",
+    "track pre-impact/post-impact object and body states"
+  ]
+}

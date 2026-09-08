@@ -1,0 +1,51 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "default": "2.0",
+      "pattern": "^\\d+\\.\\d+$",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "motif_id": {
+      "minLength": 1,
+      "title": "Motif Id",
+      "type": "string"
+    },
+    "project_id": {
+      "minLength": 1,
+      "title": "Project Id",
+      "type": "string"
+    },
+    "motif_type": {
+      "enum": [
+        "visual",
+        "audio",
+        "narrative"
+      ],
+      "title": "Motif Type",
+      "type": "string"
+    },
+    "meaning": {
+      "minLength": 1,
+      "title": "Meaning",
+      "type": "string"
+    },
+    "usage_rules": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Usage Rules",
+      "type": "array"
+    }
+  },
+  "required": [
+    "motif_id",
+    "project_id",
+    "motif_type",
+    "meaning"
+  ],
+  "title": "Motif",
+  "type": "object",
+  "$id": "https://film-studio-os.local/schema/v2/domain/Motif.json"
+}

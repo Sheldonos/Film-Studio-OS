@@ -1,0 +1,49 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "default": "2.0",
+      "pattern": "^\\d+\\.\\d+$",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "season_arc_id": {
+      "minLength": 1,
+      "title": "Season Arc Id",
+      "type": "string"
+    },
+    "season_id": {
+      "minLength": 1,
+      "title": "Season Id",
+      "type": "string"
+    },
+    "dramatic_question": {
+      "minLength": 1,
+      "title": "Dramatic Question",
+      "type": "string"
+    },
+    "episode_progression": {
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1,
+      "title": "Episode Progression",
+      "type": "array"
+    },
+    "finale_state": {
+      "minLength": 1,
+      "title": "Finale State",
+      "type": "string"
+    }
+  },
+  "required": [
+    "season_arc_id",
+    "season_id",
+    "dramatic_question",
+    "episode_progression",
+    "finale_state"
+  ],
+  "title": "SeasonArc",
+  "type": "object",
+  "$id": "https://film-studio-os.local/schema/v2/domain/SeasonArc.json"
+}

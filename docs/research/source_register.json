@@ -1,0 +1,271 @@
+{
+  "access_date": "2026-08-15",
+  "policy": "Verified facts are separated from experiments, informed inference, and unresolved claims.",
+  "sources": [
+    {
+      "access_date": "2026-08-15",
+      "authority": "primary",
+      "claims": [
+        "Project skills live under .bob/skills/<skill>/SKILL.md.",
+        "SKILL.md requires name and description frontmatter; skills without descriptions are ignored.",
+        "Supporting references/scripts can be colocated and main instructions should remain focused."
+      ],
+      "classification": "verified",
+      "id": "IBM-BOB-SKILLS",
+      "implementation_implication": "Created 36 curated Bob skills with activation-quality frontmatter and bounded supporting contracts; legacy catalog skills are non-activating.",
+      "license_boundary": "Documentation used to implement configuration; no vendor content copied into generated creative works.",
+      "organization": "IBM Bob",
+      "publication_or_revision_date": "current documentation; accessed 2026-08-15",
+      "source_type": "official product documentation",
+      "title": "Skills",
+      "uncertainty": "The Skills page still contains an older statement that skills are only available in Advanced mode while the current changelog says default modes were simplified; package does not rely on that statement.",
+      "url": "https://bob.ibm.com/docs/ide/features/skills"
+    },
+    {
+      "access_date": "2026-08-15",
+      "authority": "primary",
+      "claims": [
+        "Project personas live under .bob/agents/.",
+        "Personas shape spawned subagents rather than the main conversation.",
+        "name and description are required; tools can impose least-privilege ceilings."
+      ],
+      "classification": "verified",
+      "id": "IBM-BOB-PERSONAS",
+      "implementation_implication": "Separated main task modes from 26 durable subagent personas; reviewers default to read-only tools.",
+      "license_boundary": "Configuration conventions only.",
+      "organization": "IBM Bob",
+      "publication_or_revision_date": "current documentation; accessed 2026-08-15",
+      "source_type": "official product documentation",
+      "title": "Agent personas",
+      "uncertainty": "Actual subagent execution is performed by IBM Bob, not by the repository's Python workflow engine.",
+      "url": "https://bob.ibm.com/docs/ide/configuration/agent-personas"
+    },
+    {
+      "access_date": "2026-08-15",
+      "authority": "primary",
+      "claims": [
+        "Project modes are defined in .bob/custom_modes.yaml.",
+        "Modes can restrict read/edit/execute/MCP/skill/workflow/todo/subtask/subagent/mode groups.",
+        "Modes can restrict allowed subagents."
+      ],
+      "classification": "verified",
+      "id": "IBM-BOB-MODES",
+      "implementation_implication": "Created eight whole-task production modes; independent QC receives no edit or execute group.",
+      "license_boundary": "Configuration conventions only.",
+      "organization": "IBM Bob",
+      "publication_or_revision_date": "current documentation; accessed 2026-08-15",
+      "source_type": "official product documentation",
+      "title": "Custom modes",
+      "uncertainty": "Repository workflows are intentionally not represented as an invented Bob custom-workflow package format.",
+      "url": "https://bob.ibm.com/docs/ide/configuration/custom-modes"
+    },
+    {
+      "access_date": "2026-08-15",
+      "authority": "primary",
+      "claims": [
+        "Workspace hooks are configured in .bob/settings.json.",
+        "Hooks run shell commands at lifecycle points and execute with user permissions."
+      ],
+      "classification": "verified",
+      "id": "IBM-BOB-HOOKS",
+      "implementation_implication": "Added narrow SessionStart and PreToolUse guard hooks only; no provider credentials or network actions are embedded.",
+      "license_boundary": "Configuration conventions only.",
+      "organization": "IBM Bob",
+      "publication_or_revision_date": "current documentation; accessed 2026-08-15",
+      "source_type": "official product documentation",
+      "title": "Lifecycle hooks",
+      "uncertainty": "Hook enforcement behavior depends on the installed Bob release; validator checks structure but cannot launch Bob in this environment.",
+      "url": "https://bob.ibm.com/docs/ide/configuration/lifecycle-hooks"
+    },
+    {
+      "access_date": "2026-08-15",
+      "authority": "primary",
+      "claims": [
+        "Project MCP configuration can live in .bob/mcp.json.",
+        "Servers can use local STDIO or network transports and support tool-level controls."
+      ],
+      "classification": "verified",
+      "id": "IBM-BOB-MCP",
+      "implementation_implication": "Added a local project MCP example that exposes bounded dry-run/read operations and contains no committed secrets.",
+      "license_boundary": "Configuration conventions only.",
+      "organization": "IBM Bob",
+      "publication_or_revision_date": "current documentation; accessed 2026-08-15",
+      "source_type": "official product documentation",
+      "title": "Using MCP in Bob",
+      "uncertainty": "The optional Python mcp package is not required for core CLI tests and may need installation in a Bob workspace.",
+      "url": "https://bob.ibm.com/docs/ide/configuration/mcp/mcp-in-bob"
+    },
+    {
+      "access_date": "2026-08-15",
+      "authority": "primary",
+      "claims": [
+        "Current Bob includes subagents, lifecycle hooks, workspace trust, nested workflows and command security improvements.",
+        "Default modes were simplified to Plan, Agent and Ask with older Advanced/Orchestrator capability folded into defaults."
+      ],
+      "classification": "verified",
+      "id": "IBM-BOB-CHANGELOG",
+      "implementation_implication": "Avoided assuming legacy Advanced/Orchestrator semantics; package uses project modes and repository-owned runtime workflows.",
+      "license_boundary": "Product behavior research only.",
+      "organization": "IBM Bob",
+      "publication_or_revision_date": "current through Bob 2.0.3-era entries; accessed 2026-08-15",
+      "source_type": "official product changelog",
+      "title": "Changelog",
+      "uncertainty": "Changelog page intermixes multiple releases; exact installed Bob build remains an environment check.",
+      "url": "https://bob.ibm.com/docs/ide/changelog"
+    },
+    {
+      "access_date": "2026-08-15",
+      "authority": "primary",
+      "claims": [
+        "OTIO is an API and interchange format for editorial cut information and provides adapters/plugins for editorial interchange."
+      ],
+      "classification": "verified",
+      "id": "OTIO",
+      "implementation_implication": "Selected OTIO as the intended editorial interchange extension point; v0.2 does not claim an OTIO adapter until contract tests exist.",
+      "license_boundary": "Standard/library evaluation only.",
+      "organization": "Academy Software Foundation / OpenTimelineIO",
+      "publication_or_revision_date": "current documentation; accessed 2026-08-15",
+      "source_type": "official open-source documentation",
+      "title": "OpenTimelineIO documentation",
+      "uncertainty": "Not implemented in v0.2; remains P2 integration work.",
+      "url": "https://opentimelineio.readthedocs.io/en/latest/"
+    },
+    {
+      "access_date": "2026-08-15",
+      "authority": "primary",
+      "claims": [
+        "C2PA defines technical standards for content provenance/authenticity using Content Credentials.",
+        "Content Credentials bind provenance assertions to assets and include security guidance."
+      ],
+      "classification": "verified",
+      "id": "C2PA-2.4",
+      "implementation_implication": "v0.2 uses deterministic hashes and reproduction manifests now, with an explicit C2PA export/signing extension point rather than falsely claiming C2PA compliance.",
+      "license_boundary": "Specification is CC BY 4.0 per specification site.",
+      "organization": "Coalition for Content Provenance and Authenticity",
+      "publication_or_revision_date": "2.4; accessed 2026-08-15",
+      "source_type": "technical standard",
+      "title": "C2PA Specifications 2.4",
+      "uncertainty": "No signing/validation implementation ships in v0.2.",
+      "url": "https://spec.c2pa.org/specifications/specifications/2.4/index.html"
+    },
+    {
+      "access_date": "2026-08-15",
+      "authority": "primary",
+      "claims": [
+        "OpenColorIO is a color-management solution geared toward motion-picture production, VFX and animation."
+      ],
+      "classification": "verified",
+      "id": "OCIO",
+      "implementation_implication": "Color metadata is represented as an extension boundary; actual OCIO/ACES transforms are deferred until media fixtures and deterministic technical QC are added.",
+      "license_boundary": "Standard/library evaluation only.",
+      "organization": "Academy Software Foundation / OpenColorIO",
+      "publication_or_revision_date": "current documentation; accessed 2026-08-15",
+      "source_type": "official open-source documentation",
+      "title": "OpenColorIO",
+      "uncertainty": "No OCIO transform is executed in v0.2.",
+      "url": "https://opencolorio.org/"
+    },
+    {
+      "access_date": "2026-08-15",
+      "authority": "primary",
+      "claims": [
+        "The Copyright Office's AI report separately addresses digital replicas and copyrightability of generative-AI outputs."
+      ],
+      "classification": "verified",
+      "id": "USCO-AI",
+      "implementation_implication": "Rights and consent are separate typed records; the software never declares legal clearance and escalates human/legal decisions.",
+      "license_boundary": "Legal research, not legal advice.",
+      "organization": "U.S. Copyright Office",
+      "publication_or_revision_date": "Part 1 2024-07-31; Part 2 2025-01-29; accessed 2026-08-15",
+      "source_type": "government report hub",
+      "title": "Copyright and Artificial Intelligence",
+      "uncertainty": "Project-specific copyrightability and rights scope require counsel; software only records evidence and blockers.",
+      "url": "https://www.copyright.gov/ai/"
+    },
+    {
+      "access_date": "2026-08-15",
+      "authority": "primary",
+      "claims": [
+        "The 2026 MBA preserves 2023 AI protections and adds notice requirements if companies license writers' work for commercial generative-AI training."
+      ],
+      "classification": "verified",
+      "id": "WGA-2026",
+      "implementation_implication": "Rights records include AI-processing/training distinctions and provenance; labor obligations remain human/legal review items.",
+      "license_boundary": "Labor/compliance research only; applicability depends on signatory status and project facts.",
+      "organization": "Writers Guild of America",
+      "publication_or_revision_date": "2026",
+      "source_type": "guild contract summary",
+      "title": "Summary of the 2026 WGA MBA",
+      "uncertainty": "The package does not determine whether a production is covered by the MBA.",
+      "url": "https://www.wga.org/contracts/contracts/mba/summary-of-the-2026-wga-mba"
+    },
+    {
+      "access_date": "2026-08-15",
+      "authority": "primary",
+      "claims": [
+        "The 2026 agreement builds on digital-replica protections and further restricts synthetic uses."
+      ],
+      "classification": "verified",
+      "id": "SAG-AFTRA-2026",
+      "implementation_implication": "ConsentRecord explicitly separates voice clone, likeness and digital-replica scope and requires evidence/intended use before approval.",
+      "license_boundary": "Labor/compliance research only; applicability depends on agreement/project facts.",
+      "organization": "SAG-AFTRA",
+      "publication_or_revision_date": "2026-06-04",
+      "source_type": "guild announcement/explainer",
+      "title": "2026 TV/Theatrical AI protections",
+      "uncertainty": "The package does not interpret a collective bargaining agreement for a specific production.",
+      "url": "https://www.sagaftra.org/sag-aftra-members-approve-2026-tvtheatrical-contracts-tentative-agreement"
+    },
+    {
+      "access_date": "2026-08-15",
+      "authority": "primary",
+      "claims": [
+        "Runway's API catalog changes rapidly and includes multiple current video/image/audio models with different durations, references, resolution and billing rules."
+      ],
+      "classification": "verified",
+      "id": "RUNWAY-API-2026",
+      "implementation_implication": "Provider capabilities are dated manifests and adapter-owned; model IDs are never embedded in story/shot domain logic.",
+      "license_boundary": "Capability research only; no API use performed.",
+      "organization": "Runway",
+      "publication_or_revision_date": "current through 2026-08-07 entries; accessed 2026-08-15",
+      "source_type": "official provider API documentation",
+      "title": "API Changelog & Updates",
+      "uncertainty": "Privacy, retention, regional terms and per-account limits must be checked at authorization time; no Runway adapter is enabled in v0.2.",
+      "url": "https://docs.dev.runwayml.com/api-details/api_changelog/"
+    },
+    {
+      "access_date": "2026-08-15",
+      "authority": "primary",
+      "claims": [
+        "Google documents Gemini Omni Flash as its default video-generation recommendation and Veo 3.1 for capabilities including native audio, scene extension and frame-specific control."
+      ],
+      "classification": "verified",
+      "id": "GOOGLE-VIDEO-2026",
+      "implementation_implication": "Capability-based routing must query dated features rather than assume a single best model.",
+      "license_boundary": "Capability research only; no API use performed.",
+      "organization": "Google AI for Developers",
+      "publication_or_revision_date": "last updated 2026-06-30; accessed 2026-08-15",
+      "source_type": "official provider API documentation",
+      "title": "Video generation in the Gemini API",
+      "uncertainty": "No Google adapter is enabled in v0.2; availability and model identifiers must be reverified before live use.",
+      "url": "https://ai.google.dev/gemini-api/docs/video"
+    },
+    {
+      "access_date": "2026-08-15",
+      "authority": "primary",
+      "claims": [
+        "Higgsfield exposes image, video and audio operations through an OAuth-connected MCP endpoint and generation consumes provider credits."
+      ],
+      "classification": "verified",
+      "id": "HIGGSFIELD-MCP-2026",
+      "implementation_implication": "Retained Higgsfield only as a replaceable boundary and did not auto-connect or execute paid MCP calls; project MCP server is local and provider-neutral.",
+      "license_boundary": "Capability research only. Third-party production prompts/assets are not copied or embedded.",
+      "organization": "Higgsfield",
+      "publication_or_revision_date": "2026-08",
+      "source_type": "official provider help center",
+      "title": "How to connect Higgsfield to Claude via MCP",
+      "uncertainty": "Higgsfield account terms, privacy, retention and per-model policy must be verified before authorized integration.",
+      "url": "https://higgsfield.ai/creator-hub/help-center/mcp-cli/how-do-i-connect-higgsfield-to-claude"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema_version": "2.0",
+  "workflow_id": "documentary_v2",
+  "version": "2.0.0",
+  "description": "Build a documentary segment with claim/source linkage, consent and independent fact review.",
+  "production_route": "provider_neutral",
+  "steps": [
+    {
+      "id": "evidence",
+      "capability_id": "documentary_evidence_ledger",
+      "owner_agent": "documentary_research_editor",
+      "depends_on": [],
+      "output_type": "EvidenceLedger"
+    },
+    {
+      "id": "claim_map",
+      "capability_id": "documentary_claim_mapping",
+      "owner_agent": "documentary_research_editor",
+      "depends_on": [
+        "evidence"
+      ],
+      "output_type": "ClaimMap",
+      "reviewer_agent": "qc_supervisor"
+    },
+    {
+      "id": "consent",
+      "capability_id": "rights_risk_triage",
+      "owner_agent": "rights_clearance_supervisor",
+      "depends_on": [
+        "evidence"
+      ],
+      "handler": "rights_gate",
+      "output_type": "ConsentRightsGate",
+      "reviewer_agent": "qc_supervisor"
+    },
+    {
+      "id": "script",
+      "capability_id": "scene_writing",
+      "owner_agent": "showrunner",
+      "depends_on": [
+        "claim_map",
+        "consent"
+      ],
+      "output_type": "DocumentaryScript",
+      "reviewer_agent": "documentary_research_editor"
+    },
+    {
+      "id": "fact_check",
+      "capability_id": "documentary_fact_check",
+      "owner_agent": "documentary_research_editor",
+      "depends_on": [
+        "script"
+      ],
+      "output_type": "FactCheckReport",
+      "reviewer_agent": "qc_supervisor"
+    },
+    {
+      "id": "ethics",
+      "capability_id": "documentary_ethics_review",
+      "owner_agent": "qc_supervisor",
+      "depends_on": [
+        "fact_check"
+      ],
+      "output_type": "EthicsReview",
+      "approval_required": true,
+      "approval_role": "human_editorial_legal",
+      "gate_id": "gate_story"
+    }
+  ]
+}

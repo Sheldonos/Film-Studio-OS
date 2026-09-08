@@ -1,0 +1,10 @@
+{
+  "status": "pending",
+  "project_id": "replace-with-project-id",
+  "provider": "higgsfield-cli",
+  "operation": "generate.create",
+  "request_hash": "replace-with-64-character-hash-from-dry-run",
+  "decided_by": null,
+  "expires_at": null,
+  "max_cost_usd": 0.0
+}

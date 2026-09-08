@@ -1,0 +1,46 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "default": "2.0",
+      "pattern": "^\\d+\\.\\d+$",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "beat_id": {
+      "minLength": 1,
+      "title": "Beat Id",
+      "type": "string"
+    },
+    "scene_id": {
+      "minLength": 1,
+      "title": "Scene Id",
+      "type": "string"
+    },
+    "objective": {
+      "minLength": 1,
+      "title": "Objective",
+      "type": "string"
+    },
+    "turn": {
+      "minLength": 1,
+      "title": "Turn",
+      "type": "string"
+    },
+    "value_change": {
+      "minLength": 1,
+      "title": "Value Change",
+      "type": "string"
+    }
+  },
+  "required": [
+    "beat_id",
+    "scene_id",
+    "objective",
+    "turn",
+    "value_change"
+  ],
+  "title": "Beat",
+  "type": "object",
+  "$id": "https://film-studio-os.local/schema/v2/domain/Beat.json"
+}

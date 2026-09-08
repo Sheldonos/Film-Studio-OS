@@ -1,0 +1,66 @@
+{
+  "schema_version": "2.0",
+  "workflow_id": "release_business_v2",
+  "version": "2.0.0",
+  "description": "Business-affairs, finance, audience and distribution planning through controlled release approval.",
+  "production_route": "provider_neutral",
+  "steps": [
+    {
+      "id": "business_affairs",
+      "capability_id": "business_affairs_checklist",
+      "owner_agent": "rights_clearance_supervisor",
+      "reviewer_agent": "studio_orchestrator",
+      "output_type": "BusinessAffairsChecklist",
+      "handler": "artifact"
+    },
+    {
+      "id": "finance",
+      "capability_id": "production_finance_package",
+      "owner_agent": "line_producer",
+      "reviewer_agent": "studio_orchestrator",
+      "depends_on": [
+        "business_affairs"
+      ],
+      "output_type": "ProductionFinancePackage",
+      "handler": "artifact"
+    },
+    {
+      "id": "audience",
+      "capability_id": "audience_release_strategy",
+      "owner_agent": "studio_orchestrator",
+      "reviewer_agent": "rights_clearance_supervisor",
+      "depends_on": [
+        "business_affairs"
+      ],
+      "output_type": "AudienceReleaseStrategy",
+      "handler": "artifact"
+    },
+    {
+      "id": "distribution",
+      "capability_id": "distribution_delivery_plan",
+      "owner_agent": "localization_delivery_supervisor",
+      "reviewer_agent": "studio_orchestrator",
+      "depends_on": [
+        "finance",
+        "audience"
+      ],
+      "output_type": "DistributionDeliveryPlan",
+      "handler": "artifact"
+    },
+    {
+      "id": "release",
+      "capability_id": "release_approval",
+      "owner_agent": "studio_orchestrator",
+      "reviewer_agent": "qc_supervisor",
+      "depends_on": [
+        "distribution"
+      ],
+      "output_type": "ReleaseDecision",
+      "handler": "gate",
+      "approval_required": true,
+      "approval_role": "human_release_owner",
+      "gate_id": "release_approval"
+    }
+  ]
+}
+

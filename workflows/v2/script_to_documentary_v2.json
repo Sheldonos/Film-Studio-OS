@@ -1,0 +1,112 @@
+{
+  "schema_version": "2.0",
+  "workflow_id": "script_to_documentary_v2",
+  "version": "2.0.0",
+  "description": "Documentary script/treatment route with evidence, claim, fact, ethics and release gates.",
+  "production_route": "provider_neutral",
+  "steps": [
+    {
+      "id": "ingest",
+      "capability_id": "source_ingestion",
+      "owner_agent": "production_librarian",
+      "reviewer_agent": "security_data_governance",
+      "output_type": "TreatmentIngest",
+      "handler": "artifact"
+    },
+    {
+      "id": "diagnose",
+      "capability_id": "production_readiness_diagnostic",
+      "owner_agent": "studio_orchestrator",
+      "reviewer_agent": "line_producer",
+      "depends_on": [
+        "ingest"
+      ],
+      "output_type": "ProductionReadinessDiagnostic",
+      "handler": "project_diagnostic"
+    },
+
+    {
+      "id": "evidence",
+      "capability_id": "documentary_evidence_ledger",
+      "owner_agent": "documentary_research_editor",
+      "reviewer_agent": "rights_clearance_supervisor",
+      "depends_on": [
+        "diagnose"
+      ],
+      "output_type": "EvidenceLedger",
+      "handler": "artifact"
+    },
+    {
+      "id": "claims",
+      "capability_id": "documentary_claim_mapping",
+      "owner_agent": "documentary_research_editor",
+      "reviewer_agent": "script_editor",
+      "depends_on": [
+        "evidence"
+      ],
+      "output_type": "ClaimMap",
+      "handler": "artifact"
+    },
+    {
+      "id": "factcheck",
+      "capability_id": "documentary_fact_check",
+      "owner_agent": "documentary_research_editor",
+      "reviewer_agent": "qc_supervisor",
+      "depends_on": [
+        "claims"
+      ],
+      "output_type": "FactCheck",
+      "handler": "artifact"
+    },
+    {
+      "id": "ethics",
+      "capability_id": "documentary_ethics_review",
+      "owner_agent": "rights_clearance_supervisor",
+      "reviewer_agent": "qc_supervisor",
+      "depends_on": [
+        "factcheck"
+      ],
+      "output_type": "EthicsReview",
+      "handler": "gate",
+      "approval_required": true,
+      "approval_role": "human_editorial_owner",
+      "gate_id": "documentary_ethics"
+    },
+    {
+      "id": "team",
+      "capability_id": "production_role_coverage",
+      "owner_agent": "line_producer",
+      "reviewer_agent": "qc_supervisor",
+      "depends_on": [
+        "ethics"
+      ],
+      "output_type": "ProductionTeamContributionPlan",
+      "handler": "team_plan"
+    },
+    {
+      "id": "generate",
+      "capability_id": "video_generation_plan",
+      "owner_agent": "generative_supervisor",
+      "reviewer_agent": "qc_supervisor",
+      "depends_on": [
+        "team"
+      ],
+      "output_type": "DocumentaryTake",
+      "handler": "mock_generation"
+    },
+    {
+      "id": "release",
+      "capability_id": "release_approval",
+      "owner_agent": "studio_orchestrator",
+      "reviewer_agent": "qc_supervisor",
+      "depends_on": [
+        "generate"
+      ],
+      "output_type": "ReleaseDecision",
+      "handler": "gate",
+      "approval_required": true,
+      "approval_role": "human_release_owner",
+      "gate_id": "documentary_release"
+    }
+  ]
+}

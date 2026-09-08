@@ -1,0 +1,59 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "default": "2.0",
+      "pattern": "^\\d+\\.\\d+$",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "repair_plan_id": {
+      "minLength": 1,
+      "title": "Repair Plan Id",
+      "type": "string"
+    },
+    "take_id": {
+      "minLength": 1,
+      "title": "Take Id",
+      "type": "string"
+    },
+    "failure_class": {
+      "minLength": 1,
+      "title": "Failure Class",
+      "type": "string"
+    },
+    "repair_action": {
+      "enum": [
+        "local_repair",
+        "regenerate",
+        "alternate_coverage",
+        "composite",
+        "human_intervention"
+      ],
+      "title": "Repair Action",
+      "type": "string"
+    },
+    "preserve_artifact_version_ids": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Preserve Artifact Version Ids",
+      "type": "array"
+    },
+    "rationale": {
+      "minLength": 1,
+      "title": "Rationale",
+      "type": "string"
+    }
+  },
+  "required": [
+    "repair_plan_id",
+    "take_id",
+    "failure_class",
+    "repair_action",
+    "rationale"
+  ],
+  "title": "RepairPlan",
+  "type": "object",
+  "$id": "https://film-studio-os.local/schema/v2/domain/RepairPlan.json"
+}

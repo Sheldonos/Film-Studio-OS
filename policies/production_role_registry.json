@@ -1,0 +1,4327 @@
+{
+  "schema_version": "1.0",
+  "registry_id": "production-role-registry",
+  "role_count": 227,
+  "source": {
+    "title": "Film Production Roles and Responsibilities",
+    "imported_from": "Pasted markdown (2).md",
+    "imported_at": "2026-08-15",
+    "note": "Role boundaries vary by jurisdiction, union agreement, format, budget and negotiated scope."
+  },
+  "dispositions": [
+    "required_human",
+    "simulated_advisory",
+    "combined_coverage",
+    "not_applicable"
+  ],
+  "invariant": "Every registry role receives exactly one explicit disposition in every team contribution plan; simulation never impersonates a licensed, legal, safety-critical, consent, employment, financial or final-approval authority.",
+  "roles": [
+    {
+      "role_id": "executive_producer_ep",
+      "name": "Executive Producer (EP)",
+      "department": "Leadership, Rights, and Finance",
+      "core_responsibility": "Secures or helps secure financing, rights, strategic partnerships, major talent, distribution support, or senior oversight. The credit can be creative, financial, contractual, or honorary; its practical meaning must be confirmed on each project.",
+      "accountable_bob_persona": "line_producer",
+      "stages": [
+        "development",
+        "preproduction",
+        "production",
+        "postproduction",
+        "release"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 1
+    },
+    {
+      "role_id": "producer",
+      "name": "Producer",
+      "department": "Leadership, Rights, and Finance",
+      "core_responsibility": "Owns the project’s overall delivery: develops the material, assembles key talent, creates the financing and production strategy, supervises budget and schedule at a high level, manages senior decision-making, and delivers the completed film.",
+      "accountable_bob_persona": "line_producer",
+      "stages": [
+        "development",
+        "preproduction",
+        "production",
+        "postproduction",
+        "release"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 2
+    },
+    {
+      "role_id": "co_producer",
+      "name": "Co-producer",
+      "department": "Leadership, Rights, and Finance",
+      "core_responsibility": "Shares defined producer-level duties, often across a financing partner, production company, region, or creative workstream.",
+      "accountable_bob_persona": "line_producer",
+      "stages": [
+        "development",
+        "preproduction",
+        "production",
+        "postproduction",
+        "release"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 3
+    },
+    {
+      "role_id": "associate_producer",
+      "name": "Associate Producer",
+      "department": "Leadership, Rights, and Finance",
+      "core_responsibility": "Performs a substantial, negotiated support function, such as coordinating a production area, research, financing, talent access, or post-production. The title’s scope varies widely.",
+      "accountable_bob_persona": "line_producer",
+      "stages": [
+        "development",
+        "preproduction",
+        "production",
+        "postproduction",
+        "release"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 4
+    },
+    {
+      "role_id": "line_producer_unit_production_manager_upm",
+      "name": "Line Producer / Unit Production Manager (UPM)",
+      "department": "Leadership, Rights, and Finance",
+      "core_responsibility": "Translates the creative plan into a practical budget, staffing plan, vendor plan, schedule, cash-flow plan, and production controls. Monitors spending and logistics daily. On some productions, these are separate jobs.",
+      "accountable_bob_persona": "line_producer",
+      "stages": [
+        "development",
+        "preproduction",
+        "production",
+        "postproduction",
+        "release"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 5
+    },
+    {
+      "role_id": "production_executive_studio_executive",
+      "name": "Production Executive / Studio Executive",
+      "department": "Leadership, Rights, and Finance",
+      "core_responsibility": "Represents the studio, financier, or commissioning entity; evaluates creative, budget, schedule, casting, and delivery decisions against the organization’s goals and contractual terms.",
+      "accountable_bob_persona": "line_producer",
+      "stages": [
+        "development",
+        "preproduction",
+        "production",
+        "postproduction",
+        "release"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 6
+    },
+    {
+      "role_id": "development_executive",
+      "name": "Development Executive",
+      "department": "Leadership, Rights, and Finance",
+      "core_responsibility": "Finds material, gives script notes, tracks market and talent opportunities, prepares project analyses, and moves viable projects toward packaging and greenlight.",
+      "accountable_bob_persona": "line_producer",
+      "stages": [
+        "development",
+        "preproduction",
+        "production",
+        "postproduction",
+        "release"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 7
+    },
+    {
+      "role_id": "financier_equity_investor_lender_bond_company_representative",
+      "name": "Financier / Equity Investor / Lender / Bond Company Representative",
+      "department": "Leadership, Rights, and Finance",
+      "core_responsibility": "Provides capital or completion assurance; reviews financial risk, delivery milestones, insurance, and compliance with financing conditions. A completion-bond representative may monitor performance against the approved budget and schedule.",
+      "accountable_bob_persona": "line_producer",
+      "stages": [
+        "development",
+        "preproduction",
+        "production",
+        "postproduction",
+        "release"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 8
+    },
+    {
+      "role_id": "entertainment_attorney_business_affairs_executive",
+      "name": "Entertainment Attorney / Business Affairs Executive",
+      "department": "Leadership, Rights, and Finance",
+      "core_responsibility": "Clears chain of title; negotiates and drafts option, acquisition, writer, talent, crew, financing, distribution, music, location, insurance, and vendor agreements; advises on rights, labor, privacy, and liability issues.",
+      "accountable_bob_persona": "line_producer",
+      "stages": [
+        "development",
+        "preproduction",
+        "production",
+        "postproduction",
+        "release"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 9
+    },
+    {
+      "role_id": "rights_and_clearances_coordinator",
+      "name": "Rights and Clearances Coordinator",
+      "department": "Leadership, Rights, and Finance",
+      "core_responsibility": "Tracks permissions for source material, trademarks, artwork, clips, photos, publications, brands, and other third-party content used in the movie.",
+      "accountable_bob_persona": "line_producer",
+      "stages": [
+        "development",
+        "preproduction",
+        "production",
+        "postproduction",
+        "release"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 10
+    },
+    {
+      "role_id": "production_accountant_controller",
+      "name": "Production Accountant / Controller",
+      "department": "Leadership, Rights, and Finance",
+      "core_responsibility": "Maintains accounts payable, payroll documentation, cost reports, cash management, tax and incentive records, union reports, audit trails, and close-out accounting.",
+      "accountable_bob_persona": "line_producer",
+      "stages": [
+        "development",
+        "preproduction",
+        "production",
+        "postproduction",
+        "release"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 11
+    },
+    {
+      "role_id": "payroll_accountant_payroll_service",
+      "name": "Payroll Accountant / Payroll Service",
+      "department": "Leadership, Rights, and Finance",
+      "core_responsibility": "Processes cast and crew payroll, fringes, withholding, union or guild requirements, timecards, and payroll reporting.",
+      "accountable_bob_persona": "line_producer",
+      "stages": [
+        "development",
+        "preproduction",
+        "production",
+        "postproduction",
+        "release"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 12
+    },
+    {
+      "role_id": "production_insurance_broker_risk_manager",
+      "name": "Production Insurance Broker / Risk Manager",
+      "department": "Leadership, Rights, and Finance",
+      "core_responsibility": "Obtains and administers required insurance; helps manage claims, certificates, loss prevention, and production-specific risk controls.",
+      "accountable_bob_persona": "line_producer",
+      "stages": [
+        "development",
+        "preproduction",
+        "production",
+        "postproduction",
+        "release"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 13
+    },
+    {
+      "role_id": "screenwriter",
+      "name": "Screenwriter",
+      "department": "Writing and Creative Development",
+      "core_responsibility": "Creates the screenplay, including premise, structure, scenes, dialogue, character arcs, and revisions. May continue rewrites during pre-production and production.",
+      "accountable_bob_persona": "showrunner",
+      "stages": [
+        "development",
+        "preproduction",
+        "production"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 14
+    },
+    {
+      "role_id": "story_creator_author_source_material_rights_holder",
+      "name": "Story Creator / Author / Source-Material Rights Holder",
+      "department": "Writing and Creative Development",
+      "core_responsibility": "Supplies the original story, book, article, life rights, or other underlying material, and licenses the applicable adaptation rights.",
+      "accountable_bob_persona": "showrunner",
+      "stages": [
+        "development",
+        "preproduction",
+        "production"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 15
+    },
+    {
+      "role_id": "story_editor_script_consultant",
+      "name": "Story Editor / Script Consultant",
+      "department": "Writing and Creative Development",
+      "core_responsibility": "Assesses narrative logic, tone, character, structure, pacing, dialogue, audience clarity, and feasibility; provides notes rather than necessarily writing pages.",
+      "accountable_bob_persona": "showrunner",
+      "stages": [
+        "development",
+        "preproduction",
+        "production"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 16
+    },
+    {
+      "role_id": "script_coordinator",
+      "name": "Script Coordinator",
+      "department": "Writing and Creative Development",
+      "core_responsibility": "Tracks drafts, revision pages, versions, distribution lists, production copies, and continuity-related script paperwork, especially on larger productions.",
+      "accountable_bob_persona": "showrunner",
+      "stages": [
+        "development",
+        "preproduction",
+        "production"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 17
+    },
+    {
+      "role_id": "researcher_historical_consultant_subject_matter_expert",
+      "name": "Researcher / Historical Consultant / Subject-Matter Expert",
+      "department": "Writing and Creative Development",
+      "core_responsibility": "Verifies factual, cultural, technical, medical, legal, military, scientific, language, period, or occupational details and advises the creative departments.",
+      "accountable_bob_persona": "showrunner",
+      "stages": [
+        "development",
+        "preproduction",
+        "production"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 18
+    },
+    {
+      "role_id": "dialogue_coach_dialect_coach",
+      "name": "Dialogue Coach / Dialect Coach",
+      "department": "Writing and Creative Development",
+      "core_responsibility": "Prepares actors to deliver lines with accurate accent, speech pattern, pronunciation, language fluency, or vocal characterization.",
+      "accountable_bob_persona": "showrunner",
+      "stages": [
+        "development",
+        "preproduction",
+        "production"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 19
+    },
+    {
+      "role_id": "sensitivity_cultural_consultant",
+      "name": "Sensitivity / Cultural Consultant",
+      "department": "Writing and Creative Development",
+      "core_responsibility": "Advises on representation, cultural specificity, stereotypes, harmful inaccuracies, and context so creative choices are informed and respectful.",
+      "accountable_bob_persona": "showrunner",
+      "stages": [
+        "development",
+        "preproduction",
+        "production"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 20
+    },
+    {
+      "role_id": "translator_language_consultant",
+      "name": "Translator / Language Consultant",
+      "department": "Writing and Creative Development",
+      "core_responsibility": "Translates dialogue and written assets; advises on idiom, subtitles, pronunciation, and cultural meaning.",
+      "accountable_bob_persona": "showrunner",
+      "stages": [
+        "development",
+        "preproduction",
+        "production"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 21
+    },
+    {
+      "role_id": "director",
+      "name": "Director",
+      "department": "Direction and the Assistant Director Department",
+      "core_responsibility": "Establishes the film’s creative interpretation; directs performances, blocking, visual storytelling, pacing, tone, and coverage; collaborates with every department head; and makes central creative choices through final post-production.",
+      "accountable_bob_persona": "director",
+      "stages": [
+        "preproduction",
+        "production",
+        "postproduction"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 22
+    },
+    {
+      "role_id": "second_unit_director",
+      "name": "Second-Unit Director",
+      "department": "Direction and the Assistant Director Department",
+      "core_responsibility": "Directs separately scheduled material, commonly action, inserts, stunts, landscapes, vehicles, crowd work, or shots not requiring the principal cast. Works to the principal director’s plan and visual language.",
+      "accountable_bob_persona": "director",
+      "stages": [
+        "preproduction",
+        "production",
+        "postproduction"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 23
+    },
+    {
+      "role_id": "additional_director_action_director",
+      "name": "Additional Director / Action Director",
+      "department": "Direction and the Assistant Director Department",
+      "core_responsibility": "Directs a specifically assigned sequence or set piece, often when specialized action, scale, or schedule requires it.",
+      "accountable_bob_persona": "director",
+      "stages": [
+        "preproduction",
+        "production",
+        "postproduction"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 24
+    },
+    {
+      "role_id": "1st_assistant_director_1st_ad",
+      "name": "1st Assistant Director (1st AD)",
+      "department": "Direction and the Assistant Director Department",
+      "core_responsibility": "Converts the shooting plan into daily execution: prepares the shooting schedule with production, runs the set’s operational flow, calls for departments and cast, manages time, coordinates safety with specialists, and protects the director’s ability to direct.",
+      "accountable_bob_persona": "director",
+      "stages": [
+        "preproduction",
+        "production",
+        "postproduction"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 25
+    },
+    {
+      "role_id": "2nd_assistant_director_2nd_ad",
+      "name": "2nd Assistant Director (2nd AD)",
+      "department": "Direction and the Assistant Director Department",
+      "core_responsibility": "Prepares call sheets, coordinates cast call times and movements, maintains production reports and paperwork, liaises with cast, and supports the 1st AD’s next-day planning.",
+      "accountable_bob_persona": "director",
+      "stages": [
+        "preproduction",
+        "production",
+        "postproduction"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 26
+    },
+    {
+      "role_id": "2nd_2nd_ad_additional_2nd_ad",
+      "name": "2nd 2nd AD / Additional 2nd AD",
+      "department": "Direction and the Assistant Director Department",
+      "core_responsibility": "Supports the 2nd AD on larger units, often with background actors, call sheet distribution, base camp, transport coordination, or cast logistics.",
+      "accountable_bob_persona": "director",
+      "stages": [
+        "preproduction",
+        "production",
+        "postproduction"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 27
+    },
+    {
+      "role_id": "3rd_assistant_director_set_pa_lead",
+      "name": "3rd Assistant Director / Set PA Lead",
+      "department": "Direction and the Assistant Director Department",
+      "core_responsibility": "Assists with floor management, background staging, lockups, cues, and communications. Job titles differ by territory.",
+      "accountable_bob_persona": "director",
+      "stages": [
+        "preproduction",
+        "production",
+        "postproduction"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 28
+    },
+    {
+      "role_id": "script_supervisor_continuity_supervisor",
+      "name": "Script Supervisor (Continuity Supervisor)",
+      "department": "Direction and the Assistant Director Department",
+      "core_responsibility": "Records each take’s script changes, performance continuity, screen direction, props, wardrobe, timing, camera details, and editor-facing notes; flags continuity concerns and creates a reliable shooting record.",
+      "accountable_bob_persona": "director",
+      "stages": [
+        "preproduction",
+        "production",
+        "postproduction"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 29
+    },
+    {
+      "role_id": "set_production_assistant_pa",
+      "name": "Set Production Assistant (PA)",
+      "department": "Direction and the Assistant Director Department",
+      "core_responsibility": "Provides set-wide support: lockups, background movement, runs, signage, crowd control, walkie distribution, and communication under AD direction.",
+      "accountable_bob_persona": "director",
+      "stages": [
+        "preproduction",
+        "production",
+        "postproduction"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 30
+    },
+    {
+      "role_id": "office_production_assistant",
+      "name": "Office Production Assistant",
+      "department": "Direction and the Assistant Director Department",
+      "core_responsibility": "Supports the production office with documents, phones, deliveries, filing, onboarding, supplies, reports, and general administrative coordination.",
+      "accountable_bob_persona": "director",
+      "stages": [
+        "preproduction",
+        "production",
+        "postproduction"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 31
+    },
+    {
+      "role_id": "travel_cast_coordinator",
+      "name": "Travel / Cast Coordinator",
+      "department": "Direction and the Assistant Director Department",
+      "core_responsibility": "Manages travel bookings, itineraries, accommodation details, pickups, and travel changes for cast or designated crew.",
+      "accountable_bob_persona": "director",
+      "stages": [
+        "preproduction",
+        "production",
+        "postproduction"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 32
+    },
+    {
+      "role_id": "casting_director",
+      "name": "Casting Director",
+      "department": "Cast, Casting, and Performance Support",
+      "core_responsibility": "Breaks down roles, sources performers, organizes auditions and screen tests, advises the director and producers, manages casting negotiations with business affairs, and assembles principal and supporting cast.",
+      "accountable_bob_persona": "character_director",
+      "stages": [
+        "preproduction",
+        "production"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 33
+    },
+    {
+      "role_id": "casting_associate_casting_assistant",
+      "name": "Casting Associate / Casting Assistant",
+      "department": "Cast, Casting, and Performance Support",
+      "core_responsibility": "Sources talent, prepares audition materials, schedules sessions, maintains submissions, communicates with agents, and supports the casting director.",
+      "accountable_bob_persona": "character_director",
+      "stages": [
+        "preproduction",
+        "production"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 34
+    },
+    {
+      "role_id": "principal_actor",
+      "name": "Principal Actor",
+      "department": "Cast, Casting, and Performance Support",
+      "core_responsibility": "Performs a named major role; prepares character, dialogue, movement, and collaboration with director and departments.",
+      "accountable_bob_persona": "character_director",
+      "stages": [
+        "preproduction",
+        "production"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 35
+    },
+    {
+      "role_id": "supporting_actor_day_player",
+      "name": "Supporting Actor / Day Player",
+      "department": "Cast, Casting, and Performance Support",
+      "core_responsibility": "Performs supporting or short-duration speaking roles.",
+      "accountable_bob_persona": "character_director",
+      "stages": [
+        "preproduction",
+        "production"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 36
+    },
+    {
+      "role_id": "background_actor_extra",
+      "name": "Background Actor / Extra",
+      "department": "Cast, Casting, and Performance Support",
+      "core_responsibility": "Performs non-speaking, atmosphere-building action in scenes. Background coordinators may hire, check in, costume, stage, and release them.",
+      "accountable_bob_persona": "character_director",
+      "stages": [
+        "preproduction",
+        "production"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 37
+    },
+    {
+      "role_id": "stand_in",
+      "name": "Stand-in",
+      "department": "Cast, Casting, and Performance Support",
+      "core_responsibility": "Substitutes for a principal performer during lighting, camera, focus, and blocking preparation, enabling crew setup before the actor is needed.",
+      "accountable_bob_persona": "character_director",
+      "stages": [
+        "preproduction",
+        "production"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 38
+    },
+    {
+      "role_id": "photo_double_body_double",
+      "name": "Photo Double / Body Double",
+      "department": "Cast, Casting, and Performance Support",
+      "core_responsibility": "Doubles for the actor in selected shots when face visibility, nudity, special skills, scheduling, or safety makes it appropriate.",
+      "accountable_bob_persona": "character_director",
+      "stages": [
+        "preproduction",
+        "production"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 39
+    },
+    {
+      "role_id": "stunt_performer_stunt_double",
+      "name": "Stunt Performer / Stunt Double",
+      "department": "Cast, Casting, and Performance Support",
+      "core_responsibility": "Performs planned physical-risk action or doubles a cast member for that action. Works under approved safety procedures.",
+      "accountable_bob_persona": "character_director",
+      "stages": [
+        "preproduction",
+        "production"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 40
+    },
+    {
+      "role_id": "stunt_coordinator",
+      "name": "Stunt Coordinator",
+      "department": "Cast, Casting, and Performance Support",
+      "core_responsibility": "Designs, rehearses, staffs, budgets, risk-assesses, and supervises stunts; coordinates with the director, 1st AD, special effects, safety specialists, and performers.",
+      "accountable_bob_persona": "character_director",
+      "stages": [
+        "preproduction",
+        "production"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 41
+    },
+    {
+      "role_id": "intimacy_coordinator",
+      "name": "Intimacy Coordinator",
+      "department": "Cast, Casting, and Performance Support",
+      "core_responsibility": "Plans and choreographs intimate scenes with informed consent, closed-set procedures, clear boundaries, modesty protections, and repeatable performance beats; liaises with actors, director, producers, wardrobe, and AD team.",
+      "accountable_bob_persona": "character_director",
+      "stages": [
+        "preproduction",
+        "production"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 42
+    },
+    {
+      "role_id": "choreographer_movement_coach",
+      "name": "Choreographer / Movement Coach",
+      "department": "Cast, Casting, and Performance Support",
+      "core_responsibility": "Creates and rehearses dance, movement, fight, sports, or stylized physical performance. Combat choreography may be handled by a fight coordinator.",
+      "accountable_bob_persona": "character_director",
+      "stages": [
+        "preproduction",
+        "production"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 43
+    },
+    {
+      "role_id": "animal_coordinator_animal_trainer",
+      "name": "Animal Coordinator / Animal Trainer",
+      "department": "Cast, Casting, and Performance Support",
+      "core_responsibility": "Provides trained animals, manages welfare and handling, coordinates shots, and works with safety and production requirements.",
+      "accountable_bob_persona": "character_director",
+      "stages": [
+        "preproduction",
+        "production"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 44
+    },
+    {
+      "role_id": "child_welfare_professional_studio_teacher",
+      "name": "Child-Welfare Professional / Studio Teacher",
+      "department": "Cast, Casting, and Performance Support",
+      "core_responsibility": "Supports the lawful, safe, educational, and welfare needs of child performers, subject to local rules.",
+      "accountable_bob_persona": "character_director",
+      "stages": [
+        "preproduction",
+        "production"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 45
+    },
+    {
+      "role_id": "production_coordinator",
+      "name": "Production Coordinator",
+      "department": "Production Office, Scheduling, Logistics, and Safety",
+      "core_responsibility": "Runs day-to-day production-office operations: crew onboarding, purchase orders, rentals, travel, vendor paperwork, schedules, contact lists, and department communication.",
+      "accountable_bob_persona": "line_producer",
+      "stages": [
+        "preproduction",
+        "production"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 46
+    },
+    {
+      "role_id": "assistant_production_coordinator_apoc",
+      "name": "Assistant Production Coordinator (APOC)",
+      "department": "Production Office, Scheduling, Logistics, and Safety",
+      "core_responsibility": "Supports the coordinator with administrative and logistics tasks, records, order tracking, and crew communication.",
+      "accountable_bob_persona": "line_producer",
+      "stages": [
+        "preproduction",
+        "production"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 47
+    },
+    {
+      "role_id": "production_secretary",
+      "name": "Production Secretary",
+      "department": "Production Office, Scheduling, Logistics, and Safety",
+      "core_responsibility": "Maintains office correspondence, files, phones, meeting notes, and document distribution.",
+      "accountable_bob_persona": "line_producer",
+      "stages": [
+        "preproduction",
+        "production"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 48
+    },
+    {
+      "role_id": "production_manager",
+      "name": "Production Manager",
+      "department": "Production Office, Scheduling, Logistics, and Safety",
+      "core_responsibility": "Oversees practical implementation of the budget and schedule, vendors, labor, department needs, and production problem-solving under the UPM/line producer.",
+      "accountable_bob_persona": "line_producer",
+      "stages": [
+        "preproduction",
+        "production"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 49
+    },
+    {
+      "role_id": "production_scheduler",
+      "name": "Production Scheduler",
+      "department": "Production Office, Scheduling, Logistics, and Safety",
+      "core_responsibility": "Builds or maintains stripboards, one-line schedules, day-out-of-days reports, board changes, and schedule scenarios using script breakdowns and production constraints.",
+      "accountable_bob_persona": "line_producer",
+      "stages": [
+        "preproduction",
+        "production"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 50
+    },
+    {
+      "role_id": "production_supervisor",
+      "name": "Production Supervisor",
+      "department": "Production Office, Scheduling, Logistics, and Safety",
+      "core_responsibility": "Coordinates or manages defined production operations, often on locations, units, or special projects; exact scope varies.",
+      "accountable_bob_persona": "line_producer",
+      "stages": [
+        "preproduction",
+        "production"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 51
+    },
+    {
+      "role_id": "location_manager",
+      "name": "Location Manager",
+      "department": "Production Office, Scheduling, Logistics, and Safety",
+      "core_responsibility": "Scouts and secures locations; negotiates agreements; manages permits, site rules, neighborhood relations, access, parking, restoration, and location logistics.",
+      "accountable_bob_persona": "line_producer",
+      "stages": [
+        "preproduction",
+        "production"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 52
+    },
+    {
+      "role_id": "assistant_location_manager_location_scout",
+      "name": "Assistant Location Manager / Location Scout",
+      "department": "Production Office, Scheduling, Logistics, and Safety",
+      "core_responsibility": "Researches potential locations, gathers photos and details, supports permits, posts notices, manages location paperwork, and assists site operations.",
+      "accountable_bob_persona": "line_producer",
+      "stages": [
+        "preproduction",
+        "production"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 53
+    },
+    {
+      "role_id": "permits_coordinator",
+      "name": "Permits Coordinator",
+      "department": "Production Office, Scheduling, Logistics, and Safety",
+      "core_responsibility": "Obtains governmental, municipal, park, road, aviation, fire, and other permits needed for lawful shooting.",
+      "accountable_bob_persona": "line_producer",
+      "stages": [
+        "preproduction",
+        "production"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 54
+    },
+    {
+      "role_id": "transportation_captain_transportation_coordinator",
+      "name": "Transportation Captain / Transportation Coordinator",
+      "department": "Production Office, Scheduling, Logistics, and Safety",
+      "core_responsibility": "Plans vehicles, drivers, routes, parking, cast shuttles, crew transport, equipment movement, fuel, and compliance.",
+      "accountable_bob_persona": "line_producer",
+      "stages": [
+        "preproduction",
+        "production"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 55
+    },
+    {
+      "role_id": "drivers",
+      "name": "Drivers",
+      "department": "Production Office, Scheduling, Logistics, and Safety",
+      "core_responsibility": "Safely transport cast, crew, equipment, and materials according to production schedules and regulations.",
+      "accountable_bob_persona": "line_producer",
+      "stages": [
+        "preproduction",
+        "production"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 56
+    },
+    {
+      "role_id": "unit_manager_base_camp_manager",
+      "name": "Unit Manager / Base-Camp Manager",
+      "department": "Production Office, Scheduling, Logistics, and Safety",
+      "core_responsibility": "Runs the off-set support area, including cast trailers, crew holding, meals, restrooms, access, supplies, and daily base-camp logistics.",
+      "accountable_bob_persona": "line_producer",
+      "stages": [
+        "preproduction",
+        "production"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 57
+    },
+    {
+      "role_id": "catering_craft_services",
+      "name": "Catering / Craft Services",
+      "department": "Production Office, Scheduling, Logistics, and Safety",
+      "core_responsibility": "Catering supplies scheduled meals; craft services provides accessible snacks, beverages, and basic consumables throughout the shooting day.",
+      "accountable_bob_persona": "line_producer",
+      "stages": [
+        "preproduction",
+        "production"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 58
+    },
+    {
+      "role_id": "covid_health_safety_coordinator_or_medic",
+      "name": "COVID / Health-Safety Coordinator or Medic",
+      "department": "Production Office, Scheduling, Logistics, and Safety",
+      "core_responsibility": "Implements applicable health, medical-response, exposure-control, and emergency plans. Specific requirements depend on the jurisdiction and production.",
+      "accountable_bob_persona": "line_producer",
+      "stages": [
+        "preproduction",
+        "production"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 59
+    },
+    {
+      "role_id": "set_medic_nurse_paramedic",
+      "name": "Set Medic / Nurse / Paramedic",
+      "department": "Production Office, Scheduling, Logistics, and Safety",
+      "core_responsibility": "Provides on-set first-aid and emergency medical response within professional scope and production protocol.",
+      "accountable_bob_persona": "line_producer",
+      "stages": [
+        "preproduction",
+        "production"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 60
+    },
+    {
+      "role_id": "safety_officer_safety_consultant",
+      "name": "Safety Officer / Safety Consultant",
+      "department": "Production Office, Scheduling, Logistics, and Safety",
+      "core_responsibility": "Identifies hazards, advises on controls, tracks safety meetings and documentation, and coordinates with AD, stunts, SFX, construction, and locations. Safety is a shared responsibility, not solely this role’s.",
+      "accountable_bob_persona": "line_producer",
+      "stages": [
+        "preproduction",
+        "production"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 61
+    },
+    {
+      "role_id": "security_coordinator_security_guard",
+      "name": "Security Coordinator / Security Guard",
+      "department": "Production Office, Scheduling, Logistics, and Safety",
+      "core_responsibility": "Protects people, equipment, locations, access points, crowd boundaries, confidential material, and restricted areas.",
+      "accountable_bob_persona": "line_producer",
+      "stages": [
+        "preproduction",
+        "production"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 62
+    },
+    {
+      "role_id": "sustainability_coordinator_green_steward",
+      "name": "Sustainability Coordinator / Green Steward",
+      "department": "Production Office, Scheduling, Logistics, and Safety",
+      "core_responsibility": "Reduces waste, tracks environmental practices, organizes recycling/composting, sources reusable materials, and supports sustainability reporting.",
+      "accountable_bob_persona": "line_producer",
+      "stages": [
+        "preproduction",
+        "production"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 63
+    },
+    {
+      "role_id": "director_of_photography_dp_cinematographer",
+      "name": "Director of Photography (DP / Cinematographer)",
+      "department": "Camera Department",
+      "core_responsibility": "Designs and leads the film’s photographic language: framing, lensing, camera movement, exposure, lighting collaboration, sensor/film choices, and image consistency.",
+      "accountable_bob_persona": "cinematographer",
+      "stages": [
+        "preproduction",
+        "production"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 64
+    },
+    {
+      "role_id": "camera_operator",
+      "name": "Camera Operator",
+      "department": "Camera Department",
+      "core_responsibility": "Physically operates the camera to execute the DP’s and director’s shot design; on some shoots, the DP also operates.",
+      "accountable_bob_persona": "cinematographer",
+      "stages": [
+        "preproduction",
+        "production"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 65
+    },
+    {
+      "role_id": "1st_assistant_camera_1st_ac_focus_puller",
+      "name": "1st Assistant Camera (1st AC / Focus Puller)",
+      "department": "Camera Department",
+      "core_responsibility": "Builds and maintains the camera, changes lenses, pulls focus during takes, checks camera readiness, and helps protect image sharpness and equipment integrity.",
+      "accountable_bob_persona": "cinematographer",
+      "stages": [
+        "preproduction",
+        "production"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 66
+    },
+    {
+      "role_id": "2nd_assistant_camera_2nd_ac_clapper_loader",
+      "name": "2nd Assistant Camera (2nd AC / Clapper-Loader)",
+      "department": "Camera Department",
+      "core_responsibility": "Operates the slate, manages camera reports and media handoff, organizes lenses/accessories, marks actors, and supports the 1st AC. Film productions may include loading duties.",
+      "accountable_bob_persona": "cinematographer",
+      "stages": [
+        "preproduction",
+        "production"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 67
+    },
+    {
+      "role_id": "camera_trainee_utility_camera",
+      "name": "Camera Trainee / Utility Camera",
+      "department": "Camera Department",
+      "core_responsibility": "Supports the camera team with batteries, cables, equipment prep, video support, lens management, and departmental logistics.",
+      "accountable_bob_persona": "cinematographer",
+      "stages": [
+        "preproduction",
+        "production"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 68
+    },
+    {
+      "role_id": "digital_imaging_technician_dit",
+      "name": "Digital Imaging Technician (DIT)",
+      "department": "Camera Department",
+      "core_responsibility": "Manages digital image workflows, data integrity in camera-facing systems, on-set color pipeline, exposure monitoring, and secure media transfer in coordination with production and post.",
+      "accountable_bob_persona": "cinematographer",
+      "stages": [
+        "preproduction",
+        "production"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 69
+    },
+    {
+      "role_id": "data_wrangler_digital_loader",
+      "name": "Data Wrangler / Digital Loader",
+      "department": "Camera Department",
+      "core_responsibility": "Safely copies, verifies, logs, backs up, and transfers recorded media according to a documented chain-of-custody and backup workflow.",
+      "accountable_bob_persona": "cinematographer",
+      "stages": [
+        "preproduction",
+        "production"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 70
+    },
+    {
+      "role_id": "steadicam_operator",
+      "name": "Steadicam Operator",
+      "department": "Camera Department",
+      "core_responsibility": "Operates a body-supported stabilized camera system for moving shots.",
+      "accountable_bob_persona": "cinematographer",
+      "stages": [
+        "preproduction",
+        "production"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 71
+    },
+    {
+      "role_id": "drone_pilot_uas_operator",
+      "name": "Drone Pilot / UAS Operator",
+      "department": "Camera Department",
+      "core_responsibility": "Plans and flies authorized aerial-camera operations, observes aviation rules, performs safety checks, and coordinates with locations, AD, camera, and safety teams.",
+      "accountable_bob_persona": "cinematographer",
+      "stages": [
+        "preproduction",
+        "production"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 72
+    },
+    {
+      "role_id": "remote_head_technocrane_specialty_camera_operator",
+      "name": "Remote Head / Technocrane / Specialty-Camera Operator",
+      "department": "Camera Department",
+      "core_responsibility": "Operates specialized camera-support systems such as cranes, remote heads, robotic rigs, underwater systems, or vehicle mounts.",
+      "accountable_bob_persona": "cinematographer",
+      "stages": [
+        "preproduction",
+        "production"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 73
+    },
+    {
+      "role_id": "video_assist_operator",
+      "name": "Video Assist Operator",
+      "department": "Camera Department",
+      "core_responsibility": "Records or streams a monitoring feed for director, script supervisor, departments, playback, review, or continuity needs.",
+      "accountable_bob_persona": "cinematographer",
+      "stages": [
+        "preproduction",
+        "production"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 74
+    },
+    {
+      "role_id": "still_photographer_unit_photographer",
+      "name": "Still Photographer / Unit Photographer",
+      "department": "Camera Department",
+      "core_responsibility": "Captures approved production stills for marketing, publicity, continuity, archival, and promotional use without disrupting principal photography.",
+      "accountable_bob_persona": "cinematographer",
+      "stages": [
+        "preproduction",
+        "production"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 75
+    },
+    {
+      "role_id": "behind_the_scenes_bts_videographer_epk_crew",
+      "name": "Behind-the-Scenes (BTS) Videographer / EPK Crew",
+      "department": "Camera Department",
+      "core_responsibility": "Records approved making-of and electronic press kit material, interviews, and promotional footage.",
+      "accountable_bob_persona": "cinematographer",
+      "stages": [
+        "preproduction",
+        "production"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 76
+    },
+    {
+      "role_id": "gaffer_chief_lighting_technician",
+      "name": "Gaffer / Chief Lighting Technician",
+      "department": "Lighting, Grip, and Rigging",
+      "core_responsibility": "Leads the electrical/lighting crew; implements the DP’s lighting plan; selects fixtures, power distribution, control systems, and crew workflow.",
+      "accountable_bob_persona": "cinematographer",
+      "stages": [
+        "preproduction",
+        "production"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 77
+    },
+    {
+      "role_id": "best_boy_electric",
+      "name": "Best Boy Electric",
+      "department": "Lighting, Grip, and Rigging",
+      "core_responsibility": "Assists the gaffer with crew, equipment, orders, electrical logistics, paperwork, maintenance, and power planning.",
+      "accountable_bob_persona": "cinematographer",
+      "stages": [
+        "preproduction",
+        "production"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 78
+    },
+    {
+      "role_id": "lamp_operator_set_electrician",
+      "name": "Lamp Operator / Set Electrician",
+      "department": "Lighting, Grip, and Rigging",
+      "core_responsibility": "Installs, powers, controls, adjusts, and maintains lighting fixtures and associated cable systems.",
+      "accountable_bob_persona": "cinematographer",
+      "stages": [
+        "preproduction",
+        "production"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 79
+    },
+    {
+      "role_id": "generator_operator",
+      "name": "Generator Operator",
+      "department": "Lighting, Grip, and Rigging",
+      "core_responsibility": "Runs and monitors generators and electrical distribution safely, including fuel, load management, grounding, and required procedures.",
+      "accountable_bob_persona": "cinematographer",
+      "stages": [
+        "preproduction",
+        "production"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 80
+    },
+    {
+      "role_id": "key_grip",
+      "name": "Key Grip",
+      "department": "Lighting, Grip, and Rigging",
+      "core_responsibility": "Leads the grip department; designs and supervises camera support, rigging, light-shaping support, dollies, tracks, overheads, safety rigging, and physical control of light.",
+      "accountable_bob_persona": "cinematographer",
+      "stages": [
+        "preproduction",
+        "production"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 81
+    },
+    {
+      "role_id": "best_boy_grip",
+      "name": "Best Boy Grip",
+      "department": "Lighting, Grip, and Rigging",
+      "core_responsibility": "Assists the key grip with crew coordination, equipment tracking, truck organization, orders, and grip logistics.",
+      "accountable_bob_persona": "cinematographer",
+      "stages": [
+        "preproduction",
+        "production"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 82
+    },
+    {
+      "role_id": "dolly_grip",
+      "name": "Dolly Grip",
+      "department": "Lighting, Grip, and Rigging",
+      "core_responsibility": "Sets tracks and operates dollies, cranes, or related camera-movement systems in coordination with camera and grip leadership.",
+      "accountable_bob_persona": "cinematographer",
+      "stages": [
+        "preproduction",
+        "production"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 83
+    },
+    {
+      "role_id": "grip",
+      "name": "Grip",
+      "department": "Lighting, Grip, and Rigging",
+      "core_responsibility": "Builds and operates stands, flags, diffusion, rigging, camera-support equipment, frames, mounts, and physical light-control tools.",
+      "accountable_bob_persona": "cinematographer",
+      "stages": [
+        "preproduction",
+        "production"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 84
+    },
+    {
+      "role_id": "rigging_gaffer_rigging_grip",
+      "name": "Rigging Gaffer / Rigging Grip",
+      "department": "Lighting, Grip, and Rigging",
+      "core_responsibility": "Pre-rigs lighting, cable, support, and rigging infrastructure before the main unit arrives; later removes it safely.",
+      "accountable_bob_persona": "cinematographer",
+      "stages": [
+        "preproduction",
+        "production"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 85
+    },
+    {
+      "role_id": "board_operator_lighting_console_programmer",
+      "name": "Board Operator / Lighting Console Programmer",
+      "department": "Lighting, Grip, and Rigging",
+      "core_responsibility": "Programs and operates lighting-control boards, dimmers, DMX networks, practical effects, and lighting cues where used.",
+      "accountable_bob_persona": "cinematographer",
+      "stages": [
+        "preproduction",
+        "production"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 86
+    },
+    {
+      "role_id": "production_designer",
+      "name": "Production Designer",
+      "department": "Production Design, Art, Props, Construction, and Set Decoration",
+      "core_responsibility": "Leads the film’s physical visual world: locations, sets, color, texture, architectural language, period detail, props, graphics, and visual coherence with the director and DP.",
+      "accountable_bob_persona": "production_designer",
+      "stages": [
+        "preproduction",
+        "production"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 87
+    },
+    {
+      "role_id": "art_director",
+      "name": "Art Director",
+      "department": "Production Design, Art, Props, Construction, and Set Decoration",
+      "core_responsibility": "Converts the production designer’s concepts into drawings, schedules, budgets, construction packages, department coordination, and practical execution.",
+      "accountable_bob_persona": "production_designer",
+      "stages": [
+        "preproduction",
+        "production"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 88
+    },
+    {
+      "role_id": "assistant_art_director",
+      "name": "Assistant Art Director",
+      "department": "Production Design, Art, Props, Construction, and Set Decoration",
+      "core_responsibility": "Supports research, technical drawings, set dressing coordination, graphics, procurement, and production-art logistics.",
+      "accountable_bob_persona": "production_designer",
+      "stages": [
+        "preproduction",
+        "production"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 89
+    },
+    {
+      "role_id": "illustrator_concept_artist_storyboard_artist",
+      "name": "Illustrator / Concept Artist / Storyboard Artist",
+      "department": "Production Design, Art, Props, Construction, and Set Decoration",
+      "core_responsibility": "Produces visual concepts, renderings, storyboards, diagrams, and presentation material that clarify intended design and shots.",
+      "accountable_bob_persona": "production_designer",
+      "stages": [
+        "preproduction",
+        "production"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 90
+    },
+    {
+      "role_id": "draftsperson_set_designer_cad_technician",
+      "name": "Draftsperson / Set Designer / CAD Technician",
+      "department": "Production Design, Art, Props, Construction, and Set Decoration",
+      "core_responsibility": "Creates plans, elevations, construction drawings, models, measurements, and technical layouts for sets and scenic elements.",
+      "accountable_bob_persona": "production_designer",
+      "stages": [
+        "preproduction",
+        "production"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 91
+    },
+    {
+      "role_id": "graphic_designer_graphic_artist",
+      "name": "Graphic Designer / Graphic Artist",
+      "department": "Production Design, Art, Props, Construction, and Set Decoration",
+      "core_responsibility": "Designs diegetic graphics such as signs, labels, newspapers, screen interfaces, packaging, logos, maps, and period documents. Requires clearance-aware work when real brands or materials are involved.",
+      "accountable_bob_persona": "production_designer",
+      "stages": [
+        "preproduction",
+        "production"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 92
+    },
+    {
+      "role_id": "set_decorator",
+      "name": "Set Decorator",
+      "department": "Production Design, Art, Props, Construction, and Set Decoration",
+      "core_responsibility": "Furnishes and dresses sets with furniture, textiles, lamps, art, objects, and environmental detail that support character, story, and period.",
+      "accountable_bob_persona": "production_designer",
+      "stages": [
+        "preproduction",
+        "production"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 93
+    },
+    {
+      "role_id": "leadperson_set_dressing_lead",
+      "name": "Leadperson / Set-Dressing Lead",
+      "department": "Production Design, Art, Props, Construction, and Set Decoration",
+      "core_responsibility": "Organizes dressing crews, warehouse workflow, movement, installation, and strike of set-decoration elements.",
+      "accountable_bob_persona": "production_designer",
+      "stages": [
+        "preproduction",
+        "production"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 94
+    },
+    {
+      "role_id": "set_dresser",
+      "name": "Set Dresser",
+      "department": "Production Design, Art, Props, Construction, and Set Decoration",
+      "core_responsibility": "Places, adjusts, maintains, and removes decor, furniture, drapery, and environmental items on sets.",
+      "accountable_bob_persona": "production_designer",
+      "stages": [
+        "preproduction",
+        "production"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 95
+    },
+    {
+      "role_id": "buyer_set_decoration_buyer",
+      "name": "Buyer / Set-Decoration Buyer",
+      "department": "Production Design, Art, Props, Construction, and Set Decoration",
+      "core_responsibility": "Sources, rents, purchases, tracks, returns, and budgets furnishings and decorative items.",
+      "accountable_bob_persona": "production_designer",
+      "stages": [
+        "preproduction",
+        "production"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 96
+    },
+    {
+      "role_id": "prop_master",
+      "name": "Prop Master",
+      "department": "Production Design, Art, Props, Construction, and Set Decoration",
+      "core_responsibility": "Leads the properties department, sourcing and maintaining all hand props, hero props, practical props, weapons interfaces, and actor-use items; coordinates continuity and safety.",
+      "accountable_bob_persona": "production_designer",
+      "stages": [
+        "preproduction",
+        "production"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 97
+    },
+    {
+      "role_id": "assistant_prop_master_props_assistant",
+      "name": "Assistant Prop Master / Props Assistant",
+      "department": "Production Design, Art, Props, Construction, and Set Decoration",
+      "core_responsibility": "Prepares, places, tracks, resets, repairs, and transports props; supports the prop master during takes and changes.",
+      "accountable_bob_persona": "production_designer",
+      "stages": [
+        "preproduction",
+        "production"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 98
+    },
+    {
+      "role_id": "prop_maker_fabricator",
+      "name": "Prop Maker / Fabricator",
+      "department": "Production Design, Art, Props, Construction, and Set Decoration",
+      "core_responsibility": "Designs and builds custom props, replicas, breakaways, soft props, specialty objects, and mechanical items.",
+      "accountable_bob_persona": "production_designer",
+      "stages": [
+        "preproduction",
+        "production"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 99
+    },
+    {
+      "role_id": "armorer_weapons_master",
+      "name": "Armorer / Weapons Master",
+      "department": "Production Design, Art, Props, Construction, and Set Decoration",
+      "core_responsibility": "Lawfully procures, inventories, secures, prepares, and supervises weapons or weapon replicas; enforces strict protocols with production, AD, stunts, and performers. Applicable laws and qualified specialists are essential.",
+      "accountable_bob_persona": "production_designer",
+      "stages": [
+        "preproduction",
+        "production"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 100
+    },
+    {
+      "role_id": "construction_coordinator_construction_manager",
+      "name": "Construction Coordinator / Construction Manager",
+      "department": "Production Design, Art, Props, Construction, and Set Decoration",
+      "core_responsibility": "Budgets, schedules, staffs, and supervises construction of sets, platforms, scenic elements, and location modifications.",
+      "accountable_bob_persona": "production_designer",
+      "stages": [
+        "preproduction",
+        "production"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 101
+    },
+    {
+      "role_id": "carpenter_scenic_carpenter_welder_metalworker",
+      "name": "Carpenter / Scenic Carpenter / Welder / Metalworker",
+      "department": "Production Design, Art, Props, Construction, and Set Decoration",
+      "core_responsibility": "Constructs physical sets, structures, supports, props, and special build elements to approved designs and safety specifications.",
+      "accountable_bob_persona": "production_designer",
+      "stages": [
+        "preproduction",
+        "production"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 102
+    },
+    {
+      "role_id": "scenic_artist_painter",
+      "name": "Scenic Artist / Painter",
+      "department": "Production Design, Art, Props, Construction, and Set Decoration",
+      "core_responsibility": "Paints and finishes sets, textures, murals, aging, faux surfaces, signage, and scenic treatments.",
+      "accountable_bob_persona": "production_designer",
+      "stages": [
+        "preproduction",
+        "production"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 103
+    },
+    {
+      "role_id": "plasterer_sculptor_model_maker",
+      "name": "Plasterer / Sculptor / Model Maker",
+      "department": "Production Design, Art, Props, Construction, and Set Decoration",
+      "core_responsibility": "Creates specialized architectural, sculptural, miniature, molded, or textured elements.",
+      "accountable_bob_persona": "production_designer",
+      "stages": [
+        "preproduction",
+        "production"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 104
+    },
+    {
+      "role_id": "greensperson_greens_coordinator",
+      "name": "Greensperson / Greens Coordinator",
+      "department": "Production Design, Art, Props, Construction, and Set Decoration",
+      "core_responsibility": "Sources and maintains plants, trees, turf, flowers, soil, and other natural dressing; manages watering, replacement, and environmental appearance.",
+      "accountable_bob_persona": "production_designer",
+      "stages": [
+        "preproduction",
+        "production"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 105
+    },
+    {
+      "role_id": "set_pa_art_pa",
+      "name": "Set PA / Art PA",
+      "department": "Production Design, Art, Props, Construction, and Set Decoration",
+      "core_responsibility": "Supports department-specific errands, materials movement, paperwork, set maintenance, and coordination.",
+      "accountable_bob_persona": "production_designer",
+      "stages": [
+        "preproduction",
+        "production"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 106
+    },
+    {
+      "role_id": "costume_designer",
+      "name": "Costume Designer",
+      "department": "Costume, Hair, Makeup, and Personal Appearance",
+      "core_responsibility": "Develops the wardrobe concept for characters, story eras, palettes, silhouettes, changes, fittings, and visual storytelling; manages costume budget and team.",
+      "accountable_bob_persona": "production_designer",
+      "stages": [
+        "preproduction",
+        "production"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 107
+    },
+    {
+      "role_id": "assistant_costume_designer",
+      "name": "Assistant Costume Designer",
+      "department": "Costume, Hair, Makeup, and Personal Appearance",
+      "core_responsibility": "Supports research, sourcing, fittings, breakdowns, communication, continuity, and departmental coordination.",
+      "accountable_bob_persona": "production_designer",
+      "stages": [
+        "preproduction",
+        "production"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 108
+    },
+    {
+      "role_id": "costume_supervisor",
+      "name": "Costume Supervisor",
+      "department": "Costume, Hair, Makeup, and Personal Appearance",
+      "core_responsibility": "Manages costume operations: budgeting, hires, purchases, rentals, records, transport, fittings, maintenance, and inventory.",
+      "accountable_bob_persona": "production_designer",
+      "stages": [
+        "preproduction",
+        "production"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 109
+    },
+    {
+      "role_id": "shopper_buyer",
+      "name": "Shopper / Buyer",
+      "department": "Costume, Hair, Makeup, and Personal Appearance",
+      "core_responsibility": "Sources and purchases or rents wardrobe items, fabrics, accessories, and supplies.",
+      "accountable_bob_persona": "production_designer",
+      "stages": [
+        "preproduction",
+        "production"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 110
+    },
+    {
+      "role_id": "cutter_tailor_seamstress_costume_maker",
+      "name": "Cutter / Tailor / Seamstress / Costume Maker",
+      "department": "Costume, Hair, Makeup, and Personal Appearance",
+      "core_responsibility": "Builds, alters, repairs, fits, duplicates, and maintains costumes.",
+      "accountable_bob_persona": "production_designer",
+      "stages": [
+        "preproduction",
+        "production"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 111
+    },
+    {
+      "role_id": "set_costumer_wardrobe_assistant",
+      "name": "Set Costumer / Wardrobe Assistant",
+      "department": "Costume, Hair, Makeup, and Personal Appearance",
+      "core_responsibility": "Dresses actors, preserves costume continuity, performs quick changes, manages set bags, and resets wardrobe between takes.",
+      "accountable_bob_persona": "production_designer",
+      "stages": [
+        "preproduction",
+        "production"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 112
+    },
+    {
+      "role_id": "ager_dyer_breakdown_artist",
+      "name": "Ager-Dyer / Breakdown Artist",
+      "department": "Costume, Hair, Makeup, and Personal Appearance",
+      "core_responsibility": "Alters garments to appear aged, dirty, distressed, bloodied, weathered, duplicated, or period-appropriate.",
+      "accountable_bob_persona": "production_designer",
+      "stages": [
+        "preproduction",
+        "production"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 113
+    },
+    {
+      "role_id": "key_makeup_artist_department_head",
+      "name": "Key Makeup Artist / Department Head",
+      "department": "Costume, Hair, Makeup, and Personal Appearance",
+      "core_responsibility": "Designs and leads makeup looks, continuity, hygiene, application workflow, and team scheduling.",
+      "accountable_bob_persona": "production_designer",
+      "stages": [
+        "preproduction",
+        "production"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 114
+    },
+    {
+      "role_id": "makeup_artist",
+      "name": "Makeup Artist",
+      "department": "Costume, Hair, Makeup, and Personal Appearance",
+      "core_responsibility": "Applies and maintains standard character makeup, touch-ups, sweat control, continuity, and product hygiene.",
+      "accountable_bob_persona": "production_designer",
+      "stages": [
+        "preproduction",
+        "production"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 115
+    },
+    {
+      "role_id": "special_makeup_effects_artist_prosthetics_designer",
+      "name": "Special Makeup Effects Artist / Prosthetics Designer",
+      "department": "Costume, Hair, Makeup, and Personal Appearance",
+      "core_responsibility": "Creates and applies prosthetics, wounds, aging, creatures, appliances, blood effects, and other practical character transformations.",
+      "accountable_bob_persona": "production_designer",
+      "stages": [
+        "preproduction",
+        "production"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 116
+    },
+    {
+      "role_id": "key_hair_stylist_department_head",
+      "name": "Key Hair Stylist / Department Head",
+      "department": "Costume, Hair, Makeup, and Personal Appearance",
+      "core_responsibility": "Designs and leads hair looks, wigs, continuity, maintenance, and hair-team operations.",
+      "accountable_bob_persona": "production_designer",
+      "stages": [
+        "preproduction",
+        "production"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 117
+    },
+    {
+      "role_id": "hair_stylist_wigmaker",
+      "name": "Hair Stylist / Wigmaker",
+      "department": "Costume, Hair, Makeup, and Personal Appearance",
+      "core_responsibility": "Cuts, styles, maintains, applies, and tracks hair and wigs; handles continuity and on-set touch-ups.",
+      "accountable_bob_persona": "production_designer",
+      "stages": [
+        "preproduction",
+        "production"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 118
+    },
+    {
+      "role_id": "barber",
+      "name": "Barber",
+      "department": "Costume, Hair, Makeup, and Personal Appearance",
+      "core_responsibility": "Provides period, character, grooming, shaving, and haircut services where needed.",
+      "accountable_bob_persona": "production_designer",
+      "stages": [
+        "preproduction",
+        "production"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 119
+    },
+    {
+      "role_id": "personal_assistant_to_principal_talent_glam_team",
+      "name": "Personal Assistant to Principal Talent / Glam Team",
+      "department": "Costume, Hair, Makeup, and Personal Appearance",
+      "core_responsibility": "Supports individual talent’s approved logistical and personal-preparation needs; scope is governed by employment and production arrangements.",
+      "accountable_bob_persona": "production_designer",
+      "stages": [
+        "preproduction",
+        "production"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 120
+    },
+    {
+      "role_id": "production_sound_mixer",
+      "name": "Production Sound Mixer",
+      "department": "Sound, Playback, and Music During Production",
+      "core_responsibility": "Records clean production dialogue and location sound; chooses microphones and recording workflow; monitors sound quality; manages sound reports and sound-team operations.",
+      "accountable_bob_persona": "sound_supervisor",
+      "stages": [
+        "preproduction",
+        "production"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 121
+    },
+    {
+      "role_id": "boom_operator",
+      "name": "Boom Operator",
+      "department": "Sound, Playback, and Music During Production",
+      "core_responsibility": "Places and operates boom microphones, coordinates with camera and lighting, hides or manages microphone positions, and listens for sound issues.",
+      "accountable_bob_persona": "sound_supervisor",
+      "stages": [
+        "preproduction",
+        "production"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 122
+    },
+    {
+      "role_id": "utility_sound_technician",
+      "name": "Utility Sound Technician",
+      "department": "Sound, Playback, and Music During Production",
+      "core_responsibility": "Wires performers, manages radio mics, batteries, frequency coordination, equipment, plant mics, and sound-team logistics.",
+      "accountable_bob_persona": "sound_supervisor",
+      "stages": [
+        "preproduction",
+        "production"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 123
+    },
+    {
+      "role_id": "playback_operator",
+      "name": "Playback Operator",
+      "department": "Sound, Playback, and Music During Production",
+      "core_responsibility": "Supplies, syncs, and operates music, dialogue, timecode, video, or other playback cues during filming, especially for music, dance, screens, or lip-sync.",
+      "accountable_bob_persona": "sound_supervisor",
+      "stages": [
+        "preproduction",
+        "production"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 124
+    },
+    {
+      "role_id": "music_supervisor_production_consult",
+      "name": "Music Supervisor (Production Consult)",
+      "department": "Sound, Playback, and Music During Production",
+      "core_responsibility": "Advises on music needs, early licensing strategy, temp music, artist relationships, and clearance implications that affect the shoot.",
+      "accountable_bob_persona": "sound_supervisor",
+      "stages": [
+        "preproduction",
+        "production"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 125
+    },
+    {
+      "role_id": "special_effects_supervisor_sfx",
+      "name": "Special Effects Supervisor (SFX)",
+      "department": "Special Effects, Visual Effects, Action, and Specialty Departments",
+      "core_responsibility": "Designs and executes practical physical effects such as wind, rain, snow, smoke, fire, explosions, breakaways, mechanical effects, water effects, and atmospherics, with rigorous safety planning.",
+      "accountable_bob_persona": "vfx_supervisor",
+      "stages": [
+        "preproduction",
+        "production",
+        "postproduction"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 126
+    },
+    {
+      "role_id": "special_effects_technician",
+      "name": "Special Effects Technician",
+      "department": "Special Effects, Visual Effects, Action, and Specialty Departments",
+      "core_responsibility": "Builds, tests, operates, resets, and maintains practical-effect systems under SFX supervision.",
+      "accountable_bob_persona": "vfx_supervisor",
+      "stages": [
+        "preproduction",
+        "production",
+        "postproduction"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 127
+    },
+    {
+      "role_id": "pyrotechnician",
+      "name": "Pyrotechnician",
+      "department": "Special Effects, Visual Effects, Action, and Specialty Departments",
+      "core_responsibility": "Handles permitted pyrotechnic effects under applicable licenses, safety plans, fire requirements, and specialist procedures.",
+      "accountable_bob_persona": "vfx_supervisor",
+      "stages": [
+        "preproduction",
+        "production",
+        "postproduction"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 128
+    },
+    {
+      "role_id": "special_effects_makeup_practical_creature_team",
+      "name": "Special Effects Makeup / Practical Creature Team",
+      "department": "Special Effects, Visual Effects, Action, and Specialty Departments",
+      "core_responsibility": "Creates physical character effects; collaborates with makeup, art, props, and VFX.",
+      "accountable_bob_persona": "vfx_supervisor",
+      "stages": [
+        "preproduction",
+        "production",
+        "postproduction"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 129
+    },
+    {
+      "role_id": "visual_effects_supervisor_vfx_supervisor",
+      "name": "Visual Effects Supervisor (VFX Supervisor)",
+      "department": "Special Effects, Visual Effects, Action, and Specialty Departments",
+      "core_responsibility": "Plans effects that will be created or enhanced digitally; advises the director and DP on shooting methods, plates, tracking, greenscreens, references, and post-production execution.",
+      "accountable_bob_persona": "vfx_supervisor",
+      "stages": [
+        "preproduction",
+        "production",
+        "postproduction"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 130
+    },
+    {
+      "role_id": "on_set_vfx_supervisor_vfx_producer",
+      "name": "On-Set VFX Supervisor / VFX Producer",
+      "department": "Special Effects, Visual Effects, Action, and Specialty Departments",
+      "core_responsibility": "Captures needed VFX data and references, tracks shots, coordinates vendors and schedule, and ensures photography supports the post-production plan.",
+      "accountable_bob_persona": "vfx_supervisor",
+      "stages": [
+        "preproduction",
+        "production",
+        "postproduction"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 131
+    },
+    {
+      "role_id": "vfx_data_wrangler_witness_camera_operator_lidar_technician",
+      "name": "VFX Data Wrangler / Witness-Camera Operator / Lidar Technician",
+      "department": "Special Effects, Visual Effects, Action, and Specialty Departments",
+      "core_responsibility": "Captures camera metadata, lens data, HDRIs, texture references, scan data, witness footage, and measurements for accurate digital reconstruction.",
+      "accountable_bob_persona": "vfx_supervisor",
+      "stages": [
+        "preproduction",
+        "production",
+        "postproduction"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 132
+    },
+    {
+      "role_id": "virtual_production_supervisor",
+      "name": "Virtual Production Supervisor",
+      "department": "Special Effects, Visual Effects, Action, and Specialty Departments",
+      "core_responsibility": "Coordinates LED-volume, real-time engine, camera-tracking, virtual-art, and live-compositing systems used during photography.",
+      "accountable_bob_persona": "vfx_supervisor",
+      "stages": [
+        "preproduction",
+        "production",
+        "postproduction"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 133
+    },
+    {
+      "role_id": "fight_coordinator_fight_choreographer",
+      "name": "Fight Coordinator / Fight Choreographer",
+      "department": "Special Effects, Visual Effects, Action, and Specialty Departments",
+      "core_responsibility": "Designs and rehearses staged combat with repeatable beats, performer training, prop handling, and safety coordination.",
+      "accountable_bob_persona": "vfx_supervisor",
+      "stages": [
+        "preproduction",
+        "production",
+        "postproduction"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 134
+    },
+    {
+      "role_id": "vehicle_coordinator_picture_car_coordinator",
+      "name": "Vehicle Coordinator / Picture-Car Coordinator",
+      "department": "Special Effects, Visual Effects, Action, and Specialty Departments",
+      "core_responsibility": "Sources and prepares vehicles; coordinates picture cars, driving action, permits, mechanics, towing, continuity, and safe vehicle use.",
+      "accountable_bob_persona": "vfx_supervisor",
+      "stages": [
+        "preproduction",
+        "production",
+        "postproduction"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 135
+    },
+    {
+      "role_id": "marine_coordinator_water_safety_team",
+      "name": "Marine Coordinator / Water Safety Team",
+      "department": "Special Effects, Visual Effects, Action, and Specialty Departments",
+      "core_responsibility": "Plans watercraft, diving, lifeguard coverage, weather monitoring, rescue capability, and water-based filming safety.",
+      "accountable_bob_persona": "vfx_supervisor",
+      "stages": [
+        "preproduction",
+        "production",
+        "postproduction"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 136
+    },
+    {
+      "role_id": "aerial_coordinator",
+      "name": "Aerial Coordinator",
+      "department": "Special Effects, Visual Effects, Action, and Specialty Departments",
+      "core_responsibility": "Coordinates aircraft, aerial rigs, safety approvals, timing, and specialized personnel for aerial work.",
+      "accountable_bob_persona": "vfx_supervisor",
+      "stages": [
+        "preproduction",
+        "production",
+        "postproduction"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 137
+    },
+    {
+      "role_id": "animal_effects_creature_effects_technician",
+      "name": "Animal Effects / Creature Effects Technician",
+      "department": "Special Effects, Visual Effects, Action, and Specialty Departments",
+      "core_responsibility": "Supports animatronics, puppetry, trained animal interfaces, or mechanical creature work.",
+      "accountable_bob_persona": "vfx_supervisor",
+      "stages": [
+        "preproduction",
+        "production",
+        "postproduction"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 138
+    },
+    {
+      "role_id": "puppeteer_puppet_fabricator",
+      "name": "Puppeteer / Puppet Fabricator",
+      "department": "Special Effects, Visual Effects, Action, and Specialty Departments",
+      "core_responsibility": "Designs, builds, performs, or coordinates practical puppets and creature mechanisms.",
+      "accountable_bob_persona": "vfx_supervisor",
+      "stages": [
+        "preproduction",
+        "production",
+        "postproduction"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 139
+    },
+    {
+      "role_id": "post_production_supervisor",
+      "name": "Post-Production Supervisor",
+      "department": "Editorial and Picture Post-Production",
+      "core_responsibility": "Builds the post plan, budget, schedule, vendor strategy, workflow, delivery calendar, and communication system from editorial through final masters.",
+      "accountable_bob_persona": "editor",
+      "stages": [
+        "production",
+        "postproduction"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 140
+    },
+    {
+      "role_id": "post_production_coordinator",
+      "name": "Post-Production Coordinator",
+      "department": "Editorial and Picture Post-Production",
+      "core_responsibility": "Tracks editorial assets, schedules, approvals, turnover materials, deliveries, invoices, databases, and post-office communication.",
+      "accountable_bob_persona": "editor",
+      "stages": [
+        "production",
+        "postproduction"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 141
+    },
+    {
+      "role_id": "editor_picture_editor",
+      "name": "Editor / Picture Editor",
+      "department": "Editorial and Picture Post-Production",
+      "core_responsibility": "Selects and assembles takes; shapes scene construction, performance, rhythm, clarity, tone, and overall story; collaborates closely with director and producers through locked picture.",
+      "accountable_bob_persona": "editor",
+      "stages": [
+        "production",
+        "postproduction"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 142
+    },
+    {
+      "role_id": "assistant_editor",
+      "name": "Assistant Editor",
+      "department": "Editorial and Picture Post-Production",
+      "core_responsibility": "Organizes footage, syncs dailies, maintains project databases, prepares cuts, tracks versions, creates turnovers, handles exports, and supports editorial workflow and backups.",
+      "accountable_bob_persona": "editor",
+      "stages": [
+        "production",
+        "postproduction"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 143
+    },
+    {
+      "role_id": "apprentice_editor_editorial_assistant",
+      "name": "Apprentice Editor / Editorial Assistant",
+      "department": "Editorial and Picture Post-Production",
+      "core_responsibility": "Supports media organization, logging, exports, paperwork, deliveries, and other editorial operations.",
+      "accountable_bob_persona": "editor",
+      "stages": [
+        "production",
+        "postproduction"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 144
+    },
+    {
+      "role_id": "dailies_colorist_dailies_operator",
+      "name": "Dailies Colorist / Dailies Operator",
+      "department": "Editorial and Picture Post-Production",
+      "core_responsibility": "Applies approved looks to camera material, produces review files, and preserves metadata and color consistency for editorial and production review.",
+      "accountable_bob_persona": "editor",
+      "stages": [
+        "production",
+        "postproduction"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 145
+    },
+    {
+      "role_id": "dailies_producer_dailies_lab_technician",
+      "name": "Dailies Producer / Dailies Lab Technician",
+      "department": "Editorial and Picture Post-Production",
+      "core_responsibility": "Coordinates processing, transcoding, quality checks, delivery, security, and tracking of daily footage.",
+      "accountable_bob_persona": "editor",
+      "stages": [
+        "production",
+        "postproduction"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 146
+    },
+    {
+      "role_id": "post_production_accountant",
+      "name": "Post-Production Accountant",
+      "department": "Editorial and Picture Post-Production",
+      "core_responsibility": "Tracks post spending, vendor costs, purchase orders, cost reporting, final billing, and financial close-out.",
+      "accountable_bob_persona": "editor",
+      "stages": [
+        "production",
+        "postproduction"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 147
+    },
+    {
+      "role_id": "archival_producer_archival_researcher",
+      "name": "Archival Producer / Archival Researcher",
+      "department": "Editorial and Picture Post-Production",
+      "core_responsibility": "Sources archive footage, stills, audio, documents, and licenses; tracks terms, provenance, and delivery requirements.",
+      "accountable_bob_persona": "editor",
+      "stages": [
+        "production",
+        "postproduction"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 148
+    },
+    {
+      "role_id": "titles_designer_motion_graphics_designer",
+      "name": "Titles Designer / Motion Graphics Designer",
+      "department": "Editorial and Picture Post-Production",
+      "core_responsibility": "Creates opening titles, end credits treatments, screen graphics, lower thirds, and motion-design elements for the picture.",
+      "accountable_bob_persona": "editor",
+      "stages": [
+        "production",
+        "postproduction"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 149
+    },
+    {
+      "role_id": "vfx_producer",
+      "name": "VFX Producer",
+      "department": "Visual Effects Post-Production",
+      "core_responsibility": "Budgets, schedules, contracts, tracks, and delivers VFX work across internal teams and vendors; manages client approvals and shot priorities.",
+      "accountable_bob_persona": "vfx_supervisor",
+      "stages": [
+        "postproduction"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 150
+    },
+    {
+      "role_id": "vfx_coordinator",
+      "name": "VFX Coordinator",
+      "department": "Visual Effects Post-Production",
+      "core_responsibility": "Maintains shot databases, notes, turnover materials, review schedules, deliveries, vendor communication, and asset tracking.",
+      "accountable_bob_persona": "vfx_supervisor",
+      "stages": [
+        "postproduction"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 151
+    },
+    {
+      "role_id": "vfx_editor",
+      "name": "VFX Editor",
+      "department": "Visual Effects Post-Production",
+      "core_responsibility": "Prepares and tracks VFX turnovers, temp composites, editorial versions, reviews, and returned final shots.",
+      "accountable_bob_persona": "vfx_supervisor",
+      "stages": [
+        "postproduction"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 152
+    },
+    {
+      "role_id": "compositor",
+      "name": "Compositor",
+      "department": "Visual Effects Post-Production",
+      "core_responsibility": "Combines photographed elements and digital elements into a seamless image using mattes, keying, rotoscoping, tracking, paint, color, and integration work.",
+      "accountable_bob_persona": "vfx_supervisor",
+      "stages": [
+        "postproduction"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 153
+    },
+    {
+      "role_id": "rotoscope_paint_artist",
+      "name": "Rotoscope / Paint Artist",
+      "department": "Visual Effects Post-Production",
+      "core_responsibility": "Creates masks, removes unwanted elements, repairs imagery, prepares clean plates, and supports compositing.",
+      "accountable_bob_persona": "vfx_supervisor",
+      "stages": [
+        "postproduction"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 154
+    },
+    {
+      "role_id": "matchmove_tracking_artist",
+      "name": "Matchmove / Tracking Artist",
+      "department": "Visual Effects Post-Production",
+      "core_responsibility": "Reconstructs camera and object movement so digital elements align correctly with photographed footage.",
+      "accountable_bob_persona": "vfx_supervisor",
+      "stages": [
+        "postproduction"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 155
+    },
+    {
+      "role_id": "layout_artist",
+      "name": "Layout Artist",
+      "department": "Visual Effects Post-Production",
+      "core_responsibility": "Establishes shot composition, camera, staging, scale, and timing for digital scenes.",
+      "accountable_bob_persona": "vfx_supervisor",
+      "stages": [
+        "postproduction"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 156
+    },
+    {
+      "role_id": "modeler",
+      "name": "Modeler",
+      "department": "Visual Effects Post-Production",
+      "core_responsibility": "Builds 3D objects, characters, environments, and props.",
+      "accountable_bob_persona": "vfx_supervisor",
+      "stages": [
+        "postproduction"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 157
+    },
+    {
+      "role_id": "texture_look_development_artist",
+      "name": "Texture / Look-Development Artist",
+      "department": "Visual Effects Post-Production",
+      "core_responsibility": "Creates surface detail, materials, shaders, and appearance tests for 3D assets.",
+      "accountable_bob_persona": "vfx_supervisor",
+      "stages": [
+        "postproduction"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 158
+    },
+    {
+      "role_id": "rigger",
+      "name": "Rigger",
+      "department": "Visual Effects Post-Production",
+      "core_responsibility": "Builds controllable digital skeletons, deformers, and control systems for animation.",
+      "accountable_bob_persona": "vfx_supervisor",
+      "stages": [
+        "postproduction"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 159
+    },
+    {
+      "role_id": "animator",
+      "name": "Animator",
+      "department": "Visual Effects Post-Production",
+      "core_responsibility": "Creates character, creature, object, or camera performance and movement.",
+      "accountable_bob_persona": "vfx_supervisor",
+      "stages": [
+        "postproduction"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 160
+    },
+    {
+      "role_id": "fx_simulation_artist",
+      "name": "FX Simulation Artist",
+      "department": "Visual Effects Post-Production",
+      "core_responsibility": "Simulates fire, smoke, destruction, particles, water, cloth, crowds, and other dynamic effects.",
+      "accountable_bob_persona": "vfx_supervisor",
+      "stages": [
+        "postproduction"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 161
+    },
+    {
+      "role_id": "lighting_rendering_artist",
+      "name": "Lighting / Rendering Artist",
+      "department": "Visual Effects Post-Production",
+      "core_responsibility": "Lights digital scenes, renders final image passes, and prepares assets for compositing.",
+      "accountable_bob_persona": "vfx_supervisor",
+      "stages": [
+        "postproduction"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 162
+    },
+    {
+      "role_id": "cg_supervisor_sequence_supervisor",
+      "name": "CG Supervisor / Sequence Supervisor",
+      "department": "Visual Effects Post-Production",
+      "core_responsibility": "Leads technical and artistic quality for a CG or sequence team; solves workflow and shot-level issues.",
+      "accountable_bob_persona": "vfx_supervisor",
+      "stages": [
+        "postproduction"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 163
+    },
+    {
+      "role_id": "virtual_art_department_vad_artist",
+      "name": "Virtual Art Department (VAD) Artist",
+      "department": "Visual Effects Post-Production",
+      "core_responsibility": "Creates real-time digital environments, assets, previs materials, and virtual-production content.",
+      "accountable_bob_persona": "vfx_supervisor",
+      "stages": [
+        "postproduction"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 164
+    },
+    {
+      "role_id": "supervising_sound_editor",
+      "name": "Supervising Sound Editor",
+      "department": "Sound Post-Production and Music",
+      "core_responsibility": "Leads the sound-post creative and technical plan; supervises dialogue, effects, Foley, ADR, mixing, schedule, budget, and final sound deliverables.",
+      "accountable_bob_persona": "sound_supervisor",
+      "stages": [
+        "postproduction"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 165
+    },
+    {
+      "role_id": "dialogue_editor",
+      "name": "Dialogue Editor",
+      "department": "Sound Post-Production and Music",
+      "core_responsibility": "Cleans, organizes, edits, and matches production dialogue; prepares it for mixing and identifies ADR needs.",
+      "accountable_bob_persona": "sound_supervisor",
+      "stages": [
+        "postproduction"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 166
+    },
+    {
+      "role_id": "adr_supervisor_adr_editor",
+      "name": "ADR Supervisor / ADR Editor",
+      "department": "Sound Post-Production and Music",
+      "core_responsibility": "Plans and records replacement dialogue, cues actors, selects takes, edits replacements, and integrates them with production sound.",
+      "accountable_bob_persona": "sound_supervisor",
+      "stages": [
+        "postproduction"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 167
+    },
+    {
+      "role_id": "foley_artist",
+      "name": "Foley Artist",
+      "department": "Sound Post-Production and Music",
+      "core_responsibility": "Performs custom footsteps, cloth, and object sounds in sync with the locked picture.",
+      "accountable_bob_persona": "sound_supervisor",
+      "stages": [
+        "postproduction"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 168
+    },
+    {
+      "role_id": "foley_editor_foley_mixer",
+      "name": "Foley Editor / Foley Mixer",
+      "department": "Sound Post-Production and Music",
+      "core_responsibility": "Edits, organizes, and balances Foley recordings for the final soundtrack.",
+      "accountable_bob_persona": "sound_supervisor",
+      "stages": [
+        "postproduction"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 169
+    },
+    {
+      "role_id": "sound_effects_editor_effects_designer",
+      "name": "Sound Effects Editor / Effects Designer",
+      "department": "Sound Post-Production and Music",
+      "core_responsibility": "Selects, edits, creates, and layers environmental, vehicle, weapon, creature, designed, and practical sound effects.",
+      "accountable_bob_persona": "sound_supervisor",
+      "stages": [
+        "postproduction"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 170
+    },
+    {
+      "role_id": "field_recordist_sound_designer",
+      "name": "Field Recordist / Sound Designer",
+      "department": "Sound Post-Production and Music",
+      "core_responsibility": "Records or creates distinctive source material and develops the film’s sonic identity.",
+      "accountable_bob_persona": "sound_supervisor",
+      "stages": [
+        "postproduction"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 171
+    },
+    {
+      "role_id": "re_recording_mixer",
+      "name": "Re-recording Mixer",
+      "department": "Sound Post-Production and Music",
+      "core_responsibility": "Balances dialogue, ADR, Foley, effects, ambience, and music into final theatrical and home-release mixes; creates required mix versions.",
+      "accountable_bob_persona": "sound_supervisor",
+      "stages": [
+        "postproduction"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 172
+    },
+    {
+      "role_id": "music_editor",
+      "name": "Music Editor",
+      "department": "Sound Post-Production and Music",
+      "core_responsibility": "Spots music with the team, conforms score and source cues to picture changes, manages timing, prepares sessions, and coordinates music deliverables.",
+      "accountable_bob_persona": "sound_supervisor",
+      "stages": [
+        "postproduction"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 173
+    },
+    {
+      "role_id": "composer",
+      "name": "Composer",
+      "department": "Sound Post-Production and Music",
+      "core_responsibility": "Writes original score supporting story, character, pacing, and emotional structure; collaborates with director, music editor, and music supervisor.",
+      "accountable_bob_persona": "sound_supervisor",
+      "stages": [
+        "postproduction"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 174
+    },
+    {
+      "role_id": "orchestrator",
+      "name": "Orchestrator",
+      "department": "Sound Post-Production and Music",
+      "core_responsibility": "Expands the composer’s material into arrangements for the intended ensemble or orchestra.",
+      "accountable_bob_persona": "sound_supervisor",
+      "stages": [
+        "postproduction"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 175
+    },
+    {
+      "role_id": "arranger",
+      "name": "Arranger",
+      "department": "Sound Post-Production and Music",
+      "core_responsibility": "Adapts music for a particular style, ensemble, sequence, or performance need.",
+      "accountable_bob_persona": "sound_supervisor",
+      "stages": [
+        "postproduction"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 176
+    },
+    {
+      "role_id": "music_supervisor",
+      "name": "Music Supervisor",
+      "department": "Sound Post-Production and Music",
+      "core_responsibility": "Sources, licenses, budgets, clears, negotiates, and delivers pre-existing songs and recordings; manages artist/label/publisher relationships and cue documentation.",
+      "accountable_bob_persona": "sound_supervisor",
+      "stages": [
+        "postproduction"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 177
+    },
+    {
+      "role_id": "music_coordinator",
+      "name": "Music Coordinator",
+      "department": "Sound Post-Production and Music",
+      "core_responsibility": "Tracks licenses, cue sheets, contracts, music files, sessions, credits, and stakeholder communication.",
+      "accountable_bob_persona": "sound_supervisor",
+      "stages": [
+        "postproduction"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 178
+    },
+    {
+      "role_id": "music_contractor",
+      "name": "Music Contractor",
+      "department": "Sound Post-Production and Music",
+      "core_responsibility": "Hires musicians, ensembles, conductors, recording facilities, and related session personnel.",
+      "accountable_bob_persona": "sound_supervisor",
+      "stages": [
+        "postproduction"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 179
+    },
+    {
+      "role_id": "conductor_performers_recording_engineer",
+      "name": "Conductor / Performers / Recording Engineer",
+      "department": "Sound Post-Production and Music",
+      "core_responsibility": "Rehearses and records score performances; captures and prepares high-quality music recordings.",
+      "accountable_bob_persona": "sound_supervisor",
+      "stages": [
+        "postproduction"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 180
+    },
+    {
+      "role_id": "songs_writer_lyricist",
+      "name": "Songs Writer / Lyricist",
+      "department": "Sound Post-Production and Music",
+      "core_responsibility": "Writes original songs or lyrics for the film.",
+      "accountable_bob_persona": "sound_supervisor",
+      "stages": [
+        "postproduction"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 181
+    },
+    {
+      "role_id": "colorist",
+      "name": "Colorist",
+      "department": "Color, Finishing, Mastering, and Deliverables",
+      "core_responsibility": "Grades the completed image for exposure, contrast, color, shot matching, mood, and consistency while preserving creative intent across viewing formats.",
+      "accountable_bob_persona": "qc_supervisor",
+      "stages": [
+        "postproduction",
+        "release"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 182
+    },
+    {
+      "role_id": "online_editor_finishing_editor",
+      "name": "Online Editor / Finishing Editor",
+      "department": "Color, Finishing, Mastering, and Deliverables",
+      "core_responsibility": "Conforms the locked edit to highest-quality source material; integrates final VFX, titles, reframes, cleanups, and technical finishing work.",
+      "accountable_bob_persona": "qc_supervisor",
+      "stages": [
+        "postproduction",
+        "release"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 183
+    },
+    {
+      "role_id": "conform_artist",
+      "name": "Conform Artist",
+      "department": "Color, Finishing, Mastering, and Deliverables",
+      "core_responsibility": "Relinks and reconstructs the final timeline from original media, VFX, color, and approved edit decisions.",
+      "accountable_bob_persona": "qc_supervisor",
+      "stages": [
+        "postproduction",
+        "release"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 184
+    },
+    {
+      "role_id": "di_producer_finishing_producer",
+      "name": "DI Producer / Finishing Producer",
+      "department": "Color, Finishing, Mastering, and Deliverables",
+      "core_responsibility": "Schedules and manages digital-intermediate, color, mastering, approvals, assets, vendor coordination, and deliverables.",
+      "accountable_bob_persona": "qc_supervisor",
+      "stages": [
+        "postproduction",
+        "release"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 185
+    },
+    {
+      "role_id": "quality_control_qc_technician",
+      "name": "Quality-Control (QC) Technician",
+      "department": "Color, Finishing, Mastering, and Deliverables",
+      "core_responsibility": "Tests picture, sound, subtitles, captions, legal cards, timing, encoding, and packaging for technical defects or specification compliance.",
+      "accountable_bob_persona": "qc_supervisor",
+      "stages": [
+        "postproduction",
+        "release"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 186
+    },
+    {
+      "role_id": "mastering_engineer_digital_cinema_package_dcp_technician",
+      "name": "Mastering Engineer / Digital Cinema Package (DCP) Technician",
+      "department": "Color, Finishing, Mastering, and Deliverables",
+      "core_responsibility": "Creates, encrypts where applicable, verifies, and packages theatrical or platform masters such as DCPs, IMF packages, broadcast masters, and home-video encodes.",
+      "accountable_bob_persona": "qc_supervisor",
+      "stages": [
+        "postproduction",
+        "release"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 187
+    },
+    {
+      "role_id": "localization_producer",
+      "name": "Localization Producer",
+      "department": "Color, Finishing, Mastering, and Deliverables",
+      "core_responsibility": "Coordinates dubbing, subtitles, captions, translated graphics, regional versions, approvals, and delivery requirements.",
+      "accountable_bob_persona": "qc_supervisor",
+      "stages": [
+        "postproduction",
+        "release"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 188
+    },
+    {
+      "role_id": "subtitler_captioner",
+      "name": "Subtitler / Captioner",
+      "department": "Color, Finishing, Mastering, and Deliverables",
+      "core_responsibility": "Creates accurate timed subtitles, captions, speaker identifiers, sound descriptions, and accessibility-compliant text assets.",
+      "accountable_bob_persona": "qc_supervisor",
+      "stages": [
+        "postproduction",
+        "release"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 189
+    },
+    {
+      "role_id": "descriptive_audio_writer_narrator",
+      "name": "Descriptive Audio Writer / Narrator",
+      "department": "Color, Finishing, Mastering, and Deliverables",
+      "core_responsibility": "Creates or performs audio description that makes visual information accessible to blind or low-vision audiences.",
+      "accountable_bob_persona": "qc_supervisor",
+      "stages": [
+        "postproduction",
+        "release"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 190
+    },
+    {
+      "role_id": "accessibility_coordinator",
+      "name": "Accessibility Coordinator",
+      "department": "Color, Finishing, Mastering, and Deliverables",
+      "core_responsibility": "Plans and tracks captioning, subtitle, descriptive-audio, and accessible-deliverable requirements.",
+      "accountable_bob_persona": "qc_supervisor",
+      "stages": [
+        "postproduction",
+        "release"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 191
+    },
+    {
+      "role_id": "legal_deliverables_coordinator",
+      "name": "Legal Deliverables Coordinator",
+      "department": "Color, Finishing, Mastering, and Deliverables",
+      "core_responsibility": "Assembles chain-of-title, music, errors-and-omissions, cue sheets, releases, licenses, credits, ratings, and other documentary deliverables required by distributors or insurers.",
+      "accountable_bob_persona": "qc_supervisor",
+      "stages": [
+        "postproduction",
+        "release"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 192
+    },
+    {
+      "role_id": "credits_coordinator",
+      "name": "Credits Coordinator",
+      "department": "Color, Finishing, Mastering, and Deliverables",
+      "core_responsibility": "Collects contractual credits, verifies spelling/order and guild requirements, coordinates approvals, and delivers final end-credit text.",
+      "accountable_bob_persona": "qc_supervisor",
+      "stages": [
+        "postproduction",
+        "release"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 193
+    },
+    {
+      "role_id": "sales_agent",
+      "name": "Sales Agent",
+      "department": "Marketing, Publicity, Sales, Distribution, and Exhibition",
+      "core_responsibility": "Represents the film to potential distributors and buyers, prepares sales materials, negotiates territory-based deals, and coordinates market strategy.",
+      "accountable_bob_persona": "studio_orchestrator",
+      "stages": [
+        "release"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 194
+    },
+    {
+      "role_id": "domestic_international_distributor",
+      "name": "Domestic / International Distributor",
+      "department": "Marketing, Publicity, Sales, Distribution, and Exhibition",
+      "core_responsibility": "Acquires release rights and executes distribution across theatrical, streaming, broadcast, transactional, physical media, or other channels; manages release strategy and revenue reporting.",
+      "accountable_bob_persona": "studio_orchestrator",
+      "stages": [
+        "release"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 195
+    },
+    {
+      "role_id": "distribution_executive_distribution_coordinator",
+      "name": "Distribution Executive / Distribution Coordinator",
+      "department": "Marketing, Publicity, Sales, Distribution, and Exhibition",
+      "core_responsibility": "Plans delivery, release calendars, territories, platforms, marketing assets, booking, reporting, and distributor-facing operations.",
+      "accountable_bob_persona": "studio_orchestrator",
+      "stages": [
+        "release"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 196
+    },
+    {
+      "role_id": "marketing_producer_campaign_manager",
+      "name": "Marketing Producer / Campaign Manager",
+      "department": "Marketing, Publicity, Sales, Distribution, and Exhibition",
+      "core_responsibility": "Develops the marketing plan, budget, audience positioning, assets, campaign calendar, partnerships, and performance tracking.",
+      "accountable_bob_persona": "studio_orchestrator",
+      "stages": [
+        "release"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 197
+    },
+    {
+      "role_id": "publicist_unit_publicist",
+      "name": "Publicist / Unit Publicist",
+      "department": "Marketing, Publicity, Sales, Distribution, and Exhibition",
+      "core_responsibility": "Manages press strategy, media access, set visits, interviews, press releases, talent publicity logistics, and reputation-sensitive communication.",
+      "accountable_bob_persona": "studio_orchestrator",
+      "stages": [
+        "release"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 198
+    },
+    {
+      "role_id": "epk_producer",
+      "name": "EPK Producer",
+      "department": "Marketing, Publicity, Sales, Distribution, and Exhibition",
+      "core_responsibility": "Produces electronic press-kit content: interviews, behind-the-scenes footage, featurettes, clips, and approved promotional packages.",
+      "accountable_bob_persona": "studio_orchestrator",
+      "stages": [
+        "release"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 199
+    },
+    {
+      "role_id": "trailer_editor_creative_advertising_editor",
+      "name": "Trailer Editor / Creative Advertising Editor",
+      "department": "Marketing, Publicity, Sales, Distribution, and Exhibition",
+      "core_responsibility": "Cuts trailers, teasers, TV spots, social videos, and other campaign edits to position the film for an audience.",
+      "accountable_bob_persona": "studio_orchestrator",
+      "stages": [
+        "release"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 200
+    },
+    {
+      "role_id": "key_art_designer_poster_artist",
+      "name": "Key Art Designer / Poster Artist",
+      "department": "Marketing, Publicity, Sales, Distribution, and Exhibition",
+      "core_responsibility": "Designs posters, title treatments, billboards, thumbnails, and visual campaign assets.",
+      "accountable_bob_persona": "studio_orchestrator",
+      "stages": [
+        "release"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 201
+    },
+    {
+      "role_id": "social_media_manager_community_manager",
+      "name": "Social Media Manager / Community Manager",
+      "department": "Marketing, Publicity, Sales, Distribution, and Exhibition",
+      "core_responsibility": "Plans, publishes, moderates, and measures approved social content and audience engagement.",
+      "accountable_bob_persona": "studio_orchestrator",
+      "stages": [
+        "release"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 202
+    },
+    {
+      "role_id": "publicity_stills_photographer",
+      "name": "Publicity Stills Photographer",
+      "department": "Marketing, Publicity, Sales, Distribution, and Exhibition",
+      "core_responsibility": "Supplies still images for press, exhibitors, partners, and advertising.",
+      "accountable_bob_persona": "studio_orchestrator",
+      "stages": [
+        "release"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 203
+    },
+    {
+      "role_id": "festival_strategist_festival_producer",
+      "name": "Festival Strategist / Festival Producer",
+      "department": "Marketing, Publicity, Sales, Distribution, and Exhibition",
+      "core_responsibility": "Identifies suitable festivals, manages submissions, coordinates premiere strategy, materials, travel, press, and festival relationships.",
+      "accountable_bob_persona": "studio_orchestrator",
+      "stages": [
+        "release"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 204
+    },
+    {
+      "role_id": "theatrical_booker_exhibitor_relations_manager",
+      "name": "Theatrical Booker / Exhibitor Relations Manager",
+      "department": "Marketing, Publicity, Sales, Distribution, and Exhibition",
+      "core_responsibility": "Negotiates cinema bookings, screens, playdates, terms, promotional support, and box-office reporting.",
+      "accountable_bob_persona": "studio_orchestrator",
+      "stages": [
+        "release"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 205
+    },
+    {
+      "role_id": "ratings_classification_coordinator",
+      "name": "Ratings / Classification Coordinator",
+      "department": "Marketing, Publicity, Sales, Distribution, and Exhibition",
+      "core_responsibility": "Prepares submissions and documentation for ratings or classification boards in relevant territories.",
+      "accountable_bob_persona": "studio_orchestrator",
+      "stages": [
+        "release"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 206
+    },
+    {
+      "role_id": "film_commissioner_incentives_liaison",
+      "name": "Film Commissioner / Incentives Liaison",
+      "department": "Marketing, Publicity, Sales, Distribution, and Exhibition",
+      "core_responsibility": "Supports location production with regional introductions, permitting guidance, and tax-incentive or rebate-process coordination.",
+      "accountable_bob_persona": "studio_orchestrator",
+      "stages": [
+        "release"
+      ],
+      "project_types": [
+        "feature",
+        "series",
+        "animation",
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 207
+    },
+    {
+      "role_id": "documentary_director_producer",
+      "name": "Documentary Director / Producer",
+      "department": "Documentary-Specific Roles",
+      "core_responsibility": "Develops the journalistic or observational approach, obtains access, guides interviews, manages ethics and consent, and shapes the final argument or story.",
+      "accountable_bob_persona": "documentary_research_editor",
+      "stages": [
+        "development",
+        "preproduction",
+        "production",
+        "postproduction"
+      ],
+      "project_types": [
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 208
+    },
+    {
+      "role_id": "field_producer",
+      "name": "Field Producer",
+      "department": "Documentary-Specific Roles",
+      "core_responsibility": "Arranges contributors, travel, releases, research, access, interview logistics, and story development in the field.",
+      "accountable_bob_persona": "documentary_research_editor",
+      "stages": [
+        "development",
+        "preproduction",
+        "production",
+        "postproduction"
+      ],
+      "project_types": [
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 209
+    },
+    {
+      "role_id": "journalist_investigative_researcher",
+      "name": "Journalist / Investigative Researcher",
+      "department": "Documentary-Specific Roles",
+      "core_responsibility": "Verifies claims, develops sources, reviews records, documents evidence, and helps ensure editorial rigor.",
+      "accountable_bob_persona": "documentary_research_editor",
+      "stages": [
+        "development",
+        "preproduction",
+        "production",
+        "postproduction"
+      ],
+      "project_types": [
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 210
+    },
+    {
+      "role_id": "interview_producer",
+      "name": "Interview Producer",
+      "department": "Documentary-Specific Roles",
+      "core_responsibility": "Researches participants, designs interview lines, prepares briefing materials, and coordinates releases and logistics.",
+      "accountable_bob_persona": "documentary_research_editor",
+      "stages": [
+        "development",
+        "preproduction",
+        "production",
+        "postproduction"
+      ],
+      "project_types": [
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 211
+    },
+    {
+      "role_id": "archive_producer",
+      "name": "Archive Producer",
+      "department": "Documentary-Specific Roles",
+      "core_responsibility": "Locates, researches, clears, licenses, budgets, and tracks historical footage, stills, news, documents, and other archives.",
+      "accountable_bob_persona": "documentary_research_editor",
+      "stages": [
+        "development",
+        "preproduction",
+        "production",
+        "postproduction"
+      ],
+      "project_types": [
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 212
+    },
+    {
+      "role_id": "fact_checker",
+      "name": "Fact Checker",
+      "department": "Documentary-Specific Roles",
+      "core_responsibility": "Independently verifies names, dates, quotations, claims, source attributions, statistics, and on-screen factual statements.",
+      "accountable_bob_persona": "documentary_research_editor",
+      "stages": [
+        "development",
+        "preproduction",
+        "production",
+        "postproduction"
+      ],
+      "project_types": [
+        "documentary"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 213
+    },
+    {
+      "role_id": "legal_reviewer_defamation_counsel",
+      "name": "Legal Reviewer / Defamation Counsel",
+      "department": "Documentary-Specific Roles",
+      "core_responsibility": "Reviews factual assertions, releases, fair-use analysis, privacy issues, and risk-sensitive editorial content before release.",
+      "accountable_bob_persona": "documentary_research_editor",
+      "stages": [
+        "development",
+        "preproduction",
+        "production",
+        "postproduction"
+      ],
+      "project_types": [
+        "documentary"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 214
+    },
+    {
+      "role_id": "animation_director",
+      "name": "Animation Director",
+      "department": "Animation-Specific Roles",
+      "core_responsibility": "Leads the performance, timing, movement, acting, and visual storytelling of animated material.",
+      "accountable_bob_persona": "animation_technical_director",
+      "stages": [
+        "preproduction",
+        "production",
+        "postproduction"
+      ],
+      "project_types": [
+        "animation"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 215
+    },
+    {
+      "role_id": "animation_producer",
+      "name": "Animation Producer",
+      "department": "Animation-Specific Roles",
+      "core_responsibility": "Budgets, schedules, staffs, tracks, and delivers the animation pipeline.",
+      "accountable_bob_persona": "animation_technical_director",
+      "stages": [
+        "preproduction",
+        "production",
+        "postproduction"
+      ],
+      "project_types": [
+        "animation"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 216
+    },
+    {
+      "role_id": "character_designer",
+      "name": "Character Designer",
+      "department": "Animation-Specific Roles",
+      "core_responsibility": "Designs character appearance, turnarounds, expressions, costumes, and model sheets.",
+      "accountable_bob_persona": "animation_technical_director",
+      "stages": [
+        "preproduction",
+        "production",
+        "postproduction"
+      ],
+      "project_types": [
+        "animation"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 217
+    },
+    {
+      "role_id": "environment_production_designer",
+      "name": "Environment / Production Designer",
+      "department": "Animation-Specific Roles",
+      "core_responsibility": "Defines settings, props, palettes, visual world rules, and design assets for animated scenes.",
+      "accountable_bob_persona": "animation_technical_director",
+      "stages": [
+        "preproduction",
+        "production",
+        "postproduction"
+      ],
+      "project_types": [
+        "animation"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 218
+    },
+    {
+      "role_id": "storyboard_artist",
+      "name": "Storyboard Artist",
+      "department": "Animation-Specific Roles",
+      "core_responsibility": "Draws sequential visual storytelling, staging, shots, action, and dialogue beats.",
+      "accountable_bob_persona": "animation_technical_director",
+      "stages": [
+        "preproduction",
+        "production",
+        "postproduction"
+      ],
+      "project_types": [
+        "animation"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 219
+    },
+    {
+      "role_id": "story_reel_animatic_editor",
+      "name": "Story Reel / Animatic Editor",
+      "department": "Animation-Specific Roles",
+      "core_responsibility": "Edits boards, scratch dialogue, timing, music, and panels into a working editorial blueprint.",
+      "accountable_bob_persona": "animation_technical_director",
+      "stages": [
+        "preproduction",
+        "production",
+        "postproduction"
+      ],
+      "project_types": [
+        "animation"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 220
+    },
+    {
+      "role_id": "layout_artist_2",
+      "name": "Layout Artist",
+      "department": "Animation-Specific Roles",
+      "core_responsibility": "Establishes camera, staging, composition, background placement, and scene geometry.",
+      "accountable_bob_persona": "animation_technical_director",
+      "stages": [
+        "preproduction",
+        "production",
+        "postproduction"
+      ],
+      "project_types": [
+        "animation"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 221
+    },
+    {
+      "role_id": "2d_animator_3d_animator",
+      "name": "2D Animator / 3D Animator",
+      "department": "Animation-Specific Roles",
+      "core_responsibility": "Creates motion and performance for characters, creatures, props, or cameras.",
+      "accountable_bob_persona": "animation_technical_director",
+      "stages": [
+        "preproduction",
+        "production",
+        "postproduction"
+      ],
+      "project_types": [
+        "animation"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 222
+    },
+    {
+      "role_id": "animation_supervisor",
+      "name": "Animation Supervisor",
+      "department": "Animation-Specific Roles",
+      "core_responsibility": "Maintains animation quality, consistency, performance standards, and technical execution across teams.",
+      "accountable_bob_persona": "animation_technical_director",
+      "stages": [
+        "preproduction",
+        "production",
+        "postproduction"
+      ],
+      "project_types": [
+        "animation"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 223
+    },
+    {
+      "role_id": "clean_up_artist_inbetweener",
+      "name": "Clean-up Artist / Inbetweener",
+      "department": "Animation-Specific Roles",
+      "core_responsibility": "Refines drawings and creates transitional frames in 2D animation workflows.",
+      "accountable_bob_persona": "animation_technical_director",
+      "stages": [
+        "preproduction",
+        "production",
+        "postproduction"
+      ],
+      "project_types": [
+        "animation"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 224
+    },
+    {
+      "role_id": "background_painter_matte_painter",
+      "name": "Background Painter / Matte Painter",
+      "department": "Animation-Specific Roles",
+      "core_responsibility": "Creates environments and backdrop imagery for animated scenes.",
+      "accountable_bob_persona": "animation_technical_director",
+      "stages": [
+        "preproduction",
+        "production",
+        "postproduction"
+      ],
+      "project_types": [
+        "animation"
+      ],
+      "contribution_mode": "simulated_advisory",
+      "source_row": 225
+    },
+    {
+      "role_id": "technical_director_pipeline_td",
+      "name": "Technical Director / Pipeline TD",
+      "department": "Animation-Specific Roles",
+      "core_responsibility": "Builds and maintains tools, automation, asset-management, rendering, and data workflows across the animation pipeline.",
+      "accountable_bob_persona": "animation_technical_director",
+      "stages": [
+        "preproduction",
+        "production",
+        "postproduction"
+      ],
+      "project_types": [
+        "animation"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 226
+    },
+    {
+      "role_id": "render_wrangler_render_farm_manager",
+      "name": "Render Wrangler / Render Farm Manager",
+      "department": "Animation-Specific Roles",
+      "core_responsibility": "Manages rendering resources, job queues, failed frames, data storage, and final image delivery.",
+      "accountable_bob_persona": "animation_technical_director",
+      "stages": [
+        "preproduction",
+        "production",
+        "postproduction"
+      ],
+      "project_types": [
+        "animation"
+      ],
+      "contribution_mode": "human_required",
+      "source_row": 227
+    }
+  ]
+}
+

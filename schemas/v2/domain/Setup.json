@@ -1,0 +1,143 @@
+{
+  "$defs": {
+    "CameraSpec": {
+      "additionalProperties": false,
+      "properties": {
+        "schema_version": {
+          "default": "2.0",
+          "pattern": "^\\d+\\.\\d+$",
+          "title": "Schema Version",
+          "type": "string"
+        },
+        "shot_size": {
+          "enum": [
+            "ECU",
+            "CU",
+            "MCU",
+            "MS",
+            "MLS",
+            "WS",
+            "EWS",
+            "insert",
+            "POV",
+            "OTS",
+            "custom"
+          ],
+          "title": "Shot Size",
+          "type": "string"
+        },
+        "angle": {
+          "default": "eye_level",
+          "title": "Angle",
+          "type": "string"
+        },
+        "lens_mm": {
+          "anyOf": [
+            {
+              "exclusiveMinimum": 0,
+              "maximum": 2000,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Lens Mm"
+        },
+        "camera_height_m": {
+          "anyOf": [
+            {
+              "maximum": 100,
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Camera Height M"
+        },
+        "camera_distance_m": {
+          "anyOf": [
+            {
+              "exclusiveMinimum": 0,
+              "maximum": 10000,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Camera Distance M"
+        },
+        "movement": {
+          "default": "static",
+          "title": "Movement",
+          "type": "string"
+        },
+        "axis_rule": {
+          "default": "maintain",
+          "title": "Axis Rule",
+          "type": "string"
+        }
+      },
+      "required": [
+        "shot_size"
+      ],
+      "title": "CameraSpec",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "default": "2.0",
+      "pattern": "^\\d+\\.\\d+$",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "setup_id": {
+      "minLength": 1,
+      "title": "Setup Id",
+      "type": "string"
+    },
+    "scene_id": {
+      "minLength": 1,
+      "title": "Scene Id",
+      "type": "string"
+    },
+    "camera_spec": {
+      "$ref": "#/$defs/CameraSpec"
+    },
+    "lighting_spec_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Lighting Spec Id"
+    },
+    "covered_shot_ids": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Covered Shot Ids",
+      "type": "array"
+    }
+  },
+  "required": [
+    "setup_id",
+    "scene_id",
+    "camera_spec"
+  ],
+  "title": "Setup",
+  "type": "object",
+  "$id": "https://film-studio-os.local/schema/v2/domain/Setup.json"
+}

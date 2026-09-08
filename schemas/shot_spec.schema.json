@@ -1,0 +1,277 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ShotSpec",
+  "type": "object",
+  "required": [
+    "shot_id",
+    "scene_id",
+    "story_function",
+    "emotional_objective"
+  ],
+  "properties": {
+    "shot_id": {
+      "type": [
+        "string",
+        "number",
+        "array",
+        "object"
+      ]
+    },
+    "scene_id": {
+      "type": [
+        "string",
+        "number",
+        "array",
+        "object"
+      ]
+    },
+    "story_function": {
+      "type": [
+        "string",
+        "number",
+        "array",
+        "object"
+      ]
+    },
+    "emotional_objective": {
+      "type": [
+        "string",
+        "number",
+        "array",
+        "object"
+      ]
+    },
+    "characters": {
+      "type": [
+        "string",
+        "number",
+        "array",
+        "object"
+      ]
+    },
+    "character_states": {
+      "type": [
+        "string",
+        "number",
+        "array",
+        "object"
+      ]
+    },
+    "location": {
+      "type": [
+        "string",
+        "number",
+        "array",
+        "object"
+      ]
+    },
+    "environment_state": {
+      "type": [
+        "string",
+        "number",
+        "array",
+        "object"
+      ]
+    },
+    "action": {
+      "type": [
+        "string",
+        "number",
+        "array",
+        "object"
+      ]
+    },
+    "performance": {
+      "type": [
+        "string",
+        "number",
+        "array",
+        "object"
+      ]
+    },
+    "shot_size": {
+      "type": [
+        "string",
+        "number",
+        "array",
+        "object"
+      ]
+    },
+    "camera_angle": {
+      "type": [
+        "string",
+        "number",
+        "array",
+        "object"
+      ]
+    },
+    "lens": {
+      "type": [
+        "string",
+        "number",
+        "array",
+        "object"
+      ]
+    },
+    "camera_height": {
+      "type": [
+        "string",
+        "number",
+        "array",
+        "object"
+      ]
+    },
+    "camera_distance": {
+      "type": [
+        "string",
+        "number",
+        "array",
+        "object"
+      ]
+    },
+    "camera_motion": {
+      "type": [
+        "string",
+        "number",
+        "array",
+        "object"
+      ]
+    },
+    "blocking": {
+      "type": [
+        "string",
+        "number",
+        "array",
+        "object"
+      ]
+    },
+    "composition": {
+      "type": [
+        "string",
+        "number",
+        "array",
+        "object"
+      ]
+    },
+    "lighting": {
+      "type": [
+        "string",
+        "number",
+        "array",
+        "object"
+      ]
+    },
+    "depth": {
+      "type": [
+        "string",
+        "number",
+        "array",
+        "object"
+      ]
+    },
+    "foreground": {
+      "type": [
+        "string",
+        "number",
+        "array",
+        "object"
+      ]
+    },
+    "background": {
+      "type": [
+        "string",
+        "number",
+        "array",
+        "object"
+      ]
+    },
+    "atmosphere": {
+      "type": [
+        "string",
+        "number",
+        "array",
+        "object"
+      ]
+    },
+    "duration": {
+      "type": [
+        "string",
+        "number",
+        "array",
+        "object"
+      ]
+    },
+    "transition_in": {
+      "type": [
+        "string",
+        "number",
+        "array",
+        "object"
+      ]
+    },
+    "transition_out": {
+      "type": [
+        "string",
+        "number",
+        "array",
+        "object"
+      ]
+    },
+    "continuity_constraints": {
+      "type": [
+        "string",
+        "number",
+        "array",
+        "object"
+      ]
+    },
+    "generation_strategy": {
+      "type": [
+        "string",
+        "number",
+        "array",
+        "object"
+      ]
+    },
+    "preferred_model": {
+      "type": [
+        "string",
+        "number",
+        "array",
+        "object"
+      ]
+    },
+    "references": {
+      "type": [
+        "string",
+        "number",
+        "array",
+        "object"
+      ]
+    },
+    "negative_constraints": {
+      "type": [
+        "string",
+        "number",
+        "array",
+        "object"
+      ]
+    },
+    "audio_requirements": {
+      "type": [
+        "string",
+        "number",
+        "array",
+        "object"
+      ]
+    },
+    "quality_requirements": {
+      "type": [
+        "string",
+        "number",
+        "array",
+        "object"
+      ]
+    }
+  }
+}

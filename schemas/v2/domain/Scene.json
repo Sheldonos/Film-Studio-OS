@@ -1,0 +1,79 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "default": "2.0",
+      "pattern": "^\\d+\\.\\d+$",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "scene_id": {
+      "minLength": 1,
+      "title": "Scene Id",
+      "type": "string"
+    },
+    "sequence_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Sequence Id"
+    },
+    "slugline": {
+      "minLength": 1,
+      "title": "Slugline",
+      "type": "string"
+    },
+    "objective": {
+      "minLength": 1,
+      "title": "Objective",
+      "type": "string"
+    },
+    "location_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Location Id"
+    },
+    "character_ids": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Character Ids",
+      "type": "array"
+    },
+    "beat_ids": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Beat Ids",
+      "type": "array"
+    },
+    "shot_ids": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Shot Ids",
+      "type": "array"
+    }
+  },
+  "required": [
+    "scene_id",
+    "slugline",
+    "objective"
+  ],
+  "title": "Scene",
+  "type": "object",
+  "$id": "https://film-studio-os.local/schema/v2/domain/Scene.json"
+}

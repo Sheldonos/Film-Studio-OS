@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "film-studio-os": {
+      "command": "python",
+      "args": [
+        "-m",
+        "film_studio_os.mcp_server"
+      ],
+      "cwd": ".",
+      "env": {
+        "FILM_STUDIO_ROOT": "."
+      },
+      "disabled": false
+    }
+  }
+}

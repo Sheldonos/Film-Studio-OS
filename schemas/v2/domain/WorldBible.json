@@ -1,0 +1,58 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "default": "2.0",
+      "pattern": "^\\d+\\.\\d+$",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "world_bible_id": {
+      "minLength": 1,
+      "title": "World Bible Id",
+      "type": "string"
+    },
+    "project_id": {
+      "minLength": 1,
+      "title": "Project Id",
+      "type": "string"
+    },
+    "rules": {
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1,
+      "title": "Rules",
+      "type": "array"
+    },
+    "visual_language": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Visual Language",
+      "type": "array"
+    },
+    "location_bible_ids": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Location Bible Ids",
+      "type": "array"
+    },
+    "motif_ids": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Motif Ids",
+      "type": "array"
+    }
+  },
+  "required": [
+    "world_bible_id",
+    "project_id",
+    "rules"
+  ],
+  "title": "WorldBible",
+  "type": "object",
+  "$id": "https://film-studio-os.local/schema/v2/domain/WorldBible.json"
+}

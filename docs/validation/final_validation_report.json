@@ -1,0 +1,14 @@
+{
+  "version": "0.4.0",
+  "validated_at": "2026-08-15",
+  "recommendation": "Go With Conditions",
+  "offline_compatibility_harness": {"passed": 478, "failed": 0},
+  "pytest": {"status": "skipped", "reason": "dev dependency unavailable in sandbox"},
+  "bob": {"valid": true, "modes": 8, "personas": 26, "active_skills": 51},
+  "contracts": {"valid": true, "registered_capabilities": 105, "workflow_files": 28, "workflow_step_references": 178},
+  "workflows": {"master_routes": 5, "v2_families": 23, "pilots": 5, "all_pilots_complete": true, "external_spend_usd": 0.0},
+  "production_roles": {"roles": 227, "departments": 18, "exact_coverage_tested": true},
+  "providers": {"mock-generation": "implemented_tested", "higgsfield-cli": "production_contract_disabled_by_default_live_uat_pending"},
+  "release_hygiene": {"valid": true, "issues": 0},
+  "conditions": ["install declared extras and run pytest in connected CI", "add enterprise identity/deployment controls before hosted studio use", "complete authorized low-cap Higgsfield UAT before live provider production"]
+}

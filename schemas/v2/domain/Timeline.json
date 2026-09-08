@@ -1,0 +1,64 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "default": "2.0",
+      "pattern": "^\\d+\\.\\d+$",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "timeline_id": {
+      "minLength": 1,
+      "title": "Timeline Id",
+      "type": "string"
+    },
+    "project_id": {
+      "minLength": 1,
+      "title": "Project Id",
+      "type": "string"
+    },
+    "name": {
+      "minLength": 1,
+      "title": "Name",
+      "type": "string"
+    },
+    "edit_rate": {
+      "exclusiveMinimum": 0,
+      "title": "Edit Rate",
+      "type": "number"
+    },
+    "start_timecode": {
+      "default": "00:00:00:00",
+      "title": "Start Timecode",
+      "type": "string"
+    },
+    "clip_artifact_version_ids": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Clip Artifact Version Ids",
+      "type": "array"
+    },
+    "interchange_format": {
+      "default": "internal",
+      "enum": [
+        "internal",
+        "otio",
+        "edl",
+        "fcpxml",
+        "aaf"
+      ],
+      "title": "Interchange Format",
+      "type": "string"
+    }
+  },
+  "required": [
+    "timeline_id",
+    "project_id",
+    "name",
+    "edit_rate"
+  ],
+  "title": "Timeline",
+  "type": "object",
+  "$id": "https://film-studio-os.local/schema/v2/domain/Timeline.json"
+}

@@ -1,0 +1,109 @@
+{
+  "schema_version": "2.0",
+  "workflow_id": "script_to_film_v2",
+  "version": "2.0.0",
+  "description": "Executable screenplay revision, department coverage, mock production and release gate.",
+  "production_route": "provider_neutral",
+  "steps": [
+    {
+      "id": "ingest",
+      "capability_id": "source_ingestion",
+      "owner_agent": "production_librarian",
+      "reviewer_agent": "security_data_governance",
+      "output_type": "ScriptIngest",
+      "handler": "artifact"
+    },
+    {
+      "id": "diagnose",
+      "capability_id": "production_readiness_diagnostic",
+      "owner_agent": "studio_orchestrator",
+      "reviewer_agent": "line_producer",
+      "depends_on": [
+        "ingest"
+      ],
+      "output_type": "ProductionReadinessDiagnostic",
+      "handler": "project_diagnostic"
+    },
+
+    {
+      "id": "audit",
+      "capability_id": "revision_regression_audit",
+      "owner_agent": "script_editor",
+      "reviewer_agent": "showrunner",
+      "depends_on": [
+        "diagnose"
+      ],
+      "output_type": "ScriptAudit",
+      "handler": "artifact"
+    },
+    {
+      "id": "revise",
+      "capability_id": "revision_plan",
+      "owner_agent": "showrunner",
+      "reviewer_agent": "script_editor",
+      "depends_on": [
+        "audit"
+      ],
+      "output_type": "RevisionPlan",
+      "handler": "artifact"
+    },
+    {
+      "id": "team",
+      "capability_id": "production_role_coverage",
+      "owner_agent": "line_producer",
+      "reviewer_agent": "qc_supervisor",
+      "depends_on": [
+        "revise"
+      ],
+      "output_type": "ProductionTeamContributionPlan",
+      "handler": "team_plan"
+    },
+    {
+      "id": "shots",
+      "capability_id": "shot_spec_compilation",
+      "owner_agent": "director",
+      "reviewer_agent": "cinematographer",
+      "depends_on": [
+        "team"
+      ],
+      "output_type": "ShotPackage",
+      "handler": "artifact"
+    },
+    {
+      "id": "generate",
+      "capability_id": "video_generation_plan",
+      "owner_agent": "generative_supervisor",
+      "reviewer_agent": "qc_supervisor",
+      "depends_on": [
+        "shots"
+      ],
+      "output_type": "GeneratedTake",
+      "handler": "mock_generation"
+    },
+    {
+      "id": "post",
+      "capability_id": "assembly_edit",
+      "owner_agent": "editor",
+      "reviewer_agent": "director",
+      "depends_on": [
+        "generate"
+      ],
+      "output_type": "PictureEdit",
+      "handler": "artifact"
+    },
+    {
+      "id": "release",
+      "capability_id": "release_approval",
+      "owner_agent": "studio_orchestrator",
+      "reviewer_agent": "qc_supervisor",
+      "depends_on": [
+        "post"
+      ],
+      "output_type": "ReleaseDecision",
+      "handler": "gate",
+      "approval_required": true,
+      "approval_role": "human_release_owner",
+      "gate_id": "release_approval"
+    }
+  ]
+}

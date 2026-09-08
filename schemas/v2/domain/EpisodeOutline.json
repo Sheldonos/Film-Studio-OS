@@ -1,0 +1,84 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "default": "2.0",
+      "pattern": "^\\d+\\.\\d+$",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "episode_outline_id": {
+      "minLength": 1,
+      "title": "Episode Outline Id",
+      "type": "string"
+    },
+    "episode_id": {
+      "minLength": 1,
+      "title": "Episode Id",
+      "type": "string"
+    },
+    "a_story": {
+      "minLength": 1,
+      "title": "A Story",
+      "type": "string"
+    },
+    "b_story": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "B Story"
+    },
+    "c_story": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "C Story"
+    },
+    "cold_open": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Cold Open"
+    },
+    "act_outs": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Act Outs",
+      "type": "array"
+    },
+    "setup_payoff_ids": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Setup Payoff Ids",
+      "type": "array"
+    }
+  },
+  "required": [
+    "episode_outline_id",
+    "episode_id",
+    "a_story"
+  ],
+  "title": "EpisodeOutline",
+  "type": "object",
+  "$id": "https://film-studio-os.local/schema/v2/domain/EpisodeOutline.json"
+}

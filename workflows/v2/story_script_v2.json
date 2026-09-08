@@ -1,0 +1,97 @@
+{
+  "schema_version": "2.0",
+  "workflow_id": "story_script_v2",
+  "version": "2.0.0",
+  "description": "Develop or revise story through independent script review and controlled regression.",
+  "production_route": "provider_neutral",
+  "steps": [
+    {
+      "id": "constraints",
+      "capability_id": "creative_constraint_extraction",
+      "owner_agent": "showrunner",
+      "depends_on": [],
+      "output_type": "CreativeBrief"
+    },
+    {
+      "id": "premise",
+      "capability_id": "premise_stress_test",
+      "owner_agent": "story_architect",
+      "depends_on": [
+        "constraints"
+      ],
+      "output_type": "Premise"
+    },
+    {
+      "id": "structure",
+      "capability_id": "structure_map",
+      "owner_agent": "story_architect",
+      "depends_on": [
+        "premise"
+      ],
+      "output_type": "StructureMap",
+      "reviewer_agent": "script_editor"
+    },
+    {
+      "id": "characters",
+      "capability_id": "character_bible_creation",
+      "owner_agent": "character_director",
+      "depends_on": [
+        "premise"
+      ],
+      "output_type": "CharacterBible"
+    },
+    {
+      "id": "scene_cards",
+      "capability_id": "scene_card_generation",
+      "owner_agent": "showrunner",
+      "depends_on": [
+        "structure",
+        "characters"
+      ],
+      "output_type": "SceneCards"
+    },
+    {
+      "id": "draft",
+      "capability_id": "scene_writing",
+      "owner_agent": "showrunner",
+      "depends_on": [
+        "scene_cards"
+      ],
+      "output_type": "ScreenplayDraft",
+      "reviewer_agent": "script_editor"
+    },
+    {
+      "id": "audit",
+      "capability_id": "dialogue_voice_audit",
+      "owner_agent": "script_editor",
+      "depends_on": [
+        "draft"
+      ],
+      "output_type": "ScriptAudit",
+      "reviewer_agent": "qc_supervisor"
+    },
+    {
+      "id": "revision",
+      "capability_id": "revision_plan",
+      "owner_agent": "showrunner",
+      "depends_on": [
+        "audit"
+      ],
+      "output_type": "RevisionPlan",
+      "reviewer_agent": "script_editor"
+    },
+    {
+      "id": "lock",
+      "capability_id": "revision_regression_audit",
+      "owner_agent": "script_editor",
+      "depends_on": [
+        "revision"
+      ],
+      "output_type": "LockedScript",
+      "reviewer_agent": "qc_supervisor",
+      "approval_required": true,
+      "approval_role": "human_showrunner",
+      "gate_id": "gate_script"
+    }
+  ]
+}

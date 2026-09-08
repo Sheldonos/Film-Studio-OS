@@ -1,0 +1,2939 @@
+{
+  "baseline_version": "0.1.0",
+  "file_count": 419,
+  "items": [
+    {
+      "path": "README.md",
+      "bytes": 2154,
+      "sha256": "ba47726336d26efc1fc34323302066e7865edaf81989cbddccda50ebf84245ce",
+      "classification": "keep",
+      "reason": "retained baseline artifact"
+    },
+    {
+      "path": "adapters/base.py",
+      "bytes": 189,
+      "sha256": "8474fb7d3bc5e50dc636580a6d37ada17f91e465d741f5212e9ea110b3230524",
+      "classification": "enhance",
+      "reason": "retain provider boundary, add typed adapter contract and mock lifecycle"
+    },
+    {
+      "path": "adapters/higgsfield_cli.py",
+      "bytes": 1537,
+      "sha256": "15d14368bf04f01c4462f96eb90d0d174d5e87620c0e75bde8a57d11ce7f1078",
+      "classification": "enhance",
+      "reason": "retain provider boundary, add typed adapter contract and mock lifecycle"
+    },
+    {
+      "path": "agents/catalog.json",
+      "bytes": 47040,
+      "sha256": "bf7edd8634c00dfac89a000aa1f9cc92c9f1356ce30644fe3e2d878365c4556b",
+      "classification": "keep",
+      "reason": "retained baseline artifact"
+    },
+    {
+      "path": "agents/character_director.md",
+      "bytes": 1048,
+      "sha256": "0dc8fcf7735135d189ba4556c647a7a94c73642554647d5e2b72c1f2ef0bd0d0",
+      "classification": "merge",
+      "reason": "retain human-readable legacy charter; valid subagent persona now lives in .bob/agents"
+    },
+    {
+      "path": "agents/cinematographer.md",
+      "bytes": 1032,
+      "sha256": "dd7cd4a1189ea3eeb96ba871795291088dc8b4652850f30155d89320c9e772d5",
+      "classification": "merge",
+      "reason": "retain human-readable legacy charter; valid subagent persona now lives in .bob/agents"
+    },
+    {
+      "path": "agents/colorist.md",
+      "bytes": 810,
+      "sha256": "470d32a3f17f84e70c381e6503b7b68d8a88d70f1730c835e99b190d66482eb2",
+      "classification": "merge",
+      "reason": "retain human-readable legacy charter; valid subagent persona now lives in .bob/agents"
+    },
+    {
+      "path": "agents/composer.md",
+      "bytes": 718,
+      "sha256": "72ca7c84402b28bc5b0f128a4e1e0f538f488035144f1399ca16124469b2ded3",
+      "classification": "merge",
+      "reason": "retain human-readable legacy charter; valid subagent persona now lives in .bob/agents"
+    },
+    {
+      "path": "agents/continuity_supervisor.md",
+      "bytes": 1116,
+      "sha256": "20225f2080b27c95a72fcd4955f176d88ddae354c9e0e5f70a5accc5e795d011",
+      "classification": "merge",
+      "reason": "retain human-readable legacy charter; valid subagent persona now lives in .bob/agents"
+    },
+    {
+      "path": "agents/director.md",
+      "bytes": 1107,
+      "sha256": "d8d2c0e2ef48104a8f1d80581789f43304dce12f76066fb8a46d99799c33ca9b",
+      "classification": "merge",
+      "reason": "retain human-readable legacy charter; valid subagent persona now lives in .bob/agents"
+    },
+    {
+      "path": "agents/editor.md",
+      "bytes": 951,
+      "sha256": "f49d1bf353e84ea996a048787020eda048809ac49ab0a441aa508e250dafc64c",
+      "classification": "merge",
+      "reason": "retain human-readable legacy charter; valid subagent persona now lives in .bob/agents"
+    },
+    {
+      "path": "agents/generative_supervisor.md",
+      "bytes": 1293,
+      "sha256": "37bf19781e0fb1792ae88da5106b98c9db2565021e7205521346d308bb7a254b",
+      "classification": "merge",
+      "reason": "retain human-readable legacy charter; valid subagent persona now lives in .bob/agents"
+    },
+    {
+      "path": "agents/production_designer.md",
+      "bytes": 921,
+      "sha256": "db4a05e4c8685d7968be8b19493d9d874f89b3602c381ce90d826f0b664eeab1",
+      "classification": "merge",
+      "reason": "retain human-readable legacy charter; valid subagent persona now lives in .bob/agents"
+    },
+    {
+      "path": "agents/production_librarian.md",
+      "bytes": 988,
+      "sha256": "9c681f1062ec0fb4ab8106f24ac5c72dab0ee25157996adf31357ae27a7501d1",
+      "classification": "merge",
+      "reason": "retain human-readable legacy charter; valid subagent persona now lives in .bob/agents"
+    },
+    {
+      "path": "agents/qc_supervisor.md",
+      "bytes": 1007,
+      "sha256": "575b9dbf5bfac13b9dd68829661128c9ed0018c6f64cafc61800a86a80fb3e8e",
+      "classification": "merge",
+      "reason": "retain human-readable legacy charter; valid subagent persona now lives in .bob/agents"
+    },
+    {
+      "path": "agents/script_editor.md",
+      "bytes": 1046,
+      "sha256": "1060f98c4b2523711733775a304524c5debf5208e124a75a245391a5f1b88a4d",
+      "classification": "merge",
+      "reason": "retain human-readable legacy charter; valid subagent persona now lives in .bob/agents"
+    },
+    {
+      "path": "agents/showrunner.md",
+      "bytes": 1119,
+      "sha256": "921eec6a37739a674799f59040a7b34f5faac0dda6cf40a54856dfc3432d8e01",
+      "classification": "merge",
+      "reason": "retain human-readable legacy charter; valid subagent persona now lives in .bob/agents"
+    },
+    {
+      "path": "agents/sound_supervisor.md",
+      "bytes": 975,
+      "sha256": "4c7e36f80980b49ee095a4dbe0024141d7a755bac3349811f3704c74c9241e92",
+      "classification": "merge",
+      "reason": "retain human-readable legacy charter; valid subagent persona now lives in .bob/agents"
+    },
+    {
+      "path": "agents/story_architect.md",
+      "bytes": 957,
+      "sha256": "605ba66763013809dcd0525f0b7167fd850fb7b769d4aa7afbe8af8c8c950892",
+      "classification": "merge",
+      "reason": "retain human-readable legacy charter; valid subagent persona now lives in .bob/agents"
+    },
+    {
+      "path": "agents/storyboard_previs.md",
+      "bytes": 862,
+      "sha256": "1c8c8b4b04f10f55f07f5c084db1b51d39cc44c80ad521689d6a8a8fd608cf9c",
+      "classification": "merge",
+      "reason": "retain human-readable legacy charter; valid subagent persona now lives in .bob/agents"
+    },
+    {
+      "path": "agents/studio_orchestrator.md",
+      "bytes": 1190,
+      "sha256": "412cb8f67ec01d721e6eceaef742516ed7632b3ac2bb79796802e2cd5a6cd1b2",
+      "classification": "merge",
+      "reason": "retain human-readable legacy charter; valid subagent persona now lives in .bob/agents"
+    },
+    {
+      "path": "agents/vfx_supervisor.md",
+      "bytes": 892,
+      "sha256": "474ed1905b661dae399533b15931cab1b95aff5d226c1d5f96ae21962897bbab",
+      "classification": "merge",
+      "reason": "retain human-readable legacy charter; valid subagent persona now lives in .bob/agents"
+    },
+    {
+      "path": "docs/AGENT_CATALOG.md",
+      "bytes": 6182,
+      "sha256": "5de3cb08613dd4b39e94a1a9719b8a089e61f5bcb999f9112a2550ab952bbbdb",
+      "classification": "keep",
+      "reason": "retained baseline artifact"
+    },
+    {
+      "path": "docs/ARCHITECTURE.md",
+      "bytes": 1505,
+      "sha256": "60733d3788ecbc7e7db1c3e125099344af6a0695a2246cc6bfbfa61f645b257c",
+      "classification": "keep",
+      "reason": "retained baseline artifact"
+    },
+    {
+      "path": "docs/BENCHMARK.md",
+      "bytes": 1196,
+      "sha256": "015636fcb2f587f9774bb36a9aa7587909dcb31293b002b2d43dcbf2cde699fe",
+      "classification": "keep",
+      "reason": "retained baseline artifact"
+    },
+    {
+      "path": "docs/RESEARCH_AND_BOUNDARIES.md",
+      "bytes": 1387,
+      "sha256": "62b6443bf640dd2eb5cc45e5fb3ddc96ad7b55914739540455946770e70e6b32",
+      "classification": "keep",
+      "reason": "retained baseline artifact"
+    },
+    {
+      "path": "docs/SKILL_CATALOG.md",
+      "bytes": 21259,
+      "sha256": "059d10c80bf92a28f5b21e1cdb84ce0ea6fdaf6319bf0dc95e3f4cfdef9468fe",
+      "classification": "keep",
+      "reason": "retained baseline artifact"
+    },
+    {
+      "path": "examples/project_brief.json",
+      "bytes": 475,
+      "sha256": "847bd1d1c30f941b8333f19cafd0f037dc9c161a01c3aee642ca8a981b977fa2",
+      "classification": "keep",
+      "reason": "retained baseline artifact"
+    },
+    {
+      "path": "film_studio_os/__init__.py",
+      "bytes": 82,
+      "sha256": "08af0437ce116042f0bd7095e6f30ea5b53388dd0032210fe7db433812161898",
+      "classification": "keep",
+      "reason": "retained baseline artifact"
+    },
+    {
+      "path": "film_studio_os/__pycache__/__init__.cpython-313.pyc",
+      "bytes": 247,
+      "sha256": "cd3b6b4d6e60f2da2f53d21222e48aa32e41538f27a40f7787cbfedc7d86bce6",
+      "classification": "remove",
+      "reason": "compiled cache should not be versioned"
+    },
+    {
+      "path": "film_studio_os/__pycache__/continuity.cpython-313.pyc",
+      "bytes": 3401,
+      "sha256": "b0df96f1d5a65ad436326062f72329c9d95da830b7abf8cc953076dfe6da3f34",
+      "classification": "remove",
+      "reason": "compiled cache should not be versioned"
+    },
+    {
+      "path": "film_studio_os/__pycache__/models.cpython-313.pyc",
+      "bytes": 6009,
+      "sha256": "97495f08c03f996a78af903619326a1338ad767ef08b452df3037daf207004ae",
+      "classification": "remove",
+      "reason": "compiled cache should not be versioned"
+    },
+    {
+      "path": "film_studio_os/__pycache__/orchestrator.cpython-313.pyc",
+      "bytes": 7600,
+      "sha256": "ed6d037043383f1dc171bbf97f376bc064f3145318ea205fecd0af5725fe1347",
+      "classification": "remove",
+      "reason": "compiled cache should not be versioned"
+    },
+    {
+      "path": "film_studio_os/__pycache__/prompt_compiler.cpython-313.pyc",
+      "bytes": 1459,
+      "sha256": "66692290c6a5bca4e3a843b762e22a64830a8a9d7ff80495a8f020daccd486cd",
+      "classification": "remove",
+      "reason": "compiled cache should not be versioned"
+    },
+    {
+      "path": "film_studio_os/__pycache__/qc.cpython-313.pyc",
+      "bytes": 1647,
+      "sha256": "6236fb912b3477eae35bb0c971d80db652fbe59e7838895b5f26032cdd72b5b4",
+      "classification": "remove",
+      "reason": "compiled cache should not be versioned"
+    },
+    {
+      "path": "film_studio_os/continuity.py",
+      "bytes": 1942,
+      "sha256": "7c017c1708bbc567f951f49cfbc1bff7f25ce27c21657e82a72056ad47844cfe",
+      "classification": "keep",
+      "reason": "retained baseline artifact"
+    },
+    {
+      "path": "film_studio_os/model_router.py",
+      "bytes": 885,
+      "sha256": "ff69ff879b742919301b05cba0da385ba8e36d5b6af796c5cad04db86c810890",
+      "classification": "keep",
+      "reason": "retained baseline artifact"
+    },
+    {
+      "path": "film_studio_os/models.py",
+      "bytes": 3469,
+      "sha256": "2b551cf6f4854c29f1a412968a80a62bd6bc7c603927903001e9b2522f872975",
+      "classification": "keep",
+      "reason": "retained baseline artifact"
+    },
+    {
+      "path": "film_studio_os/orchestrator.py",
+      "bytes": 3206,
+      "sha256": "474987978365aea2d7fb44db12f479040a897d5478f92167d63223cbf4c1ab8b",
+      "classification": "keep",
+      "reason": "retained baseline artifact"
+    },
+    {
+      "path": "film_studio_os/prompt_compiler.py",
+      "bytes": 1044,
+      "sha256": "9f7eabb6d0570b7126125884d6593f185c16593def18e036eca1332d610360a9",
+      "classification": "keep",
+      "reason": "retained baseline artifact"
+    },
+    {
+      "path": "film_studio_os/provenance.py",
+      "bytes": 893,
+      "sha256": "c0b25fafacbebb9a23f01604e9ae1ec51c63bbf667f54e455b66d6a57b604cdc",
+      "classification": "keep",
+      "reason": "retained baseline artifact"
+    },
+    {
+      "path": "film_studio_os/qc.py",
+      "bytes": 922,
+      "sha256": "6d1b5939703261c049e7ff423486468942cecfe04723fe37c3e3dfccb195e415",
+      "classification": "keep",
+      "reason": "retained baseline artifact"
+    },
+    {
+      "path": "manifest.json",
+      "bytes": 319,
+      "sha256": "654e7b7d674c5da98a4f18a4ee078b53ce296a983e6cf32fcc7eb0545f0e1024",
+      "classification": "keep",
+      "reason": "retained baseline artifact"
+    },
+    {
+      "path": "policies/human_control.md",
+      "bytes": 659,
+      "sha256": "b0f4cecf891d351eeb9c26b4fcb4e96dc01772e22d5eb0bf7972c7a0a2a76db6",
+      "classification": "keep",
+      "reason": "retained baseline artifact"
+    },
+    {
+      "path": "policies/modes.json",
+      "bytes": 2982,
+      "sha256": "83898d6310941fa360deb2c826071c3a970f6eb8f807a19a741f93e621398252",
+      "classification": "deprecate",
+      "reason": "internal slash-mode registry is not Bob custom mode configuration; replaced by .bob/custom_modes.yaml"
+    },
+    {
+      "path": "policies/quality_gates.json",
+      "bytes": 3305,
+      "sha256": "c5fdcfa354a92e5a88b6fcff0c394c43a9b19116a10ec5601c2bcf86eecaac5a",
+      "classification": "keep",
+      "reason": "retained baseline artifact"
+    },
+    {
+      "path": "policies/reference_license_guardrails.md",
+      "bytes": 628,
+      "sha256": "86b57f53d601263ea637395961bff4f632844cc2fb9a39de97ade513a3337b1a",
+      "classification": "keep",
+      "reason": "retained baseline artifact"
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 219,
+      "sha256": "ded35ca77d02fd9a6a8ead43491e837bde44cfbfcb0087e5651649fc6010f24a",
+      "classification": "keep",
+      "reason": "retained baseline artifact"
+    },
+    {
+      "path": "schemas/production_work_order.schema.json",
+      "bytes": 821,
+      "sha256": "05dc22b27479212e2bfdce13063aed3c0114e87097583b024df503437903bce2",
+      "classification": "replace",
+      "reason": "v0.1 schema too permissive; strict v2 models/schemas added while legacy remains for compatibility"
+    },
+    {
+      "path": "schemas/shot_spec.schema.json",
+      "bytes": 4294,
+      "sha256": "36c82c711a9d007064bc5ea4208975b93e4203f51d047b5f3d318c4d91a04348",
+      "classification": "replace",
+      "reason": "v0.1 schema too permissive; strict v2 models/schemas added while legacy remains for compatibility"
+    },
+    {
+      "path": "skills/act_sequence_design/SKILL.md",
+      "bytes": 1358,
+      "sha256": "0e71d74d7e86bfa4c1490329132265c71d4b6b1839571986955c468e7a79b5fa",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/act_sequence_design/skill.json",
+      "bytes": 3239,
+      "sha256": "228cc34f4de35e09d976ff22bd838aeae027f6007f2cbde575ec36aa42d66933",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/action_paragraph_rhythm/SKILL.md",
+      "bytes": 1396,
+      "sha256": "93c98e5a500d5330d94ca21badb772e891f0d02c118f31fd8df3a8d287cea9d4",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/action_paragraph_rhythm/skill.json",
+      "bytes": 3293,
+      "sha256": "2c77ee2a5ce5e67181651025d5e05c996ff8e1d93e28724232226ffc6ce5804d",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/action_sequence_direction/SKILL.md",
+      "bytes": 1439,
+      "sha256": "a35a5b926b712c69d623a0efa123e5164583adc5e4a69d655c5159898380328c",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/action_sequence_direction/skill.json",
+      "bytes": 3344,
+      "sha256": "4ec27f54bd4add03ab88115a72fc46d039d34531fdcebc4ef0486bad67046e0a",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/action_state_tracking/SKILL.md",
+      "bytes": 1389,
+      "sha256": "34bd65be847c70c6aaaddf7139ea71e4b456135933c5a95cd12726f4189d780c",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/action_state_tracking/skill.json",
+      "bytes": 3278,
+      "sha256": "9a42680031eec4ab4642f38ee9a58d8c966c1dcda8534e23d8c8261b79e76aea",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/actor_speakability/SKILL.md",
+      "bytes": 1367,
+      "sha256": "825235df3e231b776d2e98ede5bded5c6c15581dcd23dc8447ddef50eb4ba89c",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/actor_speakability/skill.json",
+      "bytes": 3244,
+      "sha256": "8a36524dd6c886e7c842f35f8384b74b90396ea533c9d9f186b7ebc41a171117",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/adr_strategy/SKILL.md",
+      "bytes": 1331,
+      "sha256": "2cc9293f419d309f4d975981fc5544c1121c83258e4ee8ee314253d1984c46b7",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/adr_strategy/skill.json",
+      "bytes": 3184,
+      "sha256": "afe9c2aedf71cae0fd364fecb046691f83cc2be11f8c346471d7f54bc1889f39",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/ambience_design/SKILL.md",
+      "bytes": 1346,
+      "sha256": "c1b8822b6657df833b0c6ec44fd121f5a99aaa259f104de9534d7ff726e8b8fb",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/ambience_design/skill.json",
+      "bytes": 3211,
+      "sha256": "40404ed33eafede8f881aba7681d54623deecf0ccaaa02b3cadc823caf1e5096",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/animatic_timing/SKILL.md",
+      "bytes": 1370,
+      "sha256": "02101434e7d0c0b53e4f92aa7de6389edbe53f53ca07d470dde174adf20d59b1",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/animatic_timing/skill.json",
+      "bytes": 3235,
+      "sha256": "5f154f69e899605d5c75e600885c7e9d2d474e4c3b9024eb648679a2d074dbde",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/archive_packaging/SKILL.md",
+      "bytes": 1375,
+      "sha256": "2a0a1cb16d6b78142672927d71cc29796105d1adf6acae15402835b8c94c1ae2",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/archive_packaging/skill.json",
+      "bytes": 3248,
+      "sha256": "296be8b9ba71386d5852a33a46d908d9e29fa19bb3567e69d1db724ee18cdc61",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/artifact_cleanup/SKILL.md",
+      "bytes": 1389,
+      "sha256": "a237530ea38cca50568b388d1fd0b61f6aaa4f98363ea1d495543f94199b8d3a",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/artifact_cleanup/skill.json",
+      "bytes": 3258,
+      "sha256": "2c531beee3c2172ef16601be9f2a33e24dd47e5243884002b646dfd67d18bdb0",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/assembly_edit/SKILL.md",
+      "bytes": 1330,
+      "sha256": "6b351424153c73d1b69011352d9e72dde24b3c3fed091c8ce76cadfa5a07be23",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/assembly_edit/skill.json",
+      "bytes": 3187,
+      "sha256": "c9d48e04118c44de076e49056a0be48d32095295f402ecd16572be754ed2cc0e",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/asset_registration/SKILL.md",
+      "bytes": 1398,
+      "sha256": "3ffc74be7ed6b5f62640bd9d49ee4836466e2cc6f7c678dc30739ded74aa2d7b",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/asset_registration/skill.json",
+      "bytes": 3275,
+      "sha256": "9ca203d252ce6548b8350cc7b48debb7517e0141bcdedfe301f89380c9efe2dc",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/audience_promise_mapping/SKILL.md",
+      "bytes": 1415,
+      "sha256": "0647fca53c24da51f01ca21393ef94eeb1c14f7a5ca2b612782b7d4da9936920",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/audience_promise_mapping/skill.json",
+      "bytes": 3316,
+      "sha256": "16fe651caa5c4434bf835c8a1dac7cd167f29da994a6dc1be1f81ef6a02927a2",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/audio_qc/SKILL.md",
+      "bytes": 1300,
+      "sha256": "db61446552a9d897726222fda57d65e1c689a176d5859fe870745afe80cdd292",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/audio_qc/skill.json",
+      "bytes": 3137,
+      "sha256": "d3d14b3feaca97ef50828d035bd17bedaf261083aaa067f3ec51936a0706e3bd",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/background_repair/SKILL.md",
+      "bytes": 1356,
+      "sha256": "2b884272d7fb7ce6d3ba61f83fc29250b85452f5bbbf52d678bad0a34f1650c3",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/background_repair/skill.json",
+      "bytes": 3229,
+      "sha256": "faf5c014d8d5e966d423fcbfd455e58e95634b02c47845006ed683ec685f0020",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/banter_construction/SKILL.md",
+      "bytes": 1402,
+      "sha256": "516525d768a6e8d96414eeb06fa720c3935a109a72d19f9ed151aa9654af7c87",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/banter_construction/skill.json",
+      "bytes": 3283,
+      "sha256": "8b9f3664925e5dd6426272106877e98fb39822cf06f55decfa7b6ffc36eac10a",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/behavior_gesture_design/SKILL.md",
+      "bytes": 1408,
+      "sha256": "c000731dff72b19c751a64d32237f47ee6aeccd3f7973bb6eba83faad75a424c",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/behavior_gesture_design/skill.json",
+      "bytes": 3305,
+      "sha256": "56e6d526b770813c1701e0b2a33cd73504b72a7a84343f55f6819c5a493e4429",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/benchmark_evaluation/SKILL.md",
+      "bytes": 1369,
+      "sha256": "7151a14d4eac737859c7575564d92af45238b4018e3eae9cf2efcadc0dd040c4",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/benchmark_evaluation/skill.json",
+      "bytes": 3254,
+      "sha256": "5e7163e2ccd2ccf16c8ff08d7a0d0c132d5053d007f140b3456446c429c21564",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/blocking_geography_writing/SKILL.md",
+      "bytes": 1415,
+      "sha256": "e28d6b96ec36a5fe5dfab426f80dc1b6aa001843b34561721f815349405ccc0a",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/blocking_geography_writing/skill.json",
+      "bytes": 3324,
+      "sha256": "c346e94774cac4929a0f8a71a2d003b3ab2fd47c508798341c4531e9f8698419",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/blocking_plan/SKILL.md",
+      "bytes": 1337,
+      "sha256": "b4621ffc9ef1f6a94e894f536a2b57a5147de97fda5d1252282f46c66a1e2152",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/blocking_plan/skill.json",
+      "bytes": 3194,
+      "sha256": "ac2ae4ede43ddb45e1c7313d86b2d2c08edbc109363f7ef5b11c86ab1fa0d769",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/budget_envelope/SKILL.md",
+      "bytes": 1393,
+      "sha256": "e8bc214a4a4ee8e3a356d21de4f0ceb771226323b76e3a3c8bcd3116df6dbd03",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/budget_envelope/skill.json",
+      "bytes": 3258,
+      "sha256": "64ff2e76690bec3ae490ada78cf48dc1864a86d0b1d2efc05e99b11005e1fe81",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/camera_height_distance/SKILL.md",
+      "bytes": 1418,
+      "sha256": "15d5acdca39edb8bf9e52833ba4fa618bf66d42806b409671b6ef8e781fdc140",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/camera_height_distance/skill.json",
+      "bytes": 3311,
+      "sha256": "d24d23c70baf70abb9d6f2b1eeed8db3697dc32388bae000e097229c03907d79",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/camera_language_design/SKILL.md",
+      "bytes": 1432,
+      "sha256": "7a0bebbed8c89907c3f4719ea721b5efedd79b82dc54239f87c260ed46a68499",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/camera_language_design/skill.json",
+      "bytes": 3325,
+      "sha256": "a0c3094ebe158ea5a5c8666d8e22f4d0b2732d2578bdfd9754a7706e244bc6bb",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/camera_motion_design/SKILL.md",
+      "bytes": 1417,
+      "sha256": "27640520b042e15d45f7554325965e52ceb13f269708e93edea8daec1d0df7f3",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/camera_motion_design/skill.json",
+      "bytes": 3302,
+      "sha256": "f39c5b8ef449d3647e2b7c69014f08b4ec561469d336df06b2a3a8607cb9d7d4",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/catalog.json",
+      "bytes": 626354,
+      "sha256": "702a3284f8d5abebc5c1ad5b238e6b01941485ee4328fa59047c1aed95e6e9cb",
+      "classification": "keep",
+      "reason": "retained baseline artifact"
+    },
+    {
+      "path": "skills/causal_chain_construction/SKILL.md",
+      "bytes": 1413,
+      "sha256": "9225689de4f3cff5bf4d87fa9fa6eb716563cff6c60f74652432497611888109",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/causal_chain_construction/skill.json",
+      "bytes": 3318,
+      "sha256": "e36511f38f26466e31108e84d7369dbb69ef9278fd9d41ac0a9eab96f5f9fb25",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/character_arc_audit/SKILL.md",
+      "bytes": 1381,
+      "sha256": "550c51a39b3882f39ebdd9797d3445d4f768a85008ad302dccf4fcc312023174",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/character_arc_audit/skill.json",
+      "bytes": 3262,
+      "sha256": "13537d63cdba16a70928a9af5cd5c0dcf07f4a361d5d02e5253264d39f1fee3b",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/character_bible_creation/SKILL.md",
+      "bytes": 1443,
+      "sha256": "7eafbaeb81085792b8ed68694f312a2f534bf8f2e3696b8ed6bc6c1aa66128ad",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/character_bible_creation/skill.json",
+      "bytes": 3344,
+      "sha256": "177643409f774e12200b67fed616ad7b0e17df580685ae3b1215d567fc50fd63",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/character_reference_plan/SKILL.md",
+      "bytes": 1424,
+      "sha256": "48218fb78e19b2e892c6789b96c7930344aff82d4cc19d198057a3c83fe73f02",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/character_reference_plan/skill.json",
+      "bytes": 3325,
+      "sha256": "3f4d5549e2d0baaad46339eef480f83778b2e48804235ae52f58db08052a6b68",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/character_state_tracking/SKILL.md",
+      "bytes": 1422,
+      "sha256": "3642ed85ce4ce900d1cfa9f2e4fe08a4faa3166013ac845e4a1f57670c018511",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/character_state_tracking/skill.json",
+      "bytes": 3323,
+      "sha256": "9c4c0128e0d2af4cca9fe8ce009e8359d6287e682e9c8a13ae3e65c75f3e9747",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/cold_read_audit/SKILL.md",
+      "bytes": 1362,
+      "sha256": "5426a0af3e6ffdfd3ca9270a6f3b64159f788aab553a103c5b1312f7ad7fe6d5",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/cold_read_audit/skill.json",
+      "bytes": 3227,
+      "sha256": "a22eea7f9e5e3afd04da38ad791aad9054d39e815a60784770c0fb339a31e11a",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/color_normalization/SKILL.md",
+      "bytes": 1354,
+      "sha256": "f1db97aaf4d58ba1209b3c8eaf7bb68ffe4d84fff3d2b6423eea1b991c2b2a5d",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/color_normalization/skill.json",
+      "bytes": 3235,
+      "sha256": "32698df2d52f9bce2982429b1cbd3a0f3a3c27b6c13166aa520808854826ed31",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/compositing_plan/SKILL.md",
+      "bytes": 1354,
+      "sha256": "609f2e7d8f79108149a14610af47e15c99bf275777d642f22ac23dc3ca175140",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/compositing_plan/skill.json",
+      "bytes": 3223,
+      "sha256": "ce134e99e3ac4117c31ea37257522b36626ada351bd9385fca931134fe61e9d7",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/composition_design/SKILL.md",
+      "bytes": 1395,
+      "sha256": "f8f2625179099d3538007b93cf97661277e4345b5cd95b8c87d2bb91bfb68d95",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/composition_design/skill.json",
+      "bytes": 3272,
+      "sha256": "41daabcdd576af5b0448cbbefa76f4da75d412af5e5e35a6aba75cfb042c06d8",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/composition_lighting_qc/SKILL.md",
+      "bytes": 1397,
+      "sha256": "06973d95eaac788889a37470a726abf24e58387a034ff2bbff60448a0cd53370",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/composition_lighting_qc/skill.json",
+      "bytes": 3294,
+      "sha256": "3dda13f75ca65adc657ebbd7a29943186253a5ad97d2e79af225189a13bbbd8c",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/continuity_diff/SKILL.md",
+      "bytes": 1365,
+      "sha256": "19a650d804dc22478096adf62e64e0459be908b5918f955ccdb1d22bee2aa0f0",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/continuity_diff/skill.json",
+      "bytes": 3230,
+      "sha256": "8f6161868fd31d646e3d1a2fffc45a618703f3ed33c928916093ed0053754704",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/continuity_edit/SKILL.md",
+      "bytes": 1358,
+      "sha256": "619fa9e6f81986d5319290be2dbbabe8227ad036e4557ee1df846bcfd888f14b",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/continuity_edit/skill.json",
+      "bytes": 3223,
+      "sha256": "1de75bb07357507978cf661d9cde674ef17925b9b8d75cd93ffaf82a79bbca7b",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/continuity_extraction/SKILL.md",
+      "bytes": 1408,
+      "sha256": "b1e5e1f86741ab6d9d8c132f3e60c4ded7f176296d2329348cf68a5bb1558286",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/continuity_extraction/skill.json",
+      "bytes": 3297,
+      "sha256": "a722b5fa02e9e0c03e8a2d3a2923a2227d91096408d4d4d112a81316eec1375b",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/continuity_logic_audit/SKILL.md",
+      "bytes": 1390,
+      "sha256": "20f3be7d87fe6bf0e851c35911dbe5cf5294e8682df59b2344ea2a7eb784180b",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/continuity_logic_audit/skill.json",
+      "bytes": 3283,
+      "sha256": "99e7f2b135b5c84474898b4ff4156de3066162cbb9a32af221175b7b4b7fd738",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/continuity_qc/SKILL.md",
+      "bytes": 1332,
+      "sha256": "3bb9761d1222c1a2a13d5458911fc6908794dbcc1f23d2f9d87d61eefd3e940c",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/continuity_qc/skill.json",
+      "bytes": 3189,
+      "sha256": "033a854ec6f64e6226608a23903d1b60f979b565a4a55e6a6f887d65a585e938",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/costume_state_design/SKILL.md",
+      "bytes": 1373,
+      "sha256": "9f61e8e2a6f2ebdf26c263e5417e9c7be64d67bd16e24338aa6a2474ba851411",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/costume_state_design/skill.json",
+      "bytes": 3258,
+      "sha256": "9a9c8cca4c238b6f2ad2a84a542bdd301d5f08c47bc7bb0c28055e7859fbb319",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/coverage_plan/SKILL.md",
+      "bytes": 1359,
+      "sha256": "03750fabdd9f7a8dd3e9e934d15d8114a504e6ca24468e1724a13f52f29aaa9f",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/coverage_plan/skill.json",
+      "bytes": 3216,
+      "sha256": "e56e40929cc787d84d27a14162bccdf8c5e067e09db0e99986a44739f82e5674",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/coverage_registry.json",
+      "bytes": 59648,
+      "sha256": "6cc43d2b5f2d73b1bf38e689b093e9fec00857940e9608822ab2ac51a3c09e61",
+      "classification": "keep",
+      "reason": "retained baseline artifact"
+    },
+    {
+      "path": "skills/coverage_visualization/SKILL.md",
+      "bytes": 1411,
+      "sha256": "1fe5a8f25a9e2ebf9cdad7777a48721b1214b50bb0045c91a87ca77c042310f0",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/coverage_visualization/skill.json",
+      "bytes": 3304,
+      "sha256": "ce5cb1402e1109bef0d9524742ebf765a9a02881cf219b1d04d83420bb81a024",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/creative_constraint_extraction/SKILL.md",
+      "bytes": 1488,
+      "sha256": "7cd7c386d57fa19fa34322fe7bdd8f110f040fa9d42370c776ed1fd87211fe46",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/creative_constraint_extraction/skill.json",
+      "bytes": 3413,
+      "sha256": "d1a9cae467278471fbf5961e7216f0d529b1cba5b438dd8cbbdab9d345e60331",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/crisis_climax_design/SKILL.md",
+      "bytes": 1389,
+      "sha256": "827710f0bf8daf58fb1a5002709974e9a14538722e7e0bfb057b3ac51fdc8cda",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/crisis_climax_design/skill.json",
+      "bytes": 3274,
+      "sha256": "0c8495cc2c4b21510e91180801454b8f8279e0bb49cdc3dd8dd2fda63b6cb2f3",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/critical_path_analysis/SKILL.md",
+      "bytes": 1411,
+      "sha256": "71589c55ac3197dc2ac5c5faf89d98759369fd916798808ab26b81219efaa028",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/critical_path_analysis/skill.json",
+      "bytes": 3304,
+      "sha256": "55e858cfb14560b20bbc410df9d9c118c39b10c94cb66668e1d361cab3ed6fd5",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/cue_brief/SKILL.md",
+      "bytes": 1325,
+      "sha256": "d09b3458a8b293a7c820e5dd16af5b1874a54ae93f6889b65a79800ede34f332",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/cue_brief/skill.json",
+      "bytes": 3166,
+      "sha256": "6368e08f27f5876f743e417854df8ee5628e3664d1c161eb2551125b46a79672",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/dailies_review/SKILL.md",
+      "bytes": 1349,
+      "sha256": "6bc76766631176ff339e0b423e261dad533decde6f1affecbf4b9537c361d817",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/dailies_review/skill.json",
+      "bytes": 3210,
+      "sha256": "f895ad10e0f1448ba3e27b718216f1008b48211e5fdd9d5bbeaf3f0e4dff78a2",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/decision_logging/SKILL.md",
+      "bytes": 1378,
+      "sha256": "8514a4e0d20d0810965d735b87d32d5082762014c2591c56b31e901e865638c9",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/decision_logging/skill.json",
+      "bytes": 3247,
+      "sha256": "38bec9a0650027429ef8970469e819d10aae851a4ebc7f9936aeb933cd809f7b",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/delivery_color_check/SKILL.md",
+      "bytes": 1355,
+      "sha256": "65ee466a3b17c16ef85ff8988ae47d4f392fbbb5ef71b8d756680256baec76ad",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/delivery_color_check/skill.json",
+      "bytes": 3240,
+      "sha256": "df4fa5111d349f830ca1cbf2aeefb9c7a00c9ed22487abc69f451b193eb9f39d",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/depth_foreground_background/SKILL.md",
+      "bytes": 1449,
+      "sha256": "25b04ccde825c11d3a77bdbd1a794552501caefaa227a81b061cb23e72a294c9",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/depth_foreground_background/skill.json",
+      "bytes": 3362,
+      "sha256": "5c232825f2be0dbd0c2af2e074cf1c85a9283c485667f7b52650930c66d3bf3e",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/dialogue_edit/SKILL.md",
+      "bytes": 1336,
+      "sha256": "20a998d9fa76d4d4027e9100e536ecd3cea9af58817460d8dfe101ac0bf54c19",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/dialogue_edit/skill.json",
+      "bytes": 3193,
+      "sha256": "0d7aab832fec710dd3fc92b372081aefd205f6f17ba19e5b5ba81cd7c260047c",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/dialogue_scene_direction/SKILL.md",
+      "bytes": 1439,
+      "sha256": "71e073553a1568e55da7971a4b96dfa761e41257c3d0569ed2523a95735ee16b",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/dialogue_scene_direction/skill.json",
+      "bytes": 3340,
+      "sha256": "6546049c4f376ef757401dc77af3046ddf04abc8f1c765e6ce12966514b37922",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/dialogue_to_action_substitution/SKILL.md",
+      "bytes": 1452,
+      "sha256": "d400b2b2c341d32ed149ee61a15ec0f36b7e26118ea1045bbc066706abf2ea7d",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/dialogue_to_action_substitution/skill.json",
+      "bytes": 3381,
+      "sha256": "b2dbf5d789832e025c4f0bb2173c30cebccece9dd6b60ed2e6b085adac624445",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/dialogue_voice_audit/SKILL.md",
+      "bytes": 1409,
+      "sha256": "332ecac138537fc98b491d8cb43fc1768aa94738c68526ba9fa73966136971dd",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/dialogue_voice_audit/skill.json",
+      "bytes": 3294,
+      "sha256": "cddb0ba550f43d99cd07ca118e5b9a6d9b5d54f9d7b3b62923b26bc7635e7e48",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/dialogue_voice_construction/SKILL.md",
+      "bytes": 1415,
+      "sha256": "616eb76506cfbcd767bad2ab3a8c6cdea54745ceb299876ea0e82eb557a5a330",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/dialogue_voice_construction/skill.json",
+      "bytes": 3328,
+      "sha256": "e0ced9d5a745ae9c1085b147682d26819212203f42a61b943e40d6ab1526ec8c",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/dramatic_question_design/SKILL.md",
+      "bytes": 1404,
+      "sha256": "4fc9558dbea8923cc65c3a139f4104cba09806cd47fb52d4039253e6244b303f",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/dramatic_question_design/skill.json",
+      "bytes": 3305,
+      "sha256": "97f7ce78c7b853f94963c76028464072f3ac32d52777fb7442d3ffa5a8b16e56",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/edit_compatibility_scoring/SKILL.md",
+      "bytes": 1415,
+      "sha256": "ae083263010fc1837e03afdd9589287afd0934215b8b40879624ed6ff1b9c0f2",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/edit_compatibility_scoring/skill.json",
+      "bytes": 3324,
+      "sha256": "84fee22ebf5189fd027a84aec9802237a7da2190669d7dfd9c6446e79b62fee6",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/edit_qc/SKILL.md",
+      "bytes": 1304,
+      "sha256": "464a42400edd1ce0b9cd04cca2ebe0f52c834066eefd5826ba763e45b935c822",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/edit_qc/skill.json",
+      "bytes": 3137,
+      "sha256": "1b5a559691a873761888819679f108100c75dbed53987508aae76565852879aa",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/environment_state_design/SKILL.md",
+      "bytes": 1398,
+      "sha256": "19cea8480f9042f59cc2b896013cc0d07575b1e636479ce5db7d2ca68f7f3122",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/environment_state_design/skill.json",
+      "bytes": 3299,
+      "sha256": "82d4da9fa2c42d982e345f8fd8456e474a7e417f1479bf1ccd7ee824d645e7e1",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/era_technology_consistency/SKILL.md",
+      "bytes": 1431,
+      "sha256": "60c695abfa4e84bb26a88cc5003bb8111547dc3c0a616ec8f2fbeb0e5f470105",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/era_technology_consistency/skill.json",
+      "bytes": 3340,
+      "sha256": "f7b634c30f8833343c3c6238e90dd882555cf79fc9d4c8225f4b1c4dd703d53c",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/exposition_concealment/SKILL.md",
+      "bytes": 1403,
+      "sha256": "34280ced007011ad0c1664a44fe5907a9cfd0e69c8b036660f08ba477e5e059e",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/exposition_concealment/skill.json",
+      "bytes": 3296,
+      "sha256": "4023eed6ca5c137bc466c3b3cf0c9ee49e36d025bc7f499633d21cc2fd99e3d4",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/expression_range_map/SKILL.md",
+      "bytes": 1385,
+      "sha256": "0917d4626e8e564e2d7d426a82c288676fe0eb90ac815691b7596ae3edd3302d",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/expression_range_map/skill.json",
+      "bytes": 3270,
+      "sha256": "ddfe2ddee7254689d5d797f414ef4a533c2582b3bd32a8a08c5ae564768454cf",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/face_hand_repair/SKILL.md",
+      "bytes": 1348,
+      "sha256": "33fa2b0fdb8b1fbd09450f6e3a9c73a184f85e81b04e46f936dc163dc10db2ac",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/face_hand_repair/skill.json",
+      "bytes": 3217,
+      "sha256": "806c35285b1d34db9986dbc66a42b8cfddbc865e2681f7443b2a70a7d949779c",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/failure_classification/SKILL.md",
+      "bytes": 1388,
+      "sha256": "31b07dd07c848da2ffb07d633097dce9a62db5c735e30114dcf1169a479bc342",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/failure_classification/skill.json",
+      "bytes": 3281,
+      "sha256": "27e24ff2e4c4bacbbc9521d76cef9669877b00c7eedea0fc61f6f0ebfcaaecd9",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/filmable_action_writing/SKILL.md",
+      "bytes": 1379,
+      "sha256": "6b0e79f6602cad6418fed6e20c5920142da2ad8bec54db2eb86a49beb683bc65",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/filmable_action_writing/skill.json",
+      "bytes": 3276,
+      "sha256": "317511955ad2bb1fa08228c99173c484c5a1225eda7ae7b66852a2ee7d08248e",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/foley_design/SKILL.md",
+      "bytes": 1355,
+      "sha256": "2f5d788cd7e1493139d731c483f119be7ba97c792d79c770b6891bab6e00e3c3",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/foley_design/skill.json",
+      "bytes": 3208,
+      "sha256": "512f1e4be8bb429aab96b34ee294e3c17b382303c138e659c022ee43f6c09db3",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/generation_failure_classification/SKILL.md",
+      "bytes": 1497,
+      "sha256": "45931bd1894b5c56ae3dd36c022b608cc439fbdf783b6b6ba91b82a9cab2dfa6",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/generation_failure_classification/skill.json",
+      "bytes": 3434,
+      "sha256": "ef2e9193efc87b3e9a15c79977bff585da9bdf55ebf1a9dd123ea2cd484eedec",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/generation_logging/SKILL.md",
+      "bytes": 1391,
+      "sha256": "f3329512c7f83df93306e756300b5983b410357a258ad689430628ade33d7a9f",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/generation_logging/skill.json",
+      "bytes": 3268,
+      "sha256": "0bc71e9b6a9f461a7da6595fc1d052c96c3b147911f4b817e4e3f7dce7776900",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/generation_risk_previs/SKILL.md",
+      "bytes": 1488,
+      "sha256": "dd5e89c7288bcef7b154cd82004261667c7bb81d02c02f782050c7475c765720",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/generation_risk_previs/skill.json",
+      "bytes": 3381,
+      "sha256": "a5ec99f99e0e20d3a186958c738d1e2a462226f7ba12f207542666db42a551f7",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/genre_contract_definition/SKILL.md",
+      "bytes": 1405,
+      "sha256": "45a0fff27dce71abf656ad7c5ca52d7b95a30c38b1e1ada6d570933cf9786430",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/genre_contract_definition/skill.json",
+      "bytes": 3310,
+      "sha256": "73c46ae42103cc6f7e462f821a75c17f594dd77770a7b03145f56b9bc918ecfd",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/genre_tone_audit/SKILL.md",
+      "bytes": 1345,
+      "sha256": "bca139eb8a47698491abf6079b438101bbcde0c2bf1803f710d0618a71127cf5",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/genre_tone_audit/skill.json",
+      "bytes": 3214,
+      "sha256": "dcfd2dc3b89a477287411e6b26e868455daae599714dd9502324809058b3f7c3",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/geography_continuity/SKILL.md",
+      "bytes": 1391,
+      "sha256": "d34145184f3e58743496f51f99f2fb9ca01349ac84a1bc5f10f8b173d0a7a2dc",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/geography_continuity/skill.json",
+      "bytes": 3276,
+      "sha256": "009f98ae52ba3dad07b9e8330f9537bff59296aaef372a4b0182a24885bde629",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/greenlight_package/SKILL.md",
+      "bytes": 1396,
+      "sha256": "b90c7dc0bcbccafa7b0b34531417a47a9e24dbf13137fd7af65ce016a9b40737",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/greenlight_package/skill.json",
+      "bytes": 3273,
+      "sha256": "07d055b5b6ddc02ea2978cb97a753bfbefe27c75f47a94c561b96fef247fb35e",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/handoff_validation/SKILL.md",
+      "bytes": 1396,
+      "sha256": "1b74d97f8a2790e0b1b6df20dc0fc8a66c7e56a8725ceede21276a7d1b2f606b",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/handoff_validation/skill.json",
+      "bytes": 3273,
+      "sha256": "353acbcdf5a0c5e6cd269ee12ad12b3d20e12b2dd14a0fe8c1e978530037a5f6",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/identity_qc/SKILL.md",
+      "bytes": 1315,
+      "sha256": "670612399c99df640c8383e5f1b0eb42a43865d4985d70db72e6595c08ea36f7",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/identity_qc/skill.json",
+      "bytes": 3164,
+      "sha256": "37b7572bce3a2259705122200c9c58d07941b41352f48a4e1f5a55c2afcc838e",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/identity_state_separation/SKILL.md",
+      "bytes": 1402,
+      "sha256": "f5f696f54575d83dbf530b408beb9ce136a7aba21816478b151689a4b2ce29ca",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/identity_state_separation/skill.json",
+      "bytes": 3307,
+      "sha256": "7cbed04eb8f3d367f8685e5627a5f6a756e4f59f664dddc3ffb8991376035ad9",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/imitation_risk_audit/SKILL.md",
+      "bytes": 1435,
+      "sha256": "14230cb2d9d2a9b76d80fee8d55c8331e4f66f8892433568c26b6be2e16fa91a",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/imitation_risk_audit/skill.json",
+      "bytes": 3320,
+      "sha256": "e1382bb2162862a21041f18df2c3f3cd74506ead5749e104bd0d8e7cb8d22f09",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/interaction_repair/SKILL.md",
+      "bytes": 1375,
+      "sha256": "6adbcd4ec65750eb574fe3b3b3ac77b2af1454f50e3727a9ff9b9eb5cf0aa0d2",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/interaction_repair/skill.json",
+      "bytes": 3252,
+      "sha256": "ead058053d9656f17bf487ce300650435ee642f9942797808927278cb1e213d2",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/interruption_overlap_design/SKILL.md",
+      "bytes": 1429,
+      "sha256": "0f26026c84a981433dc6c034ef2b9ed78f6a2c7b61e8d80a9a5b6729dbcc5f97",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/interruption_overlap_design/skill.json",
+      "bytes": 3342,
+      "sha256": "f8f4ab783da9ca1055a6e7fa7869a36c6ec6072a13b1e35c96ee5a0c4f78d7a1",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/joke_mechanics/SKILL.md",
+      "bytes": 1342,
+      "sha256": "c54bacdddd9a4c3c407df378a73ec9fc704732f40555ba7187079c7def926ff2",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/joke_mechanics/skill.json",
+      "bytes": 3203,
+      "sha256": "815d9ece019cc2ffed425e1e90b0408897047ff2d4df29a3450e02fb42402785",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/keyframe_evaluation/SKILL.md",
+      "bytes": 1397,
+      "sha256": "a8978ede641a64cb1d8cb680143aa39b6c65dafa68a0579878f5ea048cb85a1d",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/keyframe_evaluation/skill.json",
+      "bytes": 3278,
+      "sha256": "7d0a414323cd45dcf28203b0aa69a45dcc1571d03ad207240959c55d0b8d961a",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/keyframe_generation_plan/SKILL.md",
+      "bytes": 1425,
+      "sha256": "cf04d42091128a65475980ff6e701cbe264ff7f40f01ac52fb977020150c3651",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/keyframe_generation_plan/skill.json",
+      "bytes": 3326,
+      "sha256": "9b0abbb262e90bb2d543da05009b7bcd5f0e1bfa26c6ba641a4c8a22e6ef1e02",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/knowledge_state_tracking/SKILL.md",
+      "bytes": 1413,
+      "sha256": "dc88422d6cf3966a08d6a992ee4df76cacac116edacb581b1d897e7c29ea7c6b",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/knowledge_state_tracking/skill.json",
+      "bytes": 3314,
+      "sha256": "3aebe106e2ba13009abab6207e1bb2cce6dc2654005180adf6d71be3c70d836a",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/lens_strategy/SKILL.md",
+      "bytes": 1360,
+      "sha256": "f0c555b5302368207f1c30f8d03f4de6fb0841dcb3880d26558c53172246c33d",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/lens_strategy/skill.json",
+      "bytes": 3217,
+      "sha256": "c9b853953ec12c22d07d16849a32cc7ba729792786a035140013be3c048f98c8",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/lighting_design/SKILL.md",
+      "bytes": 1393,
+      "sha256": "89d7ea0b1daf31735b964202239764a1e282342ccd18ea04ef34a571ab635fe0",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/lighting_design/skill.json",
+      "bytes": 3258,
+      "sha256": "306c41f5ca97d94b81a1a836a5cfda614f3d36de06efbfeb499967c3bea0acfb",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/lighting_time_state_tracking/SKILL.md",
+      "bytes": 1438,
+      "sha256": "acb3b44654d7c56bbf4597f88a63ddedfd29161385faca1b955f37dbddadccfa",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/lighting_time_state_tracking/skill.json",
+      "bytes": 3355,
+      "sha256": "fabb2cf32d6caede1fb863a26ea0a0ecd6062bc9cf97ed5bdcc0097d9d1cf66a",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/line_compression/SKILL.md",
+      "bytes": 1367,
+      "sha256": "d3ac5a3222791ed57fc943661350c252511ff6a2d246e91f7b08376726e9b0c2",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/line_compression/skill.json",
+      "bytes": 3236,
+      "sha256": "bd7e0ab09f86c3140cc688dc50509d6487b1418005dbe8d7958860c72e88d190",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/lineage_reconstruction/SKILL.md",
+      "bytes": 1405,
+      "sha256": "33fcc218ab4b0fee440fccd508f12a01a5c89a01866d6896315d42bdff7c3d1f",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/lineage_reconstruction/skill.json",
+      "bytes": 3298,
+      "sha256": "f9915f39c58faed0787a852b679f41e96bb120d43353be83f6ece6db6c6c57c8",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/lip_sync_strategy/SKILL.md",
+      "bytes": 1407,
+      "sha256": "7e5614fff89ce551767c1fd8e9a468cb10d66a50d3013a345f4a71d11f59fb08",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/lip_sync_strategy/skill.json",
+      "bytes": 3280,
+      "sha256": "3cc07b303433133d8c28edda8b27d25f24994cc2da958537a952ce2beef9931c",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/location_bible_creation/SKILL.md",
+      "bytes": 1416,
+      "sha256": "09402dfde5df3869260f073587447cd13ac648a3d753c09861b915b558dc5cfd",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/location_bible_creation/skill.json",
+      "bytes": 3313,
+      "sha256": "63014c668a3fa47eee434700fa4f77beec0d28f65207b9c79060d48ea3860861",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/location_geography_map/SKILL.md",
+      "bytes": 1403,
+      "sha256": "e7e33bd93e053a66bc8919c366bb38616b24034f5f291e23aaec171f149306d3",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/location_geography_map/skill.json",
+      "bytes": 3296,
+      "sha256": "ce6b8b1dacc3a91e297033d8bb4f1edfee5a271b0b0d3d4894d35545936967ad",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/look_grade/SKILL.md",
+      "bytes": 1305,
+      "sha256": "e4278303f8aed826ad653ac84a5797dce5fd6429020b0471999e6338c71199c3",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/look_grade/skill.json",
+      "bytes": 3150,
+      "sha256": "6702be362a3a723e38ddd5769065a002f594547753c37f9a799968458f88dc8b",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/loudness_delivery_qc/SKILL.md",
+      "bytes": 1394,
+      "sha256": "ef5942a2219a79a5c7ec2c3bbafbb9c493cc3d1a3b48643172ea48243936468f",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/loudness_delivery_qc/skill.json",
+      "bytes": 3279,
+      "sha256": "d9a179cfbca07c39c4fba2481a1edb8173cd01a135223d79ccc7d0438bffa21f",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/mask_rotoscope_plan/SKILL.md",
+      "bytes": 1369,
+      "sha256": "92aaf51c4ff5feb43078429c234b87d5e7ce9ccf8e1340f2b222c37d5afc3d50",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/mask_rotoscope_plan/skill.json",
+      "bytes": 3250,
+      "sha256": "0b40100f2348c6d78833da5845e6b268a58ea0effc2232b4a746d68d7832d1d4",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/master_qc/SKILL.md",
+      "bytes": 1316,
+      "sha256": "57d462bcc30346ff596bb933440efab7234eaea454a63a2720baf5f6e8b13323",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/master_qc/skill.json",
+      "bytes": 3157,
+      "sha256": "e44c91daa8bbf43bbf8c2c0768a904eef3c7961c2a2ede0f787401f17a8256fc",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/midpoint_reversal_design/SKILL.md",
+      "bytes": 1402,
+      "sha256": "66b5414362d04a91f29245377a630ef7e427098e7f17d78561796332175a2a70",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/midpoint_reversal_design/skill.json",
+      "bytes": 3303,
+      "sha256": "f27ee5be4da4d29ad99551106215b64f3c7624057e9123c05411c095213b081a",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/mix_plan/SKILL.md",
+      "bytes": 1313,
+      "sha256": "a9047248db9d365b563147228faaee84295a911d5164ca5cac2a861c48e452e9",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/mix_plan/skill.json",
+      "bytes": 3150,
+      "sha256": "586d0b247d1bb23e1d0bdb760fafc19a78da084ff363e117cebb490773c6ac9e",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/model_routing/SKILL.md",
+      "bytes": 1390,
+      "sha256": "f3cd1fe65403029c2da419ac2487fc9e0a31a5048f5af9ac2ef8256cc6efea2b",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/model_routing/skill.json",
+      "bytes": 3247,
+      "sha256": "c9d84baabe640a5e9454e5cf9aa05eef0730f59e6b8526cfbacefefa51b1ff7f",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/motif_design/SKILL.md",
+      "bytes": 1322,
+      "sha256": "f4b88ebd14ebbd2d74ea1544d83f25c1c1d94e77c2e595c996e73940991562d2",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/motif_design/skill.json",
+      "bytes": 3175,
+      "sha256": "3c9d330b22c13bff7b65f9747e5d2410068301e6e0fceafa3056fe5d272666ff",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/motion_physics_qc/SKILL.md",
+      "bytes": 1386,
+      "sha256": "b68582b00ca2d2d7eee4465b02e5acd1a863a514e9f28b9dbfbd528bc0f2d9d4",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/motion_physics_qc/skill.json",
+      "bytes": 3259,
+      "sha256": "078da09f2bdc0cb403f1a206e834b786ee3073f3783531f2b1658cd6e474631f",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/motion_strategy/SKILL.md",
+      "bytes": 1394,
+      "sha256": "b34181132551450ed6297800e0b149402d01037bbb764a6d715c655ed756d0e9",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/motion_strategy/skill.json",
+      "bytes": 3259,
+      "sha256": "0a1fded99592af09068cb8550476ed7d9bafd53b9f7257ba0cbdb45af844634f",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/music_transition_design/SKILL.md",
+      "bytes": 1395,
+      "sha256": "5ff18c27785a53b31da1d2cc1d0c9e5226fbd3edde6b877094a94007c83d9738",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/music_transition_design/skill.json",
+      "bytes": 3292,
+      "sha256": "1eba776f90e3167620e5d4d42e8ad7f26614e1921d9ff2485c9c6042e54ef9ee",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/negative_constraint_compilation/SKILL.md",
+      "bytes": 1491,
+      "sha256": "ade2c82ad159c1aeccf4cb8fa71c8208fbb00728c06eb321fea5c3238b085765",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/negative_constraint_compilation/skill.json",
+      "bytes": 3420,
+      "sha256": "78ef2b0a501e5559e805823e68bda9350a971af8634f37ccb912d19acdc7249d",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/performance_objective_design/SKILL.md",
+      "bytes": 1437,
+      "sha256": "38e94419d81467e44add602c5f52078368b56a2785eb3ee8f9ffadeb3e6ccfeb",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/performance_objective_design/skill.json",
+      "bytes": 3354,
+      "sha256": "79530c545bcc62b92805a6fcb5d27aa62947cca6c87b8a4ec3f9bc0f3cbd244d",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/performance_prompting/SKILL.md",
+      "bytes": 1421,
+      "sha256": "2a6f9d5c2f8914d575a47daf08985e7c177332f6263e96a24358d3c162cc4746",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/performance_prompting/skill.json",
+      "bytes": 3310,
+      "sha256": "9f781c83ea56f8f2a47d2dcef7d05355ae993360efea35745b2317b5ee0c77c3",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/pickup_identification/SKILL.md",
+      "bytes": 1408,
+      "sha256": "5b2637ba119743b9825f33dd005a79e3d4512c153e26f6c1a67c041b07d0076e",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/pickup_identification/skill.json",
+      "bytes": 3297,
+      "sha256": "579c00b73f407900f0e518c7b51fe8f3959d5671f5746a4638078b2efdee88be",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/picture_lock_check/SKILL.md",
+      "bytes": 1379,
+      "sha256": "6bd5a3064acb102d8d89b3b7c46a6ff7c109028e93f34bc755fa642620837bb4",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/picture_lock_check/skill.json",
+      "bytes": 3256,
+      "sha256": "c886da1cdba2118af25aa875cf7316077894ef602bf4407fc0e3f219f490d86a",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/premise_stress_test/SKILL.md",
+      "bytes": 1391,
+      "sha256": "60b891b6ac0aaf0f12056a4a3b22f7f53873d8277e8c06f41e2c27262f586749",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/premise_stress_test/skill.json",
+      "bytes": 3272,
+      "sha256": "ac21bca2eed9c9dfc4848ad609595ccbb63acfe914648d1c6e6ab8c3bef761c0",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/premise_theme_audit/SKILL.md",
+      "bytes": 1384,
+      "sha256": "09879cef72a758ff0399dc4d2cc87ebc85c7e1ca445f723fd03a393cea20f6ad",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/premise_theme_audit/skill.json",
+      "bytes": 3265,
+      "sha256": "13b82ab63390406876a5c769710f90a363600fd4bb065d74d20c1ef488268306",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/production_feasibility_audit/SKILL.md",
+      "bytes": 1438,
+      "sha256": "a062be43747ebee9c1792ae2ad6e69e085d540795c71a7b3cd969fd06ecbf0b6",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/production_feasibility_audit/skill.json",
+      "bytes": 3355,
+      "sha256": "68ed5dc91760ca157956a1426b3307f71beb2b68220809b6abef7f26fe97403c",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/production_status_report/SKILL.md",
+      "bytes": 1416,
+      "sha256": "1378cb9100be2a7c809a9581eef5a009b21a3bf1cdb5ef17aaa12d3ad03412b9",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/production_status_report/skill.json",
+      "bytes": 3317,
+      "sha256": "d2e03938b1802590aa090b1a2040a7fa13a21bcb50a4ac5a0eefb7aa8f5977e5",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/production_strategy_selection/SKILL.md",
+      "bytes": 1477,
+      "sha256": "6a647a3ae6438518a82060ea657e4aaca862729658e7df8efda77e175b1889bf",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/production_strategy_selection/skill.json",
+      "bytes": 3398,
+      "sha256": "14d2a923d480a01519ddb070c44c32a2b5d7455155708dede415491171f59b4b",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/progressive_complication/SKILL.md",
+      "bytes": 1411,
+      "sha256": "40eebac0ca784349f9b31dea8ab70ff4a78f29b4c8c6b260f454be90b2414f4f",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/progressive_complication/skill.json",
+      "bytes": 3312,
+      "sha256": "bc1c725812750830952bf56e52dae14b6b1ae43a8a24ca929a8343eabef11f9a",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/prompt_compilation/SKILL.md",
+      "bytes": 1401,
+      "sha256": "d7dae47bc4c900ac0ae8b8628e54acbd62ad39f456fdf70e05c89a447dbd89ea",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/prompt_compilation/skill.json",
+      "bytes": 3278,
+      "sha256": "1b768907e44286f59c03fcb8862f908bcdaf6deba0014b5d82dddee28afc41ef",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/prompt_versioning/SKILL.md",
+      "bytes": 1384,
+      "sha256": "9dbc950b5ff447797e15fa78dbe1ba46c4a8523f87e0cb5df6c7355cc2d304f2",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/prompt_versioning/skill.json",
+      "bytes": 3257,
+      "sha256": "75483e7fd064feb2785bce85b8145a70ab617739550673b8990d05f4e3d181e5",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/prop_canon_design/SKILL.md",
+      "bytes": 1356,
+      "sha256": "63d394f714b9cedce226d0787e8d30dc8636f24a85b9390ff76576d83af38aad",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/prop_canon_design/skill.json",
+      "bytes": 3229,
+      "sha256": "372b74d7ab997c9be0783cec4718f6f95a9a0abc0587258908f5a6241ce8ea07",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/prop_state_tracking/SKILL.md",
+      "bytes": 1402,
+      "sha256": "1b9723c0e6ead628afa3cf5d63c9b776488fd98c19eec3e3e4b2bbf5a5cbb037",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/prop_state_tracking/skill.json",
+      "bytes": 3283,
+      "sha256": "69177a114822b6ad1a0b2c29eb06b0b8980571bc80d6a7edda5ae299dbe28014",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/provenance_capture/SKILL.md",
+      "bytes": 1411,
+      "sha256": "ca73c09639038badd93df8a96d2c39b97288cb95fa280d8da53cd69faa66f8c2",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/provenance_capture/skill.json",
+      "bytes": 3288,
+      "sha256": "81c4f4cad1d5b9dba080b4ea0710531a8b6570d5e2f4a1b60372d33496753821",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/reaction_shot_design/SKILL.md",
+      "bytes": 1381,
+      "sha256": "dc8e7e77ae23a6a1d591b15baa424cc853f3db7142479b7ad2e7326c76711052",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/reaction_shot_design/skill.json",
+      "bytes": 3266,
+      "sha256": "91fad4fa752a56e555d05081b5c6b7308cf9340130541bf09ae6741dc774321b",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/reaction_timing/SKILL.md",
+      "bytes": 1352,
+      "sha256": "00a15197de8b65c98c00f14cac1c12482b5b96b1c4e870c066f12889423c8807",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/reaction_timing/skill.json",
+      "bytes": 3217,
+      "sha256": "a7d072f128f2e5c17ad70dd8cc9f44961c8c9c4839ffba6fbede5f8389b04abe",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/reference_selection/SKILL.md",
+      "bytes": 1414,
+      "sha256": "84a5445c6c356b802d67e6dcce8a528513879ddab4629ca40bf91a49ab9e1e96",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/reference_selection/skill.json",
+      "bytes": 3295,
+      "sha256": "8fc364fc5742174031bf32d057a72c8bbe1250bd4b74166463e9eead7cd15362",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/rejection_learning_ingest/SKILL.md",
+      "bytes": 1436,
+      "sha256": "cc7c74616faf53c5a1c683f1345c35abc4b123a7d3b308b863da6e58805c73c3",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/rejection_learning_ingest/skill.json",
+      "bytes": 3341,
+      "sha256": "2f592b36ea558d2d1735bb032e04d4d613c9a536596c2c38a12277875347c27e",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/relationship_state_tracking/SKILL.md",
+      "bytes": 1423,
+      "sha256": "634937db54a38e26d0885958782c4fc0a605ef460cefafd7de706d4e63a4a3f0",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/relationship_state_tracking/skill.json",
+      "bytes": 3336,
+      "sha256": "42d18be0a15f49187c8c34a6aaef40e737e76dab284c75a902d0eda134321688",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/reproduction_manifest/SKILL.md",
+      "bytes": 1417,
+      "sha256": "17857ed28fdcf87e8a8c41a281a3d2aa4db46dfeb5579949074234493f25e591",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/reproduction_manifest/skill.json",
+      "bytes": 3306,
+      "sha256": "e58aa020c9f2c7159a2148851cb498696e929549302926747c7ef64fcd9234d1",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/reveal_ordering/SKILL.md",
+      "bytes": 1356,
+      "sha256": "452fd1fce241199bd1da0c731fd21e20ca9999df71aaa4aef38aaedd4342d997",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/reveal_ordering/skill.json",
+      "bytes": 3221,
+      "sha256": "a1b3c6fdc8533910902f252889c56ace3633d62ccbf4800a95b61ad5a69c9dc3",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/revision_plan/SKILL.md",
+      "bytes": 1337,
+      "sha256": "da182bdc24fe07a97b6afac540be7bd24a90cabc83357c3f975617fc0fb95e26",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/revision_plan/skill.json",
+      "bytes": 3194,
+      "sha256": "8eeca55e554884d8cb06fba2a5b5cf212ef32a0adab1ddd9e00bccebc9204fc8",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/revision_regression_audit/SKILL.md",
+      "bytes": 1404,
+      "sha256": "2030e836eabae213824e7c9ee03af5f2d6a3e51c5830470f1e6b30b8207c854b",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/revision_regression_audit/skill.json",
+      "bytes": 3309,
+      "sha256": "3fdefe2a234de073c85eab02da88d5b24330e1fb706f15ba26d1700446870b76",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/rights_risk_triage/SKILL.md",
+      "bytes": 1456,
+      "sha256": "5a5e8ad2ba317b6bce059206a4f250defcb9087d065e1d5780cffc2c497f5ea3",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/rights_risk_triage/skill.json",
+      "bytes": 3333,
+      "sha256": "a0ba88fc1384b32e8edc186f0d9c726cd83d364b365fe7f400799fe20a17bad7",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/runtime_budgeting/SKILL.md",
+      "bytes": 1384,
+      "sha256": "71e08b42f3d99b6d972d08f1152ad0501eed920cca2790d5472f9334508de21c",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/runtime_budgeting/skill.json",
+      "bytes": 3257,
+      "sha256": "f406aa950f0340229f90e68ccd509dbf2c26b2a219669ff9bdd3d7436aa9e6e0",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/scene_card_generation/SKILL.md",
+      "bytes": 1409,
+      "sha256": "dd1ff456e58be97883cdf483293b16a0b70a57a6da7aceb1060f9e8eaf39af3c",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/scene_card_generation/skill.json",
+      "bytes": 3298,
+      "sha256": "0af6a7971602533b595ab26d4e5a0fe0b47af3dfcf01fa12dbe3c5c71d52e184",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/scene_function_audit/SKILL.md",
+      "bytes": 1375,
+      "sha256": "bceffb6ca88c68c4a9f26f155f512dfd6e0ea0f4d91408dce1c96af03b010b32",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/scene_function_audit/skill.json",
+      "bytes": 3260,
+      "sha256": "c87516810a7dfeb80b41ae5879a210435f7df14c3decee81c89c5010bd4b9834",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/scene_intention_breakdown/SKILL.md",
+      "bytes": 1436,
+      "sha256": "86522315202365112c22b0b09096918ea88b205fc6e4f3b2e05609e8cc057390",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/scene_intention_breakdown/skill.json",
+      "bytes": 3341,
+      "sha256": "607130abc38ffae79671e4d7ee1acd90410ef4ec96808ed47918191fb65fc841",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/scene_necessity_test/SKILL.md",
+      "bytes": 1385,
+      "sha256": "7b4727b846dd4ea74ffd35fae07fef244892901d7c511ee217f8de49b3120501",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/scene_necessity_test/skill.json",
+      "bytes": 3270,
+      "sha256": "f41f1a8ef804e5ea2790c48f7af9bb1f079b68bef3f7e44fff69d996c695f4c2",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/scene_pacing_evaluation/SKILL.md",
+      "bytes": 1394,
+      "sha256": "5933f001ea3e645fd05bc4a65812a3087bbf1df2e13361145842696a2fd199d5",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/scene_pacing_evaluation/skill.json",
+      "bytes": 3291,
+      "sha256": "94f3fcd68843961c7b5d64394d5cc2d09ef543afb84ea20be3a2b9f4576d3e9f",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/scene_writing/SKILL.md",
+      "bytes": 1367,
+      "sha256": "0ad4db8067499b4eb93e48281f7d33de12f351694725c488fc3714a2b57598cf",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/scene_writing/skill.json",
+      "bytes": 3224,
+      "sha256": "28dfe03883b130978c1ee70452291d3640ad9eac866fdf6a38676ae4637bcbfd",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/score_spotting/SKILL.md",
+      "bytes": 1358,
+      "sha256": "e46ab148d83e8b9314920d31686afedae820aebc51264f4ecd5166cf82b1a356",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/score_spotting/skill.json",
+      "bytes": 3219,
+      "sha256": "fbfbcba2e1fde9519dd33a2d1172d70032cf733ace309d90d7b11866c577972a",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/screen_direction_axis_control/SKILL.md",
+      "bytes": 1467,
+      "sha256": "15ea2eaef7cf005c7394230ab6681d8ea5f82f76201867cda54716368c93ee3c",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/screen_direction_axis_control/skill.json",
+      "bytes": 3388,
+      "sha256": "f1244f0e2dfb9c0d824ccaa32ca712e21a77c5b8bc6cb067a2e320d4b9a92bce",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/screen_direction_validation/SKILL.md",
+      "bytes": 1445,
+      "sha256": "7f2b8d33f859102300d77006bc1fed79c5541a81a5ed6862d24a7140781132be",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/screen_direction_validation/skill.json",
+      "bytes": 3358,
+      "sha256": "c7c459fd762266ad22242ec4e70cf74a17c091c52039d264edb365c331c4358f",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/screenplay_format_validation/SKILL.md",
+      "bytes": 1435,
+      "sha256": "28fd9a72bb5b2eeb1964f3f85eb88c67dc46993b50112ff490cc8b789ea6667f",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/screenplay_format_validation/skill.json",
+      "bytes": 3352,
+      "sha256": "970588c6d7f31cc2cd539c181e1fb07353b4492a57b487e8baa54161ce31d5fc",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/sequence_grade_continuity/SKILL.md",
+      "bytes": 1378,
+      "sha256": "e34a4aa1058d5723024c35f8178472143da7c5bee9d746dd5b7408a4455ad19e",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/sequence_grade_continuity/skill.json",
+      "bytes": 3283,
+      "sha256": "9498f1fcd1a42276722ac40d57d5b207394b9f83881f1d75371e4f58c6d8d2e6",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/setup_payoff_tracking/SKILL.md",
+      "bytes": 1373,
+      "sha256": "3e70e1cea47bc68c91be598b4a389473485e1d30d7e1a099e9a4b0baf2d76f2b",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/setup_payoff_tracking/skill.json",
+      "bytes": 3262,
+      "sha256": "153c976baed69f156739cc0dca84e516e21d0a69f03e823e5ea5d019964ec145",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/shot_family_grouping/SKILL.md",
+      "bytes": 1419,
+      "sha256": "abc4fd2e8661ef63ea1a445d05841d9a0d7b3408484f09c6d5899b80d25ef439",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/shot_family_grouping/skill.json",
+      "bytes": 3304,
+      "sha256": "43c04eb67e615f3a9523d921b06cb2cf7a58731998acad4c7f27b83b072f4bee",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/shot_matching/SKILL.md",
+      "bytes": 1339,
+      "sha256": "f32d75a3b4993bf85b9fc394869691b7ca7d8884496a94f64440f345cf37a45d",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/shot_matching/skill.json",
+      "bytes": 3196,
+      "sha256": "6c5e474f93547bd426b78642e58e54d519418f781cfcb1bd84d20aed884285cc",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/shot_priority_map/SKILL.md",
+      "bytes": 1364,
+      "sha256": "5eb481a22542c844d5a2529073608a3d55a07850384edb780b15d985370584a9",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/shot_priority_map/skill.json",
+      "bytes": 3237,
+      "sha256": "a546530bd7dc0a8930d5f947e1aa27d043e84229e38cf16c33d45b40579409a8",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/shot_repair_strategy/SKILL.md",
+      "bytes": 1423,
+      "sha256": "b65b3a7bac3b7788e07c394af46babc423b00e8836a264bd541cbbcba358a447",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/shot_repair_strategy/skill.json",
+      "bytes": 3308,
+      "sha256": "f46398e307f2b85b9b9d5eebdb0f7bba381741cd1754fd437d642e79ea7806a3",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/shot_size_selection/SKILL.md",
+      "bytes": 1398,
+      "sha256": "f016f5e5cc1e92e3f9e6fd59b347ab27508e55caed15aee98625b6f9944c61eb",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/shot_size_selection/skill.json",
+      "bytes": 3279,
+      "sha256": "02b089c296bb311788b17ccd2a65edd7ec71766569d8e1088598dab8831c1a9a",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/shot_spec_compilation/SKILL.md",
+      "bytes": 1444,
+      "sha256": "32c9f025ed1c4b7dd24f26b047a9c1931c198b66ea9e159ba54ba811466c2562",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/shot_spec_compilation/skill.json",
+      "bytes": 3333,
+      "sha256": "f359d4ad0bd87088d5eebe3cb2edca1f0996b9e039bc64f272b44a73f91daa98",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/silence_pause_design/SKILL.md",
+      "bytes": 1357,
+      "sha256": "5b3285b36e282b4821b7fa4ce4005c2dca6429dfb3615c6f20adcb0b28070f0e",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/silence_pause_design/skill.json",
+      "bytes": 3242,
+      "sha256": "b4d4478b249be6e1060afcb8ad14dbc06d8f6046fdd37058f31b38946434ba16",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/skin_tone_identity_check/SKILL.md",
+      "bytes": 1398,
+      "sha256": "9bc15913bb4492f1b35e3dbe77deb433e9cdca5e0e5dc94259d10f99ac6bc656",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/skin_tone_identity_check/skill.json",
+      "bytes": 3299,
+      "sha256": "4ff7dd971e3bd89dc214b25b6a74788f603db2e6b0ccb020eab477c25acbcda9",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/sound_effects_design/SKILL.md",
+      "bytes": 1379,
+      "sha256": "93aa7ab81dbed841e812de185f19b6e5049eb4df7be4d1a5b51bab682b1afc31",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/sound_effects_design/skill.json",
+      "bytes": 3264,
+      "sha256": "26990048848de2de37b61b59440e4a496aece0f795e14196ceee6c04410a3489",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/sound_motif_design/SKILL.md",
+      "bytes": 1355,
+      "sha256": "e7aea52c6484aecad5ae1f968194ff2e7807d0ffc89845faec4379cdce4f1786",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/sound_motif_design/skill.json",
+      "bytes": 3232,
+      "sha256": "eddf8a9b34d5da5c5880d9487e68377271cd3b31223f85c21ccdaab14b940fe9",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/staleness_propagation/SKILL.md",
+      "bytes": 1411,
+      "sha256": "77186a118c0036eae91367d04cfbcab0555689f3243ea7cd1b61fdbed1c923b0",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/staleness_propagation/skill.json",
+      "bytes": 3300,
+      "sha256": "e3c0566e4dd31066dff140ea7c15e6473df85227f326bfa9f33bcd86cce63bc4",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/storyboard_plan/SKILL.md",
+      "bytes": 1388,
+      "sha256": "32e6153f1f3fc861fff18385b53ddd1723e2cf9e4d09c20f105e8d05fdb40e44",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/storyboard_plan/skill.json",
+      "bytes": 3253,
+      "sha256": "f415052968a1d201d97a04a6d518595ba99591d0f6e4c4829054c969dbd330aa",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/structure_causality_audit/SKILL.md",
+      "bytes": 1434,
+      "sha256": "c800a6051a0873ba2fc57d8e5ad34faf44185f13bad876b3ff7e514c4066a8b9",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/structure_causality_audit/skill.json",
+      "bytes": 3339,
+      "sha256": "f9094e7cde1fda9a1f558d6cd5adf48a620068fb19141a7bc7a95ac62b6a77e0",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/structure_map/SKILL.md",
+      "bytes": 1343,
+      "sha256": "d4affc582128c0ea0b756e8539ad304feb778dbad9fc012662e1087cdf007e0c",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/structure_map/skill.json",
+      "bytes": 3200,
+      "sha256": "f9d1c056b6a252e4f29e503221870a8d705cc1db90b3968ac120ccbff1f8f274",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/subplot_braiding/SKILL.md",
+      "bytes": 1383,
+      "sha256": "5fe3ac86a73db52f39ec810e9ef1e9c0e095dd25df4c1f6481490dd0cb4dd79c",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/subplot_braiding/skill.json",
+      "bytes": 3252,
+      "sha256": "6b426a5f2b55c44f88fab726365824146c42c6222471fcdb9dee5d4109eb477a",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/subtext_writing/SKILL.md",
+      "bytes": 1339,
+      "sha256": "0b70c067163f2bbc66194fdd8ef6f5615e476fe1f215ced44d75f65d8050f9ee",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/subtext_writing/skill.json",
+      "bytes": 3204,
+      "sha256": "e82271e221f07290a309a7322c2af250ef02f72c7aa7f35fe3335491e539401c",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/suspense_dramatic_irony/SKILL.md",
+      "bytes": 1406,
+      "sha256": "b6d41108b32ffd4ced9c2bbef47ef41187664a990dc742da9ffca9b41099bf4b",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/suspense_dramatic_irony/skill.json",
+      "bytes": 3303,
+      "sha256": "e8bfd21af4debe455f067ee6b13564f8c934efdaeae2a92f1ef15fee5733ba8f",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/sync_validation/SKILL.md",
+      "bytes": 1352,
+      "sha256": "bf47fb9686edffecba1d38f61b392ead32ea23dc47a6d528077c9740cd8fc1cf",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/sync_validation/skill.json",
+      "bytes": 3217,
+      "sha256": "c7084bb3376b9eb1040753e7990b98ac30c5f2a2b609eede7b244e45856d04fa",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/table_read_simulation/SKILL.md",
+      "bytes": 1393,
+      "sha256": "0863b2370495cad9aa635f60ccf3f34cbd211ae0597a8bb8e9ece3a3608e1c0f",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/table_read_simulation/skill.json",
+      "bytes": 3282,
+      "sha256": "6fade9c24f440573fbb5e3a237822d3fc45fb24463869792752459f1a9adc97b",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/task_graph_compilation/SKILL.md",
+      "bytes": 1420,
+      "sha256": "da8eef71b31620d38c1b6b507b1e5e67496e949f610eb6bb89dc413a54f2697a",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/task_graph_compilation/skill.json",
+      "bytes": 3313,
+      "sha256": "dcbdb1c2d1e9573c2e1c278845eab43ab2afcab4dcc6ba797cb64b8754495fab",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/temp_track_risk_audit/SKILL.md",
+      "bytes": 1401,
+      "sha256": "3db3de28b8fff8795c7c44857c645d6cac267f4be1ae41ee4252c696debdff62",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/temp_track_risk_audit/skill.json",
+      "bytes": 3290,
+      "sha256": "77189b43d8c09b1222a90fad1fe8d4e0e47cea962bbc5c660367382046dabd0f",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/theme_countertheme_design/SKILL.md",
+      "bytes": 1414,
+      "sha256": "d4883b665f40b8af71c48dfaf3b704f30909a16e73e389b883a84d1181dc221a",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/theme_countertheme_design/skill.json",
+      "bytes": 3319,
+      "sha256": "57703cceb86a128c938f2d3d84d36ecd1eda33389ee7569b5a6646dd02fa5ffe",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/transition_previs/SKILL.md",
+      "bytes": 1408,
+      "sha256": "0ed3ca1ee55461fb05984be07188d61f857429326bdde3843802dbd20f517b96",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/transition_previs/skill.json",
+      "bytes": 3281,
+      "sha256": "09d22924980b510469b0fb32a575a1b828c412c6e9336da0fed72537edca2644",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/transition_selection/SKILL.md",
+      "bytes": 1372,
+      "sha256": "05d9cad29f977978cc110203decedd96505ec86db8e312f1b503a2ca225bd786",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/transition_selection/skill.json",
+      "bytes": 3257,
+      "sha256": "ff41fa6236f07f7356ae393ac52bc866d01c5df6905b111cb4e015dc7808ffd0",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/upscale_interpolation_plan/SKILL.md",
+      "bytes": 1457,
+      "sha256": "7c48f26ab180d37ccbfca59c947d86b65b27ae44a592d0be4d1e9213bfbc118a",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/upscale_interpolation_plan/skill.json",
+      "bytes": 3366,
+      "sha256": "3309779ba38855dac136a2ecd044c7b662c5dfc2834f0525fc909f6b8bce3b81",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/vfx_feasibility_triage/SKILL.md",
+      "bytes": 1404,
+      "sha256": "9baee4fabee5cd13a526a25fb65771ce33ccf1e203cc0160e8ed4928a767916b",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/vfx_feasibility_triage/skill.json",
+      "bytes": 3297,
+      "sha256": "836788167e8b003a6f913ec9f0750b759b9b1ef96bab0aa020f6c5876b10d836",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/vfx_review/SKILL.md",
+      "bytes": 1332,
+      "sha256": "cb6b6c49eefd6ce15a0d5fde2a712447a55ce2d61828ea1fb1b22a29c8e6f4d4",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/vfx_review/skill.json",
+      "bytes": 3177,
+      "sha256": "7e571b4d97d5719996b0dd52abc3091fcfd1939bff40bb19f34114bd097e4582",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/video_generation_plan/SKILL.md",
+      "bytes": 1423,
+      "sha256": "cf62e86cae01ba30958c65a023918ad351b42a8af9f5d4d6b90fe81373361721",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/video_generation_plan/skill.json",
+      "bytes": 3312,
+      "sha256": "bce77d026d35998d2e52b741239701addd40762cf8eb7eb4ad7419fbc3ebac8d",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/visual_motif_design/SKILL.md",
+      "bytes": 1388,
+      "sha256": "0c5e3ac51bd7b2454a9cef4af1c3d7ce5dff77bcbb434f10357937ea42fe4382",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/visual_motif_design/skill.json",
+      "bytes": 3269,
+      "sha256": "00edae4caf4eb37e5576b39835dbd3cc5b98dec9e36912f441fff9df4c15e25b",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/visual_qc/SKILL.md",
+      "bytes": 1300,
+      "sha256": "fa347eb036b615c36e4f6a6f7bceaed22cd7e3af25505b1bcdf8e6e593b602b6",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/visual_qc/skill.json",
+      "bytes": 3141,
+      "sha256": "7c521532104b52c4e851ad735bae498400b736f17f1fdaa64ae5c03bf2769e1d",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/visual_reveal_writing/SKILL.md",
+      "bytes": 1378,
+      "sha256": "a1fe2a4e8173893cd8b769d2531e3bda69cf9f6ed35c788d61afd8a00c6b5446",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/visual_reveal_writing/skill.json",
+      "bytes": 3267,
+      "sha256": "801ecbc4650b444747db0b8c26a2776865634d69b86b6326cca01fec0e17a3f7",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/voice_consistency/SKILL.md",
+      "bytes": 1381,
+      "sha256": "0282e8f1cf38c98e3742c276585a97724ca155d210491f1f27707184f1cbf475",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/voice_consistency/skill.json",
+      "bytes": 3254,
+      "sha256": "f73c7bb5d47e6e21e0710d59174160bceb330be8c6a78a305eb55224a2ab67a9",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/voice_fingerprint_design/SKILL.md",
+      "bytes": 1438,
+      "sha256": "76ae78f127e0195f13555002899d057a94044da705be04df6ffbd171c11388b4",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/voice_fingerprint_design/skill.json",
+      "bytes": 3339,
+      "sha256": "5355cbf068b8080cc182511b8397d38b2a74b0783b191389f507cb6f2010f827",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/wardrobe_canon/SKILL.md",
+      "bytes": 1338,
+      "sha256": "d502d38e98bb89f06c23cc9cbf0da0bc20258586a141154372503789a94c27f7",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/wardrobe_canon/skill.json",
+      "bytes": 3199,
+      "sha256": "6a7bd4dbd9a868af2ff97adc75cc1754a05d4d8f6506bb29349c19055f0ae1a3",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/wardrobe_state_tracking/SKILL.md",
+      "bytes": 1385,
+      "sha256": "847a9ade6dc03dfdc64baa1c33873da1ed85720a8dfbd709956f59f9f7a26365",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/wardrobe_state_tracking/skill.json",
+      "bytes": 3282,
+      "sha256": "c035a4ba178410797e551474f5e9b7c0c03e295d8471b5ed3e7a33fb14602894",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/wit_callback_design/SKILL.md",
+      "bytes": 1372,
+      "sha256": "ea195b1a9f6f3c614a532469674772e009123f127edde3ba27724f5aeddb8a9b",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/wit_callback_design/skill.json",
+      "bytes": 3253,
+      "sha256": "d506b9841ee28d7086b000b33370a315644b740bc0737b05b5d853925f0f397b",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "skills/world_bible_creation/SKILL.md",
+      "bytes": 1392,
+      "sha256": "10a4a40aa682762ee359c2b5613899b0e0f92a25619bd3df9c210aae5aee10fa",
+      "classification": "deprecate",
+      "reason": "legacy non-Bob activation docs; runtime ID retained and mapped to deep Bob skill where applicable"
+    },
+    {
+      "path": "skills/world_bible_creation/skill.json",
+      "bytes": 3277,
+      "sha256": "01572b48436d822811851b4d51ee76389b157a48abb7995cd379a9d5c1692eaa",
+      "classification": "enhance",
+      "reason": "retain stable capability ID, add specific procedure, handoff and migration metadata"
+    },
+    {
+      "path": "tests/__pycache__/test_continuity.cpython-313.pyc",
+      "bytes": 1916,
+      "sha256": "ad69c549c2abe5b15b49d2e8977762c040906d1dfd9c05c0420b68a170592cd9",
+      "classification": "remove",
+      "reason": "compiled cache should not be versioned"
+    },
+    {
+      "path": "tests/__pycache__/test_orchestrator.cpython-313.pyc",
+      "bytes": 2882,
+      "sha256": "ad1ee892c7dbee8df25e64af51238d0bb5acde6ca54df012110ea5877b506bb1",
+      "classification": "remove",
+      "reason": "compiled cache should not be versioned"
+    },
+    {
+      "path": "tests/__pycache__/test_prompt_compiler.cpython-313.pyc",
+      "bytes": 1213,
+      "sha256": "1ab8fe87c687f88df25caed8504445bcca746500856a19046069aa229a5308e3",
+      "classification": "remove",
+      "reason": "compiled cache should not be versioned"
+    },
+    {
+      "path": "tests/__pycache__/test_qc.cpython-313.pyc",
+      "bytes": 1117,
+      "sha256": "81fb479ebe6ec68ab791dcf2b7003bab4bf5243cd2e9ebfbfacf93a16e909711",
+      "classification": "remove",
+      "reason": "compiled cache should not be versioned"
+    },
+    {
+      "path": "tests/test_continuity.py",
+      "bytes": 673,
+      "sha256": "16c8d12ee88431e47914fbd06f684e5c3c9f54f2d4644a98b5caabb04dba465b",
+      "classification": "keep",
+      "reason": "retained baseline artifact"
+    },
+    {
+      "path": "tests/test_orchestrator.py",
+      "bytes": 1063,
+      "sha256": "755e9c23ab99e6fdd69b1232c0068f0337e4c6176204d13516a88a95a468d337",
+      "classification": "keep",
+      "reason": "retained baseline artifact"
+    },
+    {
+      "path": "tests/test_prompt_compiler.py",
+      "bytes": 493,
+      "sha256": "dc68329483f14835ae1aad8cf5bb3080a2008a02b1c1553f9f1e959cf99b9576",
+      "classification": "keep",
+      "reason": "retained baseline artifact"
+    },
+    {
+      "path": "tests/test_qc.py",
+      "bytes": 421,
+      "sha256": "503f4a8571ecd0ad01142417dbcc4c783b8b6ea830f0d9336962227922c490c6",
+      "classification": "keep",
+      "reason": "retained baseline artifact"
+    },
+    {
+      "path": "workflows/action_sequence.json",
+      "bytes": 838,
+      "sha256": "5b7734210d2ffb1ff84e5430d882736ff980a826d541c4b27317f0f301167516",
+      "classification": "enhance",
+      "reason": "retain legacy workflow; v2 executable workflow family added"
+    },
+    {
+      "path": "workflows/dialogue_scene.json",
+      "bytes": 897,
+      "sha256": "714afa95064478369797fb4e6f8c62b8919cac3114601488237c57ecc872514a",
+      "classification": "enhance",
+      "reason": "retain legacy workflow; v2 executable workflow family added"
+    },
+    {
+      "path": "workflows/script_to_film.json",
+      "bytes": 5012,
+      "sha256": "f70c8ddfefc36875c6ff5f33a5f0feb54aa3725e3fab220d630ca607e598af6f",
+      "classification": "enhance",
+      "reason": "retain legacy workflow; v2 executable workflow family added"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "schema_version": "2.0",
+  "workflow_id": "post_finish_v2",
+  "version": "2.0.0",
+  "description": "Editorial, sound, music, color and picture/master quality path.",
+  "production_route": "provider_neutral",
+  "steps": [
+    {
+      "id": "assembly",
+      "capability_id": "assembly_edit",
+      "owner_agent": "editor",
+      "depends_on": [],
+      "output_type": "Timeline"
+    },
+    {
+      "id": "pickups",
+      "capability_id": "pickup_identification",
+      "owner_agent": "editor",
+      "depends_on": [
+        "assembly"
+      ],
+      "output_type": "PickupList",
+      "reviewer_agent": "director"
+    },
+    {
+      "id": "sound",
+      "capability_id": "mix_plan",
+      "owner_agent": "sound_supervisor",
+      "depends_on": [
+        "assembly"
+      ],
+      "output_type": "MixPlan"
+    },
+    {
+      "id": "score",
+      "capability_id": "score_spotting",
+      "owner_agent": "composer",
+      "depends_on": [
+        "assembly"
+      ],
+      "output_type": "ScorePlan",
+      "reviewer_agent": "sound_supervisor"
+    },
+    {
+      "id": "grade",
+      "capability_id": "look_grade",
+      "owner_agent": "colorist",
+      "depends_on": [
+        "assembly"
+      ],
+      "output_type": "GradePlan",
+      "reviewer_agent": "cinematographer"
+    },
+    {
+      "id": "picture_lock",
+      "capability_id": "picture_lock_check",
+      "owner_agent": "editor",
+      "depends_on": [
+        "pickups",
+        "sound",
+        "score",
+        "grade"
+      ],
+      "output_type": "PictureLock",
+      "approval_required": true,
+      "approval_role": "human_director_producer",
+      "gate_id": "gate_edit"
+    },
+    {
+      "id": "master_qc",
+      "capability_id": "master_qc",
+      "owner_agent": "qc_supervisor",
+      "depends_on": [
+        "picture_lock"
+      ],
+      "output_type": "MasterQC"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schema_version": "2.0",
+  "workflow_id": "production_day_v2",
+  "version": "2.0.0",
+  "description": "Governed shoot-day control, qualified safety handoff, location sound and dailies reconciliation.",
+  "production_route": "physical_or_hybrid",
+  "steps": [
+    {
+      "id": "day_control",
+      "capability_id": "shoot_day_control",
+      "owner_agent": "line_producer",
+      "reviewer_agent": "continuity_supervisor",
+      "output_type": "ShootDayControl",
+      "handler": "artifact"
+    },
+    {
+      "id": "safety_handoff",
+      "capability_id": "specialist_safety_handoff",
+      "owner_agent": "studio_orchestrator",
+      "reviewer_agent": "qc_supervisor",
+      "depends_on": [
+        "day_control"
+      ],
+      "output_type": "SpecialistSafetyHandoff",
+      "handler": "gate",
+      "approval_required": true,
+      "approval_role": "human_safety_owner",
+      "gate_id": "shoot_day_safety"
+    },
+    {
+      "id": "sound_plan",
+      "capability_id": "production_sound_plan",
+      "owner_agent": "sound_supervisor",
+      "reviewer_agent": "director",
+      "depends_on": [
+        "day_control"
+      ],
+      "output_type": "ProductionSoundPlan",
+      "handler": "artifact"
+    },
+    {
+      "id": "continuity",
+      "capability_id": "continuity_qc",
+      "owner_agent": "continuity_supervisor",
+      "reviewer_agent": "qc_supervisor",
+      "depends_on": [
+        "safety_handoff",
+        "sound_plan"
+      ],
+      "output_type": "ContinuityReport",
+      "handler": "artifact"
+    },
+    {
+      "id": "sound_qc",
+      "capability_id": "sound_capture_qc",
+      "owner_agent": "sound_supervisor",
+      "reviewer_agent": "editor",
+      "depends_on": [
+        "continuity"
+      ],
+      "output_type": "SoundCaptureQC",
+      "handler": "artifact"
+    },
+    {
+      "id": "dailies",
+      "capability_id": "dailies_review",
+      "owner_agent": "editor",
+      "reviewer_agent": "director",
+      "depends_on": [
+        "sound_qc"
+      ],
+      "output_type": "DailiesReview",
+      "handler": "artifact"
+    }
+  ]
+}
+

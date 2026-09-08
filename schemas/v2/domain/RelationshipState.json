@@ -1,0 +1,59 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "default": "2.0",
+      "pattern": "^\\d+\\.\\d+$",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "relationship_state_id": {
+      "minLength": 1,
+      "title": "Relationship State Id",
+      "type": "string"
+    },
+    "character_ids": {
+      "items": {
+        "type": "string"
+      },
+      "maxItems": 2,
+      "minItems": 2,
+      "title": "Character Ids",
+      "type": "array"
+    },
+    "scene_id": {
+      "minLength": 1,
+      "title": "Scene Id",
+      "type": "string"
+    },
+    "trust": {
+      "maximum": 1,
+      "minimum": -1,
+      "title": "Trust",
+      "type": "number"
+    },
+    "power_delta": {
+      "maximum": 1,
+      "minimum": -1,
+      "title": "Power Delta",
+      "type": "number"
+    },
+    "unresolved_conflict": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Unresolved Conflict",
+      "type": "array"
+    }
+  },
+  "required": [
+    "relationship_state_id",
+    "character_ids",
+    "scene_id",
+    "trust",
+    "power_delta"
+  ],
+  "title": "RelationshipState",
+  "type": "object",
+  "$id": "https://film-studio-os.local/schema/v2/domain/RelationshipState.json"
+}

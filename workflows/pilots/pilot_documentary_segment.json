@@ -1,0 +1,105 @@
+{
+  "schema_version": "2.0",
+  "workflow_id": "pilot_documentary_segment",
+  "version": "2.0.0",
+  "description": "pilot documentary segment",
+  "production_route": "mock_dry_run",
+  "steps": [
+    {
+      "id": "intake",
+      "capability_id": "rights_risk_triage",
+      "owner_agent": "production_librarian",
+      "depends_on": [],
+      "handler": "rights_gate",
+      "output_type": "IntakeArtifact",
+      "reviewer_agent": null,
+      "approval_required": false,
+      "approval_role": "fixture_human",
+      "gate_id": null
+    },
+    {
+      "id": "evidence",
+      "capability_id": "evidence",
+      "owner_agent": "documentary_research_editor",
+      "depends_on": [
+        "intake"
+      ],
+      "handler": "artifact",
+      "output_type": "EvidenceArtifact",
+      "reviewer_agent": "qc_supervisor",
+      "approval_required": false,
+      "approval_role": "fixture_human",
+      "gate_id": null
+    },
+    {
+      "id": "claim",
+      "capability_id": "claim",
+      "owner_agent": "documentary_research_editor",
+      "depends_on": [
+        "evidence"
+      ],
+      "handler": "artifact",
+      "output_type": "ClaimArtifact",
+      "reviewer_agent": "qc_supervisor",
+      "approval_required": false,
+      "approval_role": "fixture_human",
+      "gate_id": null
+    },
+    {
+      "id": "script",
+      "capability_id": "script",
+      "owner_agent": "showrunner",
+      "depends_on": [
+        "claim"
+      ],
+      "handler": "artifact",
+      "output_type": "ScriptArtifact",
+      "reviewer_agent": "qc_supervisor",
+      "approval_required": false,
+      "approval_role": "fixture_human",
+      "gate_id": null
+    },
+    {
+      "id": "shot",
+      "capability_id": "video_generation_plan",
+      "owner_agent": "generative_supervisor",
+      "depends_on": [
+        "script"
+      ],
+      "handler": "mock_generation",
+      "output_type": "ShotArtifact",
+      "reviewer_agent": "qc_supervisor",
+      "approval_required": false,
+      "approval_role": "fixture_human",
+      "gate_id": null
+    },
+    {
+      "id": "factcheck",
+      "capability_id": "factcheck",
+      "owner_agent": "qc_supervisor",
+      "depends_on": [
+        "shot"
+      ],
+      "handler": "artifact",
+      "output_type": "FactcheckArtifact",
+      "reviewer_agent": null,
+      "approval_required": false,
+      "approval_role": "fixture_human",
+      "gate_id": null
+    },
+    {
+      "id": "release",
+      "capability_id": "master_qc",
+      "owner_agent": "studio_orchestrator",
+      "depends_on": [
+        "factcheck"
+      ],
+      "handler": "artifact",
+      "output_type": "ReleaseArtifact",
+      "reviewer_agent": "qc_supervisor",
+      "approval_required": true,
+      "approval_role": "fixture_human",
+      "gate_id": "gate_master"
+    }
+  ]
+}

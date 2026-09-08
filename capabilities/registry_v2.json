@@ -1,0 +1,2273 @@
+{
+  "schema_version": "2.0",
+  "description": "Canonical executable capability registry. Bob skill points to the bounded procedure; workflows point to these capability IDs. Legacy aliases remain in policies/capability_aliases.json.",
+  "capabilities": [
+    {
+      "capability_id": "adaptation_change_ledger",
+      "schema_version": "2.0",
+      "bob_skill": "source-adaptation",
+      "owners": [
+        "adaptation_executive"
+      ],
+      "reviewers": [
+        "script_editor"
+      ],
+      "handlers": [
+        "artifact"
+      ],
+      "output_types": [
+        "AdaptationDecisionLedger"
+      ],
+      "workflow_references": [
+        {
+          "workflow": "adaptation_v2",
+          "step": "ledger"
+        }
+      ],
+      "human_control": "review_after",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "adaptation_fidelity_audit",
+      "schema_version": "2.0",
+      "bob_skill": "source-adaptation",
+      "owners": [
+        "script_editor"
+      ],
+      "reviewers": [
+        "rights_clearance_supervisor"
+      ],
+      "handlers": [
+        "artifact"
+      ],
+      "output_types": [
+        "AuditReport"
+      ],
+      "workflow_references": [
+        {
+          "workflow": "adaptation_v2",
+          "step": "regression"
+        }
+      ],
+      "human_control": "review_after",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "adaptation_mandate",
+      "schema_version": "2.0",
+      "bob_skill": "source-adaptation",
+      "owners": [
+        "adaptation_executive"
+      ],
+      "reviewers": [
+        "showrunner"
+      ],
+      "handlers": [
+        "artifact"
+      ],
+      "output_types": [
+        "AdaptationMandate"
+      ],
+      "workflow_references": [
+        {
+          "workflow": "adaptation_v2",
+          "step": "mandate"
+        }
+      ],
+      "human_control": "review_after",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "animation_strategy",
+      "schema_version": "2.0",
+      "bob_skill": "world-character-canon",
+      "owners": [
+        "animation_technical_director"
+      ],
+      "reviewers": [
+        "production_designer"
+      ],
+      "handlers": [
+        "artifact"
+      ],
+      "output_types": [
+        "AnimationPlan"
+      ],
+      "workflow_references": [
+        {
+          "workflow": "art_animation_v2",
+          "step": "animation_plan"
+        }
+      ],
+      "human_control": "review_after",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "archive_packaging",
+      "schema_version": "2.0",
+      "bob_skill": "archive-reproduction",
+      "owners": [
+        "production_librarian"
+      ],
+      "reviewers": [
+        "qc_supervisor"
+      ],
+      "handlers": [
+        "artifact"
+      ],
+      "output_types": [
+        "ArchiveManifest"
+      ],
+      "workflow_references": [
+        {
+          "workflow": "localization_archive_v2",
+          "step": "archive"
+        }
+      ],
+      "human_control": "review_after",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "art",
+      "schema_version": "2.0",
+      "bob_skill": "world-character-canon",
+      "owners": [
+        "production_designer"
+      ],
+      "reviewers": [
+        "qc_supervisor"
+      ],
+      "handlers": [
+        "artifact"
+      ],
+      "output_types": [
+        "ArtArtifact"
+      ],
+      "workflow_references": [
+        {
+          "workflow": "pilot_animated_short",
+          "step": "art"
+        }
+      ],
+      "human_control": "review_after",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "assembly_edit",
+      "schema_version": "2.0",
+      "bob_skill": "editorial-dailies",
+      "owners": [
+        "editor"
+      ],
+      "reviewers": [],
+      "handlers": [
+        "artifact"
+      ],
+      "output_types": [
+        "Timeline"
+      ],
+      "workflow_references": [
+        {
+          "workflow": "post_finish_v2",
+          "step": "assembly"
+        }
+      ],
+      "human_control": "autonomous",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "asset_acceptance_qc",
+      "schema_version": "2.0",
+      "bob_skill": "visual-identity-qc",
+      "owners": [
+        "qc_supervisor"
+      ],
+      "reviewers": [],
+      "handlers": [
+        "artifact"
+      ],
+      "output_types": [
+        "AssetAcceptanceReport"
+      ],
+      "workflow_references": [
+        {
+          "workflow": "art_animation_v2",
+          "step": "asset_acceptance"
+        }
+      ],
+      "human_control": "autonomous",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "audio",
+      "schema_version": "2.0",
+      "bob_skill": "sound-post",
+      "owners": [
+        "sound_supervisor"
+      ],
+      "reviewers": [
+        "qc_supervisor"
+      ],
+      "handlers": [
+        "artifact"
+      ],
+      "output_types": [
+        "AudioArtifact"
+      ],
+      "workflow_references": [
+        {
+          "workflow": "pilot_dialogue_scene",
+          "step": "audio"
+        }
+      ],
+      "human_control": "review_after",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "blocking_plan",
+      "schema_version": "2.0",
+      "bob_skill": "director-breakdown",
+      "owners": [
+        "director"
+      ],
+      "reviewers": [
+        "continuity_supervisor"
+      ],
+      "handlers": [
+        "artifact"
+      ],
+      "output_types": [
+        "BlockingPlan"
+      ],
+      "workflow_references": [
+        {
+          "workflow": "direction_previs_v2",
+          "step": "blocking"
+        }
+      ],
+      "human_control": "review_after",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "camera_language_design",
+      "schema_version": "2.0",
+      "bob_skill": "cinematography-design",
+      "owners": [
+        "cinematographer"
+      ],
+      "reviewers": [],
+      "handlers": [
+        "artifact"
+      ],
+      "output_types": [
+        "CameraPlan"
+      ],
+      "workflow_references": [
+        {
+          "workflow": "direction_previs_v2",
+          "step": "camera"
+        }
+      ],
+      "human_control": "autonomous",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "character_bible_creation",
+      "schema_version": "2.0",
+      "bob_skill": "character-architecture",
+      "owners": [
+        "character_director"
+      ],
+      "reviewers": [],
+      "handlers": [
+        "artifact"
+      ],
+      "output_types": [
+        "CharacterBible"
+      ],
+      "workflow_references": [
+        {
+          "workflow": "art_animation_v2",
+          "step": "characters"
+        },
+        {
+          "workflow": "story_script_v2",
+          "step": "characters"
+        }
+      ],
+      "human_control": "autonomous",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "claim",
+      "schema_version": "2.0",
+      "bob_skill": "documentary-evidence",
+      "owners": [
+        "documentary_research_editor"
+      ],
+      "reviewers": [
+        "qc_supervisor"
+      ],
+      "handlers": [
+        "artifact"
+      ],
+      "output_types": [
+        "ClaimArtifact"
+      ],
+      "workflow_references": [
+        {
+          "workflow": "pilot_documentary_segment",
+          "step": "claim"
+        }
+      ],
+      "human_control": "review_after",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "continuity",
+      "schema_version": "2.0",
+      "bob_skill": "continuity-control",
+      "owners": [
+        "continuity_supervisor"
+      ],
+      "reviewers": [
+        "qc_supervisor"
+      ],
+      "handlers": [
+        "artifact"
+      ],
+      "output_types": [
+        "ContinuityArtifact"
+      ],
+      "workflow_references": [
+        {
+          "workflow": "pilot_episodic_linked_scenes",
+          "step": "continuity"
+        }
+      ],
+      "human_control": "review_after",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "continuity_extraction",
+      "schema_version": "2.0",
+      "bob_skill": "continuity-control",
+      "owners": [
+        "continuity_supervisor"
+      ],
+      "reviewers": [],
+      "handlers": [
+        "artifact"
+      ],
+      "output_types": [
+        "ContinuityState"
+      ],
+      "workflow_references": [
+        {
+          "workflow": "art_animation_v2",
+          "step": "continuity"
+        }
+      ],
+      "human_control": "autonomous",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "continuity_qc",
+      "schema_version": "2.0",
+      "bob_skill": "continuity-qc",
+      "owners": [
+        "continuity_supervisor"
+      ],
+      "reviewers": [
+        "qc_supervisor"
+      ],
+      "handlers": [
+        "artifact"
+      ],
+      "output_types": [
+        "ContinuityQC"
+      ],
+      "workflow_references": [
+        {
+          "workflow": "shot_production_v2",
+          "step": "continuity"
+        }
+      ],
+      "human_control": "review_after",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "coverage",
+      "schema_version": "2.0",
+      "bob_skill": "coverage-storyboard-previs",
+      "owners": [
+        "cinematographer"
+      ],
+      "reviewers": [
+        "qc_supervisor"
+      ],
+      "handlers": [
+        "artifact"
+      ],
+      "output_types": [
+        "CoverageArtifact"
+      ],
+      "workflow_references": [
+        {
+          "workflow": "pilot_action_sequence",
+          "step": "coverage"
+        },
+        {
+          "workflow": "pilot_dialogue_scene",
+          "step": "coverage"
+        }
+      ],
+      "human_control": "review_after",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "coverage_plan",
+      "schema_version": "2.0",
+      "bob_skill": "coverage-storyboard-previs",
+      "owners": [
+        "director"
+      ],
+      "reviewers": [
+        "cinematographer"
+      ],
+      "handlers": [
+        "artifact"
+      ],
+      "output_types": [
+        "CoveragePlan"
+      ],
+      "workflow_references": [
+        {
+          "workflow": "direction_previs_v2",
+          "step": "coverage"
+        }
+      ],
+      "human_control": "review_after",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "creative_constraint_extraction",
+      "schema_version": "2.0",
+      "bob_skill": "source-adaptation",
+      "owners": [
+        "showrunner"
+      ],
+      "reviewers": [],
+      "handlers": [
+        "artifact"
+      ],
+      "output_types": [
+        "CreativeBrief"
+      ],
+      "workflow_references": [
+        {
+          "workflow": "story_script_v2",
+          "step": "constraints"
+        }
+      ],
+      "human_control": "autonomous",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "cross_episode_continuity",
+      "schema_version": "2.0",
+      "bob_skill": "series-continuity",
+      "owners": [
+        "series_continuity_editor"
+      ],
+      "reviewers": [
+        "qc_supervisor"
+      ],
+      "handlers": [
+        "artifact"
+      ],
+      "output_types": [
+        "SeriesContinuityReport"
+      ],
+      "workflow_references": [
+        {
+          "workflow": "episodic_v2",
+          "step": "continuity"
+        }
+      ],
+      "human_control": "review_after",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "dailies_review",
+      "schema_version": "2.0",
+      "bob_skill": "editorial-dailies",
+      "owners": [
+        "director"
+      ],
+      "reviewers": [
+        "qc_supervisor"
+      ],
+      "handlers": [
+        "artifact"
+      ],
+      "output_types": [
+        "SelectedTake"
+      ],
+      "workflow_references": [
+        {
+          "workflow": "shot_production_v2",
+          "step": "select"
+        }
+      ],
+      "human_control": "review_after",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "delivery_validation",
+      "schema_version": "2.0",
+      "bob_skill": "master-quality-gate",
+      "owners": [
+        "localization_delivery_supervisor"
+      ],
+      "reviewers": [
+        "qc_supervisor"
+      ],
+      "handlers": [
+        "artifact"
+      ],
+      "output_types": [
+        "DeliveryQC"
+      ],
+      "workflow_references": [
+        {
+          "workflow": "localization_archive_v2",
+          "step": "delivery"
+        }
+      ],
+      "human_control": "review_after",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "dialogue_voice_audit",
+      "schema_version": "2.0",
+      "bob_skill": "dialogue-voice-subtext",
+      "owners": [
+        "script_editor"
+      ],
+      "reviewers": [
+        "qc_supervisor"
+      ],
+      "handlers": [
+        "artifact"
+      ],
+      "output_types": [
+        "ScriptAudit"
+      ],
+      "workflow_references": [
+        {
+          "workflow": "story_script_v2",
+          "step": "audit"
+        }
+      ],
+      "human_control": "review_after",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "documentary_claim_mapping",
+      "schema_version": "2.0",
+      "bob_skill": "documentary-evidence",
+      "owners": [
+        "documentary_research_editor"
+      ],
+      "reviewers": [
+        "qc_supervisor"
+      ],
+      "handlers": [
+        "artifact"
+      ],
+      "output_types": [
+        "ClaimMap"
+      ],
+      "workflow_references": [
+        {
+          "workflow": "documentary_v2",
+          "step": "claim_map"
+        }
+      ],
+      "human_control": "review_after",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "documentary_ethics_review",
+      "schema_version": "2.0",
+      "bob_skill": "documentary-evidence",
+      "owners": [
+        "qc_supervisor"
+      ],
+      "reviewers": [],
+      "handlers": [
+        "artifact"
+      ],
+      "output_types": [
+        "EthicsReview"
+      ],
+      "workflow_references": [
+        {
+          "workflow": "documentary_v2",
+          "step": "ethics"
+        }
+      ],
+      "human_control": "approve_before",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "documentary_evidence_ledger",
+      "schema_version": "2.0",
+      "bob_skill": "documentary-evidence",
+      "owners": [
+        "documentary_research_editor"
+      ],
+      "reviewers": [],
+      "handlers": [
+        "artifact"
+      ],
+      "output_types": [
+        "EvidenceLedger"
+      ],
+      "workflow_references": [
+        {
+          "workflow": "documentary_v2",
+          "step": "evidence"
+        }
+      ],
+      "human_control": "autonomous",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "documentary_fact_check",
+      "schema_version": "2.0",
+      "bob_skill": "documentary-evidence",
+      "owners": [
+        "documentary_research_editor"
+      ],
+      "reviewers": [
+        "qc_supervisor"
+      ],
+      "handlers": [
+        "artifact"
+      ],
+      "output_types": [
+        "FactCheckReport"
+      ],
+      "workflow_references": [
+        {
+          "workflow": "documentary_v2",
+          "step": "fact_check"
+        }
+      ],
+      "human_control": "review_after",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "edit",
+      "schema_version": "2.0",
+      "bob_skill": "editorial-dailies",
+      "owners": [
+        "editor"
+      ],
+      "reviewers": [
+        "qc_supervisor"
+      ],
+      "handlers": [
+        "artifact"
+      ],
+      "output_types": [
+        "EditArtifact"
+      ],
+      "workflow_references": [
+        {
+          "workflow": "pilot_action_sequence",
+          "step": "edit"
+        },
+        {
+          "workflow": "pilot_animated_short",
+          "step": "edit"
+        },
+        {
+          "workflow": "pilot_dialogue_scene",
+          "step": "edit"
+        }
+      ],
+      "human_control": "review_after",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "episode_a",
+      "schema_version": "2.0",
+      "bob_skill": "series-continuity",
+      "owners": [
+        "showrunner"
+      ],
+      "reviewers": [
+        "qc_supervisor"
+      ],
+      "handlers": [
+        "artifact"
+      ],
+      "output_types": [
+        "EpisodeAArtifact"
+      ],
+      "workflow_references": [
+        {
+          "workflow": "pilot_episodic_linked_scenes",
+          "step": "episode_a"
+        }
+      ],
+      "human_control": "review_after",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "episode_b",
+      "schema_version": "2.0",
+      "bob_skill": "series-continuity",
+      "owners": [
+        "showrunner"
+      ],
+      "reviewers": [
+        "qc_supervisor"
+      ],
+      "handlers": [
+        "artifact"
+      ],
+      "output_types": [
+        "EpisodeBArtifact"
+      ],
+      "workflow_references": [
+        {
+          "workflow": "pilot_episodic_linked_scenes",
+          "step": "episode_b"
+        }
+      ],
+      "human_control": "review_after",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "episode_lock",
+      "schema_version": "2.0",
+      "bob_skill": "series-continuity",
+      "owners": [
+        "showrunner"
+      ],
+      "reviewers": [],
+      "handlers": [
+        "artifact"
+      ],
+      "output_types": [
+        "EpisodeLock"
+      ],
+      "workflow_references": [
+        {
+          "workflow": "episodic_v2",
+          "step": "episode_lock"
+        }
+      ],
+      "human_control": "approve_before",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "episode_story_mapping",
+      "schema_version": "2.0",
+      "bob_skill": "series-continuity",
+      "owners": [
+        "story_architect"
+      ],
+      "reviewers": [],
+      "handlers": [
+        "artifact"
+      ],
+      "output_types": [
+        "EpisodeMap"
+      ],
+      "workflow_references": [
+        {
+          "workflow": "episodic_v2",
+          "step": "episode_map"
+        }
+      ],
+      "human_control": "autonomous",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "evidence",
+      "schema_version": "2.0",
+      "bob_skill": "documentary-evidence",
+      "owners": [
+        "documentary_research_editor"
+      ],
+      "reviewers": [
+        "qc_supervisor"
+      ],
+      "handlers": [
+        "artifact"
+      ],
+      "output_types": [
+        "EvidenceArtifact"
+      ],
+      "workflow_references": [
+        {
+          "workflow": "pilot_documentary_segment",
+          "step": "evidence"
+        }
+      ],
+      "human_control": "review_after",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "factcheck",
+      "schema_version": "2.0",
+      "bob_skill": "documentary-evidence",
+      "owners": [
+        "qc_supervisor"
+      ],
+      "reviewers": [],
+      "handlers": [
+        "artifact"
+      ],
+      "output_types": [
+        "FactcheckArtifact"
+      ],
+      "workflow_references": [
+        {
+          "workflow": "pilot_documentary_segment",
+          "step": "factcheck"
+        }
+      ],
+      "human_control": "autonomous",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "geography",
+      "schema_version": "2.0",
+      "bob_skill": "continuity-control",
+      "owners": [
+        "continuity_supervisor"
+      ],
+      "reviewers": [
+        "qc_supervisor"
+      ],
+      "handlers": [
+        "artifact"
+      ],
+      "output_types": [
+        "GeographyArtifact"
+      ],
+      "workflow_references": [
+        {
+          "workflow": "pilot_action_sequence",
+          "step": "geography"
+        }
+      ],
+      "human_control": "review_after",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "greenlight_package",
+      "schema_version": "2.0",
+      "bob_skill": "source-intake-rights",
+      "owners": [
+        "studio_orchestrator"
+      ],
+      "reviewers": [],
+      "handlers": [
+        "artifact"
+      ],
+      "output_types": [
+        "GreenlightDecision"
+      ],
+      "workflow_references": [
+        {
+          "workflow": "intake_rights_v2",
+          "step": "greenlight"
+        }
+      ],
+      "human_control": "approve_before",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "keyframe_generation_plan",
+      "schema_version": "2.0",
+      "bob_skill": "provider-job-operation",
+      "owners": [
+        "generative_supervisor"
+      ],
+      "reviewers": [],
+      "handlers": [
+        "artifact"
+      ],
+      "output_types": [
+        "KeyframePlan"
+      ],
+      "workflow_references": [
+        {
+          "workflow": "shot_production_v2",
+          "step": "keyframe"
+        }
+      ],
+      "human_control": "autonomous",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "localization_accessibility",
+      "schema_version": "2.0",
+      "bob_skill": "localization-accessibility",
+      "owners": [
+        "localization_delivery_supervisor"
+      ],
+      "reviewers": [
+        "qc_supervisor"
+      ],
+      "handlers": [
+        "artifact"
+      ],
+      "output_types": [
+        "LocalizationPackage"
+      ],
+      "workflow_references": [
+        {
+          "workflow": "localization_archive_v2",
+          "step": "localization"
+        }
+      ],
+      "human_control": "review_after",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "look_grade",
+      "schema_version": "2.0",
+      "bob_skill": "color-finishing",
+      "owners": [
+        "colorist"
+      ],
+      "reviewers": [
+        "cinematographer"
+      ],
+      "handlers": [
+        "artifact"
+      ],
+      "output_types": [
+        "GradePlan"
+      ],
+      "workflow_references": [
+        {
+          "workflow": "post_finish_v2",
+          "step": "grade"
+        }
+      ],
+      "human_control": "review_after",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "master_qc",
+      "schema_version": "2.0",
+      "bob_skill": "master-quality-gate",
+      "owners": [
+        "qc_supervisor",
+        "studio_orchestrator"
+      ],
+      "reviewers": [
+        "qc_supervisor"
+      ],
+      "handlers": [
+        "artifact"
+      ],
+      "output_types": [
+        "MasterQC",
+        "ReleaseArtifact"
+      ],
+      "workflow_references": [
+        {
+          "workflow": "pilot_action_sequence",
+          "step": "release"
+        },
+        {
+          "workflow": "pilot_animated_short",
+          "step": "release"
+        },
+        {
+          "workflow": "pilot_dialogue_scene",
+          "step": "release"
+        },
+        {
+          "workflow": "pilot_documentary_segment",
+          "step": "release"
+        },
+        {
+          "workflow": "pilot_episodic_linked_scenes",
+          "step": "release"
+        },
+        {
+          "workflow": "post_finish_v2",
+          "step": "master_qc"
+        }
+      ],
+      "human_control": "approve_before",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "mix_plan",
+      "schema_version": "2.0",
+      "bob_skill": "sound-post",
+      "owners": [
+        "sound_supervisor"
+      ],
+      "reviewers": [],
+      "handlers": [
+        "artifact"
+      ],
+      "output_types": [
+        "MixPlan"
+      ],
+      "workflow_references": [
+        {
+          "workflow": "post_finish_v2",
+          "step": "sound"
+        }
+      ],
+      "human_control": "autonomous",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "model_routing",
+      "schema_version": "2.0",
+      "bob_skill": "model-routing",
+      "owners": [
+        "generative_supervisor"
+      ],
+      "reviewers": [
+        "line_producer"
+      ],
+      "handlers": [
+        "artifact"
+      ],
+      "output_types": [
+        "RoutingDecision"
+      ],
+      "workflow_references": [
+        {
+          "workflow": "shot_production_v2",
+          "step": "route"
+        }
+      ],
+      "human_control": "review_after",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "performance",
+      "schema_version": "2.0",
+      "bob_skill": "director-breakdown",
+      "owners": [
+        "director"
+      ],
+      "reviewers": [
+        "qc_supervisor"
+      ],
+      "handlers": [
+        "artifact"
+      ],
+      "output_types": [
+        "PerformanceArtifact"
+      ],
+      "workflow_references": [
+        {
+          "workflow": "pilot_dialogue_scene",
+          "step": "performance"
+        }
+      ],
+      "human_control": "review_after",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "performance_objective_design",
+      "schema_version": "2.0",
+      "bob_skill": "director-breakdown",
+      "owners": [
+        "director"
+      ],
+      "reviewers": [],
+      "handlers": [
+        "artifact"
+      ],
+      "output_types": [
+        "PerformanceSpec"
+      ],
+      "workflow_references": [
+        {
+          "workflow": "direction_previs_v2",
+          "step": "performance"
+        }
+      ],
+      "human_control": "autonomous",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "pickup_identification",
+      "schema_version": "2.0",
+      "bob_skill": "director-breakdown",
+      "owners": [
+        "editor"
+      ],
+      "reviewers": [
+        "director"
+      ],
+      "handlers": [
+        "artifact"
+      ],
+      "output_types": [
+        "PickupList"
+      ],
+      "workflow_references": [
+        {
+          "workflow": "post_finish_v2",
+          "step": "pickups"
+        }
+      ],
+      "human_control": "review_after",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "picture_lock_check",
+      "schema_version": "2.0",
+      "bob_skill": "master-quality-gate",
+      "owners": [
+        "editor"
+      ],
+      "reviewers": [],
+      "handlers": [
+        "artifact"
+      ],
+      "output_types": [
+        "PictureLock"
+      ],
+      "workflow_references": [
+        {
+          "workflow": "post_finish_v2",
+          "step": "picture_lock"
+        }
+      ],
+      "human_control": "approve_before",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "premise_stress_test",
+      "schema_version": "2.0",
+      "bob_skill": "story-architecture",
+      "owners": [
+        "story_architect"
+      ],
+      "reviewers": [],
+      "handlers": [
+        "artifact"
+      ],
+      "output_types": [
+        "Premise"
+      ],
+      "workflow_references": [
+        {
+          "workflow": "story_script_v2",
+          "step": "premise"
+        }
+      ],
+      "human_control": "autonomous",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "previs",
+      "schema_version": "2.0",
+      "bob_skill": "coverage-storyboard-previs",
+      "owners": [
+        "director"
+      ],
+      "reviewers": [
+        "qc_supervisor"
+      ],
+      "handlers": [
+        "artifact"
+      ],
+      "output_types": [
+        "PrevisArtifact"
+      ],
+      "workflow_references": [
+        {
+          "workflow": "pilot_animated_short",
+          "step": "previs"
+        }
+      ],
+      "human_control": "review_after",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "production_strategy_selection",
+      "schema_version": "2.0",
+      "bob_skill": "model-routing",
+      "owners": [
+        "line_producer"
+      ],
+      "reviewers": [
+        "studio_orchestrator"
+      ],
+      "handlers": [
+        "artifact"
+      ],
+      "output_types": [
+        "ProductionStrategy"
+      ],
+      "workflow_references": [
+        {
+          "workflow": "intake_rights_v2",
+          "step": "strategy"
+        }
+      ],
+      "human_control": "review_after",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "prompt_compilation",
+      "schema_version": "2.0",
+      "bob_skill": "prompt-compilation",
+      "owners": [
+        "generative_supervisor"
+      ],
+      "reviewers": [
+        "qc_supervisor"
+      ],
+      "handlers": [
+        "artifact"
+      ],
+      "output_types": [
+        "PromptPacket"
+      ],
+      "workflow_references": [
+        {
+          "workflow": "shot_production_v2",
+          "step": "prompt"
+        }
+      ],
+      "human_control": "review_after",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "reference_selection",
+      "schema_version": "2.0",
+      "bob_skill": "reference-binding",
+      "owners": [
+        "generative_supervisor"
+      ],
+      "reviewers": [],
+      "handlers": [
+        "artifact"
+      ],
+      "output_types": [
+        "ReferenceBinding"
+      ],
+      "workflow_references": [
+        {
+          "workflow": "shot_production_v2",
+          "step": "refs"
+        }
+      ],
+      "human_control": "autonomous",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "release_approval",
+      "schema_version": "2.0",
+      "bob_skill": "master-quality-gate",
+      "owners": [
+        "studio_orchestrator"
+      ],
+      "reviewers": [],
+      "handlers": [
+        "artifact"
+      ],
+      "output_types": [
+        "ReleaseDecision"
+      ],
+      "workflow_references": [
+        {
+          "workflow": "localization_archive_v2",
+          "step": "release"
+        }
+      ],
+      "human_control": "approve_before",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "repair",
+      "schema_version": "2.0",
+      "bob_skill": "generation-failure-repair",
+      "owners": [
+        "vfx_supervisor"
+      ],
+      "reviewers": [
+        "qc_supervisor"
+      ],
+      "handlers": [
+        "artifact"
+      ],
+      "output_types": [
+        "RepairArtifact"
+      ],
+      "workflow_references": [
+        {
+          "workflow": "pilot_action_sequence",
+          "step": "repair"
+        }
+      ],
+      "human_control": "review_after",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "reproduction_manifest",
+      "schema_version": "2.0",
+      "bob_skill": "archive-reproduction",
+      "owners": [
+        "production_librarian"
+      ],
+      "reviewers": [
+        "qc_supervisor"
+      ],
+      "handlers": [
+        "artifact"
+      ],
+      "output_types": [
+        "ReproductionManifest"
+      ],
+      "workflow_references": [
+        {
+          "workflow": "localization_archive_v2",
+          "step": "reproduction"
+        }
+      ],
+      "human_control": "review_after",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "revision_plan",
+      "schema_version": "2.0",
+      "bob_skill": "script-audit-revision",
+      "owners": [
+        "showrunner"
+      ],
+      "reviewers": [
+        "script_editor"
+      ],
+      "handlers": [
+        "artifact"
+      ],
+      "output_types": [
+        "RevisionPlan"
+      ],
+      "workflow_references": [
+        {
+          "workflow": "story_script_v2",
+          "step": "revision"
+        }
+      ],
+      "human_control": "review_after",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "revision_regression_audit",
+      "schema_version": "2.0",
+      "bob_skill": "script-audit-revision",
+      "owners": [
+        "script_editor"
+      ],
+      "reviewers": [
+        "qc_supervisor"
+      ],
+      "handlers": [
+        "artifact"
+      ],
+      "output_types": [
+        "LockedScript"
+      ],
+      "workflow_references": [
+        {
+          "workflow": "story_script_v2",
+          "step": "lock"
+        }
+      ],
+      "human_control": "approve_before",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "rights_risk_triage",
+      "schema_version": "2.0",
+      "bob_skill": "source-intake-rights",
+      "owners": [
+        "production_librarian",
+        "rights_clearance_supervisor"
+      ],
+      "reviewers": [
+        "qc_supervisor"
+      ],
+      "handlers": [
+        "rights_gate"
+      ],
+      "output_types": [
+        "ConsentRightsGate",
+        "IntakeArtifact",
+        "RightsGateResult"
+      ],
+      "workflow_references": [
+        {
+          "workflow": "documentary_v2",
+          "step": "consent"
+        },
+        {
+          "workflow": "intake_rights_v2",
+          "step": "rights"
+        },
+        {
+          "workflow": "pilot_action_sequence",
+          "step": "intake"
+        },
+        {
+          "workflow": "pilot_animated_short",
+          "step": "intake"
+        },
+        {
+          "workflow": "pilot_dialogue_scene",
+          "step": "intake"
+        },
+        {
+          "workflow": "pilot_documentary_segment",
+          "step": "intake"
+        },
+        {
+          "workflow": "pilot_episodic_linked_scenes",
+          "step": "intake"
+        }
+      ],
+      "human_control": "autonomous",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "scene_card_generation",
+      "schema_version": "2.0",
+      "bob_skill": "scene-construction",
+      "owners": [
+        "showrunner"
+      ],
+      "reviewers": [],
+      "handlers": [
+        "artifact"
+      ],
+      "output_types": [
+        "SceneCards"
+      ],
+      "workflow_references": [
+        {
+          "workflow": "story_script_v2",
+          "step": "scene_cards"
+        }
+      ],
+      "human_control": "autonomous",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "scene_intention_breakdown",
+      "schema_version": "2.0",
+      "bob_skill": "director-breakdown",
+      "owners": [
+        "director"
+      ],
+      "reviewers": [],
+      "handlers": [
+        "artifact"
+      ],
+      "output_types": [
+        "DirectorBreakdown"
+      ],
+      "workflow_references": [
+        {
+          "workflow": "direction_previs_v2",
+          "step": "intention"
+        }
+      ],
+      "human_control": "autonomous",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "scene_writing",
+      "schema_version": "2.0",
+      "bob_skill": "scene-construction",
+      "owners": [
+        "showrunner"
+      ],
+      "reviewers": [
+        "documentary_research_editor",
+        "script_editor"
+      ],
+      "handlers": [
+        "artifact"
+      ],
+      "output_types": [
+        "DocumentaryScript",
+        "ScreenplayDraft"
+      ],
+      "workflow_references": [
+        {
+          "workflow": "documentary_v2",
+          "step": "script"
+        },
+        {
+          "workflow": "story_script_v2",
+          "step": "draft"
+        }
+      ],
+      "human_control": "review_after",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "score_spotting",
+      "schema_version": "2.0",
+      "bob_skill": "score-design",
+      "owners": [
+        "composer"
+      ],
+      "reviewers": [
+        "sound_supervisor"
+      ],
+      "handlers": [
+        "artifact"
+      ],
+      "output_types": [
+        "ScorePlan"
+      ],
+      "workflow_references": [
+        {
+          "workflow": "post_finish_v2",
+          "step": "score"
+        }
+      ],
+      "human_control": "review_after",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "script",
+      "schema_version": "2.0",
+      "bob_skill": "script-audit-revision",
+      "owners": [
+        "showrunner"
+      ],
+      "reviewers": [
+        "qc_supervisor"
+      ],
+      "handlers": [
+        "artifact"
+      ],
+      "output_types": [
+        "ScriptArtifact"
+      ],
+      "workflow_references": [
+        {
+          "workflow": "pilot_documentary_segment",
+          "step": "script"
+        }
+      ],
+      "human_control": "review_after",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "season_architecture",
+      "schema_version": "2.0",
+      "bob_skill": "series-continuity",
+      "owners": [
+        "showrunner"
+      ],
+      "reviewers": [
+        "series_continuity_editor"
+      ],
+      "handlers": [
+        "artifact"
+      ],
+      "output_types": [
+        "SeasonArc"
+      ],
+      "workflow_references": [
+        {
+          "workflow": "episodic_v2",
+          "step": "season_arc"
+        }
+      ],
+      "human_control": "review_after",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "series",
+      "schema_version": "2.0",
+      "bob_skill": "series-continuity",
+      "owners": [
+        "series_continuity_editor"
+      ],
+      "reviewers": [
+        "qc_supervisor"
+      ],
+      "handlers": [
+        "artifact"
+      ],
+      "output_types": [
+        "SeriesArtifact"
+      ],
+      "workflow_references": [
+        {
+          "workflow": "pilot_episodic_linked_scenes",
+          "step": "series"
+        }
+      ],
+      "human_control": "review_after",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "series_bible_control",
+      "schema_version": "2.0",
+      "bob_skill": "series-continuity",
+      "owners": [
+        "series_continuity_editor"
+      ],
+      "reviewers": [],
+      "handlers": [
+        "artifact"
+      ],
+      "output_types": [
+        "SeriesBible"
+      ],
+      "workflow_references": [
+        {
+          "workflow": "episodic_v2",
+          "step": "series_bible"
+        }
+      ],
+      "human_control": "autonomous",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "shot_spec_compilation",
+      "schema_version": "2.0",
+      "bob_skill": "shot-specification",
+      "owners": [
+        "cinematographer"
+      ],
+      "reviewers": [
+        "director"
+      ],
+      "handlers": [
+        "artifact"
+      ],
+      "output_types": [
+        "ShotSpecSet"
+      ],
+      "workflow_references": [
+        {
+          "workflow": "direction_previs_v2",
+          "step": "shots"
+        }
+      ],
+      "human_control": "review_after",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "source_canon_extraction",
+      "schema_version": "2.0",
+      "bob_skill": "source-adaptation",
+      "owners": [
+        "adaptation_executive"
+      ],
+      "reviewers": [],
+      "handlers": [
+        "artifact"
+      ],
+      "output_types": [
+        "SourceMap"
+      ],
+      "workflow_references": [
+        {
+          "workflow": "adaptation_v2",
+          "step": "source_map"
+        }
+      ],
+      "human_control": "autonomous",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "source_ingestion",
+      "schema_version": "2.0",
+      "bob_skill": "source-intake-rights",
+      "owners": [
+        "production_librarian"
+      ],
+      "reviewers": [],
+      "handlers": [
+        "artifact"
+      ],
+      "output_types": [
+        "SourceAsset"
+      ],
+      "workflow_references": [
+        {
+          "workflow": "intake_rights_v2",
+          "step": "ingest"
+        }
+      ],
+      "human_control": "autonomous",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "story",
+      "schema_version": "2.0",
+      "bob_skill": "story-architecture",
+      "owners": [
+        "showrunner"
+      ],
+      "reviewers": [
+        "qc_supervisor"
+      ],
+      "handlers": [
+        "artifact"
+      ],
+      "output_types": [
+        "StoryArtifact"
+      ],
+      "workflow_references": [
+        {
+          "workflow": "pilot_animated_short",
+          "step": "story"
+        }
+      ],
+      "human_control": "review_after",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "storyboard_plan",
+      "schema_version": "2.0",
+      "bob_skill": "coverage-storyboard-previs",
+      "owners": [
+        "storyboard_previs"
+      ],
+      "reviewers": [
+        "director"
+      ],
+      "handlers": [
+        "artifact"
+      ],
+      "output_types": [
+        "StoryboardAnimatic"
+      ],
+      "workflow_references": [
+        {
+          "workflow": "direction_previs_v2",
+          "step": "previs"
+        }
+      ],
+      "human_control": "review_after",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "structure_map",
+      "schema_version": "2.0",
+      "bob_skill": "source-adaptation",
+      "owners": [
+        "story_architect"
+      ],
+      "reviewers": [
+        "script_editor",
+        "showrunner"
+      ],
+      "handlers": [
+        "artifact"
+      ],
+      "output_types": [
+        "StructureMap"
+      ],
+      "workflow_references": [
+        {
+          "workflow": "adaptation_v2",
+          "step": "outline"
+        },
+        {
+          "workflow": "story_script_v2",
+          "step": "structure"
+        }
+      ],
+      "human_control": "review_after",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "video_generation_plan",
+      "schema_version": "2.0",
+      "bob_skill": "provider-job-operation",
+      "owners": [
+        "generative_supervisor"
+      ],
+      "reviewers": [
+        "qc_supervisor"
+      ],
+      "handlers": [
+        "mock_generation"
+      ],
+      "output_types": [
+        "GeneratedTake",
+        "ShotArtifact"
+      ],
+      "workflow_references": [
+        {
+          "workflow": "pilot_action_sequence",
+          "step": "shot"
+        },
+        {
+          "workflow": "pilot_animated_short",
+          "step": "shot"
+        },
+        {
+          "workflow": "pilot_dialogue_scene",
+          "step": "shot"
+        },
+        {
+          "workflow": "pilot_documentary_segment",
+          "step": "shot"
+        },
+        {
+          "workflow": "pilot_episodic_linked_scenes",
+          "step": "shot"
+        },
+        {
+          "workflow": "shot_production_v2",
+          "step": "generate"
+        }
+      ],
+      "human_control": "review_after",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "visual_qc",
+      "schema_version": "2.0",
+      "bob_skill": "visual-identity-qc",
+      "owners": [
+        "qc_supervisor"
+      ],
+      "reviewers": [],
+      "handlers": [
+        "artifact"
+      ],
+      "output_types": [
+        "TakeQC"
+      ],
+      "workflow_references": [
+        {
+          "workflow": "shot_production_v2",
+          "step": "qc"
+        }
+      ],
+      "human_control": "autonomous",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "world_bible_creation",
+      "schema_version": "2.0",
+      "bob_skill": "world-character-canon",
+      "owners": [
+        "production_designer"
+      ],
+      "reviewers": [],
+      "handlers": [
+        "artifact"
+      ],
+      "output_types": [
+        "WorldBible"
+      ],
+      "workflow_references": [
+        {
+          "workflow": "art_animation_v2",
+          "step": "world"
+        }
+      ],
+      "human_control": "autonomous",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "production_role_coverage",
+      "schema_version": "2.0",
+      "bob_skill": "production-team-simulation",
+      "owners": ["line_producer"],
+      "reviewers": ["qc_supervisor"],
+      "handlers": ["team_plan"],
+      "output_types": ["ProductionTeamContributionPlan"],
+      "workflow_references": [{"workflow": "team_contribution_v2", "step": "coverage"}],
+      "human_control": "review_after",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "department_contribution_synthesis",
+      "schema_version": "2.0",
+      "bob_skill": "production-team-simulation",
+      "owners": ["studio_orchestrator"],
+      "reviewers": ["qc_supervisor"],
+      "handlers": ["artifact"],
+      "output_types": ["DepartmentContributionSynthesis"],
+      "workflow_references": [{"workflow": "team_contribution_v2", "step": "synthesis"}],
+      "human_control": "review_after",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "higgsfield_capability_discovery",
+      "schema_version": "2.0",
+      "bob_skill": "higgsfield-production-bridge",
+      "owners": ["generative_supervisor"],
+      "reviewers": ["security_data_governance"],
+      "handlers": ["artifact"],
+      "output_types": ["ProviderSchemaSnapshot"],
+      "workflow_references": [{"workflow": "higgsfield_shot_batch_v2", "step": "discover"}],
+      "human_control": "review_after",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "prompt_spec_v3_compile",
+      "schema_version": "2.0",
+      "bob_skill": "higgsfield-production-bridge",
+      "owners": ["generative_supervisor"],
+      "reviewers": ["director"],
+      "handlers": ["artifact"],
+      "output_types": ["PromptSpecV3"],
+      "workflow_references": [{"workflow": "higgsfield_shot_batch_v2", "step": "compile"}],
+      "human_control": "review_after",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "higgsfield_cost_preflight",
+      "schema_version": "2.0",
+      "bob_skill": "higgsfield-production-bridge",
+      "owners": ["line_producer"],
+      "reviewers": ["generative_supervisor"],
+      "handlers": ["artifact"],
+      "output_types": ["ProviderCostPreflight"],
+      "workflow_references": [{"workflow": "higgsfield_shot_batch_v2", "step": "cost"}],
+      "human_control": "review_after",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "higgsfield_generation_submit",
+      "schema_version": "2.0",
+      "bob_skill": "higgsfield-production-bridge",
+      "owners": ["generative_supervisor"],
+      "reviewers": ["qc_supervisor"],
+      "handlers": ["higgsfield_dry_run"],
+      "output_types": ["ProviderJobPlan"],
+      "workflow_references": [{"workflow": "higgsfield_shot_batch_v2", "step": "submit_dry_run"}],
+      "human_control": "approval_before_external_side_effect",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "repository_release_audit",
+      "schema_version": "2.0",
+      "bob_skill": "repository-release-audit",
+      "owners": ["security_data_governance"],
+      "reviewers": ["qc_supervisor"],
+      "handlers": ["artifact"],
+      "output_types": ["RepositoryReleaseAudit"],
+      "workflow_references": [{"workflow": "repository_release_audit_v2", "step": "audit"}],
+      "human_control": "review_after",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "production_readiness_diagnostic",
+      "schema_version": "2.0",
+      "bob_skill": "project-intake-diagnostic",
+      "owners": ["studio_orchestrator"],
+      "reviewers": ["line_producer"],
+      "handlers": ["project_diagnostic"],
+      "output_types": ["ProductionReadinessDiagnostic"],
+      "workflow_references": [{"workflow": "development_diagnostic_v2", "step": "diagnose"}],
+      "human_control": "review_after",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "development_question_backlog",
+      "schema_version": "2.0",
+      "bob_skill": "project-intake-diagnostic",
+      "owners": ["studio_orchestrator"],
+      "reviewers": ["qc_supervisor"],
+      "handlers": ["artifact"],
+      "output_types": ["DevelopmentQuestionBacklog"],
+      "workflow_references": [{"workflow": "development_diagnostic_v2", "step": "questions"}],
+      "human_control": "review_after",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "script_element_breakdown",
+      "schema_version": "2.0",
+      "bob_skill": "script-breakdown-scheduling",
+      "owners": ["line_producer"],
+      "reviewers": ["continuity_supervisor"],
+      "handlers": ["artifact"],
+      "output_types": ["ScriptElementBreakdown"],
+      "workflow_references": [{"workflow": "physical_preproduction_v2", "step": "breakdown"}],
+      "human_control": "review_after",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "schedule_budget_scenario",
+      "schema_version": "2.0",
+      "bob_skill": "script-breakdown-scheduling",
+      "owners": ["line_producer"],
+      "reviewers": ["studio_orchestrator"],
+      "handlers": ["artifact"],
+      "output_types": ["ScheduleBudgetScenario"],
+      "workflow_references": [{"workflow": "physical_preproduction_v2", "step": "schedule"}],
+      "human_control": "review_after",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "casting_breakdown",
+      "schema_version": "2.0",
+      "bob_skill": "casting-performance-development",
+      "owners": ["director"],
+      "reviewers": ["character_director"],
+      "handlers": ["artifact"],
+      "output_types": ["CastingBreakdown"],
+      "workflow_references": [{"workflow": "casting_character_lookdev_v2", "step": "casting"}],
+      "human_control": "review_after",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "audition_evaluation_plan",
+      "schema_version": "2.0",
+      "bob_skill": "casting-performance-development",
+      "owners": ["director"],
+      "reviewers": ["rights_clearance_supervisor"],
+      "handlers": ["artifact"],
+      "output_types": ["AuditionEvaluationPlan"],
+      "workflow_references": [{"workflow": "casting_character_lookdev_v2", "step": "audition"}],
+      "human_control": "review_after",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "character_reference_package",
+      "schema_version": "2.0",
+      "bob_skill": "character-visual-development",
+      "owners": ["character_director"],
+      "reviewers": ["production_designer"],
+      "handlers": ["artifact"],
+      "output_types": ["CharacterReferencePackage"],
+      "workflow_references": [{"workflow": "casting_character_lookdev_v2", "step": "character_reference"}],
+      "human_control": "review_after",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "character_look_acceptance",
+      "schema_version": "2.0",
+      "bob_skill": "character-visual-development",
+      "owners": ["qc_supervisor"],
+      "reviewers": ["character_director"],
+      "handlers": ["gate"],
+      "output_types": ["CharacterLookAcceptance"],
+      "workflow_references": [{"workflow": "casting_character_lookdev_v2", "step": "look_acceptance"}],
+      "human_control": "human_approval",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "costume_look_plan",
+      "schema_version": "2.0",
+      "bob_skill": "costume-hair-makeup",
+      "owners": ["production_designer"],
+      "reviewers": ["character_director"],
+      "handlers": ["artifact"],
+      "output_types": ["CostumeLookPlan"],
+      "workflow_references": [{"workflow": "casting_character_lookdev_v2", "step": "costume"}],
+      "human_control": "review_after",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "appearance_continuity_plan",
+      "schema_version": "2.0",
+      "bob_skill": "costume-hair-makeup",
+      "owners": ["continuity_supervisor"],
+      "reviewers": ["production_designer"],
+      "handlers": ["artifact"],
+      "output_types": ["AppearanceContinuityPlan"],
+      "workflow_references": [{"workflow": "casting_character_lookdev_v2", "step": "appearance_continuity"}],
+      "human_control": "review_after",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "location_scout_matrix",
+      "schema_version": "2.0",
+      "bob_skill": "location-scouting-logistics",
+      "owners": ["production_designer"],
+      "reviewers": ["line_producer"],
+      "handlers": ["artifact"],
+      "output_types": ["LocationScoutMatrix"],
+      "workflow_references": [{"workflow": "physical_preproduction_v2", "step": "locations"}],
+      "human_control": "review_after",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "location_feasibility_plan",
+      "schema_version": "2.0",
+      "bob_skill": "location-scouting-logistics",
+      "owners": ["line_producer"],
+      "reviewers": ["security_data_governance"],
+      "handlers": ["artifact"],
+      "output_types": ["LocationFeasibilityPlan"],
+      "workflow_references": [{"workflow": "physical_preproduction_v2", "step": "location_feasibility"}],
+      "human_control": "review_after",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "production_design_package",
+      "schema_version": "2.0",
+      "bob_skill": "production-design-art-department",
+      "owners": ["production_designer"],
+      "reviewers": ["director"],
+      "handlers": ["artifact"],
+      "output_types": ["ProductionDesignPackage"],
+      "workflow_references": [{"workflow": "physical_preproduction_v2", "step": "design"}],
+      "human_control": "review_after",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "art_department_execution_plan",
+      "schema_version": "2.0",
+      "bob_skill": "production-design-art-department",
+      "owners": ["production_designer"],
+      "reviewers": ["line_producer"],
+      "handlers": ["artifact"],
+      "output_types": ["ArtDepartmentExecutionPlan"],
+      "workflow_references": [{"workflow": "physical_preproduction_v2", "step": "art_execution"}],
+      "human_control": "review_after",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "production_operations_plan",
+      "schema_version": "2.0",
+      "bob_skill": "physical-production-operations",
+      "owners": ["line_producer"],
+      "reviewers": ["studio_orchestrator"],
+      "handlers": ["artifact"],
+      "output_types": ["ProductionOperationsPlan"],
+      "workflow_references": [{"workflow": "physical_preproduction_v2", "step": "operations"}],
+      "human_control": "review_after",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "shoot_day_control",
+      "schema_version": "2.0",
+      "bob_skill": "physical-production-operations",
+      "owners": ["line_producer"],
+      "reviewers": ["continuity_supervisor"],
+      "handlers": ["artifact"],
+      "output_types": ["ShootDayControl"],
+      "workflow_references": [{"workflow": "production_day_v2", "step": "day_control"}],
+      "human_control": "review_after",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "production_risk_register",
+      "schema_version": "2.0",
+      "bob_skill": "production-safety-coordination",
+      "owners": ["line_producer"],
+      "reviewers": ["security_data_governance"],
+      "handlers": ["artifact"],
+      "output_types": ["ProductionRiskRegister"],
+      "workflow_references": [{"workflow": "physical_preproduction_v2", "step": "risk"}],
+      "human_control": "review_after",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "specialist_safety_handoff",
+      "schema_version": "2.0",
+      "bob_skill": "production-safety-coordination",
+      "owners": ["studio_orchestrator"],
+      "reviewers": ["qc_supervisor"],
+      "handlers": ["gate"],
+      "output_types": ["SpecialistSafetyHandoff"],
+      "workflow_references": [{"workflow": "production_day_v2", "step": "safety_handoff"}],
+      "human_control": "human_approval",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "production_sound_plan",
+      "schema_version": "2.0",
+      "bob_skill": "production-sound-capture",
+      "owners": ["sound_supervisor"],
+      "reviewers": ["director"],
+      "handlers": ["artifact"],
+      "output_types": ["ProductionSoundPlan"],
+      "workflow_references": [{"workflow": "production_day_v2", "step": "sound_plan"}],
+      "human_control": "review_after",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "sound_capture_qc",
+      "schema_version": "2.0",
+      "bob_skill": "production-sound-capture",
+      "owners": ["sound_supervisor"],
+      "reviewers": ["editor"],
+      "handlers": ["artifact"],
+      "output_types": ["SoundCaptureQC"],
+      "workflow_references": [{"workflow": "production_day_v2", "step": "sound_qc"}],
+      "human_control": "review_after",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "business_affairs_checklist",
+      "schema_version": "2.0",
+      "bob_skill": "business-affairs-packaging",
+      "owners": ["rights_clearance_supervisor"],
+      "reviewers": ["studio_orchestrator"],
+      "handlers": ["artifact"],
+      "output_types": ["BusinessAffairsChecklist"],
+      "workflow_references": [{"workflow": "release_business_v2", "step": "business_affairs"}],
+      "human_control": "review_after",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "production_finance_package",
+      "schema_version": "2.0",
+      "bob_skill": "business-affairs-packaging",
+      "owners": ["line_producer"],
+      "reviewers": ["studio_orchestrator"],
+      "handlers": ["artifact"],
+      "output_types": ["ProductionFinancePackage"],
+      "workflow_references": [{"workflow": "release_business_v2", "step": "finance"}],
+      "human_control": "review_after",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "audience_release_strategy",
+      "schema_version": "2.0",
+      "bob_skill": "marketing-distribution-strategy",
+      "owners": ["studio_orchestrator"],
+      "reviewers": ["rights_clearance_supervisor"],
+      "handlers": ["artifact"],
+      "output_types": ["AudienceReleaseStrategy"],
+      "workflow_references": [{"workflow": "release_business_v2", "step": "audience"}],
+      "human_control": "review_after",
+      "status": "executable_dry_run"
+    },
+    {
+      "capability_id": "distribution_delivery_plan",
+      "schema_version": "2.0",
+      "bob_skill": "marketing-distribution-strategy",
+      "owners": ["localization_delivery_supervisor"],
+      "reviewers": ["studio_orchestrator"],
+      "handlers": ["artifact"],
+      "output_types": ["DistributionDeliveryPlan"],
+      "workflow_references": [{"workflow": "release_business_v2", "step": "distribution"}],
+      "human_control": "review_after",
+      "status": "executable_dry_run"
+    }
+  ]
+}

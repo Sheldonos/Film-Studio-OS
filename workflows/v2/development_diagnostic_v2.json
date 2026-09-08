@@ -1,0 +1,65 @@
+{
+  "schema_version": "2.0",
+  "workflow_id": "development_diagnostic_v2",
+  "version": "2.0.0",
+  "description": "First-pass source, mandate, rights, feasibility and question audit before creative development.",
+  "production_route": "provider_neutral",
+  "steps": [
+    {
+      "id": "diagnose",
+      "capability_id": "production_readiness_diagnostic",
+      "owner_agent": "studio_orchestrator",
+      "reviewer_agent": "line_producer",
+      "output_type": "ProductionReadinessDiagnostic",
+      "handler": "project_diagnostic"
+    },
+    {
+      "id": "questions",
+      "capability_id": "development_question_backlog",
+      "owner_agent": "studio_orchestrator",
+      "reviewer_agent": "qc_supervisor",
+      "depends_on": [
+        "diagnose"
+      ],
+      "output_type": "DevelopmentQuestionBacklog",
+      "handler": "artifact"
+    },
+    {
+      "id": "rights",
+      "capability_id": "rights_risk_triage",
+      "owner_agent": "rights_clearance_supervisor",
+      "reviewer_agent": "line_producer",
+      "depends_on": [
+        "questions"
+      ],
+      "output_type": "RightsRiskTriage",
+      "handler": "artifact"
+    },
+    {
+      "id": "business",
+      "capability_id": "business_affairs_checklist",
+      "owner_agent": "rights_clearance_supervisor",
+      "reviewer_agent": "studio_orchestrator",
+      "depends_on": [
+        "rights"
+      ],
+      "output_type": "BusinessAffairsChecklist",
+      "handler": "artifact"
+    },
+    {
+      "id": "greenlight",
+      "capability_id": "greenlight_package",
+      "owner_agent": "line_producer",
+      "reviewer_agent": "studio_orchestrator",
+      "depends_on": [
+        "business"
+      ],
+      "output_type": "DevelopmentGreenlightPackage",
+      "handler": "gate",
+      "approval_required": true,
+      "approval_role": "human_greenlight_owner",
+      "gate_id": "development_greenlight"
+    }
+  ]
+}
+

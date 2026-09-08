@@ -1,0 +1,11 @@
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+.film-studio/
+**/__pycache__/
+.pytest_cache/
+artifacts/generated-media/
+artifacts/provider-downloads/

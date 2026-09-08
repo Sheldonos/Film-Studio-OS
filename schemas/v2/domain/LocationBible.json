@@ -1,0 +1,54 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "default": "2.0",
+      "pattern": "^\\d+\\.\\d+$",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "location_bible_id": {
+      "minLength": 1,
+      "title": "Location Bible Id",
+      "type": "string"
+    },
+    "world_bible_id": {
+      "minLength": 1,
+      "title": "World Bible Id",
+      "type": "string"
+    },
+    "name": {
+      "minLength": 1,
+      "title": "Name",
+      "type": "string"
+    },
+    "geography": {
+      "minLength": 1,
+      "title": "Geography",
+      "type": "string"
+    },
+    "immutable_features": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Immutable Features",
+      "type": "array"
+    },
+    "time_weather_states": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Time Weather States",
+      "type": "array"
+    }
+  },
+  "required": [
+    "location_bible_id",
+    "world_bible_id",
+    "name",
+    "geography"
+  ],
+  "title": "LocationBible",
+  "type": "object",
+  "$id": "https://film-studio-os.local/schema/v2/domain/LocationBible.json"
+}

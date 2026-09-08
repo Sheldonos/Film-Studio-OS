@@ -1,0 +1,23 @@
+{
+  "schema_version": "2.0",
+  "adapter_id": "google-gemini-video",
+  "as_of": "2026-08-15",
+  "status": "research_only",
+  "live_enabled": false,
+  "research_only": true,
+  "modalities": [
+    "video"
+  ],
+  "capabilities": [
+    "Gemini Omni Flash video generation/editing",
+    "Veo 3.1 native audio / extension / frame control"
+  ],
+  "async_job_pattern": "must be verified during adapter implementation",
+  "auth": "unknown until integration",
+  "commercial_use": "unknown/not captured",
+  "training_policy": "unknown/not captured",
+  "retention_policy": "unknown/not captured",
+  "cost_unit": "unknown/not captured",
+  "evidence": "official Google Gemini API video docs, accessed 2026-08-15",
+  "policy_note": "No live provider is enabled by default. Unknown provider policy fields block policy-sensitive routing until reverified."
+}

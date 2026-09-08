@@ -1,0 +1,47 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "default": "2.0",
+      "pattern": "^\\d+\\.\\d+$",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "costume_id": {
+      "minLength": 1,
+      "title": "Costume Id",
+      "type": "string"
+    },
+    "character_bible_id": {
+      "minLength": 1,
+      "title": "Character Bible Id",
+      "type": "string"
+    },
+    "name": {
+      "minLength": 1,
+      "title": "Name",
+      "type": "string"
+    },
+    "canon_description": {
+      "minLength": 1,
+      "title": "Canon Description",
+      "type": "string"
+    },
+    "states": {
+      "items": {
+        "type": "string"
+      },
+      "title": "States",
+      "type": "array"
+    }
+  },
+  "required": [
+    "costume_id",
+    "character_bible_id",
+    "name",
+    "canon_description"
+  ],
+  "title": "Costume",
+  "type": "object",
+  "$id": "https://film-studio-os.local/schema/v2/domain/Costume.json"
+}

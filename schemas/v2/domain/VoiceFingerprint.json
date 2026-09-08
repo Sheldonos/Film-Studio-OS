@@ -1,0 +1,61 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "default": "2.0",
+      "pattern": "^\\d+\\.\\d+$",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "voice_fingerprint_id": {
+      "minLength": 1,
+      "title": "Voice Fingerprint Id",
+      "type": "string"
+    },
+    "character_bible_id": {
+      "minLength": 1,
+      "title": "Character Bible Id",
+      "type": "string"
+    },
+    "diction": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Diction",
+      "type": "array"
+    },
+    "syntax_patterns": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Syntax Patterns",
+      "type": "array"
+    },
+    "cadence": {
+      "default": "",
+      "title": "Cadence",
+      "type": "string"
+    },
+    "status_tactics": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Status Tactics",
+      "type": "array"
+    },
+    "forbidden_genericisms": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Forbidden Genericisms",
+      "type": "array"
+    }
+  },
+  "required": [
+    "voice_fingerprint_id",
+    "character_bible_id"
+  ],
+  "title": "VoiceFingerprint",
+  "type": "object",
+  "$id": "https://film-studio-os.local/schema/v2/domain/VoiceFingerprint.json"
+}

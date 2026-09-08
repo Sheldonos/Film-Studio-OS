@@ -1,0 +1,117 @@
+{
+  "$id": "https://film-studio-os.local/schemas/v2/ProviderCapability.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "adapter_id": {
+      "title": "Adapter Id",
+      "type": "string"
+    },
+    "async_jobs": {
+      "default": true,
+      "title": "Async Jobs",
+      "type": "boolean"
+    },
+    "cancel_supported": {
+      "default": false,
+      "title": "Cancel Supported",
+      "type": "boolean"
+    },
+    "commercial_use": {
+      "default": "unknown",
+      "enum": [
+        "yes",
+        "no",
+        "conditional",
+        "unknown"
+      ],
+      "title": "Commercial Use",
+      "type": "string"
+    },
+    "dry_run_supported": {
+      "default": true,
+      "title": "Dry Run Supported",
+      "type": "boolean"
+    },
+    "inputs": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Inputs",
+      "type": "array"
+    },
+    "max_duration_seconds": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Max Duration Seconds"
+    },
+    "modality": {
+      "enum": [
+        "image",
+        "video",
+        "audio",
+        "speech",
+        "transcription",
+        "lip_sync",
+        "other"
+      ],
+      "title": "Modality",
+      "type": "string"
+    },
+    "model_id": {
+      "title": "Model Id",
+      "type": "string"
+    },
+    "outputs": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Outputs",
+      "type": "array"
+    },
+    "regions": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Regions",
+      "type": "array"
+    },
+    "retention_policy": {
+      "default": "unknown",
+      "title": "Retention Policy",
+      "type": "string"
+    },
+    "schema_version": {
+      "default": "2.0",
+      "pattern": "^\\d+\\.\\d+$",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "training_policy": {
+      "default": "unknown",
+      "title": "Training Policy",
+      "type": "string"
+    },
+    "verified_at": {
+      "title": "Verified At",
+      "type": "string"
+    }
+  },
+  "required": [
+    "adapter_id",
+    "model_id",
+    "modality",
+    "inputs",
+    "outputs",
+    "verified_at"
+  ],
+  "title": "ProviderCapability",
+  "type": "object"
+}

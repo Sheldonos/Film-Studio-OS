@@ -1,0 +1,294 @@
+{
+  "$defs": {
+    "CameraSpec": {
+      "additionalProperties": false,
+      "properties": {
+        "angle": {
+          "default": "eye_level",
+          "title": "Angle",
+          "type": "string"
+        },
+        "axis_rule": {
+          "default": "maintain",
+          "title": "Axis Rule",
+          "type": "string"
+        },
+        "camera_distance_m": {
+          "anyOf": [
+            {
+              "exclusiveMinimum": 0,
+              "maximum": 10000,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Camera Distance M"
+        },
+        "camera_height_m": {
+          "anyOf": [
+            {
+              "maximum": 100,
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Camera Height M"
+        },
+        "lens_mm": {
+          "anyOf": [
+            {
+              "exclusiveMinimum": 0,
+              "maximum": 2000,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Lens Mm"
+        },
+        "movement": {
+          "default": "static",
+          "title": "Movement",
+          "type": "string"
+        },
+        "schema_version": {
+          "default": "2.0",
+          "pattern": "^\\d+\\.\\d+$",
+          "title": "Schema Version",
+          "type": "string"
+        },
+        "shot_size": {
+          "enum": [
+            "ECU",
+            "CU",
+            "MCU",
+            "MS",
+            "MLS",
+            "WS",
+            "EWS",
+            "insert",
+            "POV",
+            "OTS",
+            "custom"
+          ],
+          "title": "Shot Size",
+          "type": "string"
+        }
+      },
+      "required": [
+        "shot_size"
+      ],
+      "title": "CameraSpec",
+      "type": "object"
+    },
+    "PerformanceSpec": {
+      "additionalProperties": false,
+      "properties": {
+        "dialogue_line_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Dialogue Line Ids",
+          "type": "array"
+        },
+        "emotional_state_in": {
+          "default": "",
+          "title": "Emotional State In",
+          "type": "string"
+        },
+        "emotional_state_out": {
+          "default": "",
+          "title": "Emotional State Out",
+          "type": "string"
+        },
+        "gesture_constraints": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Gesture Constraints",
+          "type": "array"
+        },
+        "objective": {
+          "minLength": 1,
+          "title": "Objective",
+          "type": "string"
+        },
+        "schema_version": {
+          "default": "2.0",
+          "pattern": "^\\d+\\.\\d+$",
+          "title": "Schema Version",
+          "type": "string"
+        },
+        "tactic": {
+          "minLength": 1,
+          "title": "Tactic",
+          "type": "string"
+        }
+      },
+      "required": [
+        "objective",
+        "tactic"
+      ],
+      "title": "PerformanceSpec",
+      "type": "object"
+    }
+  },
+  "$id": "https://film-studio-os.local/schemas/v2/ShotSpecV2.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "camera": {
+      "$ref": "#/$defs/CameraSpec"
+    },
+    "character_state_ids": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Character State Ids",
+      "type": "array"
+    },
+    "consent_record_ids": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Consent Record Ids",
+      "type": "array"
+    },
+    "continuity_constraints": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Continuity Constraints",
+      "type": "array"
+    },
+    "duration_seconds": {
+      "exclusiveMinimum": 0,
+      "maximum": 120,
+      "title": "Duration Seconds",
+      "type": "number"
+    },
+    "emotional_objective": {
+      "minLength": 1,
+      "title": "Emotional Objective",
+      "type": "string"
+    },
+    "generation_strategy": {
+      "default": "video",
+      "enum": [
+        "image",
+        "video",
+        "2d",
+        "3d",
+        "hybrid",
+        "traditional",
+        "none"
+      ],
+      "title": "Generation Strategy",
+      "type": "string"
+    },
+    "location_state_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Location State Id"
+    },
+    "negative_constraints": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Negative Constraints",
+      "type": "array"
+    },
+    "performance": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/PerformanceSpec"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "project_id": {
+      "minLength": 1,
+      "title": "Project Id",
+      "type": "string"
+    },
+    "prop_state_ids": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Prop State Ids",
+      "type": "array"
+    },
+    "quality_requirements": {
+      "additionalProperties": {
+        "type": "number"
+      },
+      "title": "Quality Requirements",
+      "type": "object"
+    },
+    "reference_artifact_ids": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Reference Artifact Ids",
+      "type": "array"
+    },
+    "rights_record_ids": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Rights Record Ids",
+      "type": "array"
+    },
+    "scene_id": {
+      "minLength": 1,
+      "title": "Scene Id",
+      "type": "string"
+    },
+    "schema_version": {
+      "default": "2.0",
+      "pattern": "^\\d+\\.\\d+$",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "shot_id": {
+      "minLength": 1,
+      "title": "Shot Id",
+      "type": "string"
+    },
+    "story_function": {
+      "minLength": 1,
+      "title": "Story Function",
+      "type": "string"
+    }
+  },
+  "required": [
+    "shot_id",
+    "project_id",
+    "scene_id",
+    "story_function",
+    "emotional_objective",
+    "duration_seconds",
+    "camera"
+  ],
+  "title": "ShotSpecV2",
+  "type": "object"
+}

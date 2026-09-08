@@ -1,0 +1,32 @@
+{
+  "workflow_id": "dialogue_scene_v1",
+  "name": "Dialogue Scene Production",
+  "version": "0.1.0",
+  "steps": [
+    "scene_intention_breakdown",
+    "dialogue_voice_audit",
+    "performance_objective_design",
+    "blocking_plan",
+    "coverage_plan",
+    "screen_direction_axis_control",
+    "shot_spec_compilation",
+    "continuity_extraction",
+    "reference_selection",
+    "keyframe_generation_plan",
+    "keyframe_evaluation",
+    "video_generation_plan",
+    "performance_prompting",
+    "lip_sync_strategy",
+    "identity_qc",
+    "continuity_qc",
+    "edit_compatibility_scoring",
+    "reaction_timing",
+    "dialogue_edit",
+    "sync_validation"
+  ],
+  "special_rules": [
+    "prefer simple stable coverage for identity-critical speech",
+    "reserve close interaction shots for providers/strategies proven on the benchmark",
+    "capture reaction coverage to protect editability"
+  ]
+}

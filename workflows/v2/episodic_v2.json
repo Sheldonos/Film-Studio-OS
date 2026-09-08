@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "workflow_id": "episodic_v2",
+  "version": "2.0.0",
+  "description": "Maintain series/season/episode canon and detect cross-episode staleness.",
+  "production_route": "provider_neutral",
+  "steps": [
+    {
+      "id": "series_bible",
+      "capability_id": "series_bible_control",
+      "owner_agent": "series_continuity_editor",
+      "depends_on": [],
+      "output_type": "SeriesBible"
+    },
+    {
+      "id": "season_arc",
+      "capability_id": "season_architecture",
+      "owner_agent": "showrunner",
+      "depends_on": [
+        "series_bible"
+      ],
+      "output_type": "SeasonArc",
+      "reviewer_agent": "series_continuity_editor"
+    },
+    {
+      "id": "episode_map",
+      "capability_id": "episode_story_mapping",
+      "owner_agent": "story_architect",
+      "depends_on": [
+        "season_arc"
+      ],
+      "output_type": "EpisodeMap"
+    },
+    {
+      "id": "continuity",
+      "capability_id": "cross_episode_continuity",
+      "owner_agent": "series_continuity_editor",
+      "depends_on": [
+        "episode_map"
+      ],
+      "output_type": "SeriesContinuityReport",
+      "reviewer_agent": "qc_supervisor"
+    },
+    {
+      "id": "episode_lock",
+      "capability_id": "episode_lock",
+      "owner_agent": "showrunner",
+      "depends_on": [
+        "continuity"
+      ],
+      "output_type": "EpisodeLock",
+      "approval_required": true,
+      "approval_role": "human_showrunner",
+      "gate_id": "gate_story"
+    }
+  ]
+}

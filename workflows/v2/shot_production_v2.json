@@ -1,0 +1,85 @@
+{
+  "schema_version": "2.0",
+  "workflow_id": "shot_production_v2",
+  "version": "2.0.0",
+  "description": "Produce a traceable shot through reference binding, planning, mock generation, QC and repair classification.",
+  "production_route": "provider_neutral",
+  "steps": [
+    {
+      "id": "refs",
+      "capability_id": "reference_selection",
+      "owner_agent": "generative_supervisor",
+      "depends_on": [],
+      "output_type": "ReferenceBinding"
+    },
+    {
+      "id": "prompt",
+      "capability_id": "prompt_compilation",
+      "owner_agent": "generative_supervisor",
+      "depends_on": [
+        "refs"
+      ],
+      "output_type": "PromptPacket",
+      "reviewer_agent": "qc_supervisor"
+    },
+    {
+      "id": "route",
+      "capability_id": "model_routing",
+      "owner_agent": "generative_supervisor",
+      "depends_on": [
+        "prompt"
+      ],
+      "output_type": "RoutingDecision",
+      "reviewer_agent": "line_producer"
+    },
+    {
+      "id": "keyframe",
+      "capability_id": "keyframe_generation_plan",
+      "owner_agent": "generative_supervisor",
+      "depends_on": [
+        "route"
+      ],
+      "output_type": "KeyframePlan"
+    },
+    {
+      "id": "generate",
+      "capability_id": "video_generation_plan",
+      "owner_agent": "generative_supervisor",
+      "depends_on": [
+        "keyframe"
+      ],
+      "handler": "mock_generation",
+      "output_type": "GeneratedTake"
+    },
+    {
+      "id": "qc",
+      "capability_id": "visual_qc",
+      "owner_agent": "qc_supervisor",
+      "depends_on": [
+        "generate"
+      ],
+      "output_type": "TakeQC"
+    },
+    {
+      "id": "continuity",
+      "capability_id": "continuity_qc",
+      "owner_agent": "continuity_supervisor",
+      "depends_on": [
+        "generate"
+      ],
+      "output_type": "ContinuityQC",
+      "reviewer_agent": "qc_supervisor"
+    },
+    {
+      "id": "select",
+      "capability_id": "dailies_review",
+      "owner_agent": "director",
+      "depends_on": [
+        "qc",
+        "continuity"
+      ],
+      "output_type": "SelectedTake",
+      "reviewer_agent": "qc_supervisor"
+    }
+  ]
+}

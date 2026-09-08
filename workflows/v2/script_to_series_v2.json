@@ -1,0 +1,109 @@
+{
+  "schema_version": "2.0",
+  "workflow_id": "script_to_series_v2",
+  "version": "2.0.0",
+  "description": "Script-to-series route with bible, season, episode and cross-episode continuity controls.",
+  "production_route": "provider_neutral",
+  "steps": [
+    {
+      "id": "ingest",
+      "capability_id": "source_ingestion",
+      "owner_agent": "production_librarian",
+      "reviewer_agent": "security_data_governance",
+      "output_type": "ScriptIngest",
+      "handler": "artifact"
+    },
+    {
+      "id": "diagnose",
+      "capability_id": "production_readiness_diagnostic",
+      "owner_agent": "studio_orchestrator",
+      "reviewer_agent": "line_producer",
+      "depends_on": [
+        "ingest"
+      ],
+      "output_type": "ProductionReadinessDiagnostic",
+      "handler": "project_diagnostic"
+    },
+
+    {
+      "id": "bible",
+      "capability_id": "series_bible_control",
+      "owner_agent": "showrunner",
+      "reviewer_agent": "series_continuity_editor",
+      "depends_on": [
+        "diagnose"
+      ],
+      "output_type": "SeriesBible",
+      "handler": "artifact"
+    },
+    {
+      "id": "season",
+      "capability_id": "season_architecture",
+      "owner_agent": "showrunner",
+      "reviewer_agent": "story_architect",
+      "depends_on": [
+        "bible"
+      ],
+      "output_type": "SeasonArchitecture",
+      "handler": "artifact"
+    },
+    {
+      "id": "episodes",
+      "capability_id": "episode_story_mapping",
+      "owner_agent": "story_architect",
+      "reviewer_agent": "script_editor",
+      "depends_on": [
+        "season"
+      ],
+      "output_type": "EpisodeMap",
+      "handler": "artifact"
+    },
+    {
+      "id": "continuity",
+      "capability_id": "cross_episode_continuity",
+      "owner_agent": "series_continuity_editor",
+      "reviewer_agent": "qc_supervisor",
+      "depends_on": [
+        "episodes"
+      ],
+      "output_type": "ContinuityReport",
+      "handler": "artifact"
+    },
+    {
+      "id": "team",
+      "capability_id": "production_role_coverage",
+      "owner_agent": "line_producer",
+      "reviewer_agent": "qc_supervisor",
+      "depends_on": [
+        "continuity"
+      ],
+      "output_type": "ProductionTeamContributionPlan",
+      "handler": "team_plan"
+    },
+    {
+      "id": "generate",
+      "capability_id": "video_generation_plan",
+      "owner_agent": "generative_supervisor",
+      "reviewer_agent": "qc_supervisor",
+      "depends_on": [
+        "team"
+      ],
+      "output_type": "EpisodeTakePlan",
+      "handler": "mock_generation"
+    },
+    {
+      "id": "lock",
+      "capability_id": "episode_lock",
+      "owner_agent": "showrunner",
+      "reviewer_agent": "series_continuity_editor",
+      "depends_on": [
+        "generate"
+      ],
+      "output_type": "EpisodeLock",
+      "handler": "gate",
+      "approval_required": true,
+      "approval_role": "human_showrunner",
+      "gate_id": "episode_lock"
+    }
+  ]
+}

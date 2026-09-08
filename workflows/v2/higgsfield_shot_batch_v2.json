@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "workflow_id": "higgsfield_shot_batch_v2",
+  "version": "2.0.0",
+  "description": "Governed Higgsfield schema discovery, PromptSpec compilation, cost planning and no-side-effect submission command.",
+  "production_route": "higgsfield_cli_dry_run",
+  "steps": [
+    {
+      "id": "discover",
+      "capability_id": "higgsfield_capability_discovery",
+      "owner_agent": "generative_supervisor",
+      "reviewer_agent": "security_data_governance",
+      "output_type": "ProviderSchemaSnapshot",
+      "handler": "artifact"
+    },
+    {
+      "id": "compile",
+      "capability_id": "prompt_spec_v3_compile",
+      "owner_agent": "generative_supervisor",
+      "reviewer_agent": "director",
+      "depends_on": [
+        "discover"
+      ],
+      "output_type": "PromptSpecV3",
+      "handler": "artifact"
+    },
+    {
+      "id": "cost",
+      "capability_id": "higgsfield_cost_preflight",
+      "owner_agent": "line_producer",
+      "reviewer_agent": "generative_supervisor",
+      "depends_on": [
+        "compile"
+      ],
+      "output_type": "ProviderCostPreflight",
+      "handler": "artifact"
+    },
+    {
+      "id": "submit_dry_run",
+      "capability_id": "higgsfield_generation_submit",
+      "owner_agent": "generative_supervisor",
+      "reviewer_agent": "qc_supervisor",
+      "depends_on": [
+        "cost"
+      ],
+      "output_type": "ProviderJobPlan",
+      "handler": "higgsfield_dry_run",
+      "approval_required": true,
+      "approval_role": "human_producer",
+      "gate_id": "external_generation_plan_approval"
+    }
+  ]
+}
+

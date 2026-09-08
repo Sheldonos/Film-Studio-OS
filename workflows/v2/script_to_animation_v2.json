@@ -1,0 +1,109 @@
+{
+  "schema_version": "2.0",
+  "workflow_id": "script_to_animation_v2",
+  "version": "2.0.0",
+  "description": "Script-to-animation route with world, character, board, animatic and asset controls.",
+  "production_route": "provider_neutral",
+  "steps": [
+    {
+      "id": "ingest",
+      "capability_id": "source_ingestion",
+      "owner_agent": "production_librarian",
+      "reviewer_agent": "security_data_governance",
+      "output_type": "ScriptIngest",
+      "handler": "artifact"
+    },
+    {
+      "id": "diagnose",
+      "capability_id": "production_readiness_diagnostic",
+      "owner_agent": "studio_orchestrator",
+      "reviewer_agent": "line_producer",
+      "depends_on": [
+        "ingest"
+      ],
+      "output_type": "ProductionReadinessDiagnostic",
+      "handler": "project_diagnostic"
+    },
+
+    {
+      "id": "world",
+      "capability_id": "world_bible_creation",
+      "owner_agent": "production_designer",
+      "reviewer_agent": "director",
+      "depends_on": [
+        "diagnose"
+      ],
+      "output_type": "WorldBible",
+      "handler": "artifact"
+    },
+    {
+      "id": "characters",
+      "capability_id": "character_bible_creation",
+      "owner_agent": "character_director",
+      "reviewer_agent": "qc_supervisor",
+      "depends_on": [
+        "world"
+      ],
+      "output_type": "CharacterBible",
+      "handler": "artifact"
+    },
+    {
+      "id": "strategy",
+      "capability_id": "animation_strategy",
+      "owner_agent": "animation_technical_director",
+      "reviewer_agent": "production_designer",
+      "depends_on": [
+        "characters"
+      ],
+      "output_type": "AnimationPlan",
+      "handler": "artifact"
+    },
+    {
+      "id": "boards",
+      "capability_id": "storyboard_plan",
+      "owner_agent": "storyboard_previs",
+      "reviewer_agent": "director",
+      "depends_on": [
+        "strategy"
+      ],
+      "output_type": "Storyboard",
+      "handler": "artifact"
+    },
+    {
+      "id": "team",
+      "capability_id": "production_role_coverage",
+      "owner_agent": "line_producer",
+      "reviewer_agent": "qc_supervisor",
+      "depends_on": [
+        "boards"
+      ],
+      "output_type": "ProductionTeamContributionPlan",
+      "handler": "team_plan"
+    },
+    {
+      "id": "generate",
+      "capability_id": "video_generation_plan",
+      "owner_agent": "generative_supervisor",
+      "reviewer_agent": "qc_supervisor",
+      "depends_on": [
+        "team"
+      ],
+      "output_type": "AnimatedTake",
+      "handler": "mock_generation"
+    },
+    {
+      "id": "finish",
+      "capability_id": "delivery_validation",
+      "owner_agent": "localization_delivery_supervisor",
+      "reviewer_agent": "qc_supervisor",
+      "depends_on": [
+        "generate"
+      ],
+      "output_type": "AnimationMaster",
+      "handler": "gate",
+      "approval_required": true,
+      "approval_role": "human_release_owner",
+      "gate_id": "animation_release"
+    }
+  ]
+}

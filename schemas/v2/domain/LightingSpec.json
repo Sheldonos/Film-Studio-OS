@@ -1,0 +1,60 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "default": "2.0",
+      "pattern": "^\\d+\\.\\d+$",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "lighting_spec_id": {
+      "minLength": 1,
+      "title": "Lighting Spec Id",
+      "type": "string"
+    },
+    "scene_id": {
+      "minLength": 1,
+      "title": "Scene Id",
+      "type": "string"
+    },
+    "key_direction": {
+      "minLength": 1,
+      "title": "Key Direction",
+      "type": "string"
+    },
+    "quality": {
+      "minLength": 1,
+      "title": "Quality",
+      "type": "string"
+    },
+    "color_temperature_k": {
+      "anyOf": [
+        {
+          "maximum": 20000,
+          "minimum": 1000,
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Color Temperature K"
+    },
+    "continuity_state": {
+      "minLength": 1,
+      "title": "Continuity State",
+      "type": "string"
+    }
+  },
+  "required": [
+    "lighting_spec_id",
+    "scene_id",
+    "key_direction",
+    "quality",
+    "continuity_state"
+  ],
+  "title": "LightingSpec",
+  "type": "object",
+  "$id": "https://film-studio-os.local/schema/v2/domain/LightingSpec.json"
+}

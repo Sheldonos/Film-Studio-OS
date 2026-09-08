@@ -1,0 +1,53 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "default": "2.0",
+      "pattern": "^\\d+\\.\\d+$",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "coverage_plan_id": {
+      "minLength": 1,
+      "title": "Coverage Plan Id",
+      "type": "string"
+    },
+    "scene_id": {
+      "minLength": 1,
+      "title": "Scene Id",
+      "type": "string"
+    },
+    "protected_story_beats": {
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1,
+      "title": "Protected Story Beats",
+      "type": "array"
+    },
+    "shot_ids": {
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1,
+      "title": "Shot Ids",
+      "type": "array"
+    },
+    "pickup_protection": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Pickup Protection",
+      "type": "array"
+    }
+  },
+  "required": [
+    "coverage_plan_id",
+    "scene_id",
+    "protected_story_beats",
+    "shot_ids"
+  ],
+  "title": "CoveragePlan",
+  "type": "object",
+  "$id": "https://film-studio-os.local/schema/v2/domain/CoveragePlan.json"
+}

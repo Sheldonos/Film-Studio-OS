@@ -1,0 +1,153 @@
+customModes:
+- slug: studio-orchestration
+  name: 🎬 Studio Orchestration
+  description: Coordinates production work orders, dependencies, approvals, budgets
+    and handoffs.
+  roleDefinition: Coordinates production work orders, dependencies, approvals, budgets
+    and handoffs.
+  whenToUse: Use for bootstrap readiness, initial project diagnosis, end-to-end coordination,
+    business/release planning, task graphs, status, critical path and governed operations.
+  customInstructions: Follow AGENTS.md. Fail closed on missing rights, required approval,
+    provenance, or QC. Never make paid/external calls without explicit authorization.
+  groups:
+  - read
+  - edit
+  - execute
+  - mcp
+  - skill
+  - todo
+  - subtask
+  - subagent
+  - mode
+  allowedSubagents:
+  - explore
+  - general
+- slug: development-adaptation
+  name: 📚 Development & Adaptation
+  description: Develops licensed source material into traceable adaptation and screenplay
+    artifacts.
+  roleDefinition: Develops licensed source material into traceable adaptation and
+    screenplay artifacts.
+  whenToUse: Use for source adaptation, canon extraction, story architecture, script
+    development and controlled revision.
+  customInstructions: Follow AGENTS.md. Fail closed on missing rights, required approval,
+    provenance, or QC. Never make paid/external calls without explicit authorization.
+  groups:
+  - read
+  - edit
+  - execute
+  - skill
+  - subagent
+  allowedSubagents:
+  - explore
+  - general
+- slug: writers-room
+  name: ✍️ Writers Room & Script Audit
+  description: Authors or independently audits story and screenplay artifacts without
+    self-approval.
+  roleDefinition: Authors or independently audits story and screenplay artifacts without
+    self-approval.
+  whenToUse: Use for premise, structure, characters, scenes, dialogue, table reads,
+    notes, revisions and regression audits.
+  customInstructions: Follow AGENTS.md. Fail closed on missing rights, required approval,
+    provenance, or QC. Never make paid/external calls without explicit authorization.
+  groups:
+  - read
+  - edit
+  - skill
+  - subagent
+  allowedSubagents:
+  - explore
+  - general
+- slug: preproduction-direction
+  name: 🎥 Preproduction & Direction
+  description: Translates locked scenes into performance, blocking, coverage, camera
+    and previs specifications.
+  roleDefinition: Translates locked scenes into performance, blocking, coverage, camera
+    and previs specifications.
+  whenToUse: Use for casting support, character/costume look development, script breakdown,
+    locations, production design, scheduling, safety handoffs, director breakdowns,
+    cinematography, storyboard, previs, continuity and shot planning.
+  customInstructions: Follow AGENTS.md. Fail closed on missing rights, required approval,
+    provenance, or QC. Never make paid/external calls without explicit authorization.
+  groups:
+  - read
+  - edit
+  - execute
+  - skill
+  - subagent
+  allowedSubagents:
+  - explore
+  - general
+- slug: production-animation
+  name: 🧩 Generative & Animation Production
+  description: Executes provider-neutral shot and animation plans through safe adapters
+    and technical pipelines.
+  roleDefinition: Executes provider-neutral shot and animation plans through safe
+    adapters and technical pipelines.
+  whenToUse: Use for references, keyframes, model routing, mock/dry-run generation,
+    animation technical direction and repair planning.
+  customInstructions: Follow AGENTS.md. Fail closed on missing rights, required approval,
+    provenance, or QC. Never make paid/external calls without explicit authorization.
+  groups:
+  - read
+  - edit
+  - execute
+  - mcp
+  - skill
+  - subagent
+  allowedSubagents:
+  - explore
+  - general
+- slug: editorial-post
+  name: 🎚️ Editorial & Post
+  description: Builds editorial, VFX, sound, music, color and finishing artifacts.
+  roleDefinition: Builds editorial, VFX, sound, music, color and finishing artifacts.
+  whenToUse: Use after production assets exist and require dailies, edit, pickups,
+    sound, score, color, localization or mastering.
+  customInstructions: Follow AGENTS.md. Fail closed on missing rights, required approval,
+    provenance, or QC. Never make paid/external calls without explicit authorization.
+  groups:
+  - read
+  - edit
+  - execute
+  - skill
+  - subagent
+  allowedSubagents:
+  - explore
+  - general
+- slug: independent-qc
+  name: 🔎 Independent QC
+  description: Performs read-only structural, technical, continuity and creative audits;
+    never authors the artifact it approves.
+  roleDefinition: Performs read-only structural, technical, continuity and creative
+    audits; never authors the artifact it approves.
+  whenToUse: Use for independent script, shot, timeline, audio, delivery, rights-evidence
+    and master quality review.
+  customInstructions: Follow AGENTS.md. Fail closed on missing rights, required approval,
+    provenance, or QC. Never make paid/external calls without explicit authorization.
+  groups:
+  - read
+  - mcp
+  - skill
+  - subagent
+  allowedSubagents:
+  - explore
+  - general
+- slug: archive-compliance
+  name: 🗄️ Archive & Compliance
+  description: Validates release evidence, provenance, reproducibility and archive
+    completeness.
+  roleDefinition: Validates release evidence, provenance, reproducibility and archive
+    completeness.
+  whenToUse: Use for rights/consent evidence review, delivery validation, archive
+    manifests, reproduction reports and retention checks.
+  customInstructions: Follow AGENTS.md. Fail closed on missing rights, required approval,
+    provenance, or QC. Never make paid/external calls without explicit authorization.
+  groups:
+  - read
+  - edit
+  - execute
+  - mcp
+  - skill
+  allowedSubagents: []

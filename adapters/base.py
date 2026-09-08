@@ -1,0 +1,6 @@
+from abc import ABC, abstractmethod
+class GenerationAdapter(ABC):
+    @abstractmethod
+    def capabilities(self): ...
+    @abstractmethod
+    def submit(self, prompt_packet, **kwargs): ...

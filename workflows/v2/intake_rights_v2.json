@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "workflow_id": "intake_rights_v2",
+  "version": "2.0.0",
+  "description": "Register source assets, validate safety, capture rights evidence and require human greenlight.",
+  "production_route": "provider_neutral",
+  "steps": [
+    {
+      "id": "ingest",
+      "capability_id": "source_ingestion",
+      "owner_agent": "production_librarian",
+      "depends_on": [],
+      "output_type": "SourceAsset"
+    },
+    {
+      "id": "rights",
+      "capability_id": "rights_risk_triage",
+      "owner_agent": "rights_clearance_supervisor",
+      "depends_on": [
+        "ingest"
+      ],
+      "handler": "rights_gate",
+      "output_type": "RightsGateResult",
+      "reviewer_agent": "qc_supervisor"
+    },
+    {
+      "id": "strategy",
+      "capability_id": "production_strategy_selection",
+      "owner_agent": "line_producer",
+      "depends_on": [
+        "rights"
+      ],
+      "output_type": "ProductionStrategy",
+      "reviewer_agent": "studio_orchestrator"
+    },
+    {
+      "id": "greenlight",
+      "capability_id": "greenlight_package",
+      "owner_agent": "studio_orchestrator",
+      "depends_on": [
+        "strategy"
+      ],
+      "output_type": "GreenlightDecision",
+      "approval_required": true,
+      "approval_role": "human_producer",
+      "gate_id": "gate_greenlight"
+    }
+  ]
+}
