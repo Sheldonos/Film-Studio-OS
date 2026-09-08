@@ -2,7 +2,7 @@
 
 # 🎬 Film Studio OS
 
-**A governed, provider-neutral Film Studio Operating System for IBM Bob**
+**A governed, provider-neutral Film Studio Operating System for IBM Bob/Astra 6**
 
 [![Version](https://img.shields.io/badge/version-v0.4.0-blue?style=flat-square)](./manifest.json)
 [![Python](https://img.shields.io/badge/python-3.11%2B-blue?style=flat-square)](./pyproject.toml)
